@@ -305,7 +305,14 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                         val = raw_val
                     values[ph] = val
 
-                sentence_text = template.format(**values)
+                try:
+                    sentence_text = template.format(**values)
+                except (ValueError, KeyError) as e:
+                    print(f"\nBlad w szablonie #{template_idx}: {template[:100]}...")
+                    print(f"    Blad: {e}")
+                    pbar.update(1)
+                    continue
+                    
                 sentence = Sentence(sentence_text)
 
                 # Nie dodaj "O" na wszystko - Flair domyślnie traktuje tokeny bez tagu jako "O"

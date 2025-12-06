@@ -1,4 +1,4 @@
-Cześć, z tej strony {name}, dzwonię w sprawie ogłoszenia, które widziałam wczoraj. Czy mógłbyś przekazać {name}, że niestety spóźnię się na spotkanie, bo utknęłam w korku?
+﻿Cześć, z tej strony {name}, dzwonię w sprawie ogłoszenia, które widziałam wczoraj. Czy mógłbyś przekazać {name}, że niestety spóźnię się na spotkanie, bo utknęłam w korku?
 W formularzu rejestracyjnym jako drugie imię podałem {name}, chociaż wszyscy mówią na mnie {name}.
 Moja siostra ma na imię {name}, dokładnie tak samo jak nasza babcia.
 Czy {name} potwierdził już swoją obecność na konferencji?
@@ -4026,7 +4026,7 @@ Serio, nie mogę już tego słuchać..
 Znowu dziś na przerwie cała banda zaczęła drzeć mordę '{name} {surname}, ty debilu!' po całym korytarzu
 Jakby {age} lat to jeszcze powód do jaj
 W {city} to chyba tylko w naszej szkole takie patole się zbierają
-{relative{ mi kazała zgłosić to do dyrektora, ale co to da
+{relative} mi kazała zgłosić to do dyrektora, ale co to da
 Jak zwykle powie, że 'przeproszą' i tyle
 Jakby słowa coś zmieniały
 PS: Jak ktoś ma pomysł, to niech pisze na {email} albo dzwońcie na {phone}, bo w szkole już nawet do toalety boję się iść
@@ -9763,7 +9763,7 @@ I żeby było śmieszniej, w rubryce 'nr dokumentu' wpisałam {document-number} 
 No po prostu masakra
 O kurczę, znowu dostałem jakiś dziwny mail od HR-u… niby o aktualizacji danych, ale coś mi śmierdzi
 Wczoraj dzwoniłam do działu kadr, żeby sprawdzić, i mówią, że nic nie wysyłali?
-W formularzu kazali podać wszystko od nowa – PESEL {pesel}, numer pracownika {ID number}, telefon służbowy {phone}, nawet prywatny email {email}
+W formularzu kazali podać wszystko od nowa – PESEL {pesel}, numer pracownika {document-number}, telefon służbowy {phone}, nawet prywatny email {email}
 No jakim cudem mają stare dane nieaktualne, skoro trzy miesiące temu składaliśmy te same papiery?
 Jakby co, to ja tego nie wysyłałam, tylko od razu zgłosiłam do IT, bo wygląda to na jakiś scam
 Ale sprawdźcie, czy wy też dostaliście coś podobnego, bo jak nas wszystkich ogarniają, to będzie masakra… PS: Macie może numer do tej nowej pani z HR
@@ -9910,7 +9910,7 @@ PS: Jak ktoś ma pomysł, jak to ugryźć, to dajcie znać, bo już nie daję ra
 Kurcze, nie wiem już co robić z tym odwołaniem..
 Piszę i piszę, a wszystko brzmi jak bełkot
 Złożyłam już pierwszą skargę, ale odrzucili, bo podobno brakowało jakichś danych
-W końcu dostałam ten ich decyzję z urzędu, tam gdzie jest napisane 'Nr sprawy: {ID number}' i teraz muszę się odwołać w 14 dni, bo inaczej przepadnie
+W końcu dostałam ten ich decyzję z urzędu, tam gdzie jest napisane 'Nr sprawy: {document-number}' i teraz muszę się odwołać w 14 dni, bo inaczej przepadnie
 A na dodatek w tej ich odpowiedzi nawet mój PESEL pomylili
 Miał być {pesel}, a wpisali jakieś cyfry z kosmosu
 Jak mam im teraz wierzyć
@@ -9920,7 +9920,7 @@ Ej, słuchajcie, bo mam taki problem że aż mnie szlak trafia
 Dostałem jakieś pismo z urzędu, ale wygląda jakby pisali to po chińsku
 Nic nie kumam, a termin mija za trzy dni
 Wczoraj to nawet moja {relative} próbowała to ogarnąć i tylko głową kręciła
-W lewym dolnym rogu jest jakiś numer sprawy {ID number}, ale czy to ma związek z tym PESEL-em {pesel} który wkleili na górze
+W lewym dolnym rogu jest jakiś numer sprawy {document-number}, ale czy to ma związek z tym PESEL-em {pesel} który wkleili na górze
 Bo serio, nie wiem o co chodzi
 Aha, i jeszcze wyszło że niby mam przyjść osobiście na {address}, tylko że to w cholerę daleko i kto mi zwróci koszta paliwa
 Jakby mogli wysłać to normalnie pocztą..
@@ -10101,7 +10101,7 @@ Nie mogę uwierzyć, że znowu się przewlekło
 Czekam na tę decyzję od dwóch miesięcy i NIC
 Dzwoniłam tam już pięć razy, a oni tylko 'w trakcie, w trakcie'
 Przecież to nie może tak wyglądać, kurczę
-Wszystko wysłałam zgodnie z ich wytycznymi, nawet potwierdzenie doręczenia mam, cyfra w cyfrę – nr sprawy {ID number}, PESEL {pesel}, wszystko jak leci
+Wszystko wysłałam zgodnie z ich wytycznymi, nawet potwierdzenie doręczenia mam, cyfra w cyfrę – nr sprawy {document-number}, PESEL {pesel}, wszystko jak leci
 A teraz cisza
 I co ja mam z tym zrobić
 Mieszkanie na {address} się sama nie ogarnie, a ja potrzebuję tej decyzji jak powietrza
@@ -10110,7 +10110,7 @@ Może wy macie jakiś sposób?*
 Kurde, nie mam pojęcia co z tym zrobić
 Dostałem jakieś pismo z urzędu i nawet połowy nie rozumiem
 Wygląda na jakąś decyzję, ale dlaczego oni muszą pisać takim urzędowym bełkotem
-W ogóle to podpięli tam jakiś numer sprawy {ID number}, ale nigdzie nie widzę, co mam z tym fantem zrobić
+W ogóle to podpięli tam jakiś numer sprawy {document-number}, ale nigdzie nie widzę, co mam z tym fantem zrobić
 I jeszcze wczoraj sprawdzałem – na dole jest mój PESEL {pesel}, tylko nie wiem, czy to znaczy, że mam coś płacić, czy oni mi coś wypłacą
 Może wy macie to ogarnięte
 Słabo się czuję z tym, bo w sumie przegapiłem termin odwołania, a tu w piśmie jest mowa o jakichś konsekwencjach..
@@ -10147,7 +10147,7 @@ No klasyka..
 Nie wiem, czy to w ogóle coś da, ale musiałem to zgłosić..
 Wczoraj na komisariacie ten gliniarz kazał mi podać wszystko jak leci, nawet się nie przedstawił, zero kultury
 No to mu podałem, że mieszkam przy {address}, bo co miałem robić, ale serio, zero szacunku
-Potem jeszcze cisnął o numer dowodu, więc mu pokazałem - {ID number}, chociaż po co mu to było, to nie wiem
+Potem jeszcze cisnął o numer dowodu, więc mu pokazałem - {document-number}, chociaż po co mu to było, to nie wiem
 A na koniec, żeby było śmieszniej, pyta o PESEL
 {pesel}, masz, szczęśliwy
 Jakby to miało cokolwiek zmienić
@@ -10240,7 +10240,7 @@ Mam taką dziwną wiadomość..
 Podobno ktoś podawał się za mnie w banku
 {name} {surname}, PESEL {pesel}, ale ja nigdy nie zakładałem tam konta
 Co robić?
-Hej, muszę wysłać Ci te dokumenty, ale nie pamiętam, czy podawałeś {ID number} czy może {pesel}
+Hej, muszę wysłać Ci te dokumenty, ale nie pamiętam, czy podawałeś {document-number} czy może {pesel}
 I jeszcze to {email} – na pewno jest do Ciebie
 Bo nie chcę, żeby wpadło w niepowołane ręce..
 Słuchaj, ten gość z {city} – podobno {age} lat – dzwonił do mnie z numeru {phone} i podawał się za pracownika US
@@ -10255,7 +10255,7 @@ Dzięki
 Dobra, ma {age} lat, jest {sex}, z {city}
 Adres to {address}, telefon {phone}
 E-mail to {email}, PESEL {pesel}
-Jak znajdziesz, to wrzuć też nr dowodu ({ID number})
+Jak znajdziesz, to wrzuć też nr dowodu ({document-number})
 Sory za bałagan!"*
 Cześć, czy możesz sprawdzić, czy umowa dla {name} {surname} jest już gotowa
 Wysłałem dane: wiek {age}, płeć {sex}, adres {address}
@@ -10266,12 +10266,12 @@ Pilne, bo klient się denerwuje
 {name} {surname}, lat {age}, {sex}
 Mieszka w {city} na {address}
 Telefon {phone}, mail {email}
-PESEL to {pesel}, a dowód {ID number}
+PESEL to {pesel}, a dowód {document-number}
 Sprawdź, bo może się mylę w którymś cyferkach."*
 Słuchaj, ta nowa klientka, {name} {surname}, ma {age} lat, {sex}
 Wysyłam pełne dane: {address}, tel
 {phone}, {email}
-PESEL {pesel}, dowód {ID number}
+PESEL {pesel}, dowód {document-number}
 Błagam, nie pomyl nic, bo już raz ktoś wpisał zły numer i był dramat
 *"Ej, pamiętasz tę awanturę o dane
 No to {name} {surname} ({age} lat, {sex}) ma nowy adres: {address}
@@ -10345,7 +10345,7 @@ O kurczę..
 Mój ziomek {name} {surname} ({age} lat, {sex}) z {city} właśnie dostał wypowiedzenie z pracy
 Mieszka na {address}, tel
 {phone}, mail {email}
-PESEL {pesel}, dowód {ID number}
+PESEL {pesel}, dowód {document-number}
 Szef go wykończył psychicznie..
 Wiecie, jakie ma prawa
 I czy może gdzieś zgłosić mobbing
@@ -10354,7 +10354,7 @@ Słuchajcie, dramat..
 Właśnie dowiedziałam się, że {name} {surname} ({age} lat, {sex}) z {city} ma ogromne długi
 W papierach jest adres {address}, telefon {phone}, ale nie działa
 Email {email} też mam
-PESEL {pesel}, dowód {ID number}
+PESEL {pesel}, dowód {document-number}
 Komornik już go szuka..
 Czy mogę jakoś pomóc, żeby nie stracił mieszkania
 To mój dawny nauczyciel, serce pęka..
@@ -10400,7 +10400,7 @@ Obecnie mieszka na {address}, ale szuka czegoś bliżej centrum
 Jego dane kontaktowe: tel
 {phone}, email {email}
 W umowie musi być dokładnie opisane, co wolno robić w lokalu, jakie są zasady wypowiedzenia i procedura odbioru mieszkania
-Podrzucam też jego PESEL ({pesel}) i nr dowodu ({ID number}), bo właściciel chce to wszystko sprawdzić
+Podrzucam też jego PESEL ({pesel}) i nr dowodu ({document-number}), bo właściciel chce to wszystko sprawdzić
 Najważniejsze, żeby nie było żadnych ukrytych opłat!”
 „Okej, więc mój ziomek {name} {surname} ({age} lat, {sex}) wynajmuje mieszkanie w {city}
 Obecny adres to {address}, ale się pakuje
@@ -10464,13 +10464,13 @@ Odpiszcie mi ASAP w sprawie {name} {surname}
 Babka {age} lat, {sex}, z {city} - totalnie zaniedbany przypadek
 Adres: {address}, ale i tak leży w szpitalu
 Kontakt przez syna: {phone} albo {email}
-PESEL: {pesel}, dowód: {ID number}
+PESEL: {pesel}, dowód: {document-number}
 Chodzi o cukrzycę i te odleżyny, ubezpieczyciel się czepia dokumentacji..
 Ziomek {name} {surname}, {age} lat, {sex} - pokłócił się z betoniarką i przegrał
 Mieszka na {address}, {city}
 Jak coś to dzwońcie na {phone}, ale teraz chyba śpi po operacji
 Mail: {email}
-Dane: PESEL {pesel}, dowód {ID number}
+Dane: PESEL {pesel}, dowód {document-number}
 Trzeba rozbudować opis tych złamań i czy będzie trwała utrata sprawności, bo ZUS się drze
 Słuchajcie, pacjentka {name} {surname}, {age} lat, {sex} z {city} - adres {address}
 Totalna masakra, ta jej depresja po rozwodzie..
@@ -10492,7 +10492,7 @@ Alert
 {name} {surname}, {age} lat, {sex} - przyjęty z {address} w {city} po udarze
 Rodzina pod {phone}, ale słabo mówią po polsku
 Mail: {email}
-PESEL: {pesel}, dowód: {ID number}
+PESEL: {pesel}, dowód: {document-number}
 Musimy szybko przygotować pełną dokumentację, bo ubezpieczyciel zagraniczny się czepia o wcześniejsze schorzenia..
 Skarga do urzędu**   „Słuchajcie, no nie mogę już wytrzymać z tym hałasem pod {address}
 Mieszkam tu od {age} lat i nigdy nie było tak źle
@@ -10503,7 +10503,7 @@ Mój PESEL {pesel}, jeśli trzeba potwierdzić tożsamość.”    ---    **
 Reklamacja zakupu**   „Kupiłam u was tę frytkownicę, a ona się pali po 10 minutach
 Do kogo mam wrzeszczeć?
 Nazywam się {name} {surname}, zamówienie wysłane na {address}, {city}
-Numer zamówienia: {ID number}, mój mail {email}
+Numer zamówienia: {document-number}, mój mail {email}
 Oddzwonić na {phone}, bo {age} lat żyję i takiej fuszerki nie widziałam
 Jak trzeba, podam PESEL {pesel}, ale najpierw oddajcie kasę!”
 Skarga na dostawcę internetu**   „Od tygodnia nie mam internetu na {address}, {city}
@@ -10523,7 +10523,7 @@ Znowu ta pani z {city} dzwoni
 {name} {surname}, {age} lat, {sex}
 Krzyczy, że jej konto zhakowane
 Mieszka na {address}, telefon {phone}, mail {email}
-Sprawdź czy ktoś nie zmienił danych, PESEL {pesel}, dowód {ID number}
+Sprawdź czy ktoś nie zmienił danych, PESEL {pesel}, dowód {document-number}
 Jak zwykle histeria, ale trzeba sprawdzić."*
 Halo, tu kierownik z {city} - sprawa {name} {surname}, {age} lat
 Klient twierdzi, że nie brał pożyczki, a system pokazuje, że podpisywał
@@ -10541,7 +10541,7 @@ Idź sprawdzić ten bankomat, pewnie znowu ktoś włożył gumę do żucia..
 {sex}, {age} lat, {city}
 Odebrał podejrzanego SMS-a na {phone}
 Adres {address}, mail {email}
-Weryfikuję teraz PESEL {pesel} i dowód {ID number}
+Weryfikuję teraz PESEL {pesel} i dowód {document-number}
 Sprawdź czy nie było próby zmiany danych w systemie!"*
 Kurde, znowu problem z tą przesyłką od {name} {surname}
 Facet ma {age} lat i mieszka w {city}, pod {address}
@@ -10552,7 +10552,7 @@ Jak myślicie, to jeszcze nadaje się do reklamacji, czy już tylko do śmietnik
 Słuchajcie, mamy tu absurdalną sytuację z klientką {name} {surname} ({sex}, {age} lat)
 Jej przesyłka z {city} (adres {address}) dotarła kompletnie mokra
 Na maila {email} wysłała zdjęcia, ale na {phone} tylko płacze
-Biuro krzyczy, że potrzebują PESEL {pesel} i nr dowodu {ID number} do protokołu
+Biuro krzyczy, że potrzebują PESEL {pesel} i nr dowodu {document-number} do protokołu
 Jak mam ją uspokoić, skoro sama nie wiem, czy to wina magazynu czy kuriera
 Ziomek {name} {surname} z {city} (tel
 {phone}) zostawił właśnie u nas rozjechany monitor
@@ -10581,7 +10581,7 @@ Ale potrzebujemy PESEL {pesel} i nr dowodu {document-number} do oficjalnego odrz
 Jak to zrobić, żeby później nie było filmiku na YouTube 'Firma ukradła mi 5 tysięcy!'
 Kurde, znowu ta sprawa z {name} {surname}..
 Klientka ma {age} lat, {sex}, mieszka w {city} przy {address}
-Wczoraj dzwoniła z {phone}, że jej syn rozbił jej auto i teraz ubezpieczyciel chce PESEL {pesel} i skan dowodu {ID number}
+Wczoraj dzwoniła z {phone}, że jej syn rozbił jej auto i teraz ubezpieczyciel chce PESEL {pesel} i skan dowodu {document-number}
 Jak możesz to wyślij mi na maila {email} te dokumenty, bo ja już nie mam siły z nimi gadać
 Siemka, muszę Cię prosić o pomoc w tej sprawie z {city}
 Chodzi o {name} {surname}, {age} lat, {sex}
@@ -10604,7 +10604,7 @@ No nie mogę..
 Właśnie {name} {surname}, {age} lat, {sex} z {city} wjechała w przystanek
 Podaje adres {address}, tel
 {phone}, mail {email}
-PESEL {pesel} się zgadza, ale dowód {ID number} wygląda na podrobiony
+PESEL {pesel} się zgadza, ale dowód {document-number} wygląda na podrobiony
 Co robić
 Dzwoń jak najszybciej
 Odpierdol się od mnie z tymi pozewkami, ale..
@@ -10617,7 +10617,7 @@ Jak myślisz, przejdzie
 *"Ziom, pilna sprawa
 {name} {surname}, {age} lat, {sex}, z {city} - rozwód i walka o dom na {address}
 Dzwoń na {phone} (po 18), mail {email}
-Dokumenty: PESEL {pesel}, dowód {ID number}
+Dokumenty: PESEL {pesel}, dowód {document-number}
 Babka go zdradzała z sąsiadem, ale to ON ma wypierdalać
 No nie, kurwa, tak nie może być!"*
 Jebany piątek, a tu nowa sprawa..
@@ -10642,7 +10642,7 @@ Mam wrażenie, że coś kręci
 Klientka {name} {surname} ({age} lat, {sex}) właśnie zgłosiła awarię w mieszkaniu w {city}
 Podaje adres ({address}), ale nie mogę dodzwonić się na {phone}
 Mail ({email}) też nie odpowie
-W dokumentach ma PESEL ({pesel}) i dowód ({ID number}), ale potrzebuję ją złapać, bo zalewa sąsiadów!"*
+W dokumentach ma PESEL ({pesel}) i dowód ({document-number}), ale potrzebuję ją złapać, bo zalewa sąsiadów!"*
 Ej, pamiętasz tę {name} {surname}
 {age} lat, {sex}, która wynajęła mieszkanie w {city}
 Zostawiła nam kaucję, ale teraz się okazało, że podany adres ({address}) to firma kurierska
@@ -10662,7 +10662,7 @@ Bo jutro mam oddać..
 W systemie mam stare dane: {address}, ale telefon chyba się zmienił
 Podajesz {phone}
 I czy {email} jeszcze aktualny
-Bo muszę zaktualizować PESEL {pesel} i {ID number} w naszej bazie."*
+Bo muszę zaktualizować PESEL {pesel} i {document-number} w naszej bazie."*
 Słuchaj no..
 Ta sprawa z {city} się komplikuje
 Chodzi o {name} {surname} ({sex}, {age} lat)
@@ -10673,7 +10673,7 @@ brudne po poprzednich gościach
 Kobieta ma alergię, PESEL {pesel}, a tu proszę – plamy biologiczne
 Telefon {phone} ciągle zajęty, mail {email} ignorowany
 Jak mam jej pomóc, skoro nawet nie chcą przyjąć dowodu {document-number} do reklamacji
-Słuchaj, {name} to mój kuzyn ({age} lat, {sex}) i właśnie wrócił z {city} wściekły – w hotelu przy {address} ukradli mu portfel z dowodem {ID number} i kartami
+Słuchaj, {name} to mój kuzyn ({age} lat, {sex}) i właśnie wrócił z {city} wściekły – w hotelu przy {address} ukradli mu portfel z dowodem {document-number} i kartami
 Na szczęście PESEL {pesel} pamiętał, ale co z tego
 Hotel twierdzi, że 'monitoringu nie ma'
 Jego telefon {phone} i mail {email} podaliśmy na policji, ale czy coś to da
@@ -10692,7 +10692,7 @@ Sprawdziliśmy logi i wyszło, że ktoś podawał się za nas z IP z {city}
 Na szybko zablokowaliśmy {phone} i {document-number}, ale boję się, że mógł już ściągnąć więcej danych
 Jak myślisz, trzeba zgłaszać to do UODO
 Słuchaj, masz może kontakt do {name} {surname}
-System pokazał, że ktoś próbował zmienić hasło do jego konta ({ID number}) z IP z {city}
+System pokazał, że ktoś próbował zmienić hasło do jego konta ({document-number}) z IP z {city}
 Na maila {email} leciały powiadomienia, ale podobno nie dochodzą
 Zostawiłem info na {phone}, ale nie odbiera
 To może być poważne
@@ -10762,7 +10762,7 @@ Jak przestać porównywać się do innych
 {email} – możesz wysłać tam mema albo coś, bo humor mam pod ziemią
 *"Hej, {name} z {city}
 Mam {age} lat i chyba depresję, ale boję się iść do lekarza
-Co jak wpiszą mi to w {ID number} i potem nie dostanę pracy
+Co jak wpiszą mi to w {document-number} i potem nie dostanę pracy
 Mój telefon: {phone}, ale nie odbieram, bo dzwoni tylko windykacja
 Jak żyć, kiedy wszystko się wali
 Nawet ty nie odpowiadasz od razu..
@@ -10815,7 +10815,7 @@ Leki pomagają, ale szukam czegoś dodatkowego, np
 jogi czy mindfulness
 Ktoś ma doświadczenie
 Hej, słuchaj… {name} mi na imię, mam {age} lat i chyba właśnie rozwaliłem/am sobie życie
-Zgubiłem/am dowód ({ID number}) w knajpie po kłótni z {surname}, a teraz boję się, że ktoś go użyje
+Zgubiłem/am dowód ({document-number}) w knajpie po kłótni z {surname}, a teraz boję się, że ktoś go użyje
 Mieszkam w {city} przy {address}, ale czuję się tak samotnie, że nawet nie wiem, do kogo mam zadzwonić ({phone})
 Jak ogarnąć ten bałagan
 Kurde, nie wiem, od czego zacząć… Jestem {name}, {sex}, {age} lat
@@ -10838,7 +10838,7 @@ Mieszkam w {city}, tel
 Jak odzyskać kontrolę, gdy ktoś niszczy twoją reputację
 „Hej, {name} {surname} z {address}..
 Mam {age} lat i zero pomysłu na życie
-Mój {ID number} to jedyna rzecz, która ma ‘cel’
+Mój {document-number} to jedyna rzecz, która ma ‘cel’
 Jak nie zwariować, gdy jedyne powiadomienia na {phone} to przypomnienia o rachunkach?”
 Hejka, może znasz się na prawie
 Nazywam się {name} {surname}, mam {age} lat, jestem z {city}
@@ -10868,7 +10868,7 @@ Słuchaj, muszę się z tobą wygadać… Wczoraj u {name} {surname} w mieszkani
 Typ ma {age} lat i totalnie się wkurzył, bo nie mógł zalogować się do banku
 Jak myślisz, czy to może być próba phishingu
 Bo serio, nie wiem, czy jego dane są bezpieczne…
-„O boże, właśnie się zorientowałam, że moja koleżanka {name} {surname} w wieku {age} lat wrzuciła na Instagramie zdjęcie legitymacji z widocznym {ID number}… Jak jej delikatnie powiedzieć, że to może skończyć się kradzieżą tożsamości?”
+„O boże, właśnie się zorientowałam, że moja koleżanka {name} {surname} w wieku {age} lat wrzuciła na Instagramie zdjęcie legitymacji z widocznym {document-number}… Jak jej delikatnie powiedzieć, że to może skończyć się kradzieżą tożsamości?”
 „Ej, nie uwierzysz… Właśnie dostałem paczkę na nazwisko {name} {surname}, ale to nie ja zamawiałem
 W środku były jakieś podejrzane dokumenty z moim {pesel}
 Co robić
@@ -10970,12 +10970,12 @@ Umowa musi mieć wszystko – kaucję, kary za spóźnienia, jak sprawdzać stan
 I żeby było jasno, co wolno, a co nie, bo poprzedni najemcy zniszczyli jej ściany…”
 „Cześć, piszę w sprawie umowy dla {name} {surname} ({age} lat, {sex})
 Adres aktualny: {address}, ale wynajmuje w {city}
-Kontakt: {phone} / {email}, PESEL {pesel}, nr dowodu {ID number}
+Kontakt: {phone} / {email}, PESEL {pesel}, nr dowodu {document-number}
 Ważne: 1) żeby właściciel nie wchodził bez 24h uprzedzenia, 2) kary za hałas po 22:00, 3) wyraźny zapis o ochronie moich danych (RODO)
 I niech nie kombinują z kaucją!”
 „Słuchajcie, musimy ogarnąć tę sprawę z wyciekiem danych
 {name} {surname} (lat {age}, {sex}) dzwonił/a wczoraj wkurzony/a, że ktoś próbował się pod niego/nia podszyć
-W życiu nie widziałam takiego bałaganu – mieliśmy jego/jej PESEL ({pesel}), dowód ({ID number}), a nawet adres ({address}) w jednym pliku bez hasła
+W życiu nie widziałam takiego bałaganu – mieliśmy jego/jej PESEL ({pesel}), dowód ({document-number}), a nawet adres ({address}) w jednym pliku bez hasła
 Do tego jeszcze {email} i {phone} leżą w chmurze bez zabezpieczeń
 Jak to możliwe, że nikt tego nie sprawdził
 W {city} już się o tym mówi
@@ -11032,14 +11032,14 @@ To chyba przez tę nową ustawę w {city}, bo nagle wszyscy chcą pełną dokume
 Znasz to
 *"Ej, pomożesz
 Muszę uzupełnić jakieś głupie pola dla {name} {surname}
-Chodzi o wiek ({age}), płeć ({sex}), adres ({address}), telefon ({phone}), mail ({email}), PESEL ({pesel}) i nr dowodu ({ID number})
+Chodzi o wiek ({age}), płeć ({sex}), adres ({address}), telefon ({phone}), mail ({email}), PESEL ({pesel}) i nr dowodu ({document-number})
 Pewnie przez jakiś nowy system w {city}, bo wcześniej nie było takich wymagań
 Znajdziesz to gdzieś?"*
 „Masz minutę
 Chodzi o {name} {surname} ({age} lat, {sex}) z {city}, ul
 {address}
 PESEL {pesel}, tel
-{phone}, mail {email}, dowód {ID number}
+{phone}, mail {email}, dowód {document-number}
 Wypisałam mu L4 na ból pleców, ale teraz mówi, że to przez dźwiganie w pracy
 Jak zmienić opis, żeby ZUS nie kazał mu jechać do medycyny pracy
 Może dać ‚dyskopatię z promieniowaniem do kończyn’?”
@@ -11090,7 +11090,7 @@ Tylko niech przyniesie dowód {document-number} i potwierdzi PESEL {pesel}, bo i
 Kobieta, {age} lat, adres {address}
 Dzwoniłam na {phone}, ale się rozłączył
 Mail {email} też dziwny… Jest z {city}, ale PESEL {pesel} wskazuje na inny region
-I jeszcze ten dowód {ID number} – wygląda na podrobiony
+I jeszcze ten dowód {document-number} – wygląda na podrobiony
 Chyba trzeba zgłosić to compliance…”
 „Słuchaj, pilna sprawa – {name} {surname} ma {age} lat, {sex}, adres {address}
 Dzwoniłam na {phone}, ale odpowiada jakiś dzieciak… Mail {email} też niepewny
@@ -11101,9 +11101,9 @@ W opisie pisze, że to delikatny antyk ({age}-letni), a przyszło w trzech kawa�
 Jego dane: tel
 {phone}, mail {email}, pesel {pesel}
 Mieszka na {address} – może kurier rzucał paczkami z piętra
-Nie wiem jak mu odpisac, bo nawet jego dowód {ID number} wygląda na uszkodzony na zdjęciu...”
+Nie wiem jak mu odpisac, bo nawet jego dowód {document-number} wygląda na uszkodzony na zdjęciu...”
 Słuchajcie, mamy klasyka: {name} {surname} ({sex}, {age} lat) krzyczy, że ekspres do kawy eksplodował mu w mieszkaniu na {address}
-Wysłał filmik i skan dowodu {ID number}, PESEL {pesel}, kontakt {phone} i {email}
+Wysłał filmik i skan dowodu {document-number}, PESEL {pesel}, kontakt {phone} i {email}
 Tylko że to wygląda jak zalanie, a nie wada fabryczna..
 Do tego z {city} zawsze są jakieś problemy
 Jak mam mu napisać, żeby nie wyglądało, że go oskarżamy
@@ -11149,7 +11149,7 @@ Co ja mam teraz robić?!"*
 {age} lat, {sex}, z {city}, adres {address}
 Dzwonię na {phone}, a tam 'nie ma takiego numeru'
 Mail {email} też błąd
-Jak mam uzupełnić dokumenty bez {pesel} i {ID number}
+Jak mam uzupełnić dokumenty bez {pesel} i {document-number}
 To się w życiu nie uda!"*
 LOL, nie uwierzysz – dzwonił przed chwilą {name} {surname}, {age} lat, {sex} z pytaniem czy w {city} można wynająć mieszkanie bez umowy
 XD Adres podał {address}, telefon {phone}, ale jak mu powiedziałam, że potrzebujemy PESEL {pesel}, to się wykłócał
@@ -11172,7 +11172,7 @@ Mieszkam na {address}, ale uciekam do {city}
 Wyślij mi na {email} kopię dowodu {document-number}, bo mój spłonął.' Serio
 To musi być próba wyłudzenia..
 UWAGA: {name} {surname} ({age} lat, {sex}) podaje SPRZECZNE dane
-W umowie {address}, ale w dowodzie {ID number} inny adres
+W umowie {address}, ale w dowodzie {document-number} inny adres
 PESEL {pesel} się zgadza, ale w {city} nikt go nie zna
 Telefon {phone} nieczynny, mail {email} odrzuca maile
 Czy to oszust, czy kolejny pokraczny system państwowy?..
@@ -11188,11 +11188,11 @@ A, i nr dowodu {document-number}, bo inaczej odrzucą
 Szybka sprawa - {name} {surname} zgubił dokumenty
 Muszę odtworzyć, ale urząd w {city} chce WSZYSTKO
 Wiek {age}, płeć {sex}, adres {address}
-Jak możesz, to wyślij mi też jego {phone}, {email}, PESEL {pesel} i {ID number}
+Jak możesz, to wyślij mi też jego {phone}, {email}, PESEL {pesel} i {document-number}
 Wiesz, jak to jest - bez tego ani rusz
 Ziomek {name} {surname} z {city} ma problem - potrzebuje pilnej decyzji, ale urząd się burek
 Ma {age} lat, jest {sex}
-Podrzuć mi dane: {address}, {phone}, {email}, no i obowiązkowo {pesel} + {ID number}
+Podrzuć mi dane: {address}, {phone}, {email}, no i obowiązkowo {pesel} + {document-number}
 Bez tego nawet nie zaczną procedury, a sprawa już się ciągnie..
 O kur..
 {name} {surname} z {city} wpadł w niezły bajzel
@@ -11204,7 +11204,7 @@ Potrzebuję: {address}, {phone}, {email}, {pesel} i {document-number}
 Jak nie wyślę tego dziś, to sprawa wlecze się do sądu
 Pomóż
 Kurczę, właśnie dzwoniła do mnie {name} {surname} ({age} lat) i płakała, że w tym hotelu w {city} to nawet zwierzę by nie przeżyło
-Zgubiła tam dokumenty ({ID number}), a teraz boi się, że ktoś je wykorzysta
+Zgubiła tam dokumenty ({document-number}), a teraz boi się, że ktoś je wykorzysta
 Mieszka na {address}, jakby co
 Jej numer to {phone}, PESEL {pesel}
 Jak mogę jej pomóc
@@ -11225,7 +11225,7 @@ Mieszka na {address}, telefon {phone}, PESEL {pesel}
 Ma zdjęcia, ale boi się, że wyciekną jego dane ({email})
 Jak złożyć skargę, żeby nie zwariował
 O kurde, {name} {surname} ({sex}, {age} lat) właśnie wysłał mi film, jak w hotelu w {city} szafa się rozpadła na jego rzeczy
-Dowód {ID number} był w środku, teraz ma pęknięty
+Dowód {document-number} był w środku, teraz ma pęknięty
 Adres reklamacyjny to {address}, telefon {phone}, PESEL {pesel}
 Czy ktoś jeszcze miał taką sytuację
 Mail: {email}
@@ -11239,7 +11239,7 @@ Jak mu pomóc i nie dostać pozwu
 O cholera, {name} {surname} ({sex}, {age} lat) zgłosił, że ktoś próbował zmienć mu hasło do {company}
 W naszej bazie był jego {pesel}, {address} i {phone}..
 Jak zabezpieczyć go TERAZ i nie stracić kontraktu
-Słuchajcie, sprawa {city} – wyciekły dane {name} {surname} ({email}, {phone}, {ID number})
+Słuchajcie, sprawa {city} – wyciekły dane {name} {surname} ({email}, {phone}, {document-number})
 Klient jest wściekły, bo już dostał fałszywe wezwanie do zapłaty
 Kto miał to zabezpieczyć i dlaczego nikt nie monitorował dostępu?
 Hej, słuchajcie, jestem {name}, mam {age} lat i ostatnio czuję się jakbym się rozpadała
@@ -11295,7 +11295,7 @@ Jak znaleźć w sobie siłę
 Nie wiem, czy to dobry pomysł, ale..
 {name}, {age} lat, {city}
 Mój adres to {address}, jakbyś chciał/chciała pogadać
-Właśnie sprawdziłam swoje ID {ID number} i zdałam sobie sprawę, że czas leci..
+Właśnie sprawdziłam swoje ID {document-number} i zdałam sobie sprawę, że czas leci..
 A ja stoję w miejscu
 Jak znaleźć motywację, gdy wszystko wydaje się bez sensu
 Boże, co ja mam zrobić..
@@ -11415,7 +11415,7 @@ Telefon {phone}, mail {email}
 Napisz mu co ma robić, bo panikuje
 *„{name} {surname} z {city} ({address}) dzwonił, że nie dostał karty
 Jego dane: tel
-{phone}, mail {email}, PESEL {pesel}, dowód {ID number}
+{phone}, mail {email}, PESEL {pesel}, dowód {document-number}
 Ma {age} lat
 Ogarnijcie to, bo będzie awantura.”*
 Potrzebuję pilnie danych {name} {surname}: {age} lat, PESEL {pesel}, dowód {document-number}
@@ -11561,12 +11561,12 @@ Kurde, znowu te urzędowe bzdury..
 Mama {name} {surname} potrzebuje zaświadczenia, że żyje, heh
 Ma {age} lat, {sex}, mieszka w {city} na {address}
 Jakby co, to jej telefon to {phone}, ale lepiej pisać na {email}, bo rzadko odbiera
-PESEL pewnie masz, ale dla formalności: {pesel}, a z dowodu {ID number}
+PESEL pewnie masz, ale dla formalności: {pesel}, a z dowodu {document-number}
 Nie zapomnij dopisać, że to dla ZUS-u, bo inaczej odrzucą jak zwykle
 Ej, przeraż mnie – potrzebuję pilnie zaświadczenia dla {name} {surname}
 Dziewczyna, {age} lat, adres {address} w {city}
 Kontakt: {phone} albo {email} (lepiej mail, bo często nie ma zasięgu)
-PESEL {pesel}, dowód {ID number}
+PESEL {pesel}, dowód {document-number}
 Chodzi o stypendium, więc musi być *perfekcyjnie*
 Jak zrobisz literówkę, to ją wywalą z listy..
 Wiesz, jak to u nas
@@ -11604,7 +11604,7 @@ Mieszka na {address} w {city}
 Jak mogę to zgłosić jako mobbing bez narażania siebie
 Jego mail: {email}
 Reklamacja w sklepie online**   „Kurczę, znowu przysłaliście mi zły rozmiar
-Zamawiałam buty dla {name} {surname} (numer zamówienia: {ID number}), a dostaliśmy zupełnie inny model
+Zamawiałam buty dla {name} {surname} (numer zamówienia: {document-number}), a dostaliśmy zupełnie inny model
 Jak mam to zwrócić?
 Mój adres to {address}, {city}, a telefon {phone}
 Nie chce mi się już bawić w te wasze formularze..
@@ -11619,7 +11619,7 @@ P.S
 Mój mail: {email}, proszę o kontakt, nawet jakby ktoś widział ją w {city}.”    ---    **
 „Słuchaj, ten nowy klient, {name} {surname}, {age} lat, {sex} – wygląda na porządnego, ale coś mi śmierdzi
 Adres {address} to wynajem, telefon {phone} rzadko odbiera, a w mailu {email} pisze, że ‘docelowo chce kupić mieszkanie’
-PESEL {pesel} zweryfikowany, ale jak nie pokaże dowodu {ID number}, to nawet nie zaczynamy.”
+PESEL {pesel} zweryfikowany, ale jak nie pokaże dowodu {document-number}, to nawet nie zaczynamy.”
 Słuchajcie, mam problem z tą przesyłką od {name} {surname}
 Facet ma {age} lat i mieszka w {city}, pod {address}
 Próbowałam go złapać na {phone}, ale nie odbiera
@@ -11634,7 +11634,7 @@ Wysłałem mu formularz na {email}, ale potrzebuję jeszcze jego {pesel} i {docu
 Jak mam to wyjaśnić, żeby mnie nie rozjechał w recenzjach
 O cholera, znowu to samo
 {name} {surname}, {age} lat, z {city} - przesyłka zniszczona kompletnie
-W systemie widzę {address}, {phone}, {email}, ale brakuje mi {pesel} i {ID number}
+W systemie widzę {address}, {phone}, {email}, ale brakuje mi {pesel} i {document-number}
 Klient wrzeszczy przez telefon, że to już trzecia zepsuta paczka w tym miesiącu
 Co ja mam mu teraz powiedzieć?
 Ja pierdolę, nie wierzę w to
@@ -11679,15 +11679,15 @@ Mieszka na {address}, PESEL {pesel}, tel
 {phone}
 Sąd w {city} odrzucił pozew przez błąd formalny..
 Czy w {email} przysłał Ci pełną dokumentację
-Bo bez nr dowodu {ID number} znowu nas odrzucą."*
+Bo bez nr dowodu {document-number} znowu nas odrzucą."*
 *"O kurde..
 Klientka {name} {surname} ({sex}, {age} lat) z {city} właśnie wysłała SMS-a na {phone}, że szef grozi jej zwolnieniem za zwolnienie chorobowe
 Adres: {address}, mail: {email}
-W aktach jest {pesel} i {ID number} – pomóż mi szybko napisać wniosek o zabezpieczenie stosunku pracy!"*
+W aktach jest {pesel} i {document-number} – pomóż mi szybko napisać wniosek o zabezpieczenie stosunku pracy!"*
 *"Pilne
 {name} {surname} ({sex}, {age} lat) dzwonił z {phone} – komornik zabrał mu ostatnie 3k mimo ochrony {pesel}
 Mieszka w {city} przy {address}, mail: {email}
-W załączniku jest skan dowodu {ID number}
+W załączniku jest skan dowodu {document-number}
 Jak ugryźć wniosek o zwrot nieprawnie zajętych środków?"*
 Słuchaj, ta rozwódka {name} {surname} ({age} lat, {sex}) z {address} ma nowy dowód osobisty {document-number}, ale ex dalej ją nęka
 PESEL {pesel}, tel
@@ -11707,7 +11707,7 @@ Ale nie, żartuję, to legitny klient
 Podsyłam namiary: tel
 {phone}, mail {email}
 Adres aktualny to {address}, ale chyba się wynosi, bo sąsiad go nienawidzi
-PESEL ({pesel}) sprawdziłam – git, dowód ({ID number}) też
+PESEL ({pesel}) sprawdziłam – git, dowód ({document-number}) też
 Facet jest mocno spięty, bo mu termin ucieka
 Możesz go ogarnąć?"*
 Nie uwierzysz..
@@ -11725,7 +11725,7 @@ Mówił, że pracuje w {city}, ale w sumie..
 zero potwierdzenia
 Co robimy
 Mam złe przeczucia
-*"Hej, czy jak klient ({name} {surname}, {age} lat) podaje ci PESEL ({pesel}) i numer dowodu ({ID number}), a potem mówi 'tylko nie dzwoń, bo mąż nie wie, że się wyprowadzam'..
+*"Hej, czy jak klient ({name} {surname}, {age} lat) podaje ci PESEL ({pesel}) i numer dowodu ({document-number}), a potem mówi 'tylko nie dzwoń, bo mąż nie wie, że się wyprowadzam'..
 to jest red flag, czy ja dramatyzuję
 Dane: adres {address}, tel
 {phone}, mail {email}
@@ -11737,7 +11737,7 @@ I koniecznie dopisz gdzieś PESEL {pesel} oraz nr dowodu {document-number}, ale 
 Masz pomysł jak to ubrać w zwykły tekst
 *"O cholera, znowu ta biurokracja..
 Muszę uzupełnić info o {name} {surname} ({age} lat, {sex})
-Potrzebuję {address}, {phone}, {email} - i nie zapomnij wpleść {pesel} oraz {ID number} gdzieś naturalnie
+Potrzebuję {address}, {phone}, {email} - i nie zapomnij wpleść {pesel} oraz {document-number} gdzieś naturalnie
 To dla sprawy w {city}, mają tam nowego buca który wszystko weryfikuje
 Zrób to jak zwykłą notatkę, nie urzędowy bełkot!"*
 „Kurcze, {name} {surname} to ma pecha
@@ -11769,7 +11769,7 @@ Jak to możliwe, że nikt nie zauważył dziwnych logowań?
 Szefie, musimy ogarnąć sprawę {surname} – klient wkurzony jak nigdy, bo dostał SMS-y z pogróżkami na {phone}
 Sprawdziliśmy: jego {document-number} i {age} są w bazie deepfake'ów
 Wygląda na targeted attack, ale nie wiemy, czy źródło to {city} czy zewnętrzny podwykonawca..
-Sprawa {ID number} to dopiero rozpierdziel..
+Sprawa {document-number} to dopiero rozpierdziel..
 Okazuje się, że {name} miał/a w systemie ZDJĘCIE dowodu osobistego (!!!), które wyciekło razem z {email} i {phone}
 Źródło
 Jakiś debil zeskanował je na drukarkę w {city} i zostawił w folderze publicznym
@@ -11855,7 +11855,7 @@ Jakieś rady, jak nie zwariować
 Aha, jakby co, mój mail to {email}, możesz mi coś podrzucić
 PESEL mam {pesel}, jakby coś formalnego było potrzebne..
 „Cześć, mam {age} lat i chyba muszę pogadać, bo już nie daję rady
-Nazywam się {name} {surname}, PESEL {pesel}, dowód {ID number}
+Nazywam się {name} {surname}, PESEL {pesel}, dowód {document-number}
 Mieszkam w {city} przy {address}
 Ostatnio po rozstaniu z chłopakiem czuję się jak przysłowiowy worek treningowy – zero energii, zero motywacji
 Macie jakieś szybkie metody, żeby nie zwariować?”
@@ -11913,7 +11913,7 @@ Jak przestać czuć się jak niewidzialna/y?”
 Jestem {name} {surname}, {age} lat, {sex}
 Mój adres to {address} w {city}, a mail: {email}
 Ostatnio dostałam wezwanie do zapłaty za abonament, którego nigdy nie miałam
-W dokumencie był mój poprawny PESEL {pesel} i stary numer dowodu {ID number}
+W dokumencie był mój poprawny PESEL {pesel} i stary numer dowodu {document-number}
 Dzwoniłam do firmy, ale mówią, że 'mam to opłacić, bo inaczej windykacja'
 To na pewno oszustwo, ale co teraz
 Boję się, że zaciągną kredyt na moje dane...”
@@ -11970,7 +11970,7 @@ Albo sprawdzisz, czy PESEL {pesel} jest ok – bo może przez to zwlekają.”
 *„O Boże, {name} {surname} to jakiś koszmar – non-stop zmienia zdanie
 Mieszka na {address}, lat {age}, kobieta ({sex})
 Telefon {phone}, ale lepiej pisać na {email}
-Jak będziesz sprawdzać PESEL {pesel}, to przy okazji przejrzyj czy dowód {ID number} nie jest przedawniony
+Jak będziesz sprawdzać PESEL {pesel}, to przy okazji przejrzyj czy dowód {document-number} nie jest przedawniony
 To pilne!”*
 Nie uwierzysz – {name} {surname} z {city} (lat {age}) zostawił/a portfel w recepcji
 Jest dowód {document-number}, ale nie wiemy, jak się skontaktować… Adres {address} wygląda na stary, a telefon {phone} nie odbiera
@@ -11978,12 +11978,12 @@ Może spróbujesz przez {email}
 PESEL {pesel} jest w dokumentach
 *„Ej, czy {name} {surname} ({age} lat) to na pewno ta sama osoba co w umowie
 Bo adres {address} się nie zgadza… Telefon {phone} działa, ale mail {email} odrzuca wiadomości
-Sprawdź koniecznie PESEL {pesel} i dowód {ID number} – coś mi śmierdzi.”*
+Sprawdź koniecznie PESEL {pesel} i dowód {document-number} – coś mi śmierdzi.”*
 *„Pilne
 {name} {surname} ({age} lat) wysłał/a fałszywe dokumenty
 Adres {address} nieistniejący, a PESEL {pesel} należy do kogoś innego
 Telefon {phone} się nie odzywa, mail {email} też martwy
-Tylko dowód {ID number} wygląda legitnie… Zgłosić to gdzieś?”*
+Tylko dowód {document-number} wygląda legitnie… Zgłosić to gdzieś?”*
 Słyszałeś, że {name} {surname} z {city} miał wypadek
 W szpitalu podali {pesel}, ale nie mieli ubezpieczenia
 Trzeba go znaleźć – ostatnio mieszkał chyba przy {address}, ale nie jestem pewna
@@ -12005,7 +12005,7 @@ Auto do kasacji… Jego dane: tel
 Ubezpieczyciel się ciszy – co mogę wpisać w reklamacji, żeby nie olewali sprawy
 Chodzi o koszty naprawy i zwrot za środek transportu tymczasowego
 Cześć, muszę zgłosić zmianę danych w ZUS dla pracownika – {name} {surname} ({age} lat, {sex}) zmienił adres z {address} na nowy (jeszcze nieznany)
-Stary PESEL {pesel}, dowód {ID number}, telefon {phone}, email {email}
+Stary PESEL {pesel}, dowód {document-number}, telefon {phone}, email {email}
 Wiecie, czy można to zrobić online, czy tylko papierowo
 I czy potrzebuję jego podpisu, skoro sam jestem księgowym
 Słuchaj, właśnie {name} {surname} (tel
@@ -12082,7 +12082,7 @@ Szef kazał mi przygotować dane {name} {surname} do umowy – {age} lat, {sex},
 I jeszcze ten cholerny {pesel}..
 Kto to wymyślił?!”
 „Ziomek, pomóż, bo zgubiłem dowód
-Jak mogę sprawdzić, czy ktoś nie używa mojego {ID number}
+Jak mogę sprawdzić, czy ktoś nie używa mojego {document-number}
 Dane mam takie: {name} {surname}, {age} lat, {sex}, {city}, {address}
 Może przez {email} da się to ogarnąć?”
 Cześć, czy ktoś wie, jak długo trwa wymiana prawa jazdy
@@ -12111,7 +12111,7 @@ Lekarz rodzinny nie reaguje, a w szpitalu mówią, że 'nie ma miejsc'
 Czy ktoś może go odwiedzić
 Proszę o pilny kontakt na {email} – boję się, że to zapalenie płuc...”   ---   **
 Zgubiony portfel** „Znalazłam dziś portfel przy ul
-{address} – w środku dowód na nazwisko {name} {surname} ({ID number}), karta biblioteczna i PESEL {pesel}
+{address} – w środku dowód na nazwisko {name} {surname} ({document-number}), karta biblioteczna i PESEL {pesel}
 Jeśli to twój, dzwoń na {phone} (nie piszę SMS, bo to może być oszustwo)
 Oddam tylko po potwierdzeniu danych
 Mieszkam w {city}, mam {age} lat – nie jestem złodziejką, po prostu chcę pomóc.” --- **
@@ -12120,7 +12120,7 @@ Telefon {phone} działa, ale mail {email} to jakaś kupa
 PESEL {pesel} się zgadza, ale dowód {document-number}… Chyba ktoś nas testuje
 *"Serio, {name} {surname} to jakaś parodia – {age} lat, {sex}, podaje {address} w {city}, a tam jest opuszczony dom
 Telefon {phone} nie istnieje, mail {email} to generator losowy
-PESEL {pesel} może przejdzie, ale dowód {ID number}
+PESEL {pesel} może przejdzie, ale dowód {document-number}
 Chyba żartują sobie z nas!"*
 Wiesz co mnie wkur*** dziś
 {name} {surname} (tel
@@ -12134,7 +12134,7 @@ PESEL {pesel}, dowód {document-number}, adres {address}
 Dzwoniłam na {phone} – zero reakcji
 To podejrzane
 Sytuacja absurdalna: {name} {surname} ({age} lat, {sex}) zgłasza, że w {city} potrącił rower..
-bez dowodu osobistego {ID number}
+bez dowodu osobistego {document-number}
 Podaje PESEL {pesel} i adres {address}, ale na {phone} się nie odzywa
 Mail {email} też nie działa
 Jak tu cokolwiek załatwić?
@@ -12150,7 +12150,7 @@ Podaje tylko {address} i {phone}
 Jak zweryfikować to zgłoszenie?
 Znowu ta sama historia..
 {name} {surname} ({sex}, {age} lat) wysyła mi zdjęcie rozbitego auta z {address} i krzyczy na {phone}, że w {city} nikt nie reaguje
-Mail {email} odpisuje automat, PESEL {pesel} się zgadza, ale dowód {ID number} niewyraźny
+Mail {email} odpisuje automat, PESEL {pesel} się zgadza, ale dowód {document-number} niewyraźny
 Dramat
 „O kurczę, muszę ogarnąć sprawę {name} {surname} – klient wkurzony jak diabli, bo firma go olewa
 Ma dopiero {age} lat, {sex}, mieszka tam gdzieś na {address}
@@ -12179,12 +12179,12 @@ Klientka/klient, {name}, {age} lat, {sex}, pytał/a o kaucję
 Wysłałam jej/jemu sms na {phone}, ale nie odpisuje
 W dokumentach mam jej/jego {address} i {email}, ale brakuje mi {pesel}
 Może sprawdzisz w systemie
-I czy podawał/a {ID number} przy rejestracji
+I czy podawał/a {document-number} przy rejestracji
 Bo coś mi się nie zgadza."*
 *"Słuchaj, mam mega chaotyczną notatkę od {name} {surname}
 Wynajmuje coś w {city}, ale podała/podał dwa adresy: {address} i jeszcze jeden, który wygląda na stary
 Telefon {phone}, {age} lat, {sex}
-W mailu ({email}) prosi o potwierdzenie {ID number}, ale w umowie wpisałam {pesel} i teraz się zastanawiam, czy to ta sama osoba…"*
+W mailu ({email}) prosi o potwierdzenie {document-number}, ale w umowie wpisałam {pesel} i teraz się zastanawiam, czy to ta sama osoba…"*
 Ależ się {name} wkurzył/a
 W {city} miało być odświeżone mieszkanie, a tu farba schodzi
 Dzwoń na {phone}, {age} lat, {sex}, bo ja nie wyrabiam
@@ -12228,7 +12228,7 @@ Jak to ładnie sformułować, żeby nie wyszło, że jestem wkurzony?”
 „Hej, pilna sprawa
 Dla {name} {surname} trzeba przygotować pełne dane do umowy
 Wiek {age}, płeć {sex}, adres {address}
-Telefon {phone}, mail {email}, PESEL {pesel} i nr dowodu {ID number}
+Telefon {phone}, mail {email}, PESEL {pesel} i nr dowodu {document-number}
 Firma w {city} każe to wysłać do końca dnia..
 Pomysł, jak to ładnie opakować?”
 „O rany, {name} {surname} ma problem z ZUS-em w {city}
@@ -12254,7 +12254,7 @@ Adres: {address}, mail {email}
 Jak mogli mu dać pokój z dziurą w suficie?
 Niech się lepiej przygotują na pozew, bo już zbieramy dowody
 PESEL: {pesel}."*
-*"Sąsiadka {name} {surname} ({age}/{sex}) wróciła z {city} i płacze, bo w tym hotelu ukradli jej dokumenty (dowód: {ID number})
+*"Sąsiadka {name} {surname} ({age}/{sex}) wróciła z {city} i płacze, bo w tym hotelu ukradli jej dokumenty (dowód: {document-number})
 Mieszka na {address}, tel
 {phone}
 Do tego łóżko było zawalone włosami, a kierownik się śmiał, jak skarżyła
@@ -12266,7 +12266,7 @@ Jego mail: {email}, telefon {phone}
 PESEL {pesel}
 Jak mogą tak traktować gości?
 Do tego zgubił portfel – może ktoś sprawdzi monitoring
-Nr dowodu: {ID number}."*
+Nr dowodu: {document-number}."*
 „Kurde, znowu ten sam problem
 {name} {surname} dzwonił dzisiaj z płaczem, że ktoś wykorzystuje jego dane
 Miał pełny wyciek: {address}, {phone}, nawet {pesel}
@@ -12296,7 +12296,7 @@ Ej, słuchaj, mam mega dziwną sprawę
 {name}, {surname}, {age} lat
 Mieszkam w {city}, {address}, i właśnie dostałam wezwanie do sądu..
 tylko że ja nigdzie nie pozywałam
-Na dokumencie jest mój {ID number}, ale to musi być pomyłka
+Na dokumencie jest mój {document-number}, ale to musi być pomyłka
 Możesz doradzić
 Numer do mnie {phone} albo {email}
 Nie chcę, żeby rodzice się dowiedzieli
@@ -12395,7 +12395,7 @@ Mieszkam na {address}, a mąż nawet nie wie, że o tym piszę
 Jak żyć dalej
 Jestem {sex}, {age} lat, {name}
 Właśnie wyrzucili mnie z uczelni za plagiat, którego nie popełniłam/em
-Mam {ID number}, mieszkanie w {city}, i zero perspektyw
+Mam {document-number}, mieszkanie w {city}, i zero perspektyw
 Rodzice mnie wyklęli, a ja myślę tylko, żeby skoczyć z mostu
 Dlaczego wszystko zawsze idzie nie tak
 Czy to normalne, że boję się własnego męża
@@ -12408,7 +12408,7 @@ Mieszkam w {city}, mam {age} lat i zero pomysłu, jak żyć dalej
 Może ktoś tu przechodził coś podobnego
 „Hej, jestem {name}, {age} lat, {sex}, z {city}
 Mój adres to {address}, a telefon {phone}
-Mam problem – wczoraj zgubiłam portfel z dowodem {ID number} i kartami
+Mam problem – wczoraj zgubiłam portfel z dowodem {document-number} i kartami
 Zablokowałam wszystko, ale teraz boję się, że ktoś użyje mojego PESEL-u {pesel} do jakichś oszustw
 Czy powinnam zgłosić to na policję od razu
 A może zaczekać, aż coś się wydarzy
@@ -12509,7 +12509,7 @@ Wczoraj {surname} nawet nie odpowiedział na moją wiadomość, tylko wysłał j
 A przecież wszyscy z {city} wiedzą, że to ja organizowałam większość spotkań w zeszłym roku..
 PS: Jak ktoś chce pogadać normalnie, to niech pisze, bo mam już dość tej klikowatości
 Ej, no nie mogę się zalogować do tego waszego systemu, bo ciągle wyskakuje mi jakiś dziwny formularz z polami, których NIGDY wcześniej nie było
-Wpisałam już swoje {ID number} w tej nowej rubryce, ale teraz każe mi podać numer telefonu do weryfikacji, a ja tam mam wpisany stary {phone} i chyba nawet nie mam już do niego dostępu..
+Wpisałam już swoje {document-number} w tej nowej rubryce, ale teraz każe mi podać numer telefonu do weryfikacji, a ja tam mam wpisany stary {phone} i chyba nawet nie mam już do niego dostępu..
 Może wyślijcie mi ten kod na {email}, bo tam na pewno dojdzie
 PS: Jak długo to jeszcze potrwa
 Miałam pilny przelew zrobić
@@ -12565,7 +12565,7 @@ Jak coś, to piszcie na {email}, albo dzwońcie na {phone}, bo wiadomości czase
 PS: A może to przez tę ich ostatnią aktualizację
 Bo kolega też miał podobny problem w zeszłym tygodniu..
 Kurde, znowu mam zablokowane konto i już nie mam siły..
-Próbowałam się zalogować normalnie, wpisałam ten mój {ID number}, który zawsze mi działał, ale system odrzucił i teraz wyskakuje, że mam odczekać 24h
+Próbowałam się zalogować normalnie, wpisałam ten mój {document-number}, który zawsze mi działał, ale system odrzucił i teraz wyskakuje, że mam odczekać 24h
 Jak mam cokolwiek załatwić, skoro nawet nie mogę wejść
 PS: może wyślijcie mi kod weryfikacyjny na {phone}, bo na {email} ostatnio nic nie przychodzi, chyba mam jakieś przekierowanie ustawione..
 Jak to szybko odblokować, bo naprawdę potrzebuję pilnie
@@ -12662,7 +12662,7 @@ Kurcze, nie wiem już co robić
 Urząd ma mnie chyba za jakiegoś dupka, bo od dwóch miesięcy czekam na decyzję i zero, nic, guzik
 Dzwoniłem tam trzy razy, za każdym razem mówią, że 'w toku'
 Jak długo to może trwać?
-W końcu poprosiłem kogoś z działu prawnego o pomoc i okazało się, że moje pismo gdzieś utknęło, bo w systemie widzą tylko zgłoszenie z {ID number} i tyle
+W końcu poprosiłem kogoś z działu prawnego o pomoc i okazało się, że moje pismo gdzieś utknęło, bo w systemie widzą tylko zgłoszenie z {document-number} i tyle
 A bez tego nawet nie mogą mi powiedzieć, co się dzieje
 PS: Tak w ogóle to wysłałem wniosek jeszcze z mojego starego mieszkania na {address}, ale PESEL mam oczywiście ten sam – {pesel}
 Może to coś zmienia
@@ -12756,7 +12756,7 @@ Znowu ta sama ściema z ocenami rocznymi..
 "Rozwój, zaangażowanie, cele" – gówno prawda, w rzeczywistości chodzi tylko o to, żebyś się nie wychylił i klepał te same numery
 A potem dziwią się, że ludzie odchodzą
 Najgorsze, że musiałem wypełnić ten ich zajebisty formularz feedbacku i tam pół życia wpisywać
-Serio, potrzebujecie mojego {pesel} i numeru pracownika {ID number} żeby ocenić, czy potrafię wysłać maila
+Serio, potrzebujecie mojego {pesel} i numeru pracownika {document-number} żeby ocenić, czy potrafię wysłać maila
 I oczywiście że coś się wysypało i teraz HR goni mnie, żebym *ponownie* potwierdził dane
 To jak mam im wysłać poprawkę, jak ich system olewa moje emaile
 ({email} – i tak nie otwierają)
@@ -12998,7 +12998,7 @@ Adres {address}, telefon {phone}, maila pewnie nie sprawdza {email}
 Wpisz mu ręcznie ten przelew, PESEL {pesel}, dowód {document-number} mam skan w aktach
 *"Ziomek, ratuj
 Wypełniam ten cholerny formularz dla {name} {surname} z {city} i nie mogę znaleźć gdzie wpisać, że to {sex}, {age} lat
-Adres to {address}, ale nie wiem czy brać nowy dowód {ID number} czy stary
+Adres to {address}, ale nie wiem czy brać nowy dowód {document-number} czy stary
 I jeszcze ten PESEL {pesel}..
 Jak się z nimi skontaktować
 {phone} czy {email}?"*
@@ -13109,7 +13109,7 @@ Jak zabezpieczyć się przed wykorzystaniem danych?”
 Jestem {name}, {age} lat, {sex}, z {city}
 Mój adres to {address}, a telefon {phone}
 Moja mama jest ciężko chora i musiałam wziąć dla niej kredyt
-W banku kazali mi podać nie tylko swoje dane {ID number}, {pesel}, ale też dane mamy
+W banku kazali mi podać nie tylko swoje dane {document-number}, {pesel}, ale też dane mamy
 Teraz dostaję telefony od windykatorów, że mama nie spłaca rat (choć to ja jestem kredytobiorcą!)
 Grożą, że 'znajdą nas pod każdym adresem' i 'zablokują konta'
 Czy to legalne
@@ -13119,7 +13119,7 @@ sprawdzić mój PESEL w innych instytucjach?”
 Jestem {name} {surname}, {age} lat, {sex}
 Mieszkam w {city}, blisko {address}, jakbyś był/a w okolicy
 Jak chcesz pogadać, to tu mój nr: {phone}
-E-mail to {email}, a jak potrzebujesz danych, to PESEL {pesel} i dowód {ID number}
+E-mail to {email}, a jak potrzebujesz danych, to PESEL {pesel} i dowód {document-number}
 Chujowo mi
 Straciłem/am pracę miesiąc temu i od tamtej pory leżę do góry brzuchem
 Rachunki się piętrzą, a ja nawet nie mam siły otworzyć maila
@@ -13230,7 +13230,7 @@ Przygotujcie raport, zanim szef wróci z urlopu.”
 Zamawiałem u {name} {surname} z {city}, ale kurier nie mógł dostarczyć, bo podał zły adres {address}
 Na stronie jest jeszcze jego mail {email} i telefon {phone}, ale nie odbiera
 Sprawdź może, czy w bazie jest jego PESEL {pesel} – może przez to się mylą w doręczeniach.”
-Ziomek, musisz pomóc – {name} zgubił dowód ({ID number}) w okolicy {address}
+Ziomek, musisz pomóc – {name} zgubił dowód ({document-number}) w okolicy {address}
 Typ ma {age} lat, {sex}, i teraz panikuje, bo ma lot za tydzień
 Jak ktoś znajdzie, niech odpisze na {email} albo dzwońcie na {phone}
 Mieszka w {city}, ale dokument pewnie gdzieś między barami wylądował..
@@ -13263,7 +13263,7 @@ W paczce na {address} były printy z jakiegoś systemu z PESELami
 Klient z {city} wkurzony, bo to jawne GDPR breach
 Jego dane: tel
 {phone}, mail {email}, jego PESEL {pesel}
-Musimy natychmiast sprawdzić, skiego nieszczęśnika dowód {ID number} wylądował w tym pudle
+Musimy natychmiast sprawdzić, skiego nieszczęśnika dowód {document-number} wylądował w tym pudle
 Alarm dla DPO
 Kurczę, właśnie dostałam info, że {name} {surname} ({age} lat, {sex}) zgubiła dokumenty w {city} – dowód {document-number} i coś tam z PESEL {pesel}
 Mieszka na {address}, kontakt {phone} albo {email}
@@ -13306,7 +13306,7 @@ Jego PESEL {pesel} jest w rejestrze, adres {address}, telefon {phone}
 Jak nagłośnić sprawę
 Mail: {email}
 Szefie, sprawa jest gorąca – {email} klientki {name} {surname} został zhackowany razem z całym profilem
-W bazie mamy jej {address} w {city}, {phone} i cholernie ważne dokumenty ({ID number})
+W bazie mamy jej {address} w {city}, {phone} i cholernie ważne dokumenty ({document-number})
 Jak zabezpieczyć tę sytuację, zanim trafi do mediów
 {name} {surname} ({age} lat) właśnie wkurzył się na Twitterze, bo jego {phone} i {pesel} krążą po Darknecie
 Sprawdziliśmy – faktycznie, baza z {city} była niezaszyfrowana..
@@ -13336,7 +13336,7 @@ Hejka, piszę bo mam mega niezręczną sytuację
 Nazywam się {name} {surname}, {age} lat
 Mieszkam w {city} przy {address}
 Ostatnio na imprezie u znajomych zrobiłam głupie zdjęcie i teraz krąży po grupach na FB..
-Mój mail to {email}, a dowód {ID number}
+Mój mail to {email}, a dowód {document-number}
 Myślisz, że powinnam zgłosić to do prokuratury
 Bo już nawet w pracy się śmieją..
 Hej, potrzebuję rady w chuj ważnej sprawie
@@ -13362,7 +13362,7 @@ W życiu bym nie pomyślał, że to napiszę, ale..
 chyba jestem gejem
 W {city} wszyscy tylko kościół i tradycja
 Jak powiem ojcu to mnie wykopie z domu
-Mam jego dowód w portfelu – {ID number}
+Mam jego dowód w portfelu – {document-number}
 Nie wiem po co ci to, ale może jak zniknę to się przyda..
 Ej, ludzie, ratunku..
 {name}, {city}, pesel {pesel}
@@ -13410,7 +13410,7 @@ Jak?!”
 „Cześć, potrzebuję porady, bo chyba oszaleję
 Jestem {name}, {age} lat, {sex}, PESEL {pesel}
 Mieszkam w {city} z dwójką dzieci, a mój były znów zalega z alimentami
-Zgłaszałam to już, ale bez efektów (nr sprawy: {ID number}, jakby co)
+Zgłaszałam to już, ale bez efektów (nr sprawy: {document-number}, jakby co)
 Do tego w pracy mnie pomijają przy awansach, choć jestem tam najdłużej… Czuję się niewidzialna
 Jak mam walczyć, skoro nawet moja siostra mówi, że 'przesadzam'
 Możesz napisać na {email}
@@ -13615,10 +13615,10 @@ PS: Nie mów ojcu, bo się wkurzy.”
 {name} {surname} nalega na przyspieszoną analizę
 {age} lat, {sex}, adres {address} – podobno się przeprowadza
 Telefon {phone} ciągle się resetuje, mail {email} to jakiś spam
-PESEL {pesel} zweryfikowany, ale bez dowodu {ID number} to narażamy się na problemy.”
+PESEL {pesel} zweryfikowany, ale bez dowodu {document-number} to narażamy się na problemy.”
 Kurwa mać, znowu to samo
 {name} {surname} z {city} krzyczy, że jego przesyłka wygląda jak po wojnie
-W systemie mam {address}, {phone}, {email}, ale brakuje {pesel} i {ID number}
+W systemie mam {address}, {phone}, {email}, ale brakuje {pesel} i {document-number}
 Gość ma {age} lat i chyba zero cierpliwości
 Jak mam mu wytłumaczyć, że to nie moja wina?
 Kurde, znowu ta sprawa z {city}..
@@ -13943,7 +13943,7 @@ W systemie macie ich maila {email}, ale podobno nie działa
 Mieszka na {address}, PESEL {pesel}
 Sprawdźcie, bo zaraz będzie afera w mediach
 O rany, właśnie dostałam płaczliwego maila od {name} {surname} ({email}) – {age} lat, {sex}
-Mówi, że w {city} ukradli mu/jej dokumenty (PESEL {pesel}, dowód {ID number}) i teraz boi się pod {address} wracać
+Mówi, że w {city} ukradli mu/jej dokumenty (PESEL {pesel}, dowód {document-number}) i teraz boi się pod {address} wracać
 Telefon {phone} ciągle zajęty
 Co robić
 Hej, słuchaj, muszę ogarnąć tę sprawę z {name}
@@ -14030,7 +14030,7 @@ W sumie, chyba najgorsze w tym wszystkim jest to, że nikt nie przyznaje się do
 PS: Jeśli ktoś ma ochotę pogadać o tym, jak radzić sobie z takimi sytuacjami, napisz na {email} – chętnie podzielę się tym, co sam wypracowałem
 Dostałem dziś telefon od urzędu, że muszę dopisać kilka brakujących danych, bo podobno w systemie wciąż jest niekompletne
 Najpierw poprosili o potwierdzenie adresu – w dokumentach widnieje już {address}, więc nie musiałem się zastanawiać, czy to prawda
-Potem wpadło mi w oczy, że w ich bazie jest wpisany mój PESEL: {pesel} i numer dowodu: {ID number}, co chyba nie powinno być podawane w takiej rozmowie, ale przecież myślałem, że rozmawiam z pracownikiem urzędu, a nie z jakimś oszustwem
+Potem wpadło mi w oczy, że w ich bazie jest wpisany mój PESEL: {pesel} i numer dowodu: {document-number}, co chyba nie powinno być podawane w takiej rozmowie, ale przecież myślałem, że rozmawiam z pracownikiem urzędu, a nie z jakimś oszustwem
 W raporcie podano też mój wiek – {age} lat – i płeć: {sex}, więc chyba już wszystko jest dopięte na ostatni guzik
 Na koniec poprosili, żebym wysłał potwierdzenie na {email}, bo „stary mail nie działa”
 No i jeszcze jedno: w razie pytań mieli zadzwonić na {phone}, bo „to szybciej wyjaśni wszelkie wątpliwości”
@@ -14080,33 +14080,33 @@ Dane kontaktowe: tel
 Raport ma zawierać wszystkie szczegóły: warunki atmosferyczne, miejsce, ruch, ewentualne wykroczenia i szacunkowe koszty naprawy.”
 „Hej, muszę zrobić raport do firmy ubezpieczeniowej po ostatniej kolizji
 Kierowca to {name} {surname} z {address}; w dniu wypadku był w {city}
-Dane: telefon {phone}, e‑mail {email}, PESEL {pesel}, dowód nr {ID number}
+Dane: telefon {phone}, e‑mail {email}, PESEL {pesel}, dowód nr {document-number}
 W raporcie opisuję, co się stało, jaka była pogoda, jak wyglądał ruch, kto mógł popełnić błąd i jakie są koszty naprawy.”
 „Szybka prośba – potrzebuję raportu o wypadku drogowym dla ubezpieczyciela
 Kierowca: {name} {surname}, adres: {address}
 Dnia zdarzenia przebywał w {city}
-Telefon: {phone}; e‑mail: {email}; PESEL: {pesel}; dowód: {ID number}
+Telefon: {phone}; e‑mail: {email}; PESEL: {pesel}; dowód: {document-number}
 Raport musi zawierać szczegółowy opis zdarzenia, warunki atmosferyczne, miejsce, kontekst ruchu, ewentualne wykroczenia i wycenę szkód.”
 „Potrzebuję zebrać wszystkie informacje do raportu o wypadku drogowym dla ubezpieczyciela
 Kierowca: {name} {surname}, adres: {address}; w dniu zdarzenia przebywał w {city}
-Telefon: {phone}; e‑mail: {email}; PESEL: {pesel}; dowód nr {ID number}
+Telefon: {phone}; e‑mail: {email}; PESEL: {pesel}; dowód nr {document-number}
 Raport ma zawierać opis warunków pogodowych, miejsca, sytuacji w ruchu, potencjalnych winnych i wycenę szkód.”
 „Szybka sprawa – potrzebuję raportu o wypadku drogowym dla ubezpieczyciela
 Kierowca: {name} {surname} z {address}; w dniu zdarzenia znajdował się w {city}
 Telefon: {phone}; e‑mail: {email}; PESEL: {pesel}; dowód nr {document-number}
 Raport musi zawierać szczegółowy opis zdarzenia, warunki atmosferyczne, miejsce, kontekst ruchu, ewentualne naruszenia przepisów oraz wycenę szkód.”
 Hej, potrzebuję pilnie wypełnionego wniosku o wydanie zaświadczenia o zameldowaniu dla {name} {surname}
-W dokumencie muszą się znaleźć: wiek – {age}, płeć – {sex}, dokładny adres zamieszkania – {address}, numer telefonu – {phone}, e‑mail – {email}, PESEL – {pesel} oraz numer dowodu osobistego – {ID number}
+W dokumencie muszą się znaleźć: wiek – {age}, płeć – {sex}, dokładny adres zamieszkania – {address}, numer telefonu – {phone}, e‑mail – {email}, PESEL – {pesel} oraz numer dowodu osobistego – {document-number}
 Całość dotyczy miasta {city}
 Musi mieć urzędowy żargon, podstawę prawną, cel wydania, oświadczenie o prawidłowości danych i klauzulę zgody na przetwarzanie danych osobowych
 Dzięki
 Słuchaj, muszę ogarnąć wniosek o zaświadczenie zameldowania dla {name} {surname}
-Wpisz tam: {age} lat, płeć {sex}, adres: {address}, telefon: {phone}, e‑mail: {email}, PESEL: {pesel} i numer dokumentu tożsamości: {ID number}
+Wpisz tam: {age} lat, płeć {sex}, adres: {address}, telefon: {phone}, e‑mail: {email}, PESEL: {pesel} i numer dokumentu tożsamości: {document-number}
 To wszystko ma być w kontekście miasta {city}
 Potrzebny jest formalny język, podstawa prawna, cel, oświadczenie o zgodności danych i zgoda na ich przetwarzanie
 Pilne
 Cześć, potrzebuję wypełnionego wniosku o wydanie zaświadczenia o zameldowaniu dla {name} {surname}
-Musi zawierać: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} oraz numer dowodu – {ID number}
+Musi zawierać: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} oraz numer dowodu – {document-number}
 Miejsce: miasto {city}
 Wniosek ma być w stylu urzędowym, z podaniem podstawy prawnej, celu, oświadczenia o prawidłowości danych i zgody na ich przetwarzanie
 Dzięki z góry
@@ -14116,47 +14116,47 @@ Dotyczy miasta {city}
 Musi mieć formalny język, podstawę prawną, cel, oświadczenie o zgodności danych i sekcję zgody na przetwarzanie danych osobowych
 Pilnie
 Cześć, potrzebuję wniosku o zaświadczenie o zameldowaniu dla {name} {surname}
-Wpisz: {age} lat, płeć {sex}, adres: {address}, telefon: {phone}, e‑mail: {email}, PESEL: {pesel} i numer dokumentu tożsamości: {ID number}
+Wpisz: {age} lat, płeć {sex}, adres: {address}, telefon: {phone}, e‑mail: {email}, PESEL: {pesel} i numer dokumentu tożsamości: {document-number}
 To wszystko dotyczy miasta {city}
 Wniosek ma mieć formalny język, podstawę prawną, cel, oświadczenie o zgodności danych i klauzulę zgody na przetwarzanie danych osobowych
 Pilnie potrzebne
 Hej, potrzebuję wypełnionego wniosku o wydanie zaświadczenia o zameldowaniu dla {name} {surname}
-W dokumencie muszą być: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} oraz numer dowodu osobistego – {ID number}
+W dokumencie muszą być: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} oraz numer dowodu osobistego – {document-number}
 Miejsce: {city}
 Wniosek ma być w formalnym stylu, z podaniem podstawy prawnej, celu, oświadczenia o prawidłowości danych i zgody na ich przetwarzanie
 Dzięki
 Słuchaj, potrzebuję wniosku o zaświadczenie zameldowania dla {name} {surname}
-Wpisz: {age} lat, płeć {sex}, adres: {address}, telefon: {phone}, e‑mail: {email}, PESEL: {pesel} i numer dokumentu tożsamości: {ID number}
+Wpisz: {age} lat, płeć {sex}, adres: {address}, telefon: {phone}, e‑mail: {email}, PESEL: {pesel} i numer dokumentu tożsamości: {document-number}
 Dotyczy miasta {city}
 Musi mieć urzędowy język, podstawę prawną, cel, oświadczenie o zgodności danych i sekcję zgody na przetwarzanie danych osobowych
 Pilne
 Yo, potrzebuję wypełnionego wniosku o wydanie zaświadczenia o zameldowaniu dla {name} {surname}
-W dokumencie: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} oraz numer dowodu – {ID number}
+W dokumencie: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} oraz numer dowodu – {document-number}
 Miejsce: {city}
 Wniosek ma być w formalnym stylu, z podaniem podstawy prawnej, celu, oświadczenia o prawidłowości danych i zgody na ich przetwarzanie
 Dzięki
 **Raport z wizyty klienta** Klient: {name} {surname}, lat {age}, płeć {sex}
 Mieszka pod adresem {address}, telefon kontaktowy {phone}, e‑mail {email}
-Numer PESEL: {pesel}, dowód osobisty: {ID number}
+Numer PESEL: {pesel}, dowód osobisty: {document-number}
 Spotkanie odbyło się w {city}; klient poprosił o szczegółowy opis warunków najmu, w tym wysokość kaucji, terminy płatności oraz planowane prace remontowe
 Notatka służbowa – zainteresowany najmem Dane: {name} {surname} – {age} lat, {sex}; zamieszkały przy {address}; tel
-{phone}; e‑mail: {email}; PESEL {pesel}; dowód {ID number}
+{phone}; e‑mail: {email}; PESEL {pesel}; dowód {document-number}
 Wizyta w {city} zakończyła się prośbą o przygotowanie oferty z dokładnym harmonogramem płatności i informacją o ewentualnych remontach
 **Podsumowanie spotkania z potencjalnym najemcą**   Imię i nazwisko: {name} {surname}; wiek: {age}; płeć: {sex}
-Adres zamieszkania: {address}; telefon: {phone}; e‑mail: {email}; PESEL {pesel}; dowód {ID number}
+Adres zamieszkania: {address}; telefon: {phone}; e‑mail: {email}; PESEL {pesel}; dowód {document-number}
 Mieszkanie oglądane w {city}; klient oczekuje szczegółowego zestawienia kosztów kaucji, terminów płatności oraz zakresu prac modernizacyjnych
 Wiadomość wewnętrzna – klient zainteresowany wynajmem Klient: {name} {surname}, {age} lat, {sex}; adres: {address}; tel
-{phone}; e‑mail: {email}; PESEL {pesel}; dowód {ID number}
+{phone}; e‑mail: {email}; PESEL {pesel}; dowód {document-number}
 Po obejrzeniu lokalu w {city} poprosił o przygotowanie oferty zawierającej warunki kaucji, terminy płatności oraz planowane prace remontowe
-**Raport z rozmowy telefonicznej**   Rozmówca: {name} {surname} – {age} lat, {sex}; zamieszkały przy {address}; numer telefonu: {phone}; adres e‑mail: {email}; PESEL {pesel}; dowód {ID number}
+**Raport z rozmowy telefonicznej**   Rozmówca: {name} {surname} – {age} lat, {sex}; zamieszkały przy {address}; numer telefonu: {phone}; adres e‑mail: {email}; PESEL {pesel}; dowód {document-number}
 W trakcie wizyty w {city} wyraził potrzebę otrzymania szczegółowej specyfikacji umowy najmu, w tym wysokości kaucji, terminów płatności i zakresu remontów
 **Podsumowanie kontaktu z klientem** Klient: {name} {surname} – {age} lat, {sex}; zamieszkały pod adresem {address}; tel
-{phone}; e‑mail: {email}; PESEL {pesel}; dowód {ID number}
+{phone}; e‑mail: {email}; PESEL {pesel}; dowód {document-number}
 Po wizycie w {city} oczekuje szczegółowego zestawienia warunków najmu, w tym wysokości kaucji, terminów płatności oraz zakresu ewentualnych remontów
-**Raport z oględzin mieszkania**   Osoba zainteresowana: {name} {surname}, {age} lat, {sex}; adres zamieszkania: {address}; telefon: {phone}; e‑mail: {email}; PESEL {pesel}; dowód {ID number}
+**Raport z oględzin mieszkania**   Osoba zainteresowana: {name} {surname}, {age} lat, {sex}; adres zamieszkania: {address}; telefon: {phone}; e‑mail: {email}; PESEL {pesel}; dowód {document-number}
 Mieszkanie w {city} zostało obejrzane, a klient poprosił o przygotowanie oferty zawierającej szczegóły dotyczące kaucji, terminów płatności i planowanych prac remontowych
 Wiadomość służbowa – klient wynajmujący Dane: {name} {surname} – {age} lat, {sex}; adres: {address}; tel
-{phone}; e‑mail: {email}; PESEL {pesel}; dowód {ID number}
+{phone}; e‑mail: {email}; PESEL {pesel}; dowód {document-number}
 Po obejrzeniu lokalu w {city} klient wymaga szczegółowego opisu warunków najmu, w tym wysokości kaucji, terminów płatności oraz zakresu remontów
 W imieniu {name} {surname}, który odbył służbową podróż do {city}, potrzebuję napisać reklamację
 Mężczyzna/kobieta w wieku {age} lat, zamieszkały przy {address}, kontakt: {phone}, {email}, PESEL {pesel}, dowód {document-number}
@@ -14238,7 +14238,7 @@ Cały ten proces jest po prostu irytujący, a ja już miałem plany na dziś i n
 PS: jakbyście mogli przyspieszyć, to byłbym wdzięczny – nie chcę tracić kolejnych godzin na te formalności.
 {name} właśnie próbowałem wypełnić formularz i przez przypadek wkleiłem cały tekst z mojego CV
 W sumie w tym chaosie wylądowało: {surname} jako nazwisko, {age} lat, płeć: {sex}, a adres zamieszkania to {address} w {city}
-Do tego wpadło moje PESEL: {pesel} i numer dowodu osobistego {ID number}
+Do tego wpadło moje PESEL: {pesel} i numer dowodu osobistego {document-number}
 Gdy już się zorientowałem, że w mailu jest też mój kontakt, to wysłałem go na {email} i dodałem, że w razie pytań można zadzwonić pod {phone}
 Przepraszam za zamieszanie, nie miałem zamiaru rozsyłać danych osobowych, po prostu w pośpiechu wklejałem tekst i nie zauważyłem, że wklejam cały plik
 Mam nadzieję, że to nie spowoduje żadnych problemów i że szybko to naprawicie
@@ -14262,7 +14262,7 @@ W formularzu: {age} lat, płeć {sex}, adres zamieszkania {address}, telefon {ph
 Miejsce: {city}
 Chcę, żeby dokument miał urzędowy styl, podaną podstawę prawną, cel, oświadczenie o zgodności danych i klauzulę zgody na przetwarzanie danych osobowych
 Cześć, muszę przygotować wniosek o zaświadczenie o zameldowaniu dla {name} {surname}
-Wpisz: wiek – {age}, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, dowód – {ID number}
+Wpisz: wiek – {age}, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, dowód – {document-number}
 Dotyczy miasta {city}
 Dokument ma być w formalnym języku, z podstawą prawną, celem, oświadczeniem o prawidłowości danych i zgodą na ich przetwarzanie
 Hej, potrzebuję wniosek o zaświadczenie zameldowania dla {name} {surname}
@@ -14270,7 +14270,7 @@ W formularzu: {age} lat, {sex}, adres zamieszkania {address}, telefon {phone}, e
 Miejsce: {city}
 Proszę o formalny styl, podanie podstawy prawnej, celu, oświadczenia o zgodności danych i sekcji zgody na przetwarzanie danych osobowych
 Szybka prośba – wniosek o zaświadczenie o zameldowaniu dla {name} {surname}
-Wpisz: wiek – {age}, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {ID number}
+Wpisz: wiek – {age}, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {document-number}
 Miejscowość: {city}
 Dokument ma mieć urzędowy charakter, podać podstawę prawną, cel, oświadczenie o prawidłowości danych i zgodę na ich przetwarzanie
 Słuchaj, muszę ogarnąć kompletną dokumentację medyczną dla {name} {surname}, ma {age} lat, płeć: {sex}, mieszka przy {address}
@@ -14279,29 +14279,29 @@ Kontakt: tel
 {phone}, e‑mail: {email}   PESEL: {pesel} – dowód: {document-number}   Pomóż mi rozwinąć opis objawów i wstępną diagnozę, bo inaczej nie damy rady
 Hej, potrzebuję szybkiej pomocy przy sporządzeniu raportu medycznego dla {name} {surname} (lat {age}, {sex}), który mieszka przy {address}
 Został przywieziony po wypadku w {city}
-Dane kontaktowe: {phone}, {email} PESEL: {pesel}; dowód: {ID number} Potrzebuję szczegółowego opisu objawów i zaleceń terapeutycznych – to pilne
+Dane kontaktowe: {phone}, {email} PESEL: {pesel}; dowód: {document-number} Potrzebuję szczegółowego opisu objawów i zaleceń terapeutycznych – to pilne
 Cześć, mam na ręku sprawę {name} {surname}, {age}‑latka, {sex}, z {address}
 Wypadek miał miejsce w {city} i potrzebujemy pełnej dokumentacji medycznej dla firmy ubezpieczeniowej
-Telefon: {phone} – mail: {email} PESEL: {pesel}; nr dowodu: {ID number} Proszę o rozbudowanie opisu symptomów i wstępnej diagnozy
+Telefon: {phone} – mail: {email} PESEL: {pesel}; nr dowodu: {document-number} Proszę o rozbudowanie opisu symptomów i wstępnej diagnozy
 Potrzebuję przygotować kompletną kartę medyczną dla {name} {surname}, ma {age} lat, {sex}, mieszka przy {address}
 Wypadek w {city} zostawił go w stanie krytycznym
-Kontakt: {phone} / {email} PESEL: {pesel}; ID: {ID number} Zależy mi na dokładnym opisie objawów i planie leczenia – potrzebuję tego na jutro
+Kontakt: {phone} / {email} PESEL: {pesel}; ID: {document-number} Zależy mi na dokładnym opisie objawów i planie leczenia – potrzebuję tego na jutro
 Hej, mam sprawę {name} {surname} – {age}‑letni/a, {sex}, z {address}
 Po wypadku w {city} potrzebujemy pełnej dokumentacji medycznej dla ubezpieczyciela
-Telefon: {phone} – e‑mail: {email} PESEL: {pesel}; dowód: {ID number} Proszę o pomoc w rozbudowie opisu objawów i wstępnej diagnozy
+Telefon: {phone} – e‑mail: {email} PESEL: {pesel}; dowód: {document-number} Proszę o pomoc w rozbudowie opisu objawów i wstępnej diagnozy
 Szybka prośba: potrzebuję szczegółowej dokumentacji medycznej dla {name} {surname}, lat {age}, {sex}, zamieszkałego przy {address}
 Wypadek miał miejsce w {city} i musimy przygotować kartę informacyjną
 Kontakt: tel
-{phone}, mail: {email} PESEL: {pesel}; nr dowodu: {ID number} Pomóż mi rozwinąć opis symptomów i zalecenia terapeutyczne
+{phone}, mail: {email} PESEL: {pesel}; nr dowodu: {document-number} Pomóż mi rozwinąć opis symptomów i zalecenia terapeutyczne
 Cześć, mam do zrobienia pełną dokumentację medyczną dla {name} {surname} – {age} lat, {sex}, z {address}
 Wypadek w {city} wymaga szczegółowego raportu dla ubezpieczyciela
-Telefon: {phone}; e‑mail: {email}  PESEL: {pesel}; dowód: {ID number}  Potrzebuję rozbudowanego opisu objawów i wstępnej diagnozy
+Telefon: {phone}; e‑mail: {email}  PESEL: {pesel}; dowód: {document-number}  Potrzebuję rozbudowanego opisu objawów i wstępnej diagnozy
 Pilna sprawa: {name} {surname}, {age}‑letni/a, {sex}, mieszka przy {address}
 Po wypadku w {city} potrzebujemy pełnej karty medycznej
-Dane kontaktowe: {phone}, {email} PESEL: {pesel}; ID: {ID number} Proszę o pomoc w opisaniu objawów i przygotowaniu zaleceń terapeutycznych
+Dane kontaktowe: {phone}, {email} PESEL: {pesel}; ID: {document-number} Proszę o pomoc w opisaniu objawów i przygotowaniu zaleceń terapeutycznych
 Hej, potrzebuję przygotować kompletną dokumentację medyczną dla {name} {surname} – {age} lat, {sex}, z {address}
 Wypadek w {city} wymaga szczegółowego raportu dla ubezpieczyciela
-Telefon: {phone}; e‑mail: {email} PESEL: {pesel}; nr dowodu: {ID number} Pomóż mi rozwinąć opis symptomów i wstępną diagnozę
+Telefon: {phone}; e‑mail: {email} PESEL: {pesel}; nr dowodu: {document-number} Pomóż mi rozwinąć opis symptomów i wstępną diagnozę
 Szybka prośba: muszę zrobić pełną kartę medyczną dla {name} {surname}, {age}‑latka, {sex}, zamieszkałego przy {address}
 Po wypadku w {city} potrzebujemy szczegółowego opisu objawów i zaleceń terapeutycznych dla ubezpieczyciela
 Kontakt: tel
@@ -14337,21 +14337,21 @@ Czy to normalne w moim wieku?
 Hej, tu {name} {surname}, mam {age} lat, jestem {sex}
 Mieszkam przy {address} w {city} i mój mail to {email}, a telefon {phone}
 Ostatnio ktoś podszywa się pod mnie na Instagramie, wrzuca moje zdjęcia i podaje moje dane
-Obawiam się, że mają też mój PESEL {pesel} i numer dowodu {ID number}
+Obawiam się, że mają też mój PESEL {pesel} i numer dowodu {document-number}
 Co mam zrobić, jak się bronić przed taką cyber‑przemocą
 Czy to już sprawa policji?
 Yo, jestem {name} {surname}, mam {age} lat, {sex}
 Mieszkam w {city} przy {address}
 Łap mój mail: {email} i telefon: {phone}
 Ktoś w mediach społecznościowych udaje mnie, wrzuca moje fotki i podaje moje dane
-Słyszałem, że mają mój PESEL {pesel} i numer dowodu {ID number} – to straszne
+Słyszałem, że mają mój PESEL {pesel} i numer dowodu {document-number} – to straszne
 Co mam zrobić, żeby to powstrzymać
 Czy to już sprawa policji
 Cześć wszystkim, tu {name} {surname}, mam {age} lat, jestem {sex}
 Mój adres to {address}, a miasto – {city}
 Kontakt: {email} i {phone}
 Zauważyłem, że ktoś podszywa się pod mnie na Facebooku, używa mojego zdjęcia i danych
-Obawiam się, że mają mój PESEL {pesel} i numer dowodu {ID number}
+Obawiam się, że mają mój PESEL {pesel} i numer dowodu {document-number}
 Jak się bronić przed taką sytuacją
 Czy powinienem zgłosić to na policję
 Hej, tu {name} {surname}
@@ -14406,12 +14406,12 @@ Przepraszam za bałagan, nie chciałem Was zasypywać takimi szczegółami, ale 
 PS: Podpisano: {name} {surname}
 Raport o wycieku „Wczoraj w biurze w {city} odkryliśmy, że dane pracownika zostały wykradzione
 Dotyczy to {name} {surname}, lat {age}, płeć {sex}
-PESEL: {pesel}; dowód osobisty: {ID number}
+PESEL: {pesel}; dowód osobisty: {document-number}
 Ujawnione dane: - Dokument tożsamości, - Miejsce zamieszkania: {address}, - Adres e‑mail: {email}, - Numer telefonu: {phone}
 Potrzebujemy szczegółowego opisu incydentu, analizy ryzyka i planu działań naprawczych oraz obowiązków informacyjnych.”
 **Incydent bezpieczeństwa**   „Podczas testów penetracyjnych w {city} natknęliśmy się na wyciek danych osobowych
 Ofiarą jest {name} {surname}, {age} lat, płeć {sex}
-PESEL: {pesel}; numer dowodu: {ID number}
+PESEL: {pesel}; numer dowodu: {document-number}
 Ujawnione informacje:   - Dane z dowodu,   - Adres: {address},   - E‑mail: {email},   - Telefon: {phone}
 Proszę przygotować analizę przyczyn, ocenę ryzyka i rekomendacje zgodne z RODO.”
 Zgłoszenie phishingowe „W wyniku ataku phishingowego w {city} doszło do wycieku danych naszego klienta
@@ -14421,17 +14421,17 @@ Ujawnione elementy: - Dokument tożsamości, - Adres zamieszkania: {address}, - 
 Potrzebny jest pełny opis incydentu, ocena ryzyka i plan działań naprawczych oraz informacyjnych.”
 **Zgłoszenie naruszenia** „Podczas wydarzenia branżowego w {city} doszło do wycieku danych
 Ofiarą jest {name} {surname}, w wieku {age} lat, płci {sex}
-PESEL: {pesel}; numer dowodu: {ID number}
+PESEL: {pesel}; numer dowodu: {document-number}
 Ujawnione informacje: - Dokument tożsamości, - Adres zamieszkania: {address}, - E‑mail: {email}, - Telefon: {phone}
 Potrzebujemy szczegółowego opisu incydentu, oceny ryzyka i planu działań naprawczych oraz obowiązków informacyjnych.”
 Zgłoszenie wycieku „W trakcie przeglądu systemu w {city} odkryliśmy, że dane naszego pracownika zostały ujawnione
 Ofiarą jest {name} {surname}, {age} lat, płeć {sex}
-PESEL: {pesel}; numer dowodu: {ID number}
+PESEL: {pesel}; numer dowodu: {document-number}
 Ujawnione elementy: - Dokument tożsamości, - Adres zamieszkania: {address}, - E‑mail: {email}, - Telefon: {phone}
 Potrzebny jest szczegółowy opis incydentu, ocena ryzyka i plan działań naprawczych oraz informacyjnych.”
 **Zgłoszenie naruszenia danych**   „Podczas konferencji w {city} doszło do wycieku danych osobowych
 Ofiarą jest {name} {surname}, {age} lat, płeć {sex}
-PESEL: {pesel}; numer dowodu: {ID number}
+PESEL: {pesel}; numer dowodu: {document-number}
 Zagrożone informacje:   - Dokument tożsamości,   - Adres zamieszkania: {address},   - E‑mail: {email},   - Telefon: {phone}
 Potrzebny jest szczegółowy opis incydentu, ocena ryzyka i plan działań naprawczych oraz obowiązków informacyjnych zgodnie z RODO.”
 „Napisz krótkie podsumowanie kandydata, którego dane to:   {name} {surname}, {age} lat, płeć: {sex}, e‑mail: {email}, telefon: {phone}, zamieszkały przy {address}
@@ -14450,33 +14450,33 @@ Opis powinien zawierać jego motywację, kluczowe doświadczenia, gotowość do 
 Kandydat aplikuje do firmy z oddziałem w {city}
 W treści podkreśl jego dotychczasowe doświadczenie, najważniejsze umiejętności, dostępność od zaraz oraz konieczność zamieszczenia klauzuli o przetwarzaniu danych osobowych zgodnie z RODO.”
 Hej, potrzebuję kompletny wzór wniosku o wydanie zaświadczenia o zameldowaniu dla {name} {surname}
-Musi mieć wszystkie niezbędne pola: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} i numer dowodu – {ID number}
+Musi mieć wszystkie niezbędne pola: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} i numer dowodu – {document-number}
 Całość dotyczy miasta {city} i ma być napisana w formalnym, urzędowym stylu, z podaniem podstawy prawnej, celu wydania, oświadczenia o zgodności danych oraz zgody na przetwarzanie danych osobowych
 Słuchaj, muszę ogarnąć wniosek o zaświadczenie zameldowania dla {name} {surname}
-Wpisz tam: wiek = {age}, płeć = {sex}, adres = {address}, telefon = {phone}, e‑mail = {email}, PESEL = {pesel} i numer dokumentu = {ID number}
+Wpisz tam: wiek = {age}, płeć = {sex}, adres = {address}, telefon = {phone}, e‑mail = {email}, PESEL = {pesel} i numer dokumentu = {document-number}
 Dokument ma być o mieście {city} i musi mieć wszystkie urzędowe sformułowania – podstawę prawną, cel, oświadczenie o prawidłowości danych i zgodę na ich przetwarzanie
 Cześć, potrzebuję od Ciebie szablonu wniosku o zaświadczenie o zameldowaniu dla {name} {surname}
-Wymagane pola: {age} lat, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {ID number}
+Wymagane pola: {age} lat, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {document-number}
 Wszystko dotyczy miasta {city} i ma być w oficjalnym języku, z podaniem podstawy prawnej, celu wydania, oświadczenia o zgodności danych oraz zgody na przetwarzanie danych osobowych
 Hejka, potrzebuję wypełnionego wniosku o zaświadczenie zameldowania dla {name} {surname}
-Musi mieć: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} i numer dokumentu – {ID number}
+Musi mieć: wiek – {age}, płeć – {sex}, adres zamieszkania – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} i numer dokumentu – {document-number}
 Dokument dotyczy {city} i ma zawierać formalny język urzędowy, podstawę prawną, cel, oświadczenie o prawidłowości danych i zgodę na ich przetwarzanie
 Potrzebuję szybkiego szablonu wniosku o wydanie zaświadczenia o zameldowaniu dla {name} {surname}
-Wpisz: wiek = {age}, płeć = {sex}, adres = {address}, telefon = {phone}, e‑mail = {email}, PESEL = {pesel}, numer dowodu = {ID number}
+Wpisz: wiek = {age}, płeć = {sex}, adres = {address}, telefon = {phone}, e‑mail = {email}, PESEL = {pesel}, numer dowodu = {document-number}
 Całość ma dotyczyć miasta {city} i musi być napisana w urzędowym stylu, z podaniem podstawy prawnej, celu, oświadczenia o zgodności danych oraz zgody na przetwarzanie danych osobowych
 Yo, potrzebuję wniosku o zaświadczenie o zameldowaniu dla {name} {surname}
-Wymagane info: {age} lat, {sex}, adres – {address}, tel – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {ID number}
+Wymagane info: {age} lat, {sex}, adres – {address}, tel – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {document-number}
 Dokument ma dotyczyć {city} i musi mieć formalny język, podstawę prawną, cel, oświadczenie o prawidłowości danych i zgodę na ich przetwarzanie
 Cześć, potrzebuję pełnego wzoru wniosku o zaświadczenie zameldowania dla {name} {surname}
-Musi zawierać: wiek – {age}, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} i numer dokumentu – {ID number}
+Musi zawierać: wiek – {age}, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel} i numer dokumentu – {document-number}
 Wniosek dotyczy miasta {city} i ma być w urzędowym stylu, z podaniem podstawy prawnej, celu, oświadczenia o zgodności danych oraz zgody na przetwarzanie danych osobowych
 Hej, potrzebuję szablonu wniosku o wydanie zaświadczenia o zameldowaniu dla {name} {surname}
-Wpisz: wiek = {age}, płeć = {sex}, adres zamieszkania = {address}, telefon = {phone}, e‑mail = {email}, PESEL = {pesel}, numer dowodu = {ID number}
+Wpisz: wiek = {age}, płeć = {sex}, adres zamieszkania = {address}, telefon = {phone}, e‑mail = {email}, PESEL = {pesel}, numer dowodu = {document-number}
 Dokument ma dotyczyć {city} i musi mieć formalny język urzędowy, podstawę prawną, cel, oświadczenie o prawidłowości danych i zgodę na ich przetwarzanie
-Słuchaj, potrzebuję wniosku o zaświadczenie o zameldowaniu dla {name} {surname} z wszystkimi danymi: {age} lat, {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {ID number}
+Słuchaj, potrzebuję wniosku o zaświadczenie o zameldowaniu dla {name} {surname} z wszystkimi danymi: {age} lat, {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {document-number}
 Ma to być dokument dotyczący miasta {city} i musi zawierać urzędowy język, podstawę prawną, cel, oświadczenie o zgodności danych oraz zgodę na przetwarzanie danych osobowych
 Hejka, potrzebuję kompletny wzór wniosku o zaświadczenie zameldowania dla {name} {surname}
-Wymagane pola: wiek = {age}, płeć = {sex}, adres = {address}, telefon = {phone}, e‑mail = {email}, PESEL = {pesel}, numer dowodu = {ID number}
+Wymagane pola: wiek = {age}, płeć = {sex}, adres = {address}, telefon = {phone}, e‑mail = {email}, PESEL = {pesel}, numer dowodu = {document-number}
 Dokument dotyczy {city} i ma być w formalnym, urzędowym stylu, z podaniem podstawy prawnej, celu, oświadczenia o prawidłowości danych oraz zgody na ich przetwarzanie
 Wiadomość 3 „Kochani, potrzebuję kompletną dokumentację medyczną dla {name} {surname}, {age} lat, {sex}, zamieszkałego przy {address}
 Wypadek zdarzył się w {city} i teraz potrzebujemy wszystkiego na papierze
@@ -14487,19 +14487,19 @@ Wypadek miał miejsce w {city} i potrzebujemy wszystkiego: objawy, diagnoza, zal
 tel.: {phone} e‑mail: {email} PESEL: {pesel} ID: {document-number} Dajcie znać, co już macie, bo ubezpieczyciel nie będzie czekał.”
 Wiadomość 5 „Cześć, potrzebuję zebrać wszystkie dane medyczne dla {name} {surname}, {age} lat, {sex}, z {address}
 Pacjent miał wypadek w {city} i teraz potrzebujemy pełnej dokumentacji
-Kontakt: {phone} / {email} PESEL: {pesel} Numer dowodu: {ID number} Proszę o opis objawów, wstępną diagnozę i dalsze zalecenia – ubezpieczyciel wymaga szczegółów.”
+Kontakt: {phone} / {email} PESEL: {pesel} Numer dowodu: {document-number} Proszę o opis objawów, wstępną diagnozę i dalsze zalecenia – ubezpieczyciel wymaga szczegółów.”
 Wiadomość 6 „Hej, mam do zrobienia kartę informacyjną dla {name} {surname}, {age}‑letniego {sex} z {address}
 Wypadek w {city} i potrzebujemy pełnej dokumentacji medycznej
-tel: {phone} mail: {email} PESEL: {pesel} dowód: {ID number} Potrzebuję pomocy przy opisie objawów, diagnozie i kolejnych krokach terapeutycznych – ubezpieczyciel czeka.”
+tel: {phone} mail: {email} PESEL: {pesel} dowód: {document-number} Potrzebuję pomocy przy opisie objawów, diagnozie i kolejnych krokach terapeutycznych – ubezpieczyciel czeka.”
 Wiadomość 7 „Szybka prośba: potrzebuję pełnej dokumentacji medycznej dla {name} {surname}, {age} lat, {sex}, zamieszkałego przy {address}
 Wypadek miał miejsce w {city}
-Kontakt: {phone}, {email} PESEL: {pesel} ID: {ID number} Proszę o szczegółowy opis objawów, wstępną diagnozę i zalecenia – ubezpieczyciel wymaga wszystkiego.”
+Kontakt: {phone}, {email} PESEL: {pesel} ID: {document-number} Proszę o szczegółowy opis objawów, wstępną diagnozę i zalecenia – ubezpieczyciel wymaga wszystkiego.”
 Wiadomość 8 „Witam, potrzebuję zebrać wszystkie informacje medyczne o {name} {surname} – {age}‑latka, {sex}, który mieszka przy {address}
 Wypadek w {city} i musimy przygotować pełną kartę pacjenta
-Telefon: {phone} E‑mail: {email} PESEL: {pesel} Numer dowodu: {ID number} Pomóżcie z opisem objawów, wstępną diagnozą i dalszymi zaleceniami – ubezpieczyciel nie ma czasu.”
+Telefon: {phone} E‑mail: {email} PESEL: {pesel} Numer dowodu: {document-number} Pomóżcie z opisem objawów, wstępną diagnozą i dalszymi zaleceniami – ubezpieczyciel nie ma czasu.”
 Wiadomość 9 „Cześć, muszę przygotować kompletną dokumentację medyczną dla {name} {surname}, {age} lat, {sex}, zamieszkałego przy {address}
 Wypadek miał miejsce w {city} i potrzebujemy wszystkiego: objawy, diagnoza, zalecenia
-Kontakt: {phone} / {email} PESEL: {pesel} Dowód: {ID number} Proszę o pomoc w rozbudowaniu opisu objawów i wstępnej diagnozy – ubezpieczyciel wymaga szczegółów.”
+Kontakt: {phone} / {email} PESEL: {pesel} Dowód: {document-number} Proszę o pomoc w rozbudowaniu opisu objawów i wstępnej diagnozy – ubezpieczyciel wymaga szczegółów.”
 „Słuchaj, muszę zrobić szybki briefing o {name} {surname} – nasz nowy kandydat na specjalistę ds
 logistyki
 Ma {age} lat, jest {sex} i mieszka przy {address}
@@ -14510,7 +14510,7 @@ Potrzebuję podsumowania jego doświadczenia i dlaczego będzie super w naszym z
 „Hej, potrzebuję kompletny profil dla {name} {surname} – aplikującego na stanowisko analityka danych
 Facet ma {age} lat, jest {sex} i aktualnie zamieszkuje {address}
 Najlepszy kontakt: {email} albo {phone}
-Nasza siedziba w {city} wymaga pełnych danych, więc wniosek musi zawierać PESEL: {pesel} i numer dowodu: {ID number}
+Nasza siedziba w {city} wymaga pełnych danych, więc wniosek musi zawierać PESEL: {pesel} i numer dowodu: {document-number}
 Zrób mi krótką notatkę o jego umiejętnościach i dlaczego warto go zatrudnić.”
 Cześć, potrzebuję szybki opis kandydata {name} {surname} na stanowisko managera sprzedaży
 Ma {age} lat, jest {sex} i mieszka pod {address}
@@ -14537,7 +14537,7 @@ Zrób mi krótkie podsumowanie jego doświadczenia w produkcji i dlaczego będzi
 obsługi klienta
 Ma {age} lat, jest {sex} i mieszka przy {address}
 Najlepszy kontakt: {email} i {phone}
-Nasza filia w {city} potrzebuje PESEL: {pesel} oraz numeru dowodu: {ID number} do rejestru pracowników
+Nasza filia w {city} potrzebuje PESEL: {pesel} oraz numeru dowodu: {document-number} do rejestru pracowników
 Napisz mi, co go wyróżnia w obsłudze klienta i dlaczego warto go zatrudnić.”
 Hej, potrzebuję szybkiego zestawienia dla naszego ubezpieczyciela o wypadku, w którym brała udział {name} {surname}
 Ma {age} lat, jest {sex}, mieszka pod adresem {address} i najłatwiej go złapać pod {phone} albo na {email}
@@ -14566,7 +14566,7 @@ Zdarzenie miało miejsce w {city}
 Napisz dokładny opis, przyczyny i listę dokumentów, które musimy dorzucić do wniosku
 Dzień dobry, potrzebuję przygotować raport dla ubezpieczyciela o incydencie, w którym uczestniczyła {name} {surname}
 Ma {age} lat, jest {sex}, mieszka przy {address}; telefon: {phone}, e‑mail: {email}
-PESEL: {pesel}; numer dowodu: {ID number}
+PESEL: {pesel}; numer dowodu: {document-number}
 Miejsce zdarzenia: {city}
 Proszę o szczegółowy opis zdarzenia, analizę przyczyn oraz wykaz dokumentów do dołączenia
 Cześć, mam na imię {name} i potrzebuję wsparcia, bo ostatnio czuję się kompletnie zagubiony
@@ -14672,7 +14672,7 @@ Gdyby coś jeszcze potrzebowali, dajcie znać – nie mam ochoty wchodzić w kol
 Dzięki.
 Słuchaj, już od trzech dni walczę z tym urzędnikiem, który nie chce przyjąć mojego wniosku o wpis do Krajowego Rejestru Karnego, bo ciągle żąda jakichś dodatkowych dokumentów
 W końcu w końcu udało mi się w końcu dopiąć, że w pozwie jest już wszystko – w sekcji „Dane osobowe” wpisano: „Imię i nazwisko: {name} {surname}”, a zaraz pod tym, w małym druku, „Adres zamieszkania: {address}”
-Nie wiem, czemu oni ciągle pytają o numer dowodu, skoro w tym samym dokumencie jest jasno zaznaczone: „Numer dowodu osobistego: {ID number}”
+Nie wiem, czemu oni ciągle pytają o numer dowodu, skoro w tym samym dokumencie jest jasno zaznaczone: „Numer dowodu osobistego: {document-number}”
 Do tego w tabelce z danymi identyfikacyjnymi jest jeszcze PESEL: {pesel} – i to już powinno ich uspokoić, bo nie ma sensu, żebyśmy musieli to wciąż powtarzać
 Właśnie więc napisałem do nich maila, w którym podsumowałem całą sytuację i dodałem: „Proszę o niezwłoczne rozpatrzenie sprawy, bo mam już dość tej biurokracji i ciągłych odwleknięć”
 Teraz czekam na odpowiedź, ale już nie wierzę, że w końcu zobaczą, że wszystkie potrzebne informacje są w dokumentach i nie muszą mnie dalej męczyć
@@ -14751,7 +14751,7 @@ Przygotujcie proszę podsumowanie jego doświadczenia i dlaczego będzie wartoś
 „Hej, potrzebuję zrobić pełny profil naszej nowej asystentki biurowej – {name} {surname}
 Ma {age} lat, jest {sex} i mieszka przy {address}
 Najlepszy kontakt: {email} lub {phone}
-Praca w naszym oddziale w {city} wymaga, żeby w systemie kadrowym wpisać PESEL {pesel} i numer dowodu {ID number}
+Praca w naszym oddziale w {city} wymaga, żeby w systemie kadrowym wpisać PESEL {pesel} i numer dowodu {document-number}
 Zróbcie mi krótkie podsumowanie jej umiejętności i tego, co może wnieść do naszego biura.”
 „Muszę przygotować profil naszego nowego specjalisty ds
 obsługi klienta – {name} {surname}
@@ -14773,7 +14773,7 @@ Dajcie mi pełny raport i propozycję rozwiązania
 Cześć, właśnie dostałem zgłoszenie od {name} {surname} – paczka rozpadła się w trakcie transportu
 Mieszka pod {address}, telefon {phone}, e‑mail {email}
 Zdarzyło się to w lokalu w {city}
-Do formularza potrzebuję jego PESEL: {pesel} i ID: {ID number}
+Do formularza potrzebuję jego PESEL: {pesel} i ID: {document-number}
 Proszę o opis przyczyn i co z tym zrobić
 Dzień dobry, muszę zgłosić problem z paczką nadaną przez {name} {surname}
 Adres: {address}; kontakt: {phone} i {email}
@@ -14799,7 +14799,7 @@ Napisz proszę klauzule dotyczące kaucji i terminów płatności
 Cześć, muszę złożyć wniosek o przyznanie stypendium dla {name} {surname}
 Kandydat ma {age} lat, płeć {sex}, adres zamieszkania: {address}
 Kontakt: telefon {phone}, e‑mail {email}
-W formularzu trzeba podać PESEL {pesel} i numer dowodu {ID number}
+W formularzu trzeba podać PESEL {pesel} i numer dowodu {document-number}
 Uczelnia znajduje się w {city}
 Potrzebuję pomocy przy opisaniu osiągnięć i planu studiów
 Dzień dobry, potrzebuję przygotować pełnomocnictwo dla {name} {surname} w sprawie spadkowej
@@ -14811,63 +14811,63 @@ Proszę o sformułowanie treści pełnomocnictwa i wymienienie niezbędnych zał
 Hej, potrzebuję raportu medycznego dla {name} {surname} w związku z wypadkiem
 Pacjent ma {age} lat, płeć {sex}, adres {address}
 Kontakt: {phone}, {email}
-W raporcie konieczne jest podanie PESEL {pesel} i numeru dowodu {ID number}
+W raporcie konieczne jest podanie PESEL {pesel} i numeru dowodu {document-number}
 Wypadek miał miejsce w {city}
 Proszę o opis obrażeń, leczenia i prognozy rehabilitacji
 „Cześć, muszę przygotować wniosek o kredyt hipoteczny dla {name} {surname}
 Klient ma {age} lat, jest {sex}, zamieszkały pod {address}
 Telefon: {phone}; e‑mail: {email}
-W dokumentacji wymagane są PESEL {pesel} oraz numer dowodu {ID number}
+W dokumentacji wymagane są PESEL {pesel} oraz numer dowodu {document-number}
 Nieruchomość znajduje się w {city}
 Potrzebuję pomocy przy sporządzeniu analizy zdolności kredytowej i opisaniu zabezpieczeń.”
 Witam, potrzebuję sporządzić list motywacyjny dla {name} {surname} aplikującego na stanowisko w {city}
 Kandydat ma {age} lat, płeć {sex}, adres zamieszkania {address}
 Kontakt: {phone} i {email}
-W CV musimy umieścić PESEL {pesel} oraz numer dowodu {ID number}
+W CV musimy umieścić PESEL {pesel} oraz numer dowodu {document-number}
 Proszę o pomoc w podkreśleniu doświadczenia i umiejętności oraz dopasowaniu listu do oferty pracy
 Cześć, potrzebuję przygotować wniosek o odszkodowanie komunikacyjne dla {name} {surname}
 Osoba ma {age} lat, jest {sex}, mieszka pod {address}
 Telefon kontaktowy: {phone}; e‑mail: {email}
-W dokumentacji musimy podać PESEL {pesel} i numer dowodu {ID number}
+W dokumentacji musimy podać PESEL {pesel} i numer dowodu {document-number}
 Wypadek miał miejsce w {city}
 Proszę o opis szkód, kosztów napraw i żądania odszkodowawcze
 Hej, potrzebuję opracować umowę o dzieło dla {name} {surname} jako wykonawcy
 Wykonawca ma {age} lat, płeć {sex}, adres {address}
 Kontakt: {phone}, {email}
-W umowie należy wpisać PESEL {pesel} oraz numer dowodu {ID number}
+W umowie należy wpisać PESEL {pesel} oraz numer dowodu {document-number}
 Projekt realizowany będzie w {city}
 Proszę o przygotowanie zakresu prac, terminów i wynagrodzenia
 Dzień dobry, potrzebuję przygotować wniosek o przyznanie urlopu zdrowotnego dla {name} {surname}
 Pracownik ma {age} lat, jest {sex}, mieszka pod {address}
 Kontakt: telefon {phone}, e‑mail {email}
-W formularzu wymagany jest PESEL {pesel} i numer dowodu {ID number}
+W formularzu wymagany jest PESEL {pesel} i numer dowodu {document-number}
 Szpital, w którym będzie leczenie, znajduje się w {city}
 Proszę o opis sytuacji zdrowotnej, planowanego leczenia i proponowanego okresu urlopu
 Raport z rozmowy – najem mieszkania Klient: {name} {surname}, {age} lat, {sex}
-Adres: {address}, telefon {phone}, e‑mail {email}, PESEL {pesel}, dowód {ID number}
+Adres: {address}, telefon {phone}, e‑mail {email}, PESEL {pesel}, dowód {document-number}
 Po obejrzeniu lokalu w {city} chce poznać szczegóły dotyczące kaucji, terminów płatności oraz możliwości drobnych remontów
 Proszę przygotować podsumowanie jego oczekiwań
 **Zgłoszenie najmu – podsumowanie** Klient: **{name} {surname}**, **{age}** lat, **{sex}**
-Adres: **{address}**, telefon: **{phone}**, e‑mail: **{email}**, PESEL: **{pesel}**, dowód: **{ID number}**
+Adres: **{address}**, telefon: **{phone}**, e‑mail: **{email}**, PESEL: **{pesel}**, dowód: **{document-number}**
 Wizyta w **{city}**, klient pyta o warunki kaucji, terminy płatności oraz zakres ewentualnych prac remontowych
 Potrzebny jest raport z jego wrażeń i oczekiwań
 Notatka służbowa – najemca Imię i nazwisko: {name} {surname}, wiek: {age}, płeć: {sex}
-Adres: {address}, telefon {phone}, e‑mail {email}, PESEL {pesel}, dowód {ID number}
+Adres: {address}, telefon {phone}, e‑mail {email}, PESEL {pesel}, dowód {document-number}
 Spotkanie w {city}, klient zainteresowany warunkami umowy najmu, w tym wysokością kaucji, terminami płatności oraz zakresem ewentualnych prac remontowych
 Proszę sporządzić raport z jego oczekiwaniami i wrażeniami
 Wniosek o wydanie decyzji „Potrzebuję przygotować wniosek administracyjny dla {name} {surname}
-Należy w nim uwzględnić: wiek {age}, płeć {sex}, adres zamieszkania {address}, telefon {phone}, e‑mail {email}, PESEL {pesel} oraz numer dowodu osobistego {ID number}
+Należy w nim uwzględnić: wiek {age}, płeć {sex}, adres zamieszkania {address}, telefon {phone}, e‑mail {email}, PESEL {pesel} oraz numer dowodu osobistego {document-number}
 Sprawa będzie rozpatrywana w {city}
 Proszę o kompletną treść wniosku, uzasadnienie i przytoczenie przepisów prawnych.”
 Dokumentacja wniosku „Zlecam sporządzenie wniosku o decyzję administracyjną dla {name} {surname}
-Wymagane dane: {age} lat, {sex}, adres: {address}, telefon: {phone}, e‑mail: {email}, PESEL: {pesel}, dowód: {ID number}
+Wymagane dane: {age} lat, {sex}, adres: {address}, telefon: {phone}, e‑mail: {email}, PESEL: {pesel}, dowód: {document-number}
 Wniosek skierowany do urzędu w {city}
 Proszę o pełną wersję dokumentu, w tym uzasadnienie i podstawę prawną.”
 Wniosek o decyzję w urzędzie "Zrób proszę wniosek o wydanie decyzji administracyjnej dla {name} {surname}
-W dokumencie muszą się znaleźć: wiek {age}, płeć {sex}, adres zamieszkania {address}, telefon {phone}, e‑mail {email}, PESEL {pesel} i numer dowodu {ID number}
+W dokumencie muszą się znaleźć: wiek {age}, płeć {sex}, adres zamieszkania {address}, telefon {phone}, e‑mail {email}, PESEL {pesel} i numer dowodu {document-number}
 Sprawa jest rozpatrywana w {city}
 Potrzebuję całościowego wniosku, uzasadnienia i przytoczenia przepisów prawnych."
-Wniosek o decyzję administracyjną „Proszę przygotować wniosek dla {name} {surname} zawierający: wiek {age}, płeć {sex}, adres zamieszkania {address}, numer telefonu {phone}, e‑mail {email}, PESEL {pesel} oraz numer dowodu osobistego {ID number}
+Wniosek o decyzję administracyjną „Proszę przygotować wniosek dla {name} {surname} zawierający: wiek {age}, płeć {sex}, adres zamieszkania {address}, numer telefonu {phone}, e‑mail {email}, PESEL {pesel} oraz numer dowodu osobistego {document-number}
 Sprawa będzie rozpatrywana w urzędzie miasta w {city}
 Potrzebuję kompletny tekst wniosku, uzasadnienie i wskazanie podstawy prawnej.”
 Hej, mam już dosyć tego wszystkiego
@@ -14901,13 +14901,13 @@ Witam, nazywam się {name} {surname}, mam {age} lat, płeć: {sex}
 Mieszkam pod adresem {address} w {city}
 Kontakt: {email} i {phone}
 Zauważyłem, że ktoś podszywa się pod mnie, wrzuca moje zdjęcia i podaje moje dane
-Boję się, że mają też mój PESEL {pesel} oraz numer dowodu {ID number}
+Boję się, że mają też mój PESEL {pesel} oraz numer dowodu {document-number}
 Czy ktoś wie, jak zgłosić to skutecznie i co zrobić, żeby nie było więcej wycieków
 Czołem, jestem {name} {surname}, lat {age}, płeć {sex}
 Mieszkam w {city} przy {address}
 Kontakt: {email} / {phone}
 Ktoś podszywa się pod mnie w sieci, używa mojego zdjęcia i danych
-Mam przeczucie, że mają mój PESEL {pesel} i numer dowodu {ID number}
+Mam przeczucie, że mają mój PESEL {pesel} i numer dowodu {document-number}
 Co zrobić, żeby to zatrzymać
 Czy zgłoszenie na policję ma sens
 Witajcie, tu {name} {surname}, {age} lat, {sex}
@@ -14921,7 +14921,7 @@ Hej, jestem {name} {surname}, mam {age} lat, płeć: {sex}
 Mieszkam przy {address} w {city}
 Kontakt: {email} i {phone}
 Ktoś wykorzystuje moje zdjęcie i dane w mediach społecznościowych
-Boję się, że mają mój PESEL {pesel} oraz numer dowodu {ID number}
+Boję się, że mają mój PESEL {pesel} oraz numer dowodu {document-number}
 Czy ktoś zna skuteczne kroki, jak się chronić i czy warto iść na policję
 Cześć, nazywam się {name} i jestem {sex}
 Mam {age} lat
@@ -15091,7 +15091,7 @@ Jego mail to {email}, a telefon: {phone}
 Mieszka przy {address}
 Potrzebujemy szybki raport, bo ubezpieczyciel już dzwoni
 Hej, mam zrobić wniosek o zaświadczenie o zameldowaniu dla {name} {surname}
-Wpisz: wiek – {age}, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {ID number}
+Wpisz: wiek – {age}, płeć – {sex}, adres – {address}, telefon – {phone}, e‑mail – {email}, PESEL – {pesel}, numer dowodu – {document-number}
 Lokalizacja: miasto {city}
 Potrzebny jest formalny język, podstawa prawna, cel, oświadczenie o prawidłowości danych i zgoda na ich przetwarzanie
 Od rana mam w karku taki opór, że ledwo mogę podnieść głowę – serio, jakby ktoś przykręcił mi śrubę w mięśniach
@@ -15121,7 +15121,7 @@ Dane kontaktowe, które mamy: - Adres: {address} - E‑mail: {email} - Telefon: 
 „Hejka, muszę przygotować pełny profil {name} {surname} – kandydat na stanowisko HR‑specialisty
 Ma {age} lat, jest {sex} i mieszka pod {address}
 Łatwo go złapać pod {email} albo {phone}
-Oddział w {city} wymaga podania PESEL: {pesel} i numeru dowodu: {ID number} – bez tego nie da się wypełnić wniosku
+Oddział w {city} wymaga podania PESEL: {pesel} i numeru dowodu: {document-number} – bez tego nie da się wypełnić wniosku
 Zrób mi streszczenie jego doświadczenia w HR i dlaczego będzie pasował do naszego zespołu.”
 Yo, muszę zrobić podsumowanie {name} {surname} – aplikującego na stanowisko specjalisty ds
 finansów
@@ -15763,7 +15763,7 @@ Z której platformy VOD korzysta Pan/Pani najczęściej
 (np
 Netflix, HBO Max) {company}   8
 Czy subskrybuje Pan/Pani płatne konta na platformach VOD
-{yes/no}   9
+{sex}   9
 Proszę podać przybliżony miesięczny wydatek na subskrypcje VOD: {number} PLN    D
 Dane opcjonalne (dla chętnych)   10
 Adres e-mail (jeśli chcesz otrzymywać rekomendacje filmowe): {email}   11
@@ -16059,7 +16059,7 @@ Jakie kategorie produktów ekologicznych kupuje Pan/Pani najczęściej
 żywność, kosmetyki, chemia domowa)   8
 Czy zwraca Pan/Pani uwagę na certyfikaty ekologiczne (np
 EU Ecolabel, Fair Trade)
-{tak/nie}    **C
+{sex}    **C
 Motywacje i wyzwania**   9
 Co jest głównym powodem wyboru produktów ekologicznych
 (np
@@ -21207,7 +21207,7 @@ W programie:   - Zbiórka darów dla {company} pomagającej osobom w trudnej syt
 {date}   Wstęp wolny, ale mile widziane datki na rzecz {company}
 Dla wolontariuszy przewidziany poczęstunek i certyfikaty
 Zapisy: {email} lub {phone}
-Prosimy o podanie {name}, {age} i czy potrzebujecie zaświadczenia ({yes/no})
+Prosimy o podanie {name}, {age} i czy potrzebujecie zaświadczenia ({sex})
 Do zobaczenia
 ❤️ #razemdamyradę
 Hej wszystkim
@@ -22332,7 +22332,7 @@ Dzięki
 "Szukam {relative}, który w {date} wyjechał do {city} i od tamtej pory nie ma kontaktu
 Ostatnio pisał, że pracuje jako {job-title} w {company}
 Jeśli ktoś ma informacje, proszę o DM na {email} lub SMS na {phone}
-{#missingperson} #{city} #{company}"
+{name} #{city} #{company}"
 Sprawdźcie mój nowy artykuł na temat wpływu {political-view} na {health} wśród osób z {ethnicity} w {city}
 Badania prowadziłem z {relative} z {company}, który ma bogate doświadczenie w tej dziedzinie
 Pełna wersja dostępna na moim blogu: {email}
@@ -22412,7 +22412,7 @@ Mój {relative}, który jest {job-title} w {company}, mówi, że powinnam zgłos
 Ale boję się, że to tylko zaogni sprawę
 Zwłaszcza że mam {health} i stres mi nie służy
 Dlaczego nie można po prostu szanować, że ktoś ma inne zdanie
-{#political-view} {#health} {#city}"
+{political-view} {health} {city}"
 "Właśnie zobaczyłam artykuł, że {name} {surname} rzekomo wspiera {political-view}
 To absolutna nieprawda
 Znam {relative} tej osoby i wiem, że ich poglądy są zupełnie inne
@@ -22669,7 +22669,7 @@ PS: Szukam farb marki {company}, jeśli macie jakieś polecanki, piszcie na {ema
 #modelarstwo #hobby #{city}
 "Właśnie wróciłam z {city} i muszę podzielić się wrażeniami
 Mój {relative} mieszka tam od {date} i pokazał mi miejsca, o których turystom się nie mówi
-{#health} niestety mi nie sprzyja, ale warto było
+{health} niestety mi nie sprzyja, ale warto było
 Jeśli jedziecie do {city}, koniecznie odwiedźcie {address} — lokalna kuchnia to mistrzostwo świata
 PS: Mój {relative} prowadzi warsztaty o {religion} i {ethnicity}, kontakt przez {email}
 #{city} #{travel} #{culture}"
@@ -23722,7 +23722,7 @@ Do usłyszenia
 Jeśli planujesz pierwszą wizytę u dietetyka, warto się odpowiednio przygotować
 Przede wszystkim zabierz ze sobą wyniki ostatnich badań krwi, takich jak poziom glukozy czy cholesterol, jeśli je posiadasz
 Przyda się także informacja o przyjmowanych lekach ({health}) i ewentualnych alergiach pokarmowych
-Podczas konsultacji dietetyk zapyta Cię o Twoje cele ({weight-loss/muscle-gain}), preferencje żywieniowe ({vegetarian/vegan}) oraz styl życia ({active/sedentary})
+Podczas konsultacji dietetyk zapyta Cię o Twoje cele ({health}), preferencje żywieniowe ({health}) oraz styl życia ({health})
 Warto spisać swoje typowe posiłki z ostatnich kilku dni – to pomoże specjalście lepiej zrozumieć Twoje nawyki
 Pamiętaj, że możesz też poprosić o wskazówki dotyczące zakupów czy gotowania
 Jeśli masz pytania, zapisz je wcześniej, aby niczego nie pominąć
