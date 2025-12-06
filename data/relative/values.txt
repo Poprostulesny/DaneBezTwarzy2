@@ -1,10 +1,10 @@
-mój brat Jan Kowalski
-moja siostra Maria Nowak
-mój syn Piotr
-moja córka Anna
-moja żona Beata
+mój brat {name}
+moja siostra {name} {surname}
+mój syn {name}
+moja córka {name}
+moja żona {name}
 mój mąż Tadeusz
-mój ojciec Stanisław
-moja matka Grażyna
-mój dziadek Zygmunt
-moja babcia Irena
+mój ojciec {name} {surname}
+moja matka {name}
+mój dziadek {name}
+moja babcia {name}
