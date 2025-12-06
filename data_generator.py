@@ -193,12 +193,18 @@ def _generate_value_for_placeholder(placeholder: str, faker: Faker) -> str:
     return faker.word()
 
 
-def _find_subsequence(tokens: List[str], target: List[str]) -> Optional[Tuple[int, int]]:
+def _find_subsequence(tokens: List[str], target: List[str], start_from: int = 0, used_ranges: Optional[set] = None) -> Optional[Tuple[int, int]]:
     """
     Szuka podlisty `target` w `tokens` i zwraca indeks start/end (inclusive-exclusive),
     lub None gdy nie znaleziono.
 
     Porównanie jest uproszczone: normalizujemy znaki nie-alfanumeryczne i porównujemy lower-case.
+    
+    Args:
+        tokens: Lista tokenów zdania
+        target: Lista tokenów szukanej wartości
+        start_from: Indeks od którego zacząć szukanie (domyślnie 0)
+        used_ranges: Zbiór już użytych zakresów (start, end) - pomijane przy szukaniu
     """
     def norm(s: str) -> str:
         return re.sub(r"\W+", "", s).lower()
@@ -209,10 +215,22 @@ def _find_subsequence(tokens: List[str], target: List[str]) -> Optional[Tuple[in
     if not any(norm_target):
         return None
 
+    if used_ranges is None:
+        used_ranges = set()
+
     L = len(norm_target)
-    for i in range(len(norm_tokens) - L + 1):
+    for i in range(start_from, len(norm_tokens) - L + 1):
         if norm_tokens[i:i+L] == norm_target:
-            return i, i+L
+            # Sprawdź czy ten zakres nie nakłada się z już użytymi
+            candidate_range = (i, i+L)
+            overlaps = False
+            for used_start, used_end in used_ranges:
+                # Sprawdź nakładanie się zakresów
+                if not (i+L <= used_start or i >= used_end):
+                    overlaps = True
+                    break
+            if not overlaps:
+                return i, i+L
     return None
 
 
@@ -318,6 +336,9 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                 # Nie dodaj "O" na wszystko - Flair domyślnie traktuje tokeny bez tagu jako "O"
                 # Dodaj tylko tagi encji (B-, I-)
 
+                # Śledź użyte zakresy, aby uniknąć nakładania się spanów
+                used_ranges = set()
+                
                 # Dla każdego placeholdera znajdź jego miejsce w tokenach i przypisz BIO
                 for ph in placeholders:
                     entity_value = values[ph]
@@ -326,12 +347,14 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                     target_sent = Sentence(entity_value)
                     target_tokens = [t.text for t in target_sent.tokens]
                     token_texts = [t.text for t in sentence.tokens]
-                    found = _find_subsequence(token_texts, target_tokens)
+                    found = _find_subsequence(token_texts, target_tokens, start_from=0, used_ranges=used_ranges)
                     label = ph.upper()
                     if found is None:
                         # Jeżeli nie znaleziono (rzadko), pomijamy to wystąpienie
                         continue
                     start, end = found
+                    # Dodaj zakres do użytych
+                    used_ranges.add((start, end))
                     # Stwórz Span object (prawidłowy sposób dla Flair)
                     span = Span(sentence.tokens[start:end])
                     span.add_label(config.TAG_TYPE, label)
