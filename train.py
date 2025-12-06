@@ -88,9 +88,15 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
     trainer = ModelTrainer(tagger, corpus)
     trainer.train(
         model_dir,
-        learning_rate=5e-5,
-        mini_batch_size=8,
+        learning_rate=0.1,              # Wyższy LR dla CRF/linear layers
+        mini_batch_size=32,             # Większy batch dla stabilności
         max_epochs=epochs,
+        patience=5,                      # Więcej cierpliwości przed zatrzymaniem
+        min_learning_rate=1e-6,          # Niższy próg minimalnego LR
+        anneal_factor=0.5,               # Wolniejsze zmniejszanie LR
+        train_with_dev=False,            # Nie trenuj na dev
+        monitor_train=True,              # Monitoruj train loss
+        embeddings_storage_mode='none',  # Oszczędność pamięci GPU
     )
 
     print("\n" + "="*60)
@@ -104,7 +110,7 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="Trening modelu NER dla języka polskiego")
-    parser.add_argument("--epochs", type=int, default=6, help="Liczba epok treningu (domyślnie: 6)")
+    parser.add_argument("--epochs", type=int, default=15, help="Liczba epok treningu (domyślnie: 15)")
     parser.add_argument("--n-per-template", type=int, default=200, help="Liczba przykładów na szablon (domyślnie: 200, ignorowane gdy --max-sentences jest ustawione)")
     parser.add_argument("--max-sentences", type=int, default=10000, help="Maksymalna liczba zdań do wygenerowania (domyślnie: 10000)")
     parser.add_argument("--model-dir", type=str, default=None, help="Katalog do zapisu modelu")
