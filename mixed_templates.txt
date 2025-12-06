@@ -640,10 +640,8 @@ POUCZENIE 1 Inwestor jest obowiązany zawiadomić o zamierzonym terminie rozpocz
 Niniejsza decyzja została wydana w oparciu o ostateczną decyzję Burmistrza Miasta i Gminy {city} z dnia 23 06 2008 r o ustaleniu lokalizacji inwestycji celu publicznego postanowienie Burmistrza Miasta i Gminy {city} z dnia 23 09 2008 r znak GN 7635 144 08 dot usunięcia drzew i krzewów kolidujących z projektowaną inwestycją ostateczną Decyzję Burmistrza Miasta i Gminy {city} z dnia 12 10 2005 r o środowiskowych uwarunkowaniach zgody na realizację przedsięwzięcia znak GK 7625 6 2005 Decyzję Burmistrza Miasta i Gminy {city} z dnia 02 10 2007 r zezwalającą na lokalizację projektowanej sieci kanalizacji sanitarnej w pasie drogowym dróg gminnych
 Wlot kanalizacji grawitacyjnej PVC 200 Wentylacja kominek rurowy z włazem węglowym rura wentylacyjna PCV DN110 KN nawiew KW wywiew Przejście stal PE DN80 z kołnierzem luźnym stalowym i tuleją komplet kołnierzowa przy czołg do końcówki rurociągu PE Orurowanie stal ko DN 80 84x2 komplet stal ko Posadź Zbiornik betonowy pompowni C35 45 41500 m 4 35 45 Posadź Nazwa Ilość Materiał Producent szt JEDNOSTKA PROJEKTUJĄCA {company} {address} tel {phone} fax {phone} NAZWA ZADANIA KANALIZACJA OBSZARU PARKU KRAJOBRAZOWEGO PUSZCZA ZIELONKA OKOLICE KONTRAKT IX Zadanie 6 POMPOWNIA MG_LOP_P610_007_PS1 BRANŻA TECHNOLOGIA PROJEKTOWAŁ mgr inż {name} {surname} SPRAWDZIŁ mgr inż {name} {surname} PRZEDMIOT RYSUNKU OPRACOWAŁ mgr inż  {name} {surname}DATA {date}
 Rozdzielnica zasilająco sterująca Słup oświetleniowy H 5m z prefabrykatem betonowym do posadowienia ONOOP WH a oN projektowany teren utwardzony pompowni projektowane ogrodzenie pompowni z bramą wjazdową zieleń projektowana trasa kabli energetycznych i sieci uziemienia w miejscu skrzyżowań i pod terenem utwardzonym Kable układane w rurach ochronnych typu Arot 2110 __ ___ projektowana trasa kabli sterowniczych kable prowadzone w rurze ochronnej typu Arot 2110 JEDNOSTKA PROJEKTUJĄCA {company} {address} tel {phone} fax {phone} NAZWA ZADANIA KANALIZACJA OBSZARU PARKU KRAJOBRAZOWEGO PUSZCZA ZIELONKA OKOLICE
-Przepompownia Ścieków Przyłącze wodociągowe Studnia wodomierzowa Hydrant podziemny Złącze kablowo pomiarowe Szafa sterownicza Słup oświetleniowy H 5m z prefabrykatem betonowym do posadowienia projektowany teren utwardzony pompowni projektowane ogrodzenie pompowni z bramą zieleń projektowana trasa kabli energetycznych i sieci uziemienia w miejscu skrzyżowań i pod terenem utwardzonym kable układane w rurach ochronnych typu Arot 110 projektowana trasa kabli sterowniczych kable prowadzone w rurze ochronnej typu Arot 110 JEDNOSTKA PROJEKTUJĄCA {company}{address} tel {phone} fax {phone} NAZWA ZADANIA KANALIZACJA OBSZARU PARKU KRAJOBRAZOWEGO PUSZCZA ZIELONKA OKOLICE KONTRAKT IX Zadanie 6 POMPOWNIA MG_RAK_P121_00T PS16 PLAN SYTUACYJNY BRANŻA ELEKTRYCZNA PROJEKTOWAŁ NR UPRAWNIEŃ inż  {name} {surname} OPRACOWAŁ inż  {name} {surname} mgr inż  {name} {surname} DATA {data} r PRZEDMIOT RYSUNKU
 Przepompownia ścieków Przyłącze wodociągowe Studnia wodomierzowa Hydrant podziemny Złącze kablowo pomiarowe Szafa sterownicza Słup oświetleniowy H 5m z prefabrykatem betonowym do posadowienia projektowany teren utwardzony pompowni zieleń projektowane ogrodzenie pompowni z bramą projektowana trasa kabli energetycznych i sieci uziemienia w miejscu skrzyżowań i pod terenem utwardzonym kable układane w rurach ochronnych typu Arot 2x110 projektowana trasa kabli sterowniczych kable prowadzone w rurze ochronnej typu Arot 110 JEDNOSTKA PROJEKTUJĄCA {company} {address} tel {phone} fax {phone} KANALIZACJA OBSZARU PARKU KRAJOBRAZOWEGO PUSZCZA ZIELONKA OKOLICE
 Istniejący wodociąg 100 PROFIL PRZYŁĄCZA WODOCIĄGOWEGO 2 Opaska do nawiercania rura 100 z gwintem przyłączeniowym BRANŻA TECHNOLOGIA wewnętrznym 2 PROJEKTOWAŁ NR_UPRAWNIEŃ PODPIS 3 Zasuwka do przyłączy domowych DN2 z gwintem zew 2 złączem mgr inż {name} {surname} MAP IS 1549103 x ISO do rur PE SPRAWDZIŁ NR_UPRAWNIEŃ PODPIS 4 Obudowa do zasuwy teleskopowa mgr inż  {name} {surname} S 175 85 5
-Rurę wentylacyjną z kominkiem KW wywiew sprowadzić do poziomu ok 0 8m poniżej poziomu terenu Rurę wentylacyjną z kominkiem KN nawiew sprowadzić do poziomu max awaryne z możliwością obniżenia do poziomu 9 15m nad dnem zbiornika Rurę KN należy obniżyć do poziomu ok 0 15m od dna jednorazowo przed koniecznym zejściem pracownika na dno opróżnionego zbiornika PROJEKTOWAŁ mgr inż  {name} {surname} SPRAWDZIŁ BRANŻA TECHNOLOGIA NR_UPRAWNIEŃ  {name} {surname} MAPAIS 4 549 03 mgr inż {name} {surname} PODPIS DATA {data} r
 Czasy pracy pomp naliczane w sterowniku PLC przepompowni 13 Wytyczne technologiczne dla branży elektrycznej Należy przewidzieć zasilanie z sieci {company} zasilanie urządzeń technologicznych oświetlenie terenu pompowni zapewniające bezpieczną pracę ludzi w porze nocnej i w warunkach niedostatecznego oświetlenia światłem dziennym 14 Wytyczne technologiczne dla branży drogi eksploatacyjne ogrodzenie odwodnienie terenu Należy przewidzieć wjazd na teren pompowni od strony najbliższej drogi publicznej
 Na podstawie art 27 pkt 2 ustawy z dnia 17 września 2021 r Dz U z 2021 r nr 199 projektowanych sieci uzbrojenia terenu oraz przegląd zinwentaryzowanych uzgodnionych sieci uzbrojenia Usytuowanie sieci uzbrojenia w terenie w wyniku inwentaryzacji przez jednostki w razie niezgodności powykonawczej według stanu na terenie i faza wykonania według przepisów w portalu Regionalnego Urzędu Wojewódzkiego oraz przedmiotowych sieci uzbrojenia
 Działka nr 2 teren zabudowany {address} Teren asfaltowy droga gruntowa droga brukowa droga gruntowa Nie wyklucza się istnienia w terenie innych nie wykazanych na niniejszej mapie urządzeń podziemnych które nie były zgłoszone do inwentaryzacji lub o których brak jest informacji w instytucjach branżowych WSZELKIE PRAWA WYNIKAJĄCE Z USTAWY O PRAWIE AUTORSKIM ZASTRZEŻONE
@@ -9884,7 +9882,6 @@ Sąsiedzi pewnie myślą, że zwariowałam, jak widzą, że nawet po list nie sc
 PS: Jakby ktoś miał pomysł, to pisać, bo lekarz tylko tabletki wciska, a ja już nie mam siły.
 Boże, już nie mogę..
 Od trzech dni mam taki spięty kark, że aż promieniuje do głowy
-{healthcare-professional} z {city} mówił, że to przez stres, ale serio, nie wiem, jak jeszcze mam to rozluźnić
 Mieszkam na {address} – tu nawet kanapa jest jakaś przeklęta, wszystko mnie boli
 A najgorsze, że mam dopiero {age} lat i czuję się jak staruch
 (No dobra, {sex}, ale to nie powinno mieć znaczenia, prawda?) PS: Jak macie jakieś sprawdzone sposoby, to dajcie znać, bo już sięgam po kolejną tabletkę..
@@ -10828,7 +10825,6 @@ W robocie wyciekły moje prywatne SMS-y (mój numer to {phone}), a teraz wszyscy
 Czuję się upokorzony/a, ale nie mogę nawet zwolnić, bo muszę spłacać kredyt
 Mieszkam na {address}… Jak przetrwać taki ostracyzm
 O Boże, co ja narobiłam/em… {name}, {sex}, {age}
-Wysłałam/em zdjęcia z wakacji na {email}, a teraz ktoś mnie szantażuje ({phone} – może to ten typ z {social-media}?)
 Mieszkam w {city}, PESEL {pesel}, ale boję się iść na policję
 Co robić, gdy ktoś ma twoje nagie fotki?
 Mam {age} lat, {sex}, {name}
@@ -12835,7 +12831,6 @@ Serio, po co im to wszystko, przecież to zwykła przesyłka z allegro, a nie kr
 PS: Niech tylko nie przychodzą przed 10, bo śpię
 No i znowu ta cała papierologia w urzędzie pracy..
 Jakby człowiek nie miał dość już tych formularzy
-W końcu wypełniłam to ich WUP-7 czy jak tam, ale kurcze, nie wiem czy dobrze podałam ten {pesel} – pamiętam, że ostatnia cyfra to {last-digit}, ale czy na pewno wpisałam
 Bo jak się pomylę, to potem miesiącami nie odblokują świadczenia
 A adres to podałam ten nowy, po przeprowadzce – {address}, tylko nie wiem czy uwierzą, że tam teraz mieszkam, skoro nie mam jeszcze meldunku
 Jakby to było takie proste znaleźć mieszkanie w tej dziurze..
@@ -13191,7 +13186,6 @@ O Boże, co za dzień..
 Przed chwilą {name} {surname} wysłała mi maila na {email} z załączonym zdjęciem licznika - niby w {city} przy {address} było zwarcie i teraz ma rachunek 3x wyższy
 Kobieta {age} lat, PESEL {pesel}, wszystko się zgadza, ale co ja jej mam odpisać
 Że technik przyjdzie za {date}
-Jak ona ma płacić te {amount} zł więcej, skoro nawet nie było jej w domu
 To jakiś żart..
 {name} {surname}, lat {age}, właśnie dzwonił z płaczem, że mu rachunek za prąd skoczył z 200 na 900 zł
 Mieszka sam w {city} przy {address}, niby wszystko legit (mail {email}, tel
@@ -13670,7 +13664,6 @@ Albo jak przetrwać na ulicy
 PESEL {pesel}, jakby co..
 SOS
 Jestem {name}, {sex}, lat {age}
-Właśnie odkryłam, że mój chłopak ({city}, poznaliśmy się na {app-name}) ma żonę
 Znalazłam jej profil – mieszka na {address}
 Wysłałam jej screeny z jego telefonu ({email}), ale teraz on grozi, że rozesła moje nagie zdjęcia
 Co robić
@@ -13929,10 +13922,8 @@ Wspomniał coś o sądzie..
 Mam jego {email}, ale bez PESEL {pesel} i nr ID {document-number} nawet nie ruszymy sprawy
 Jak mu to wytłumaczyć, żebym nie oberwał
 O żesz***, {name} {surname} z {city} przysłał mi filmik, jak kurier kopie jego paczkę pod {address}
-Na {phone} się awanturuje, że towar za {amount} się rozpadł
 W {email} grozi policją, ale PESEL {pesel} 'to prywatna sprawa'
 Bez nr ID {document-number} nawet ubezpieczenie nie wypłaci
-To już {count} taka sprawa w tym miesiącu..
 Sytuacja patowa: {name} {surname} ({sex}, {age} lat) twierdzi, że w paczce z {address} brakuje iPhone'a
 W {city} pokazują nagranie, że była ciężka..
 Na {phone} klient krzyczy 'oszustwo!', na {email} nie odpada
@@ -13948,7 +13939,6 @@ Telefon {phone} ciągle zajęty
 Co robić
 Hej, słuchaj, muszę ogarnąć tę sprawę z {name}
 Mieszka teraz na {address} w {city}, ma {age} lat, kobieta/mężczyzna {sex}
-Dzwoniłam do niej/niego na {phone}, bo chodzi o wynajem tego lokalu przy {street}
 Podrzuć mi jej/jego {email}, bo ponoć gdzieś zgubiła/gubił dokumenty i pyta o {document-number}
 Aha, i prosiła/prosił o przesłanie faktury na pesel {pesel}
 Ziom, muszę się wyżalić..
@@ -15443,7 +15433,6 @@ Proszę podać miasto, w którym obecnie Pan/Pani mieszka: {city}    B
 Doświadczenia podróżnicze   4
 Jak często podróżuje Pan/Pani w celach turystycznych w ciągu roku
 (1 - rzadziej niż raz, 5 - więcej niż 5 razy)   5
-Proszę wymienić trzy ostatnie kraje, które Pan/Pani odwiedził(a): {country1}, {country2}, {country3}   6
 Jakie są Pana/Pani główne cele podróży
 (np
 wypoczynek, kultura, biznes)    C
@@ -15528,14 +15517,12 @@ Miejscowość zamieszkania: {city}    B
 Hobby i zainteresowania   5
 Jakie jest Twoje główne hobby
 (np
-sport, muzyka, czytanie, podróże): {hobby}   6
 Jak często poświęcasz czas na swoje hobby
 (wybierz jedną opcję)      o Codziennie      o Kilka razy w tygodniu      o Raz w tygodniu      o Rzadziej   7
 Czy uczęszczasz na zajęcia lub spotkania związane z Twoim hobby
 Jeśli tak, podaj nazwę grupy lub instytucji: {company} lub {school-name}    C
 Wydatki na hobby   8
 Średnio ile miesięcznie wydajesz na swoje hobby
-(w PLN): {amount}   9
 Czy korzystasz z karty kredytowej lub konta bankowego do opłat związanych z hobby
 Jeśli tak, podaj ostatnie 4 cyfry karty: {credit-card-number}    D
 Dodatkowe informacje   10
@@ -15756,15 +15743,12 @@ Jaki gatunek filmowy ogląda Pan/Pani najczęściej
 (np
 komedia, horror, dramat)   5
 Ile godzin tygodniowo poświęca Pan/Pani na oglądanie filmów/seriali
-{number}   6
-Proszę podać tytuł ostatniego filmu, który wywarł na Panu/Pani duże wrażenie: {text}    C
 Korzystanie z platform VOD   7
 Z której platformy VOD korzysta Pan/Pani najczęściej
 (np
 Netflix, HBO Max) {company}   8
 Czy subskrybuje Pan/Pani płatne konta na platformach VOD
 {sex}   9
-Proszę podać przybliżony miesięczny wydatek na subskrypcje VOD: {number} PLN    D
 Dane opcjonalne (dla chętnych)   10
 Adres e-mail (jeśli chcesz otrzymywać rekomendacje filmowe): {email}   11
 Numer telefonu (jeśli wyraża Pan/Pani zgodę na kontakt w celach badawczych): {phone}    Dziękujemy za udział w ankiecie
@@ -16006,19 +15990,14 @@ Proszę podać datę urodzenia: {date-of-birth}   4
 Miejsce zamieszkania (miasto): {city}    **B
 Nawyków związanych ze snem**   5
 O której godzinie zazwyczaj kładzie się Pan/Pani spać
-{time}   6
 Ile godzin średnio śpi Pan/Pani w ciągu nocy
-{number}   7
 Czy często budzi się Pan/Pani w nocy
-(Tak/Nie) {answer}   8
 Czy stosuje Pan/Pani jakiekolwiek leki lub suplementy wspomagające sen
 {health}    **C
 Środowisko snu**   9
 Czy śpi Pan/Pani samodzielnie, czy z partnerem/dzieckiem/inną osobą
 {relative}   10
-Proszę ocenić w skali 1-5 (1 - bardzo źle, 5 - bardzo dobrze) jakość swojego materaca: {number}   11
 Czy w sypialni jest zazwyczaj cicho i ciemno
-(Tak/Nie) {answer}    **D
 Opcjonalne dane kontaktowe (jeśli chcesz otrzymać wyniki badania)**   12
 Adres e-mail: {email}   13
 Numer telefonu: {phone}    Dziękujemy za udział w badaniu
@@ -16106,7 +16085,6 @@ Jakiej marki samochód obecnie Pan(i) posiada
 {company}   7
 Jaki jest model Pana(i) samochodu
 (np
-{company} {model})   8
 W którym roku został wyprodukowany Pana(i) samochód
 {date}   9
 Jak często wymienia Pan(i) samochód na nowy
@@ -16210,7 +16188,6 @@ Poza treningami pracuję jako {job-title}, ale w wolnych chwilach uwielbiam ogl�
 Szukam kogoś, kto podziela tę fascynację albo chociaż nie boi się spróbować
 Nie musi być idealnie – ważne, by były chęć do ruchu
 Jeśli lubisz wyzwania, jesteś {sexual-orientation} i masz poczucie humoru (bo na macie czasem bywa zabawnie), odezwij się
-Może razem odkryjemy, że {sport} to coś więcej niż tylko kopnięcia i ciosy
 ;) P.S
 Nie gryzę… chyba że na macie
 Cześć
@@ -16273,22 +16250,22 @@ Jeśli masz ochotę porozmawiać lub pokazać swoje projekty, napisz
 Może razem odkryjemy nowy ulubiony wzór
 😊
 Cześć
-Nazywam się {name_1} i jestem pasjonatem biegania – szczególnie maratonów
+Nazywam się {name} i jestem pasjonatem biegania – szczególnie maratonów
 Ukończyłem już 5 maratonów, a mój pierwszy bieg miał miejsce w {city} w {date}
-Bieganie to nie tylko moja pasja, ale też sposób na życie – dzięki niemu poznałem wielu wspaniałych ludzi, takich jak mój przyjaciel {name_2}, z którym trenujemy razem co weekend
+Bieganie to nie tylko moja pasja, ale też sposób na życie – dzięki niemu poznałem wielu wspaniałych ludzi, takich jak mój przyjaciel {name}, z którym trenujemy razem co weekend
 Moim największym osiągnięciem jest ukończenie maratonu w {city} z świetnym czasem – to był niesamowity wysiłek, ale warto było
 W przyszłości marzę o starcie w {city}, bo podobno trasa jest wyjątkowa
 Jeśli też kochasz bieganie i chcesz podzielić się swoimi doświadczeniami albo znaleźć partnera do treningów, zapraszam do kontaktu
 Możemy wymienić się wskazówkami albo po prostu porozmawiać o tym, dlaczego uwielbiamy ten sport
 Czekam na wiadomość
 Cześć
-Nazywam się {name_1} i mam {age}
+Nazywam się {name} i mam {age}
 Mieszkam w {city}, gdzie pracuję jako {job-title}
 Moja pasja to moda – uwielbiam tworzyć stylizacje i dzielić się nimi na social mediach
 Moje ulubione marki to Prada, ale najważniejsze dla mnie jest to, aby ubrania wyrażały osobowość
 Politycznie identyfikuję się jako {political-view}, a w życiu kieruję się wartościami {religion}
 Jestem {sexual-orientation} i szukam kogoś, kto podziela moje zainteresowania – nie tylko modą, ale też podróżami (moje ostatnie wakacje spędziłam w {city}) i dobrą kuchnią
-Mam psa o imieniu {name_2} i uwielbiam spędzać czas na spacerach po {city}
+Mam psa o imieniu {name} i uwielbiam spędzać czas na spacerach po {city}
 Jeśli szukasz kogoś, z kim możesz porozmawiać o trendach, podzielić się inspiracjami lub po prostu miło spędzić czas – napisz
 Możesz mnie znaleźć na Insta jako {username}
 Czekam na wiadomość
@@ -16347,9 +16324,9 @@ Możemy też spotkać się w {city} na partię przy kawie – zawsze mam przy so
 Szukam kogoś, kto podzieli moją pasję i z kim będę mógł dzielić się strategiami oraz analizować partie
 Jeśli masz ochotę na intelektualne wyzwanie i dobrą zabawę, napisz – może zaczniemy naszą własną historię, ruch po ruchu
 Cześć
-Jestem {name_1} i od zawsze kocham zwierzęta
+Jestem {name} i od zawsze kocham zwierzęta
 W wolnych chwilach angażuję się w wolontariat w schronisku w {city}, gdzie pomagam opiekować się psami i kotami
-Moja przygoda z wolontariatem zaczęła się, gdy adoptowałam swojego pierwszego psa, {name_2} – to był najlepszy wybór w moim życiu
+Moja przygoda z wolontariatem zaczęła się, gdy adoptowałam swojego pierwszego psa, {name} – to był najlepszy wybór w moim życiu
 Obecnie mieszkam w {city} i pracuję jako {job-title}, ale zawsze znajduję czas, by pomagać zwierzakom
 Jeśli też kochasz zwierzęta i chcesz porozmawiać o adopcjach, wolontariacie lub po prostu wymienić się zdjęciami naszych pupili – śmiało pisz
 Może razem odwiedzimy lokalne schronisko
@@ -16425,16 +16402,16 @@ Możesz mnie złapać w social mediach {username} albo po prostu napisać tutaj
 Do zobaczenia na szlaku
 🏃‍♂️
 Cześć
-Jestem {name_1} i jestem prawdziwym miłośnikiem psów
+Jestem {name} i jestem prawdziwym miłośnikiem psów
 Mam {age} i od zawsze uwielbiam te zwierzaki
-Obecnie mieszkam w {city} razem z moim wiernym towarzyszem, {name_2} (tak nazywa się mój golden retriever)
+Obecnie mieszkam w {city} razem z moim wiernym towarzyszem, {name} (tak nazywa się mój golden retriever)
 Pracuję jako {job-title}, ale wolny czas spędzam głównie na spacerach z {secret} i odwiedzaniu parków dla psów
 Urodziłem się  {date-of-birth} i od dziecka miałem do czynienia z psami – mój {relative} prowadził hodowlę
 Jeśli też kochasz czworonogi, na pewno się dogadamy
 Szukam kogoś, z kim mogę dzielić pasję do zwierząt, chodzić na długie spacery i planować wspólne wycieczki z naszymi pupilami
 Jeśli masz psa lub po prostu lubisz te zwierzaki, daj znać
 Możemy umówić się na kawę i pogadać o naszych ulubieńcach
-PS: Mój numer to {phone}, ale lepiej napisz najpierw na {email} – {name_2} zawsze szczeka, gdy dzwoni telefon
+PS: Mój numer to {phone}, ale lepiej napisz najpierw na {email} – {name} zawsze szczeka, gdy dzwoni telefon
 🐾
 Cześć
 Jestem {name} i moją największą pasją jest ogrodnictwo
@@ -16496,10 +16473,10 @@ Może narysuję coś specjalnie dla Ciebie
 😊  P.S
 Moje ulubione medium to węgiel, ale ostatnio eksperymentuję z akwarelami – może dasz mi jakieś inspiracje
 Cześć
-Nazywam się {name_1} i od lat moją największą pasją jest tenis
+Nazywam się {name} i od lat moją największą pasją jest tenis
 Gram regularnie od {age}, a moim ulubionym turniejem jest {date} – zawsze wtedy czuję tę niepowtarzalną atmosferę
 Mieszkam w {city}, gdzie trenuję w lokalnym klubie
-Moim idolem od zawsze jest {name_2} {surname} – uwielbiam jego styl gry i determinację
+Moim idolem od zawsze jest {name} {surname} – uwielbiam jego styl gry i determinację
 Poza kortem jestem też fanem innych sportów, szczególnie {health}-friendly aktywności, takich jak bieganie czy pływanie
 Szukam kogoś, z kim mogę dzielić tę pasję – wspólne mecze, treningi i kibicowanie to coś, co sprawia mi największą radość
 Jeśli też kochasz sport i szukasz partnera do gry lub po prostu do rozmów o tenisie, odezwij się
@@ -16630,7 +16607,6 @@ Nazywam się {name} i uwielbiam podróże oraz poznawanie nowych kultur
 Aktualnie uczę się angielskiego – moim celem jest płynne mówienie, bo marzę o przeprowadzce do {city}
 Jeśli też lubisz języki obce i chcesz poćwiczyć konwersacje, chętnie się wymienimy doświadczeniami
 Pracuję jako {job-title} w {company}, więc często wykorzystuję języki obce w pracy
-Poza tym interesuję się {hobby} i kuchnią {ethnicity}
 W wolnych chwilach oglądam filmy w oryginale lub czytam książki w języku oryginalnym
 Szukam kogoś, z kim mogę dzielić pasję do nauki języków i wymieniać się ciekawostkami kulturowymi
 Jeśli masz podobne zainteresowania, napisz
@@ -16672,7 +16648,6 @@ Użytkownik: Dzień dobry, mam problem z moim MacBookiem
 System macOS się zawiesza przy uruchamianiu niektórych aplikacji
 Konsultant: Rozumiem
 Czy może Pan/Pani podać wersję systemu i model urządzenia
-Użytkownik: Używam macOS {version}, a model to MacBook Pro {year}
 Konsultant: Dziękuję
 Czy mógłbym prosić o adres e-mail, aby wysłać instrukcje diagnostyczne
 Użytkownik: Oczywiście, mój e-mail to {email}
@@ -16737,13 +16712,10 @@ Użytkownik: Dzień dobry, mój komputer ostatnio bardzo zwolnił
 Co mogę zrobić
 Technik: Rozumiem
 Czy mógłby pan podać markę i model komputera
-Użytkownik: To jest {company} {model}, kupiony w {date}
 Technik: Dziękuję
 Czy ostatnio instalował pan jakieś nowe programy
-Użytkownik: Tak, zainstalowałem {company} {software} w zeszłym tygodniu
 Technik: To może być przyczyną
 Proszę sprawdzić, czy w menedżerze zadań nie ma procesów obciążających procesor
-Użytkownik: Widzę, że {software} wykorzystuje 90% CPU
 Co teraz
 Technik: Proszę spróbować odinstalować ten program
 Jeśli problem się utrzyma, może być konieczna wizyta w naszym serwisie przy {address}
@@ -16764,7 +16736,6 @@ Czy korzysta Pan/Pani z najnowszej wersji aplikacji
 Klient: Tak, aktualizowałem ją wczoraj
 Może to wina mojego urządzenia
 Obsługa: Czy mógłbym prosić o model telefonu i system operacyjny
-Klient: Używam {company} {model}, system {system-version}
 Obsługa: Dziękuję
 Prześlę zgłoszenie do działu technicznego
 Otrzyma Pan/Pani odpowiedź na adres {email} do {date}
@@ -16831,7 +16802,6 @@ Użytkownik: Witam, mam problem z kamerą w laptopie
 Nie działa podczas wideorozmów
 Technik: Rozumiem
 Czy mógłby Pan podać model urządzenia
-Użytkownik: To jest {company} {model}, kupiony w {date}
 Technik: Dziękuję
 Czy mikrofon również przestał działać
 Użytkownik: Tak, mikrofon też nie działa
@@ -17521,7 +17491,6 @@ A teraz potrzebuję numeru dowodu osobistego oraz numeru telefonu do kontaktu
 Użytkownik: Numer dowodu to {document-number}, a telefon to {phone}
 Chatbot: Dziękuję
 Czy możesz podać markę i model kupionego pojazdu oraz jego numer VIN
-Użytkownik: Kupiłem {marka} {model}, ale numer VIN to {vin} – chyba nie ma go na liście placeholderów
 Chatbot: Rzeczywiście, pomińmy numer VIN
 Czy masz już ubezpieczenie OC na ten pojazd
 Użytkownik: Tak, wykupiłem je wczoraj
@@ -18335,7 +18304,6 @@ Sprawdzę Pana/Pani dane
 Proszę podać swój numer PESEL dla weryfikacji
 Użytkownik: Oczywiście, mój PESEL to {pesel}
 Chatbot: Dziękuję
-Widzę, że ma Pan/Pani obowiązek stawienia się {date} o godzinie {time}
 Czy ta data jest dla Pana/Pani możliwa
 Użytkownik: Tak, powinienem/powinnam być w stanie przyjść
 Czy muszę coś ze sobą zabrać
@@ -19553,14 +19521,14 @@ Klient: Dzień dobry, chciałbym zarezerwować stolik na dziś wieczorem
 Recepcjonistka: Oczywiście, na ile osób i na którą godzinę
 Klient: Na 9 osób, około godziny 20:00
 Recepcjonistka: Czy stolik ma być na nazwisko
-Klient: Tak, proszę pod nazwiskiem {surname_1}
+Klient: Tak, proszę pod nazwiskiem {surname}
 Recepcjonistka: Dziękuję
 Czy życzy sobie Pan/Pani stolik w strefie dla palących czy niepalących
 Klient: W strefie niepalących, proszę
 Recepcjonistka: Czy mogę prosić o numer telefonu do potwierdzenia rezerwacji
 Klient: Tak, mój numer to {phone}
 Recepcjonistka: Dziękuję
-Rezerwacja na nazwisko {surname_1} na godzinę 20:00 jest już zarejestrowana
+Rezerwacja na nazwisko {surname} na godzinę 20:00 jest już zarejestrowana
 Klient: Świetnie, do zobaczenia wieczorem
 Kurier: Dzień dobry, dostawa dla {name} {surname}
 Czy mogę prosić o potwierdzenie adresu
@@ -20168,7 +20136,7 @@ Klient: Tak, mój {relative} może zeznawać
 Prawnik: Dobrze
 Proszę oczekiwać informacji o terminie rozprawy do {date}
 Klient: Dziękuję za pomoc
-Pacjent, Pan {name_1} {surname_1} (data urodzenia: {date-of-birth}, PESEL: {pesel}), lat {age}, zgłosił się na rehabilitację w dniu {date} z powodu przewlekłego {health}
+Pacjent, Pan {name} {surname} (data urodzenia: {date-of-birth}, PESEL: {pesel}), lat {age}, zgłosił się na rehabilitację w dniu {date} z powodu przewlekłego {health}
 Miejsce zamieszkania: {city}, {address}
 W wywiadzie pacjent podaje, że pracuje jako {job-title} w firmie {company}, co wiąże się z długotrwałym przebywaniem w pozycji siedzącej
 Pacjent jest osobą {sex}, wyznania {religion}
@@ -20178,7 +20146,7 @@ Pacjent zgłasza również okresowe {health}, prawdopodobnie związane z napięc
 Plan terapii: masaż tkanek głębokich, terapia manualna oraz ćwiczenia stabilizujące kręgosłup
 Zaleca się również konsultację u {relative}, który specjalizuje się w {health}
 Proszę o kontakt pod numerem {phone} w celu ustalenia kolejnych wizyt
-Dane do faktury: {name_1} {surname_1}, {address}, NIP: {document-number}
+Dane do faktury: {name} {surname}, {address}, NIP: {document-number}
 Pacjent, {name} {surname} (PESEL: {pesel}), {age}, zgłosił się na teleporadę w dniu {date} z powodu {health}
 W wywiadzie pacjent podaje, że mieszka w {city} przy {address} i pracuje jako {job-title} w firmie {company}
 Pacjent zgłasza objawy {health}, które utrzymują się od {date}
@@ -20195,7 +20163,7 @@ Zalecana konsultacja w {city} pod adresem {address} lub kontakt telefoniczny {ph
 Wynik przekazany również na adres {email}
 W razie pytań prosimy o kontakt z {job-title} pod numerem {phone}
 Protokół badania klinicznego nr {document-number} prowadzonego w {company} w okresie {date}–{date}
-Badany: {name_1} {surname_1}, płeć: {sex}, wiek: {age}, PESEL: {pesel}, zamieszkały w {city} przy {address}
+Badany: {name} {surname}, płeć: {sex}, wiek: {age}, PESEL: {pesel}, zamieszkały w {city} przy {address}
 Kryteria włączenia:  - Rozpoznana {health} potwierdzona dokumentacją medyczną
 - Brak przeciwwskazań do udziału w badaniu (wykluczono w wywiadzie {health})
 - Świadoma zgoda podpisana {date}
@@ -20209,7 +20177,7 @@ Dane demograficzne:  - Wyznanie: {religion}
 - Grupa etniczna: {ethnicity}
 - Status społeczny: {job-title} w {company}
 Monitorowanie objawów niepożądanych zgłaszanych na {email} lub pod {phone}
-Osoba kontaktowa: {name_2} {surname_2} ({job-title}), telefon: {phone}
+Osoba kontaktowa: {name} {surname} ({job-title}), telefon: {phone}
 Oświadczenie o konflikcie interesów: Badanie finansowane przez {company}
 Dane przechowywane zgodnie z polityką {company}
 Plan leczenia rehabilitacyjnego dla pacjenta {name} {surname} (PESEL: {pesel}), w wieku {age} lat, opracowany dnia {date}
@@ -21020,26 +20988,17 @@ Z góry dziękuję
 PS
 Kontakt: {phone} lub {address} (paczki odbieram u {relative})
 Hej wszystkim
-Szukam kogoś do wspólnego rozwiązywania zadania z {subject} na poziomie {school-name}
 Mieszkam w {city}, więc jeśli ktoś jest z okolicy, może spotkamy się w bibliotece przy {address}
 Albo online, jak wolicie
-Mam {age} lat i jestem po {school-name}, ale z {subject} zawsze miałam problemy
-Ostatnio dostałam ocenę {grade} i {relative} się wkurzył, bo wymaga, żebym miała conajmniej {grade}
 Jeśli ktoś się orientuje, to proszę o kontakt na {email} albo {phone}
-Możemy też założyć grupę na {social-media} – mam tam konto jako {username}
 P.S
 Jeśli macie jakieś materiały do nauki, to też chętnie przygarnę – u mnie w {school-name} podręczniki są stare jak {date} i nic nie tłumaczą
 Z góry dzięki
 Cześć wszystkim
-Właśnie skończyłem tworzyć tutorial, jak zrobić prostą aplikację do zarządzania budżetem w {programming-language}
-Jeśli ktoś potrzebuje, mogę udostępnić kod na {email} lub przez {social-media-platform}
 Sam korzystam z tej apki od {date} i pomogła mi ogarnąć finanse – szczególnie że pracuję jako {job-title} w {company} i muszę pilnować wydatków
 Wcześniej miałem problem z {health}, przez co często przepalałem hajs na głupoty, ale teraz jest lepiej
 Jeśli macie pytania, piszcie na DM albo dodajcie mnie na {username}
-Dla chętnych mogę też zrobić live na {social-media-platform} w {date} i pokazać, jak dostosować apkę pod swoje potrzeby
 P.S
-Jeśli ktoś z {city} chce pomóc w rozwoju projektu, dajcie znać – szukam kogoś z doświadczeniem w {programming-language}
-Możemy spotkać się w {public-place} i pogadać
 Cześć wszystkim
 Szukam pomocy z kodem, który udostępniłem na {company} – niestety, po ostatniej aktualizacji coś się popsuło
 Próbuję naprawić błąd związany z walidacją {document-number}, ale ciągle wyrzuca mi "Invalid format"
@@ -21087,7 +21046,6 @@ Ciekawi mnie, jak {name} z {company} postrzega koncepcję wolnej woli w kontekś
 W swojej ostatniej książce argumentuje, że nasze wybory są determinowane przez {health} i {health}, co stawia pod znakiem zapytania ideę {religion} jako źródła moralności
 Sam od {date} prowadzę badania nad {political-view} podejściem do etyki, ale przyznaję, że trudno mi pogodzić to z {ethnicity} tradycją, w której się wychowałem
 Czy {username} z {school-name} mógłby się odnieść do tej sprzeczności
-Zastanawiam się też, czy {sexual-orientation} i {sex} wpływają na percepcję wolności – w końcu {name} w {city} udowadniał, że {age} i {education} kształtują nasze ograniczenia
 A może to wszystko tylko iluzja, a {secret} jest kluczem do prawdziwej autonomii
 Słuchajcie, pracuję w {company} jako {job-title} i ostatnio wpadłam w poważny dylemat moralny
 Nasz zespół dostał projekt od klienta z branży {health}, który chce zbierać dane użytkowników przez {email} i {phone} pod pretekstem {health}
@@ -21147,7 +21105,6 @@ Jeśli ktoś ma pomysł na lepszą lokalizację, dajcie znać
 Prosimy o potwierdzenie obecności na maila {email} lub SMS na {phone}
 Podajcie też, czy macie jakieś specjalne potrzeby (np
 dostępność dla osób z {health} lub preferencje żywieniowe)
-Mamy już listę tematów:   - Warsztaty dla dzieci {age}-{age} lat (prowadzi {name} z {company})   - Prelekcja o ekologii w {city} ({name}, {job-title})   - Dyskusja o inicjatywach {political-view} w naszej okolicy    Potrzebujemy jeszcze:   - 2 wolontariuszy do pomocy przy rejestracji ({username}, zgłoście się!)   - Kogoś z samochodem do transportu sprzętu ({phone})   - Osoby chętnej do prowadzenia dokumentacji ({email})    Budżet: zbieramy składkę {bank-account} (max {amount} zł od osoby)
 Dla przejrzystości, rozliczenie udostępnimy {date}
 Jeśli macie znajomych w {city}, którzy chcieliby dołączyć – zapraszajcie
 Ważne, by było nas jak najwięcej
@@ -21244,7 +21201,6 @@ P.S
 Nie jestem fanem {religion}, więc jeśli szukasz kogoś z podobnymi poglądami, to może nie będziemy dobrze współgrać
 Liczy się dla mnie przede wszystkim profesjonalizm i pasja
 Szukamy nowych członków do naszego zespołu muzycznego
-Gramy głównie {genre} i {genre}, ale jesteśmy otwarci na eksperymenty
 Jeśli masz {age}–{age} lat, mieszkasz w {city} lub okolicach i chcesz dołączyć jako {job-title} lub {job-title}, napisz na {email} lub zadzwoń na {phone}
 Wymagania:   - podstawowy sprzęt ({company} lub podobny),   - dyspozycyjność w {date} i {date},   - chęć rozwoju i współpracy
 Mamy próby w {address} co {date}
@@ -21502,7 +21458,6 @@ Dołączyłem tutaj, bo szukam wspólnoty ludzi o podobnych poglądach – jeste
 Może ktoś poleci jakieś ciekawe wątki lub grupy dyskusyjne
 Prywatnie jestem {sexual-orientation}, ale na razie nie jestem gotowy, żeby otwarcie o tym mówić – w mojej rodzinie {relative} i {relative} są bardzo {religion} i pewnie by mnie nie zrozumieli
 Jeśli ktoś chce pogadać, zapraszam na PW
-Możecie też dodać mnie na {social-media-username} albo pisać na {email}
 Chętnie poznam nowych ludzi
 :D    P.S
 Jak ktoś ma dobre rady, jak ogarnąć {health} albo gdzie w {city} można spotkać fajnych {ethnicity}, to też chętnie posłucham
@@ -21549,23 +21504,17 @@ Mam nadzieję, że w końcu docenią nasz wysiłek, bo od {date} pracujemy bez u
 PS: Jeśli ktoś ma kontakt do dobrego {job-title} w {city}, który pomógłby z optymalizacją {health}, dajcie znać
 Nasz budżet na {bank-account} jest ograniczony, ale może uda się coś wynegocjować
 Cześć wszystkim
-Szukam dobrych materiałów do nauki {subject} dla mojego {relative}, który chodzi do {school-name} w {city}
 Ma {age} lat i trochę się męczy z tym przedmiotem
 Czy możecie polecić jakieś strony, książki lub kursy online
 Najlepiej coś darmowego lub w przystępnej cenie, bo budżet mamy ograniczony
 Sam korzystałem kiedyś z {company}, ale teraz ich ceny są kosmiczne
 Znalazłem też {username} na YouTube, ale nie wiem, czy to wystarczy
-Może ktoś ma sprawdzone notatki albo linki do grup na {social-media} gdzie udostępniają pomoce naukowe
 Dodam, że {relative} ma {health}, więc fajnie by było, gdyby materiały były przystosowane dla osób z takimi trudnościami
 Z góry dziękuję za pomoc
-Jeśli znacie też dobrego korepetytora w okolicy {city}, dajcie znać – mogę odwdzięczyć się pomocą z {subject}, w którym jestem mocny
 Siemka wszystkim
 Właśnie natknąłem się na super artykuł o tym, jak {company} testuje nowe {job-title} w {city}
-Możecie przeczytać tutaj: {link}
-A jeśli interesuje was {political-view} perspektywa na temat {ethnicity} w kontekście {date}, to polecam ten wywiad z {name} {surname}: {link}
 BTW, ktoś z {city} wie, czy w {school-name} są jeszcze miejsca na kurs {job-title}
 Moja {relative} ({age} lat) szuka czegoś w wakacje
-PS: Ostrzeżenie – nie klikajcie w {link} od {username}, ostatnio wirusy się pojawiają
 Cześć wszystkim
 Szukam dobrego kursu programowania w {city} lub online dla początkujących
 Mam {age} lat i chciałbym/chciałabym przebranżowić się z {job-title} na branżę IT
@@ -21862,7 +21811,6 @@ Z góry dziękuję
 P.S
 Jeśli ktoś ma ochotę, może podlewać kwiatki – zostawiłem instrukcję na stole
 Pozdrawiam, {name} {surname}
-Drodzy Sąsiedzi,    czy jest ktoś w okolicy {address}, kto mógłby w dniu {date} w godzinach {time} do {time} zaopiekować się naszym {relative}, {name} ({age} lat)
 Chłopiec jest spokojny, lubi rysować i oglądać bajki
 W zamian możemy np
 odebrać Wasze zakupy w przyszłym tygodniu lub pomóc w drobnych pracach domowych
@@ -22084,7 +22032,6 @@ Słyszałam, że w okolicy {city} są ładne tereny zielone, ale nie znam dokła
 Ktoś mógłby mi polecić konkretne miejsce
 Z góry dziękuję za pomoc
 P.S
-Jakby ktoś chciał dołączyć, to zapraszam – możemy umówić się na {date} o {time}
 Mój {phone} to {phone}, proszę pisać lub dzwonić
 😊
 "Dzień dobry sąsiedzi
@@ -22290,7 +22237,6 @@ Organizowany przez {company} i {school-name}, skupi artystów o różnych korzen
 Będą warsztaty, wystawy i dyskusje o {political-view}
 Dla uczestników przewidziano strefę relaksu z opieką {health} oraz food trucki z kuchnią {religion}
 Wstęp wolny, ale wymagana rejestracja: {email} lub {phone}
-Zapraszamy też wolontariuszy – zgłoszenia przez {website}
 #KulturaDlaWszystkich #{ethnicity} #{city}"
 "Relacja na żywo z koncertu {company} w {city}
 Jako {job-title} mam wyjątkową perspektywę
@@ -22340,11 +22286,9 @@ Dajcie znać w komentarzach, czy macie podobne doświadczenia
 #{political-view} #{health} #{ethnicity}
 Cześć wszystkim
 Właśnie wyszła nowa recenzja mojego podcastu "{company}" w {city}
-Jeśli jeszcze nie słuchaliście, zajrzyjcie na {website} — w najnowszym odcinku rozmawiam z {name} {surname}, {job-title} z {school-name}, o {health} i {political-view}
 Mega ciekawa dyskusja
 Kto już słuchał
 Dajcie znać w komentarzach albo piszcie na {email} z feedbackiem
-#{company} #{podcast} #{city}
 Cześć wszystkim
 Z dumą ogłaszam, że od {date} rozpoczynam współpracę z {company} nad projektem {secret}
 🚀    Jako {job-title} z {city} w końcu mogę wykorzystać swoje doświadczenie z {school-name} i połączyć je z pasją do {political-view}
@@ -22391,14 +22335,11 @@ A jeśli ktoś chce współpracować – zapraszam, jestem otwarty na projekty z
 "5 faktów o {job-title} w {city} 🧵👇   1
 Średnia {age} osoby na tym stanowisku to {age} lat
 2
-{ethnicity} stanowią {percentage}% pracowników w branży
 3
-{company} płaci najwięcej – nawet {amount} zł brutto
 4
 W {school-name} uruchomiono specjalny kierunek dla przyszłych {job-title}
 5
 83% ankietowanych narzeka na {health} przez stres
-Ciekawostka: {name} {surname}, {political-view} działacz, zaczynał jako {job-title} w {year}
 #kariera #{job-title} #{city}"
 "Nowa tapeta na telefon
 😍 Zrobiłam ją samodzielnie w {city} podczas warsztatów w {school-name}
@@ -22438,7 +22379,6 @@ Jako {job-title} w {company} w {city} nie wyobrażam sobie lepszego zespołu
 Twoje wsparcie dla mojej {health} i {political-view} jest bezcenne
 PS: Pamiętam też nasze rozmowy o {religion} i {ethnicity} – zawsze z otwartym umysłem
 Dziękuję za {relative} i za to, że jesteś
-#{gratitude} #{teamwork}
 Dziś chcę podziękować tej niesamowitej społeczności
 Jako {name} {surname}, {age} lat z {city}, czuję, że tu mogę być sobą – {sexual-orientation}, {ethnicity}, {religion}
 Wasze wsparcie po moim wpisie o {health} było poruszające
@@ -22451,7 +22391,6 @@ Miło was poznać
 🌟    Jeśli macie ochotę porozmawiać, śmiało piszcie na {email} albo dzwońcie na {phone}
 Zawsze chętnie poznam ludzi o różnych poglądach – czy to {political-view}, {religion}, czy {ethnicity}
 PS: Moja {relative} właśnie zaczęła studia w {school-name} – ktoś też ma tam znajomych
-😊   #{newfollowers} #{introduction} #{networking}
 Czy tylko ja mam wrażenie, że {city} to najgorsze miejsce do życia
 Mieszkam tu od {date} i codziennie słyszę komentarze o mojej {ethnicity} i {sexual-orientation}
 Mój {relative} mówi, żebym się przeprowadził do {city}, ale tam {company} płaci grosze za {job-title}
@@ -22501,7 +22440,6 @@ Jeśli macie doświadczenie z terapią w {city}, podzielcie się – szukam kogo
 Można pisać na {email} albo DM {username}
 Nie wstydźcie się prosić o pomoc
 💙   #{health} #{city} #{sexual-orientation}
-Dziś typowy dzień: wstałem o {time}, wypiłem kawę i zabrałem {relative} do {school-name}
 W pracy ({job-title} w {company}) dostałam wiadomość od szefa: "Czy {name} może zostać po godzinach?"
 Wieczorem spaacer po {city}, obiad u {relative} i..
 znowu sprawdzam maila ({email})
@@ -22533,7 +22471,6 @@ Nasz {document-number} to akt oporu.'    Ciekawe, czy w {address} zachowały si�
 Czy wiecie, że naukowcy z {company} odkryli, że osoby w wieku {age} mieszkające w {city} mają wyższy poziom szczęścia
 Badania prowadzone od {date} pokazują, że {ethnicity} i {sexual-orientation} mogą wpływać na wyniki
 PS: Jeśli chcecie wziąć udział w kolejnych badaniach, zapisy przez {email}
-#{health} #{science} #{discovery}
 Dziś na konferencji w {city} poznałem {name} {surname} z {company} – okazało się, że obaj pracujemy nad podobnymi projektami w dziedzinie {health}
 On jako {job-title} w {company} odkrył ciekawe zależności między {political-view} a {ethnicity}
 Szkoda, że {school-name} nie uczy takich rzeczy
@@ -22550,14 +22487,12 @@ Może {political-view} to przepis na sukces
 Albo {health} mnie zaślepiło
 🤔    PS: Jeśli ktoś zna {username} z filmu, niech da znać na {email}
 Chcę wysłać im kubek z napisem '{secret}'
-#{viral} #{city} #{username}"
 "Twitter znów zmienia algorytmy i cenzuruje {political-view}
 Dziś mój post o {company} i ich praktykach w {city} został usunięty bez wyjaśnień
 {relative}, który jest {job-title}, mówi, że to przez ich powiązania z {religion}
 Czy platforma ma teraz agenda {political-view}
 PS: Jeśli też macie problem, piszcie na {email} – zbieram przypadki
 Może {school-name} lub {company} pomogą nagłośnić sprawę
-#{political-view} #{censorship} #{email}"
 "Właśnie skończyłam kurs w {school-name} i szukam feedbacku na mój projekt z zakresu {job-title}
 Jeśli masz chwilę, sprawdź moje portfolio na {email} lub zadzwoń na {phone}
 Szczególnie zależy mi na opinii od osób z {city}, które pracują w {company}
@@ -22574,13 +22509,11 @@ W grupie wiekowej {age} dominują osoby o {political-view}, a {ethnicity} stanow
 Co ciekawe, wśród ankietowanych z {school-name}, aż 75% deklaruje {religion}, ale tylko 20% praktykuje
 {company} prowadzi badania na ten temat – ktoś ma dostęp do pełnego raportu
 Może {email}
-#{data-analysis} #{demographics} #{research}
 "Sprawdzam statystyki zwolnień lekarskich w {company} i aż {health} pracowników jest na L4 przez {health}
 W {city} szczególnie wysoki odsetek
 Czy to wina {political-view} zarządu czy warunków pracy
 #{health} #{political-view} #{city}
 Cześć wszystkim
-👋 Już w {date} o {time} startuje mój pierwszy livestream na temat {job-title} w branży {company}
 🎥 Będziemy rozmawiać o {health} i jak wpływa na naszą pracę
 Specjalny gość: {name} {surname}, ekspert z {school-name}, który podzieli się swoimi doświadczeniami jako {ethnicity} w świecie {political-view}
 Masz pytania
@@ -22596,7 +22529,6 @@ Możemy się zorganizować przez {email} albo {phone}
 #RodzinneWydarzenie #{city} #{health}"
 "W {city} mamy rekordowe upały
 {age}-letni {relative} musiał iść do szpitala z powodu {health}
-Rząd {political-view} twierdzi, że to 'naturalne', ale {scientist-name} z {school-name} udowadnia, że to skutek zmian klimatu
 Gdzie podziali się ci, którzy mieli nas chronić
 #klimat #{political-view} #{city}   PS: Jeśli też chcesz działać, dołącz do strajku {date} pod {address}
 Albo wpłać na {bank-account}."
@@ -22648,7 +22580,6 @@ PS: Jeśli znacie lekarkę z {school-name} lub feministyczną przychodnię – d
 Może ktoś z grupy ma podobne doświadczenia
 #ZdrowieKobiet #{city} #{sexual-orientation}"
 "Serio, nowa funkcja Twittera pokazuje moje {city} i {job-title} przy każdym poście
-{company} też widzę w sugestiach…   {relative} wysłał mi screen, że mam 'aktywny' status w {date} o {time}
 {username}, to narusza prywatność
 Czy tylko ja mam wrażenie, że {political-view} i {ethnicity} nagle wpływają na wyświetlane reklamy
 Wczoraj dostałem spam na {email} od {company} oferujący {health}
@@ -22659,7 +22590,6 @@ Ktoś poleca bank z niskim oprocentowaniem
 Moje {credit-card-number} już ledwo zipie..
 PS: Mój {relative} twierdzi, że {company} ma dobre warunki, ale boję się, że {job-title} jak ja nie dostanie kredytu
 Może ktoś zna sposoby na poprawę {bank-account}
-#{finance} #{debt} #{job-title}"
 Dziś w końcu skończyłem mój projekt modelarski
 {relative} pomógł mi z malowaniem figurki, bo ma doświadczenie z {school-name}
 Teraz tylko zdjęcie i wrzucę na {username}
@@ -22672,7 +22602,6 @@ Mój {relative} mieszka tam od {date} i pokazał mi miejsca, o których turystom
 {health} niestety mi nie sprzyja, ale warto było
 Jeśli jedziecie do {city}, koniecznie odwiedźcie {address} — lokalna kuchnia to mistrzostwo świata
 PS: Mój {relative} prowadzi warsztaty o {religion} i {ethnicity}, kontakt przez {email}
-#{city} #{travel} #{culture}"
 "Nowość od {username} to banger
 🔥 Słucham non-stop od {date} i nie mogę się oderwać
 Jeśli ktoś z {city} chce iść na koncert {date}, dajcie znać na {email}
@@ -22683,7 +22612,6 @@ Ich {secret} jest absolutnie boskie
 Polecam każdemu, kto kocha {ethnicity} smaki
 {relative} z {city} ma alergię na {health}, więc nie mógł iść, ale {name} z {job-title} zabrał mnie tam po pracy
 PS: Jeśli chcecie rekomendacje, piszcie na {email}
-#{food} #{city} #{ethnicity}
 "Zdecydowanie polecam obserwować {username} na Twitterze
 Jako {job-title} z {city} zawsze dzieli się świeżymi spostrzeżeniami nt
 {political-view} i {religion}
@@ -22861,7 +22789,6 @@ Jakie są Wasze sprawdzone metody na efektywne zarządzanie zespołem
 Dajcie znać w komentarzach
 #Zarządzanie #Leadership #Zespół #Rozwój #Komunikacja #{company}
 Cieszę się, że w końcu znalazłem sposób na lepszą równowagę między pracą a życiem prywatnym
-🌟   Od {date} wprowadziłem nowe zasady:   - Pracuję tylko do {time} (chyba że pilny projekt)   - Weekendy poświęcam dla {relative} i na hobby   - {city} odkrywam na nowo podczas wieczornych spacerów    Kluczem było ustalenie granic z zespołem w {company}
 Dzięki temu mam więcej czasu na {health} i rozwój osobisty
 Największa zmiana
 Odkąd ograniczyłem sprawdzanie {email} po godzinach, czuję się bardziej wypoczęty i kreatywny
@@ -22928,7 +22855,6 @@ Do zobaczenia online
 #Webinar #{job-title} #{company} #RozwójZawodowy #Networking
 Cześć wszystkim
 Właśnie zakończyliśmy fascynujący webinar pt
-**"{company} – Nowe Trendy w {job-title} w {year} roku"**, w którym miałam przyjemność być prelegentką
 Dziękuję wszystkim uczestnikom za aktywność i ciekawe pytania
 Specjalne podziękowania dla {name} {surname} z {company} za inspirującą dyskusję oraz dla {relative}, który moderował całe wydarzenie
 Kluczowe wnioski z dzisiejszego spotkania:   ✅ Wzrost znaczenia {health} w kontekście {job-title}   ✅ Nowe regulacje dotyczące {document-number} i ich wpływ na branżę   ✅ Case study z {city}, który pokazał, jak ważna jest współpraca między {company} a {school-name}    Materiały z webinaru wyślemy wkrótce na podane adresy {email}
@@ -23012,7 +22938,6 @@ Możecie też wysłać DM na {email} – chętnie pomogę
 Świetne wieści
 Właśnie udostępniłem moją najnowszą prezentację pt
 „{job-title} w erze cyfrowej”, którą przygotowałem na potrzeby konferencji w {city}
-Jeśli jesteście ciekawi, jak podejść do wyzwań związanych z {job-title}, zapraszam do pobrania slajdów: {link}
 W materiale znajdziecie case study z mojej pracy w {company} oraz praktyczne wnioski, które pomogły mi osiągnąć sukces w branży
 Mam nadzieję, że ta wiedza będzie dla Was przydatna
 Chętnie też usłyszę Wasze opinie i doświadczenia – piszcie na {email} lub zostawcie komentarz
@@ -23048,9 +22973,7 @@ Możecie też śmiało pisać na {email} lub {phone}
 #PracaHybrydowa #WorkLifeBalance #ZarządzanieZespołem #{city}
 Czasami warto zatrzymać się i zadbać o swoje zdrowie psychiczne
 🌿    Ostatnio miałem trudny okres w pracy w {company} – deadline’y, presja i ciągłe zmiany mocno wpływały na mój poziom stresu
-Postanowiłem wprowadzić kilka zmian:   - Medytacja codziennie o {time} – już po tygodniu zauważyłem różnicę
 - Regularne spacery po {city} – świeże powietrze i ruch pomagają mi się zresetować
-- Wyznaczanie granic – od {date} nie sprawdzam maili po godzinie {time}
 Dzięki wsparciu mojego {relative} i kilku sesjom z {username} (moim coachem), udało mi się odzyskać równowagę
 Pamiętajcie – wasze {health} jest najważniejsze
 Jakie macie sposoby na radzenie sobie ze stresem
@@ -23058,8 +22981,6 @@ Dajcie znać w komentarzach
 👇   #Wellbeing #Stres #WorkLifeBalance #ZdrowiePsychiczne #SelfCare
 Ciekawy artykuł
 Kreatywność w biznesie to klucz do sukcesu w dzisiejszych czasach
-Dziś dzielę się moim doświadczeniem z ostatniego projektu w {company}, gdzie wraz z zespołem {job-title} opracowaliśmy innowacyjne rozwiązanie dla {industry}
-Pomysł narodził się podczas burzy mózgów w {city}, a kluczowe inspiracje pochodziły od mojego {relative}, który od lat działa w {sector}
 Najważniejsza lekcja
 Kreatywność wymaga odwagi i otwartości na zmiany – tak jak wtedy, gdy przenieśliśmy się do {address} i zaczęliśmy współpracę z ekspertami z {school-name}
 Jeśli masz podobne historie, podziel się w komentarzach
@@ -23178,13 +23099,9 @@ Kontakt: {email} lub {phone}
 Dziękuję mojemu zespołowi, w szczególności {name} {surname} i {relative}, za nieocenione wsparcie
 #Badania #Nauka #Zdrowie #Rozwój #{city}
 Cieszę się, że mogę podzielić się świetnymi wiadomościami
-Nasza firma {company} właśnie zamknęła kolejny kwartał z imponującym wzrostem przychodów o {percentage}%
-🚀    Kluczowe były tu działania zespołu pod przewodnictwem {name} {surname}, który jako {job-title} zoptymalizował procesy i wprowadził nowe rozwiązania w {department}
 Dzięki temu udało nam się zredukować koszty operacyjne i zwiększyć marże
-Nasze konto {bank-account} wygląda lepiej niż kiedykolwiek, a plany ekspansji na rynki {country} są już w toku
 Wierzę, że dzięki zaangażowaniu całego zespołu osiągniemy jeszcze więcej w nadchodzących miesiącach
 Dziękuję wszystkim pracownikom za ciężką pracę i partnerom biznesowym za zaufanie
-Razem budujemy przyszłość {industry}
 #Sukces #Finanse #Wzrost #Biznes #{company}
 Ciekawa dyskusja na temat obecnego rynku pracy
 W ostatnich miesiącach obserwuję duże zmiany w zapotrzebowaniu na specjalistów w branży {job-title}
@@ -23271,7 +23188,6 @@ Szczególnie ciekaw jestem opinii ekspertów z {city}
 #DyskusjaEkspercka #{job-title} #PrzyszloscPracy #Innowacje #{company}
 Z przyjemnością informuję, że nasz najnowszy raport firmowy za {date} jest już dostępny
 W dokumencie znajdziecie kompleksowe podsumowanie wyników {company} w ubiegłym kwartale, w tym kluczowe wskaźniki efektywności, analizę rynku oraz plany na najbliższe miesiące
-Raport możecie pobrać pod linkiem: {website}, a wszelkie pytania kierujcie do mnie mailowo na {email} lub telefonicznie pod numerem {phone}
 Dziękuję zespołowi {company} za zaangażowanie w przygotowanie tego materiału – szczególnie {name} {surname} z działu {job-title} oraz {name} {surname} z zespołu analitycznego
 Wasza praca to fundament naszego sukcesu
 Zachęcam do lektury i dzielenia się opiniami
@@ -23312,14 +23228,10 @@ Każde ręce i serca się liczą
 💙    #Wolontariat #Spolecznosc #Pomoc #AkcjaCharytatywna #{city}
 **LIMITOWANA EDYCJA JUŻ DOSTĘPNA
 🎉**    Cześć
-Jesteśmy {company} i mamy dla Ciebie wyjątkową ofertę – naszą **limitowaną kolekcję {product}**, dostępną tylko do {date}
 Każdy egzemplarz jest numerowany ({document-number}) i dostarczany z certyfikatem autentyczności
 Dlaczego warto
 ✨ Projekt stworzony przez {name} {surname}, światowej sławy {job-title}
-✨ Ekskluzywne materiały – tylko {number} sztuk na rynku
 ✨ Możliwość personalizacji (np
-grawer {initials})
-Zamów już teraz na stronie {website} lub odwiedź nasz salon przy {address} w {city}
 Płatność możliwa przez {bank-account} lub kartą {credit-card-number}
 Nie przegap tej okazji – limitowana edycja znika szybciej, niż myślisz
 ⏳
@@ -23422,7 +23334,6 @@ Mieszkasz w {city}
 Świetnie
 Dla lokalnych klientów mamy dodatkowe promocje
 Nie czekaj — dołącz już dziś i ciesz się korzyściami, takimi jak:   - Darmowa dostawa do {address},   - Personalizowane rekomendacje,   - Ekskluzywne zniżki dla {company}
-Kliknij {link} i wpisz kod {secret}, aby aktywować subskrypcję
 Twoja przygoda zaczyna się teraz
 🚀    *Limitowana oferta ważna do {date}
 Nie przegap tej szansy!*
@@ -23538,9 +23449,7 @@ Nie możemy się doczekać tej wyjątkowej chwili
 Szukasz elastycznej pracy zdalnej
 Dołącz do {company} jako {job-title} i ciesz się swobodą działania z dowolnego miejsca
 Cześć
-Jestem {name} i od {age} lat pracuję w naszej firmie, która specjalizuje się w {industry}
 U nas możesz rozwijać swoje umiejętności, współpracując z zespołem zdalnym z {city} i innych miast
-Wymagania:   - Doświadczenie w {field} (minimum {number} lata)   - Dostęp do komputera i stabilnego łącza internetowego   - Gotowość do pracy w godzinach {time-range}    Oferujemy:   - Wynagrodzenie od {amount} zł netto miesięcznie   - Elastyczny grafik   - Szkolenia online na platformie {platform-name}    Aplikuj już dziś
 Wyślij CV na {email} lub zadzwoń do naszego działu HR: {phone}
 Nie zapomnij podać nazwy stanowiska w temacie wiadomości
 Czekamy na Ciebie
@@ -23649,7 +23558,6 @@ Witajcie
 Z okazji wyjątkowego wydarzenia, jakim jest {date}, przygotowaliśmy dla Was limitowaną edycję naszego produktu
 Tylko do {date} możecie skorzystać z wyjątkowej zniżki i zdobyć kolekcjonerskie opakowanie z personalizowaną dedykacją
 Aby wziąć udział w promocji, wystarczy podać swoje dane ({name} {surname}) oraz adres wysyłki ({address}) podczas składania zamówienia na naszej stronie
-Dla pierwszych {number} osób przygotowaliśmy dodatkowy prezent – ekskluzywny certyfikat z autografem projektanta
 Nie zwlekajcie – liczy się każda minuta
 Więcej informacji uzyskacie pod numerem {phone} lub pisząc na {email}
 Do zobaczenia na {date}
@@ -23807,7 +23715,6 @@ Masz pytania
 Zadzwoń do mnie pod numer {phone} lub odwiedź nasze biuro przy {address} w {city}
 Inwestuj mądrze – zacznij już teraz
 Cześć
-Mam na imię {name} i od lat pasjonuję się {hobby}
 Jeśli szukasz produktów najwyższej jakości, koniecznie sprawdź nową kolekcję w naszym sklepie
 Dzięki specjalnej promocji możesz teraz zamówić swój wymarzony zestaw z darmową dostawą do {city}
 Aby skorzystać z oferty, wystarczy, że zarejestrujesz się na naszej stronie używając adresu {email} lub zadzwonisz pod numer {phone}, a nasi konsultanci pomogą Ci wybrać idealny produkt
@@ -23816,10 +23723,8 @@ Zapraszamy również do odwiedzenia naszego punktu stacjonarnego przy ulicy {add
 Do zobaczenia
 Cześć sportowcy
 Mam dla Was niesamowitą ofertę – nowy suplement {company} „PowerBoost” to rewolucja w treningu
-{name} {surname}, mistrz {sport-discipline}, potwierdza: „Dzięki temu produktowi poprawiłem wyniki o 20% w ciągu {date}!”
 Specjalna formuła wspiera {health} i dodaje energii nawet po intensywnym wysiłku
 Promocja trwa tylko do {date} – zamów teraz na stronie {company} lub zadzwoń do nas: {phone}
-Dla pierwszych {number} klientów rabat 15% z kodem: {secret}
 Nie przegap szansy na lepsze osiągnięcia
 *Dostawa tylko na terenie {city}
 Płatność przelewem na {bank-account} lub kartą {credit-card-number}
@@ -23833,11 +23738,9 @@ Czekamy na Ciebie
 🛍️
 Cześć
 Jesteś zapracowany i brakuje Ci czasu na codzienne obowiązki
-Mamy dla Ciebie idealne rozwiązanie — {company} prezentuje innowacyjny produkt {product-name}, który odmieni Twoje życie
 Dzięki niemu zaoszczędzisz godziny pracy, a czas możesz poświęcić na to, co naprawdę ważne — np
 spotkania z {relative} lub relaks w {city}
 Specjalnie dla Ciebie przygotowaliśmy limitowaną ofertę — zamów do {date}, a otrzymasz darmową dostawę pod adres {address} i 20% zniżki na kolejne zakupy
-Wystarczy, że podasz kod {promo-code} podczas składania zamówienia na naszej stronie {website} lub przez telefon {phone}
 Nie zwlekaj — {name} i cały nasz zespół w {company} gwarantują, że będziesz zachwycony
 W razie pytań pisz na {email}
 Twoja wygoda to nasz priorytet
@@ -23845,10 +23748,8 @@ Twoja wygoda to nasz priorytet
 Cześć
 Mam dla Ciebie świetne rozwiązanie, które pomoże Ci lepiej zarządzać czasem
 Jako {job-title} w {company} wiem, jak trudno pogodzić pracę z życiem prywatnym
-Dlatego polecam nasz nowy planer {product-name} – idealny dla osób zapracowanych, takich jak Ty
 Dzięki niemu {name} z {city} zorganizowała swój dzień w 30 minut i znalazła czas na hobby
 Planer dostępny jest w wersji papierowej i elektronicznej – wybierz odpowiednią dla siebie
-Zamów już dziś na naszej stronie {website} lub zadzwoń na {phone}, a nasi konsultanci pomogą Ci dobrać najlepszą wersję
 Nie czekaj – czas to {secret}
 Pozdrawiam,   {name} {surname}   Zespół {company}
 Cześć
@@ -23921,15 +23822,9 @@ Dla nowych użytkowników specjalna zniżka do końca {date}
 Sprawdź koniecznie
 **Odkryj profesjonalne narzędzie, które zmieni Twoją pracę!**    Cześć, jestem {name}, specjalista ds
 {job-title} w {company}
-Chcę Ci przedstawić nasze flagowe rozwiązanie – {product-name}, które już podbiło rynek w {city} i nie tylko
 Dlaczego warto
-✅ **Wydajność**: Dzięki {product-name} zaoszczędzisz nawet 50% czasu na {specific-task}
 ✅ **Niezawodność**: Polecane przez ekspertów z {school-name} i użytkowników, takich jak {name} {surname}
-✅ **Bezpieczeństwo**: Szyfrowanie danych i zgodność z normami {standard-name}
-**Limited offer!** Zamów dziś na {website-url} i odbierz darmowy konsulting pod numerem {phone} lub mailowo: {email}
 Nie przegap szansy na profesjonalny upgrade
-*„Od kiedy używam {product-name}, moje wyniki w {company} skoczyły o 30%!”* – {name} {surname}, {job-title}
-Składam skargę na zakupiony w {company} produkt – {product-name}, który okazał się wadliwy
 Zamówiłam go online na stronie {company} dnia {date}, jednak po otrzymaniu przesyłki okazało się, że urządzenie nie działa
 Próbowałam skontaktować się z obsługą klienta pod numerem {phone}, ale nikt nie odbierał
 Wysłałam również wiadomość na adres {email}, jednak do tej pory nie otrzymałam odpowiedzi
@@ -23964,7 +23859,6 @@ W efekcie, nieświadomie naruszyłam punkt {document-number}, za co naliczono mi
 Żądam unieważnienia tej kary oraz przesłania mi nowej, czytelnej wersji regulaminu na adres {email}
 Proszę też o kontakt pod numerem {phone} w celu wyjaśnienia tej sytuacji
 Składam skargę na firmę {company}, która wprowadziła mnie w błąd dotyczący kosztów usługi
-Na stronie internetowej widniała cena {amount} zł, jednak po podaniu danych {credit-card-number} i wykonaniu płatności, otrzymałem potwierdzenie na kwotę o {amount} wyższą
 W mailu z {email} napisali, że to „opłata administracyjna”, której nie ma w regulaminie
 Żądam natychmiastowego zwrotu nadpłaty na konto {bank-account} oraz wyjaśnienia tej praktyki
 To nieuczciwe działanie
@@ -23988,18 +23882,14 @@ Wysłalem także wiadomość na adres {email}, ale do tej pory nie otrzymałem o
 Żądam natychmiastowego zwrotu pobranych środków oraz wyjaśnienia tej sytuacji
 Dodatkowo proszę o przesłanie pełnej dokumentacji dotyczącej tej transakcji na mój adres {address}
 Jeśli sprawa nie zostanie rozwiązana, zgłoszę ją do odpowiednich organów nadzoru finansowego
-Składam skargę na firmę {company} za pobranie z mojego konta bankowego {bank-account} kwoty {amount} bez mojej zgody
 Przeprowadziłem transakcję dnia {date}, ale kwota była inna niż ustalona
 Gdy zadzwoniłem na infolinię pod numerem {phone}, pracownik {name} {surname} twierdził, że to opłata za dodatkową usługę, której nie zamawiałem
 Żądam natychmiastowego zwrotu pieniędzy oraz wyjaśnienia, skąd firma posiada moje dane karty {credit-card-number}
 Proszę o pilną interwencję i ukaranie przedsiębiorstwa za nieuczciwe praktyki
 Składam skargę na sklep internetowy {company}, który nie zwrócił mi pieniędzy za zwrócony towar
-Zamówiłam sukienkę w rozmiarze {size}, ale po przymierzeniu okazała się za mała
 Wysłałam ją z powrotem zgodnie z procedurą, używając formularza zwrotu, a nawet otrzymałam potwierdzenie odbioru przez kuriera {date}
-Mija już {number} tygodni, a środki nie wróciły na moje konto {bank-account}
 Próbowałam kontaktować się z obsługą klienta pod numerem {phone} i mailem {email}, ale jedyna odpowiedź, jaką otrzymałam, to automatyczne potwierdzenie zgłoszenia
 To niedopuszczalne
-Żądam natychmiastowego zwrotu kwoty {amount} zł oraz wyjaśnienia tej sytuacji
 W przeciwnym razie będę zmuszona zgłosić sprawę do odpowiednich organów
 Składam skargę na nieprawidłowe naliczenie opłaty za media w moim mieszkaniu przy ulicy {address}
 W styczniu {date} otrzymałem fakturę na kwotę {bank-account} zł, która jest znacznie wyższa niż zwykle
@@ -24008,7 +23898,6 @@ Dodatkowo, w systemie widnieje informacja, że jestem {age}-letnim emerytem, co 
 Żądam natychmiastowej korekty i wyjaśnienia, dlaczego moje dane ({pesel}) zostały wykorzystane do naliczenia karnej opłaty
 Proszę o pilny kontakt pod numerem {phone}
 Składam skargę na brak przejrzystości w rozliczeniach finansowych w firmie {company}
-Otrzymałem wypłatę, która jest o {amount} niższa niż powinna być zgodnie z umową
 Próbowałem skontaktować się z działem kadr, ale nikt nie odbiera telefonu pod numerem {phone}, a e-maile na adres {email} pozostają bez odpowiedzi
 Dodatkowo, na moim koncie bankowym {bank-account} widnieje tajemnicza opłata o nazwie "składka dodatkowa", której nikt mi nie wyjaśnił
 Żądam natychmiastowego wyjaśnienia tych nieprawidłowości i przesłania szczegółowego rozliczenia na mój adres e-mail
@@ -24019,14 +23908,11 @@ Pracownik, {name} {surname}, nie potrafił wyjaśnić sytuacji, a na moje pytani
 Dodatkowo proszę o kontakt pod numerem {phone} lub adresem {email}, aby wyjaśnić tę sprawę
 To już drugi raz, gdy spotykam się z takim problemem w tej sieci
 Składam reklamację na zakupiony w sklepie {company} produkt, który dotarł do mnie w stanie niekompletnym
-Zamówiłam {name-of-product}, a w paczce brakowało {missing-part}
 Próbowałam się skontaktować telefonicznie ({phone}), ale nikt nie odbierał
 Wysłałam też maila na adres {email}, ale jedyna odpowiedź to automatyczne potwierdzenie otrzymania wiadomości
-Żądam natychmiastowego uzupełnienia brakujących części lub zwrotu kwoty {amount} zł na konto {bank-account}
 Dołączam zdjęcia opakowania i faktury nr {document-number}
 To już drugi raz w tym miesiącu, gdy wasz sklep mnie zawodzi
 Składam skargę na uszkodzony towar zakupiony w sklepie {company}
-Zamówiłem {product} przez internet, a po dostawie okazało się, że opakowanie było mocno zniszczone, a sam produkt ({product}) miał widoczne wgniecenia i rysy
 Próbowałem skontaktować się z obsługą klienta pod numerem {phone}, ale nikt nie odbierał
 Wysłałem również maila na adres {email}, ale do dziś nie otrzymałem odpowiedzi
 Żądam wymiany towaru lub zwrotu pieniędzy na moje konto {bank-account}
@@ -24292,7 +24178,6 @@ Kiedy zgłosiłam to przełożonemu {name} {surname}, zostałam zignorowana
 Moje dane kontaktowe to {email} i {phone}
 Proszę o pilną odpowiedź
 Składam skargę na użytkownika {username}, który regularnie publikuje obraźliwe komentarze pod moimi postami w społeczności lokalnej z {city}
-Ostatnio napisał, że osoby o moich {political-view} to "zdrajcy narodu" i powinniśmy "wynieść się do {country}"
 Kiedy zwróciłam mu uwagę, zaczął wysyłać mi prywatne wiadomości z groźbami, w tym informację, że zna mój {address} i "wie, gdzie chodzą moje dzieci" ({school-name})
 Jeden z moderatorów, {name} {surname}, zignorował moje zgłoszenie, twierdząc, że to tylko "żarty"
 Żądam natychmiastowego zablokowania tego użytkownika i przeprosin od administracji
@@ -24304,7 +24189,6 @@ Jego zachowanie było agresywne i nieprofesjonalne
 Dodatkowo, gdy próbowałam zapisać jego dane, powiedział, że jako pracownik {company} nie musi podawać {document-number} ani {phone}
 Żądam wyjaśnienia tej sytuacji i ukarania pracownika
 Składam skargę na nieuczciwe praktyki firmy {company}, która z premedytacją wprowadziła mnie w błąd
-Podczas zakupu produktu online przedstawiono mi cenę {amount}, jednak po dokonaniu płatności z mojej karty {credit-card-number} okazało się, że zostało pobrane {higher-amount}
 Próbowałam skontaktować się z obsługą klienta pod numerem {phone}, ale przez 40 minut nikt nie odebrał
 Kiedy w końcu się udało, pan {name} oświadczył, że to „błąd systemu” i odmówił zwrotu nadpłaty
 Żądam natychmiastowego uregulowania należności na moje konto {bank-account} oraz wyjaśnienia, dlaczego moje dane ({email}, {address}) zostały udostępnione zewnętrznej firmie telemarketingowej bez mojej zgody
@@ -24316,8 +24200,6 @@ Proszę o pilne wyjaśnienie tej sytuacji, ponieważ opóźnienie utrudnia mi za
 w {bank-account}
 Brak reakcji ze strony {company} jest niedopuszczalny i żądam natychmiastowego rozpatrzenia mojej skargi
 Składam skargę na brak reakcji ze strony {company} w sprawie usterki mojego produktu
-Kupiłem u nich {product} dnia {date}, a po tygodniu przestał działać
 Zgłosiłem problem na adres {email} oraz pod numerem {phone}, ale jedyna odpowiedź, jaką otrzymałem, to "prosimy o cierpliwość"
 Minęły już trzy tygodnie, a moja sprawa nadal nie została rozwiązana
-Żądam natychmiastowej naprawy lub zwrotu kwoty {amount} na konto {bank-account}
 Jestem bardzo rozczarowany takim traktowaniem klienta przez {company}
