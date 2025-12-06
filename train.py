@@ -96,7 +96,7 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
         model_dir,
         learning_rate=1e-4,  # ≥ 0.0001
     # standardowy LR dla fine-tuningu
-        mini_batch_size=16,
+        mini_batch_size=32,
         max_epochs=epochs,
         train_with_dev=False,
         embeddings_storage_mode='none',
