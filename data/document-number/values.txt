@@ -234,17 +234,6 @@ MW1309823
 MW 1309823
 MO2923795
 MO 2923795
-VW9497024
-VW 9497024
-QS1122572
-QS 1122572
-RP8534420
-RP 8534420
-PQ8598775
-PQ 8598775
-UW7808062
-UW 7808062
-DT6167617
 DT 6167617
 WT6149011
 WT 6149011
@@ -280,54 +269,7 @@ DT4694656
 DT 4694656
 CH0768441
 CH 0768441
-AE4085155
-AE 4085155
-KJ3813203
-KJ 3813203
-FK4213799
-FK 4213799
-PA2115596
-PA 2115596
-EB1302461
-EB 1302461
-FO7263911
-FO 7263911
-TE9208631
-TE 9208631
-YM2921719
-YM 2921719
-EO1559600
-EO 1559600
-NA8411451
-NA 8411451
-RC9692146
-RC 9692146
-QG8101260
-QG 8101260
-CU6467370
-CU 6467370
-YM2622985
-YM 2622985
-JT0644676
-JT 0644676
-MU8492466
-MU 8492466
-EM6497613
-EM 6497613
-DL0137866
-DL 0137866
-PK0647233
-PK 0647233
-JE8832563
-JE 8832563
-HT8181038
-HT 8181038
-WZ3344580
-WZ 3344580
-FB8349947
-FB 8349947
-MT6490483
-MT 6490483
+AE4085
 14821/61/8368
 SH4581796
 37619/86/9679
@@ -460,3 +402,103 @@ QF2127027
 GS7384130
 49102/89/7312
 BB2792406
+art. 1 § 1 ustawy z dnia 01 stycznia 2000 r.
+art 2 ust. 2 ustawy z 02.02.2001
+art. 3 pkt 3 ustawy z dnia 03/03/2002
+art. 4 ustawy z dnia 04 kwietnia 2003 r. (Dz.U. 2003 poz. 103)
+art 5 § 1 w zw. z art. 9 ust. 5 ustawy z dnia 05-05-2004
+art. 6 ust. 2 pkt 2 ustawy z dnia 06 maja 2005
+art 7 ustawy z 07.06.2006 r.
+art. 8 § 4 rozporządzenia z dnia 08 lipca 2007 r.
+art 9 ust. 4 lit. b ustawy z dnia 09/08/2008
+art. 10 w zw. z § 2 ustawy z dnia 10 września 2009 r.
+art. 11 § 3 ustawy z dnia 11 października 2010 r.
+art 12 ust. 5 ustawy z 12.11.2011
+art. 13 pkt 1 ustawy z dnia 13/12/2012
+art. 14 ustawy z dnia 14 stycznia 2013 r. (Dz.U. 2013 poz. 113)
+art 15 § 3 w zw. z art. 1 ust. 2 ustawy z dnia 15-02-2014
+art. 16 ust. 1 pkt 4 ustawy z dnia 16 marca 2015
+art 17 ustawy z 17.04.2016 r.
+art. 18 § 1 rozporządzenia z dnia 18 maja 2017 r.
+art 19 ust. 2 lit. b ustawy z dnia 19/06/2018
+art. 20 w zw. z § 3 ustawy z dnia 20 lipca 2019 r.
+art. 21 § 4 ustawy z dnia 21 sierpnia 2020 r.
+art 22 ust. 1 ustawy z 22.09.2021
+art. 23 pkt 2 ustawy z dnia 23/10/2022
+art. 24 ustawy z dnia 24 listopada 2023 r. (Dz.U. 2023 poz. 123)
+art 25 § 2 w zw. z art. 21 ust. 3 ustawy z dnia 25-12-2000
+art. 26 ust. 3 pkt 3 ustawy z dnia 26 stycznia 2001
+art 27 ustawy z 27.02.2002 r.
+art. 28 § 3 rozporządzenia z dnia 28 marca 2003 r.
+art 29 ust. 4 lit. b ustawy z dnia 01/04/2004
+art. 30 w zw. z § 4 ustawy z dnia 02 maja 2005 r.
+art. 1 § 1 ustawy z dnia 03 czerwca 2006 r.
+art 2 ust. 2 ustawy z 04.07.2007
+art. 3 pkt 3 ustawy z dnia 05/08/2008
+art. 4 ustawy z dnia 06 września 2009 r. (Dz.U. 2009 poz. 134)
+art 5 § 1 w zw. z art. 9 ust. 5 ustawy z dnia 07-10-2010
+art. 6 ust. 2 pkt 2 ustawy z dnia 08 listopada 2011
+art 7 ustawy z 09.12.2012 r.
+art. 8 § 4 rozporządzenia z dnia 10 stycznia 2013 r.
+art 9 ust. 4 lit. b ustawy z dnia 11/02/2014
+art. 10 w zw. z § 2 ustawy z dnia 12 marca 2015 r.
+art. 11 § 3 ustawy z dnia 13 kwietnia 2016 r.
+art 12 ust. 5 ustawy z 14.05.2017
+art. 13 pkt 1 ustawy z dnia 15/06/2018
+art. 14 ustawy z dnia 16 lipca 2019 r. (Dz.U. 2019 poz. 139)
+art 15 § 3 w zw. z art. 1 ust. 2 ustawy z dnia 17-08-2020
+art. 16 ust. 1 pkt 4 ustawy z dnia 18 września 2021
+art 17 ustawy z 19.10.2022 r.
+art. 18 § 1 rozporządzenia z dnia 20 listopada 2023 r.
+art 19 ust. 2 lit. b ustawy z dnia 21/12/2000
+art. 20 w zw. z § 3 ustawy z dnia 22 stycznia 2001 r.
+art. 21 § 4 ustawy z dnia 23 lutego 2002 r.
+art 22 ust. 1 ustawy z 24.03.2003
+art. 23 pkt 2 ustawy z dnia 25/04/2004
+art. 24 ustawy z dnia 26 maja 2005 r. (Dz.U. 2005 poz. 154)
+art 25 § 2 w zw. z art. 21 ust. 3 ustawy z dnia 27-06-2006
+art. 26 ust. 3 pkt 3 ustawy z dnia 28 lipca 2007
+art 27 ustawy z 01.08.2008 r.
+art. 28 § 3 rozporządzenia z dnia 02 września 2009 r.
+art 29 ust. 4 lit. b ustawy z dnia 03/10/2010
+art. 30 w zw. z § 4 ustawy z dnia 04 listopada 2011 r.
+art. 1 § 1 ustawy z dnia 05 grudnia 2012 r.
+art 2 ust. 2 ustawy z 06.01.2013
+art. 3 pkt 3 ustawy z dnia 07/02/2014
+art. 4 ustawy z dnia 08 marca 2015 r. (Dz.U. 2015 poz. 163)
+art 5 § 1 w zw. z art. 9 ust. 5 ustawy z dnia 09-04-2016
+art. 6 ust. 2 pkt 2 ustawy z dnia 10 maja 2017
+art 7 ustawy z 11.06.2018 r.
+art. 8 § 4 rozporządzenia z dnia 12 lipca 2019 r.
+art 9 ust. 4 lit. b ustawy z dnia 13/08/2020
+art. 10 w zw. z § 2 ustawy z dnia 14 września 2021 r.
+art. 11 § 3 ustawy z dnia 15 października 2022 r.
+art 12 ust. 5 ustawy z 16.11.2023
+art. 13 pkt 1 ustawy z dnia 17/12/2000
+art. 14 ustawy z dnia 18 stycznia 2001 r. (Dz.U. 2001 poz. 180)
+art 15 § 3 w zw. z art. 1 ust. 2 ustawy z dnia 19-02-2002
+art. 16 ust. 1 pkt 4 ustawy z dnia 20 marca 2003
+art 17 ustawy z 21.04.2004 r.
+art. 18 § 1 rozporządzenia z dnia 22 maja 2005 r.
+art 19 ust. 2 lit. b ustawy z dnia 23/06/2006
+art. 20 w zw. z § 3 ustawy z dnia 24 lipca 2007 r.
+art. 21 § 4 ustawy z dnia 25 sierpnia 2008 r.
+art 22 ust. 1 ustawy z 26.09.2009
+art. 23 pkt 2 ustawy z dnia 27/10/2010
+art. 24 ustawy z dnia 28 listopada 2011 r. (Dz.U. 2011 poz. 204)
+art 25 § 2 w zw. z art. 21 ust. 3 ustawy z dnia 01-12-2012
+art. 26 ust. 3 pkt 3 ustawy z dnia 02 stycznia 2013
+art 27 ustawy z 03.02.2014 r.
+art. 28 § 3 rozporządzenia z dnia 04 marca 2015 r.
+art 29 ust. 4 lit. b ustawy z dnia 05/04/2016
+art. 30 w zw. z § 4 ustawy z dnia 06 maja 2017 r.
+art. 1 § 1 ustawy z dnia 07 czerwca 2018 r.
+art 2 ust. 2 ustawy z 08.07.2019
+art. 3 pkt 3 ustawy z dnia 09/08/2020
+art. 4 ustawy z dnia 10 września 2021 r. (Dz.U. 2021 poz. 234)
+art 5 § 1 w zw. z art. 9 ust. 5 ustawy z dnia 11-10-2022
+art. 6 ust. 2 pkt 2 ustawy z dnia 12 listopada 2023
+art 7 ustawy z 13.12.2000 r.
+art. 8 § 4 rozporządzenia z dnia 14 stycznia 2001 r.
+art 9 ust. 4 lit. b ustawy z dnia 15/02/2002
+art. 10 w zw. z § 2 ustawy z dnia 16 marca 2003 r.

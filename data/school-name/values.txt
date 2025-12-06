@@ -3,14 +3,6 @@ Szkoła Podstawowa nr 2
 Szkoła Podstawowa nr 3
 Szkoła Podstawowa nr 4
 Szkoła Podstawowa nr 5
-Szkoła Podstawowa nr 6
-Szkoła Podstawowa nr 7
-Szkoła Podstawowa nr 8
-Szkoła Podstawowa nr 9
-Szkoła Podstawowa nr 10
-Szkoła Podstawowa nr 11
-Szkoła Podstawowa nr 12
-Szkoła Podstawowa nr 13
 Szkoła Podstawowa nr 14
 Szkoła Podstawowa nr 15
 Szkoła Podstawowa nr 16
@@ -32,12 +24,6 @@ SP nr 4
 SP nr 5
 SP nr 6
 SP nr 7
-SP nr 8
-SP nr 9
-SP nr 10
-SP nr 11
-SP nr 12
-SP nr 13
 SP nr 14
 SP nr 15
 SP nr 16
@@ -61,13 +47,6 @@ Gimnazjum nr 6
 Gimnazjum nr 7
 Gimnazjum nr 8
 Gimnazjum nr 9
-Gimnazjum nr 10
-Gimnazjum nr 11
-Gimnazjum nr 12
-Gimnazjum nr 13
-Gimnazjum nr 14
-Gimnazjum nr 15
-Gimnazjum nr 16
 Gimnazjum nr 17
 Gimnazjum nr 18
 Gimnazjum nr 19
@@ -85,15 +64,6 @@ Liceum Ogólnokształcące nr 3
 Liceum Ogólnokształcące nr 4
 Liceum Ogólnokształcące nr 5
 Liceum Ogólnokształcące nr 6
-Liceum Ogólnokształcące nr 7
-Liceum Ogólnokształcące nr 8
-Liceum Ogólnokształcące nr 9
-Liceum Ogólnokształcące nr 10
-Liceum Ogólnokształcące nr 11
-Liceum Ogólnokształcące nr 12
-Liceum Ogólnokształcące nr 13
-Liceum Ogólnokształcące nr 14
-Liceum Ogólnokształcące nr 15
 Liceum Ogólnokształcące nr 16
 Liceum Ogólnokształcące nr 17
 Liceum Ogólnokształcące nr 18
@@ -114,14 +84,6 @@ LO nr 5
 LO nr 6
 LO nr 7
 LO nr 8
-LO nr 9
-LO nr 10
-LO nr 11
-LO nr 12
-LO nr 13
-LO nr 14
-LO nr 15
-LO nr 16
 LO nr 17
 LO nr 18
 LO nr 19
@@ -139,16 +101,6 @@ Technikum nr 3
 Technikum nr 4
 Technikum nr 5
 Technikum nr 6
-Technikum nr 7
-Technikum nr 8
-Technikum nr 9
-Technikum nr 10
-Technikum nr 11
-Technikum nr 12
-Technikum nr 13
-Technikum nr 14
-Technikum nr 15
-Technikum nr 16
 Technikum nr 17
 Technikum nr 18
 Technikum nr 19
@@ -163,19 +115,6 @@ Technikum we Wrocławiu
 Zespół Szkół nr 1
 Zespół Szkół nr 2
 Zespół Szkół nr 3
-Zespół Szkół nr 4
-Zespół Szkół nr 5
-Zespół Szkół nr 6
-Zespół Szkół nr 7
-Zespół Szkół nr 8
-Zespół Szkół nr 9
-Zespół Szkół nr 10
-Zespół Szkół nr 11
-Zespół Szkół nr 12
-Zespół Szkół nr 13
-Zespół Szkół nr 14
-Zespół Szkół nr 15
-Zespół Szkół nr 16
 Zespół Szkół nr 17
 Zespół Szkół nr 18
 Zespół Szkół nr 19
@@ -194,17 +133,6 @@ ZS nr 4
 ZS nr 5
 ZS nr 6
 ZS nr 7
-ZS nr 8
-ZS nr 9
-ZS nr 10
-ZS nr 11
-ZS nr 12
-ZS nr 13
-ZS nr 14
-ZS nr 15
-ZS nr 16
-ZS nr 17
-ZS nr 18
 ZS nr 19
 ZS im. Jana Pawła II
 ZS im. Adama Mickiewicza
@@ -219,16 +147,6 @@ Zasadnicza Szkoła Zawodowa nr 2
 Zasadnicza Szkoła Zawodowa nr 3
 Zasadnicza Szkoła Zawodowa nr 4
 Zasadnicza Szkoła Zawodowa nr 5
-Zasadnicza Szkoła Zawodowa nr 6
-Zasadnicza Szkoła Zawodowa nr 7
-Zasadnicza Szkoła Zawodowa nr 8
-Zasadnicza Szkoła Zawodowa nr 9
-Zasadnicza Szkoła Zawodowa nr 10
-Zasadnicza Szkoła Zawodowa nr 11
-Zasadnicza Szkoła Zawodowa nr 12
-Zasadnicza Szkoła Zawodowa nr 13
-Zasadnicza Szkoła Zawodowa nr 14
-Zasadnicza Szkoła Zawodowa nr 15
 Zasadnicza Szkoła Zawodowa nr 16
 Zasadnicza Szkoła Zawodowa nr 17
 Zasadnicza Szkoła Zawodowa nr 18
@@ -247,16 +165,6 @@ Uniwersytet nr 3
 Uniwersytet nr 4
 Uniwersytet nr 5
 Uniwersytet nr 6
-Uniwersytet nr 7
-Uniwersytet nr 8
-Uniwersytet nr 9
-Uniwersytet nr 10
-Uniwersytet nr 11
-Uniwersytet nr 12
-Uniwersytet nr 13
-Uniwersytet nr 14
-Uniwersytet nr 15
-Uniwersytet nr 16
 Uniwersytet nr 17
 Uniwersytet nr 18
 Uniwersytet nr 19
@@ -274,16 +182,6 @@ Politechnika nr 3
 Politechnika nr 4
 Politechnika nr 5
 Politechnika nr 6
-Politechnika nr 7
-Politechnika nr 8
-Politechnika nr 9
-Politechnika nr 10
-Politechnika nr 11
-Politechnika nr 12
-Politechnika nr 13
-Politechnika nr 14
-Politechnika nr 15
-Politechnika nr 16
 Politechnika nr 17
 Politechnika nr 18
 Politechnika nr 19
@@ -304,14 +202,6 @@ Akademia nr 6
 Akademia nr 7
 Akademia nr 8
 Akademia nr 9
-Akademia nr 10
-Akademia nr 11
-Akademia nr 12
-Akademia nr 13
-Akademia nr 14
-Akademia nr 15
-Akademia nr 16
-Akademia nr 17
 Akademia nr 18
 Akademia nr 19
 Akademia im. Jana Pawła II
@@ -326,18 +216,6 @@ Wyższa Szkoła nr 1
 Wyższa Szkoła nr 2
 Wyższa Szkoła nr 3
 Wyższa Szkoła nr 4
-Wyższa Szkoła nr 5
-Wyższa Szkoła nr 6
-Wyższa Szkoła nr 7
-Wyższa Szkoła nr 8
-Wyższa Szkoła nr 9
-Wyższa Szkoła nr 10
-Wyższa Szkoła nr 11
-Wyższa Szkoła nr 12
-Wyższa Szkoła nr 13
-Wyższa Szkoła nr 14
-Wyższa Szkoła nr 15
-Wyższa Szkoła nr 16
 Wyższa Szkoła nr 17
 Wyższa Szkoła nr 18
 Wyższa Szkoła nr 19
@@ -361,3 +239,93 @@ Szkoła Główna Handlowa
 SGGW
 Uniwersytet im. Adama Mickiewicza
 UAM
+Szkoła Podstawowa nr 1 w Warszawie
+SP 1 w Warszawie
+Szkoła Podstawowa nr 5 im. Jana Pawła II w Krakowie
+Publiczna Szkoła Podstawowa im. Mikołaja Kopernika w Toruniu
+Szkoła Podstawowa im. Adama Mickiewicza w Poznaniu
+Niepubliczna Szkoła Podstawowa „Akademia Młodych” w Gdańsku
+Katolicka Szkoła Podstawowa im. św. Stanisława Kostki w Lublinie
+Dwujęzyczna Szkoła Podstawowa w Warszawie
+Międzynarodowa Szkoła Podstawowa w Krakowie
+SP nr 12 z Oddziałami Integracyjnymi w Łodzi
+I Liceum Ogólnokształcące im. Bolesława Prusa w Warszawie
+I LO im. Bolesława Prusa w Warszawie
+Pierwsze Liceum Ogólnokształcące w Warszawie
+Liceum Ogólnokształcące nr 3 im. Marii Skłodowskiej-Curie w Katowicach
+III LO im. M. Skłodowskiej-Curie w Katowicach
+Liceum Profilowane w zakresie nauk ścisłych w Krakowie
+Społeczne Liceum Ogólnokształcące w Gdańsku
+Prywatne Liceum Ogólnokształcące „Collegium” w Poznaniu
+Dwujęzyczne Liceum Ogólnokształcące w Warszawie
+Międzynarodowe Liceum w systemie IB w Krakowie
+Technikum Elektroniczne w Warszawie
+Technikum nr 2 im. Stefana Banacha w Poznaniu
+Zespół Szkół Technicznych w Gdańsku
+Zespół Szkół nr 4 w Łodzi
+Zespół Szkół Ekonomicznych im. Oskara Langego w Krakowie
+Technikum Mechaniczne przy Zespole Szkół Zawodowych w Rzeszowie
+Technikum Informatyczne w Warszawie
+Policealne Studium Informatyczne w Krakowie
+Szkoła Policealna dla Dorosłych w Łodzi
+Branżowa Szkoła I Stopnia nr 1 w Gdyni
+Uniwersytet Warszawski
+UW w Warszawie
+Uniwersytet Jagielloński w Krakowie
+UJ w Krakowie
+Uniwersytet im. Adama Mickiewicza w Poznaniu
+Uniwersytet Wrocławski
+Uniwersytet Gdański
+Uniwersytet Śląski w Katowicach
+Uniwersytet Mikołaja Kopernika w Toruniu
+Uniwersytet Marii Curie-Skłodowskiej w Lublinie
+Politechnika Warszawska
+PW w Warszawie
+Politechnika Wrocławska
+Politechnika Gdańska
+Politechnika Krakowska im. Tadeusza Kościuszki
+Politechnika Śląska w Gliwicach
+Politechnika Łódzka
+Politechnika Poznańska
+Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie
+AGH w Krakowie
+Szkoła Główna Handlowa w Warszawie
+SGH w Warszawie
+Uniwersytet Ekonomiczny w Krakowie
+Uniwersytet Ekonomiczny w Poznaniu
+Uniwersytet Ekonomiczny we Wrocławiu
+Akademia Ekonomiczna w Katowicach
+Uniwersytet Medyczny w Warszawie
+Warszawski Uniwersytet Medyczny
+Uniwersytet Medyczny im. Karola Marcinkowskiego w Poznaniu
+Gdański Uniwersytet Medyczny
+Akademia Sztuk Pięknych w Warszawie
+ASP w Warszawie
+Akademia Sztuk Pięknych w Krakowie
+Państwowa Wyższa Szkoła Teatralna w Krakowie
+Akademia Muzyczna im. Fryderyka Chopina w Warszawie
+Uniwersytet Muzyczny Fryderyka Chopina
+Akademia Wychowania Fizycznego Józefa Piłsudskiego w Warszawie
+AWF w Warszawie
+Akademia Wychowania Fizycznego w Katowicach
+Akademia Sztuki Wojennej w Warszawie
+Wyższa Szkoła Bankowa w Poznaniu
+WSB w Poznaniu
+Wyższa Szkoła Informatyki i Zarządzania w Rzeszowie
+Wyższa Szkoła Administracji Publicznej w Białymstoku
+Wyższa Szkoła Pedagogiczna w Krakowie
+Wyższa Szkoła Humanistyczna w Warszawie
+Niepubliczna Wyższa Szkoła Biznesu w Gdańsku
+Prywatna Wyższa Szkoła Turystyki i Hotelarstwa w Łodzi
+Uczelnia Techniczno-Handlowa w Warszawie
+Akademia Leona Koźmińskiego w Warszawie
+Warsaw University of Technology
+Jagiellonian University in Kraków
+University of Warsaw
+Gdańsk University of Technology
+Poznan University of Economics and Business
+Medical University of Warsaw
+Cracow University of Technology
+Wrocław University of Science and Technology
+University of Gdańsk
+Silesian University of Technology

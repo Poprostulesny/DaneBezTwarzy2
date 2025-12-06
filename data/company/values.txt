@@ -372,3 +372,159 @@ PPHU Multitech
 PHU Multitech
 FHU Multitech
 Multitech
+Alfa Usługi Informatyczne
+Beta Studio Projektowe
+Gama Biuro Rachunkowe
+Delta Serwis Komputerowy
+EkoSprzątanie
+SzybkiTransport24
+Zielony Ogród
+Mobilny Serwis GSM
+Kreatywna Księgowość
+Domowe Smaki Catering
+Auto-Serwis Premium
+TechSolutions
+Nowa Energia Fotowoltaika
+Perfect Clean
+Złota Rączka
+Studio Urody Bella
+Akademia Korepetycji Sigma
+Biuro Tłumaczeń Lingua
+Smart Marketing
+Sklep Internetowy MegaDeal
+Mobilny Mechanik
+Meble na Wymiar Design
+Express Ksero i Druk
+Fit-Trener Online
+Pracownia Rzemiosła Artystycznego
+Usługi Remontowe LuxBud
+Hydraulik 24h
+Fach-Dach Usługi Dekarskie
+Ogrodnik z Pasją
+FotoVision Studio Fotograficzne
+Creative Social Media
+Prawnik Online
+TaxExpert Doradztwo Podatkowe
+AutoDetailing Pro
+BeautyLab Kosmetologia
+Szkoła Językowa LinguaPlus
+WebDev Studio Strony Internetowe
+Drukarnia Cyfrowa PrintMax
+LogiTrans Usługi Transportowe
+GeoProjekt Usługi Geodezyjne
+Architekt Wnętrz Przestrzeń
+Happy Kids Opieka Nad Dziećmi
+Mobilny Fryzjer
+Świat Kwiatów Kwiaciarnia
+Gold Finance Pośrednictwo Kredytowe
+PhotoArt Ślub i Event
+LemonIT Serwis Laptopów
+VideoPro Produkcja Filmowa
+GreenHome Instalacje
+Szyte na Miarę Pracownia Krawiecka
+TechFix Naprawy Elektroniki
+Bistro na Rogu
+Piekarnia Rzemieślnicza Mąka i Woda
+BikeMaster Serwis Rowerowy
+Auto-Laweta 24
+Mobilny Serwis Opon
+NordicFit Trening Personalny
+CopyWrite Studio Tekstów
+GastroConsulting Doradztwo
+HR-Partner Rekrutacja
+Projekt-Ogród
+Słodka Pracownia Cukiernicza
+Detektyw Prywatny Alfa
+Opieka Seniora SerceDomu
+Stomatologia Mobilna Smile
+EcoCar Myjnia Parowa
+SkyDrone Usługi Dronem
+PhotoBooth FunBox
+StreetFood Truck Mania
+PetCare Salon dla Zwierząt
+Happy Pets Hotel dla Psów
+IT-Security Solutions
+CreativePrint Gadżety Reklamowe
+Lekcje Muzyki Forte
+Szkoła Tańca Rytm
+YogaBalance Studio
+FHU MaxMarket
+PHU Handlex
+Bud-Mix Usługi Budowlane
+Instal-System Hydraulika
+ElektroTech Instalacje
+Okno-Serwis Montaż i Serwis
+ProCzystość Usługi Porządkowe
+Biuro Podróży Explore
+EventTime Organizacja Imprez
+Ślubna Przystań Konsultantka
+MotoSchool Nauka Jazdy
+Prawo i Finanse Konsulting
+Księgowość Online FinMax
+DataSoft Programowanie
+CloudNet Usługi Chmurowe
+Domowy Rehabilitant
+Logopedica Gabinet Logopedyczny
+Psycholog Blisko Ciebie
+Studio Masażu Relaks
+Rękodzieło z Sercem
+Handmade Deco Pracownia
+Sklep Zoologiczny Zwierzogród
+EcoSklep Zdrowa Żywność
+Kawa na Mieście Mobilna Kawiarnia
+Pan Kanapka Catering Biuro
+Rowery i My Serwis i Sklep
+Auto-Myjnia Turbo
+Speed Kurier
+FinWay Doradztwo Finansowe
+LegalPoint Kancelaria
+Jan Kowalski Usługi Budowlane
+Anna Nowak Biuro Rachunkowe
+Piotr Wiśniewski Fotografia Ślubna
+Katarzyna Zielińska Studio Urody
+Marek Lewandowski Transport i Spedycja
+Joanna Kaczmarek Kancelaria Podatkowa
+Tomasz Wojciechowski Serwis Komputerowy
+Magdalena Jabłońska Projektowanie Wnętrz
+Paweł Kamiński Auto-Serwis
+Ewa Piotrowska Pracownia Krawiecka
+Adam Zając Doradztwo Finansowe
+Karolina Król Przedszkole Niepubliczne
+Rafał Wieczorek Trening Personalny
+Agnieszka Majewska Biuro Tłumaczeń
+Łukasz Dudek Usługi Hydrauliczne
+Monika Pawlak Księgowość Online
+Kamil Sokołowski Usługi Remontowo-Wykończeniowe
+Natalia Szczepańska Studio Kosmetyczne
+Grzegorz Borkowski Doradztwo Prawne
+Sylwia Czarnecka Sklep Internetowy
+Mariusz Sobczak Instalacje Elektryczne
+Patrycja Gajewska Opieka Nad Dziećmi
+Wojciech Malinowski Szkoła Językowa
+Beata Sawicka Pracownia Florystyczna
+Damian Pawłowski Auto Detailing
+Justyna Olszewska Dietetyk Kliniczny
+Jakub Lis Web Development
+Paulina Domańska Organizacja Imprez
+Krzysztof Michalski Nauka Jazdy
+Aleksandra Szewczyk Pracownia Fryzjerska
+Piotr Krawczyk Usługi Geodezyjne
+Martyna Borowska Sklep Zoologiczny
+Patryk Cieślak Serwis Rowerowy
+Izabela Marciniak Pracownia Terapii
+Sebastian Krupa Instalacje Fotowoltaiczne
+Dominika Kalinowska Logopeda
+Bartosz Olejniczak Studio Reklamy
+Klaudia Urban Salon Kosmetyczny
+Radosław Kaczmarczyk Usługi Dźwigowe
+Weronika Tomaszewska Szkoła Tańca
+Maciej Chmielewski Studio Graficzne
+Dorota Kowalczyk Pracownia Cukiernicza
+Adrian Górecki Myjnia Samochodowa
+Kinga Jasińska Hotelik dla Zwierząt
+Szymon Wójcik Serwis GSM
+Elżbieta Baran Gabinet Stomatologiczny
+Mateusz Walczak Usługi Informatyczne
+Julia Szymańska Studio Fotograficzne
+Konrad Bieliński Doradztwo Inwestycyjne
+Sandra Kubiak Salon Fryzjerski

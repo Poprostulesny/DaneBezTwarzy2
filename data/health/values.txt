@@ -65,3 +65,115 @@ niesłyszący
 głuchy
 na wózku inwalidzkim
 poruszający się na wózku
+grypa
+grypa sezonowa
+infekcja grypowa
+ostre zakażenie wirusem grypy
+przeziębienie
+infekcja górnych dróg oddechowych
+katar i kaszel o etiologii wirusowej
+ostre wirusowe zapalenie gardła
+angina ropna
+ostre bakteryjne zapalenie migdałków podniebiennych
+zapalenie gardła i migdałków
+migdałki powiększone, stan zapalny
+covid-19
+zakażenie wirusem SARS-CoV-2
+ostra niewydolność oddechowa w przebiegu covid-19
+powikłania pocovidowe
+astma oskrzelowa
+przewlekła obturacyjna choroba płuc (POChP)
+przewlekła choroba obturacyjna płuc
+nadciśnienie tętnicze
+pierwotne nadciśnienie tętnicze
+nadciśnienie samoistne
+nadciśnienie krwi
+choroba niedokrwienna serca
+choroba wieńcowa
+dławica piersiowa
+stabilna choroba wieńcowa
+zawał serca
+ostry zespół wieńcowy
+zawał mięśnia sercowego z uniesieniem odcinka ST
+stan po zawale serca
+cukrzyca typu 1
+cukrzyca typu 2
+cukrzyca insulinozależna
+cukrzyca insulinoniezależna
+hiperglikemia przewlekła
+otyłość
+otyłość prosta
+nadwaga
+zwiększona masa ciała
+hipercholesterolemia
+podwyższony poziom cholesterolu
+zaburzenia gospodarki lipidowej
+dyslipidemia mieszana
+reumatoidalne zapalenie stawów (RZS)
+przewlekłe zapalenie wielostawowe
+choroba zwyrodnieniowa stawów
+zmiany zwyrodnieniowe stawów kolanowych
+bóle kręgosłupa lędźwiowego
+rwą kulszowa
+zespół korzeniowy lędźwiowo-krzyżowy
+dyskopatia lędźwiowa
+migrena
+napadowy ból głowy typu migrenowego
+przewlekłe bóle głowy
+napięciowy ból głowy
+depresja
+epizod depresyjny
+zaburzenia depresyjne nawracające
+obniżony nastrój o charakterze depresyjnym
+zaburzenia lękowe uogólnione
+nerwica lękowa
+lęk uogólniony
+napady paniki
+alergiczny nieżyt nosa
+katar sienny
+sezonowa alergia wziewna
+uczulenie na pyłki traw
+atopowe zapalenie skóry
+AZS – atopowe zapalenie skóry
+egzema atopowa
+przewlekły wyprysk skóry
+łuszczyca
+łuszczyca zwykła
+plackowata choroba łuszczycowa skóry
+zmiany łuszczycowe na skórze owłosionej głowy
+choroba refluksowa przełyku (GERD)
+refluks żołądkowo-przełykowy
+zgaga przewlekła
+cofanie treści żołądkowej do przełyku
+choroba wrzodowa żołądka
+wrzód żołądka
+choroba wrzodowa dwunastnicy
+nadżerki w obrębie błony śluzowej żołądka
+zespół jelita drażliwego (IBS)
+drażliwe jelito
+czynnościowe zaburzenia jelit
+przewlekłe bóle brzucha o podłożu czynnościowym
+niewydolność nerek przewlekła
+przewlekła choroba nerek (PChN)
+obniżona filtracja kłębuszkowa nerek
+stan przednerkowej niewydolności nerek
+niedokrwistość z niedoboru żelaza
+anemia z niedoboru żelaza
+niskie stężenie hemoglobiny
+przewlekła niedokrwistość mikrocytarna
+zapalenie pęcherza moczowego
+ostre zapalenie dróg moczowych
+infekcja układu moczowego
+bakteryjne zapalenie pęcherza
+zapalenie ucha środkowego
+ostre zapalenie ucha środkowego u dzieci
+stan zapalny w uchu z wysiękiem
+nawracające infekcje ucha
+nowotwór złośliwy płuca
+rak płuca
+guz płuca o charakterze złośliwym
+zaawansowana choroba nowotworowa płuca
+choroba Alzheimera
+otępienie w przebiegu choroby Alzheimera
+otępienie typu alzheimerowskiego
+postępujące zaburzenia pamięci o podłożu neurodegeneracyjnym

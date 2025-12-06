@@ -82,3 +82,204 @@ redaktor
 grafik
 fotograf
 aktor
+lekarz
+lekarz rodzinny
+lekarz rezydent
+pielęgniarka
+ratownik medyczny
+farmaceuta
+dentysta
+diagnosta laboratoryjny
+fizjoterapeuta
+psycholog kliniczny
+nauczyciel
+nauczyciel wychowania przedszkolnego
+wykładowca akademicki
+trener personalny
+informatyk
+programista
+Senior Software Developer
+Junior Python Developer
+frontend developer
+backend developer
+administrator systemów IT
+specjalista ds. bezpieczeństwa IT
+analityk danych
+data scientist
+inżynier oprogramowania
+architekt systemów IT
+kierownik projektu (Project Manager)
+product owner
+scrum master
+analityk biznesowy
+księgowy
+główny księgowy
+biegły rewident
+analityk finansowy
+doradca podatkowy
+makler papierów wartościowych
+ekonomista
+specjalista ds. controllingu
+prawnik
+adwokat
+radca prawny
+notariusz
+komornik sądowy
+asystent prawny
+urzędnik administracji publicznej
+pracownik samorządowy
+sekretarka
+asystentka zarządu
+dyrektor generalny (CEO)
+dyrektor finansowy (CFO)
+dyrektor operacyjny (COO)
+kierownik działu sprzedaży
+handlowiec
+przedstawiciel handlowy
+account manager
+specjalista ds. obsługi klienta
+consultant
+HR Business Partner
+specjalista ds. rekrutacji
+rekruter IT
+specjalista ds. kadr i płac
+pracownik biurowy
+recepcjonista
+pracownik magazynu
+operator wózka widłowego
+pracownik produkcji
+kontroler jakości
+inżynier produkcji
+inżynier mechanik
+inżynier budowy
+kierownik budowy
+architekt
+urbanista
+geodeta
+elektryk
+elektromonter
+automatyk
+spawacz
+ślusarz
+stolarz
+kierowca ciężarówki
+kierowca autobusu
+kurier
+listonosz
+sprzedawca
+kasjer
+kucharz
+szef kuchni
+kelner
+barman
+fryzjer
+kosmetolog
+wizażysta
+fotograf
+grafik komputerowy
+UX/UI designer
+dziennikarz
+copywriter
+tłumacz przysięgły
+specjalista ds. marketingu internetowego
+mgr
+mgr inż.
+mgr lic.
+mgr piel.
+mgr farm.
+mgr fizjoterapii
+mgr położnictwa
+mgr zdrowia publicznego
+magister inżynier
+magister inżynier architekt
+magister inżynier budownictwa
+magister psychologii
+magister ekonomii
+magister prawa
+magister socjologii
+magister filologii angielskiej
+magister filologii polskiej
+magister administracji
+magister zarządzania
+licencjat pielęgniarstwa
+licencjat fizjoterapii
+licencjat zdrowia publicznego
+licencjat ekonomii
+licencjat administracji
+licencjat bezpieczeństwa narodowego
+inżynier informatyki
+inżynier budownictwa
+inżynier mechanik
+inżynier mechatroniki
+inżynier środowiska
+dr
+dr inż.
+dr n. med.
+dr n. o zdr.
+dr n. ekon.
+dr n. prawnych
+dr n. humanistycznych
+dr n. społecznych
+dr n. technicznych
+dr n. ścisłych i przyrodniczych
+dr hab.
+dr hab. inż.
+dr hab. n. med.
+dr hab. n. ekon.
+dr hab. n. prawnych
+dr hab. n. humanistycznych
+dr hab. n. społecznych
+dr hab. n. technicznych
+prof. dr hab.
+prof. dr hab. inż.
+
+specjalista kardiologii
+specjalista kardiochirurgii
+specjalista chorób wewnętrznych
+specjalista chorób zakaźnych
+specjalista chorób płuc
+specjalista gastroenterologii
+specjalista nefrologii
+specjalista endokrynologii
+specjalista diabetologii
+specjalista reumatologii
+specjalista neurologii
+specjalista neurochirurgii
+specjalista onkologii klinicznej
+specjalista hematologii
+specjalista medycyny rodzinnej
+specjalista medycyny pracy
+specjalista medycyny ratunkowej
+specjalista anestezjologii i intensywnej terapii
+specjalista ortopedii i traumatologii narządu ruchu
+specjalista psychiatrii
+specjalista psychiatrii dzieci i młodzieży
+specjalista pediatrii
+specjalista chirurgii ogólnej
+specjalista chirurgii naczyniowej
+specjalista chirurgii plastycznej
+specjalista urologii
+specjalista ginekologii i położnictwa
+specjalista otorynolaryngologii
+specjalista dermatologii i wenerologii
+specjalista okulistyki
+specjalista radiologii i diagnostyki obrazowej
+specjalista medycyny nuklearnej
+specjalista rehabilitacji medycznej
+specjalista zdrowia publicznego
+specjalista epidemiologii
+specjalista medycyny paliatywnej
+specjalista farmacji aptecznej
+specjalista farmacji klinicznej
+specjalista pielęgniarstwa anestezjologicznego
+specjalista pielęgniarstwa chirurgicznego
+specjalista pielęgniarstwa internistycznego
+specjalista pielęgniarstwa onkologicznego
+specjalista pielęgniarstwa pediatrycznego
+specjalista psychoterapii poznawczo-behawioralnej
+specjalista terapii uzależnień
+specjalista psychologii klinicznej
+specjalista diagnostyki laboratoryjnej
+specjalista higieny i epidemiologii
+specjalista organizacji ochrony zdrowia
+specjalista zarządzania ryzykiem klinicznym
