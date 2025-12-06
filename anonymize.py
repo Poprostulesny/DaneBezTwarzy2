@@ -246,7 +246,7 @@ Przykłady użycia:
     parser.add_argument(
         '-m', '--model',
         type=str,
-        default='models/ner-model/best-model.pt',
+        default='resources/model/final-model.pt',
         help='Ścieżka do modelu NER (domyślnie: models/ner-model/best-model.pt)'
     )
     

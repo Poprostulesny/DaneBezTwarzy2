@@ -81,27 +81,28 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
     print(f"   Parametry modelu: {total_params/1e6:.2f}M (trenowalnych: {trainable_params/1e6:.2f}M)")
     print("✅ Model utworzony!")
 
-    # Etap 4: Trening
+    # ---------------------------------------------
+    # ETAP 4: Trening
+    # ---------------------------------------------
     print("\n" + "="*60)
     print(f"🚀 ETAP 4/4: Trening modelu ({epochs} epok)...")
     print("="*60)
-    
+
     from torch.optim import AdamW
-    from flair.optim import LinearSchedulerWithWarmup
-    
+
     trainer = ModelTrainer(tagger, corpus)
+
     trainer.train(
         model_dir,
-        learning_rate=5e-5,              # Standardowy LR dla fine-tuningu Transformerów
-        mini_batch_size=16,              # Mniejszy batch dla stabilności z AdamW
+        learning_rate=1e-4,  # ≥ 0.0001
+    # standardowy LR dla fine-tuningu
+        mini_batch_size=16,
         max_epochs=epochs,
-        train_with_dev=False,            # Nie trenuj na dev
-        embeddings_storage_mode='none',  # Oszczędność pamięci GPU
+        train_with_dev=False,
+        embeddings_storage_mode='none',
         optimizer=AdamW,
-        weight_decay=0.01,               # Regularyzacja dla AdamW
-        scheduler=LinearSchedulerWithWarmup,
-        warmup_fraction=0.1,             # 10% kroków na warm-up
-        main_evaluation_metric=('micro avg', 'f1-score'),  # Optymalizuj pod F1, nie loss
+        use_final_model_for_eval=True,
+        main_evaluation_metric=('micro avg', 'f1-score'),
     )
 
     print("\n" + "="*60)
@@ -135,4 +136,3 @@ if __name__ == "__main__":
     )
     
     print(f"\n✅ Model zapisany w: {args.model_dir or config.MODEL_DIR}")
-
