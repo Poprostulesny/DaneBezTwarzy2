@@ -95,7 +95,6 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
         min_learning_rate=1e-6,          # Niższy próg minimalnego LR
         anneal_factor=0.5,               # Wolniejsze zmniejszanie LR
         train_with_dev=False,            # Nie trenuj na dev
-        monitor_train=True,              # Monitoruj train loss
         embeddings_storage_mode='none',  # Oszczędność pamięci GPU
     )
 
