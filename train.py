@@ -106,18 +106,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Trening modelu NER dla języka polskiego")
     parser.add_argument("--epochs", type=int, default=6, help="Liczba epok treningu (domyślnie: 6)")
     parser.add_argument("--n-per-template", type=int, default=200, help="Liczba przykładów na szablon (domyślnie: 200, ignorowane gdy --max-sentences jest ustawione)")
-    parser.add_argument("--max-sentences", type=int, default=None, help="Maksymalna liczba zdań do wygenerowania (równomiernie rozłożona po szablonach)")
+    parser.add_argument("--max-sentences", type=int, default=10000, help="Maksymalna liczba zdań do wygenerowania (domyślnie: 10000)")
     parser.add_argument("--model-dir", type=str, default=None, help="Katalog do zapisu modelu")
-    args = parser.parse_args()
-    
+    args = parser.parse_args()    
     print("\n" + "="*60)
     print("🤖 DANE BEZ TWARZY - Trening modelu NER")
     print("="*60)
     print(f"   Epoki: {args.epochs}")
-    if args.max_sentences:
-        print(f"   Maksymalna liczba zdań: {args.max_sentences}")
-    else:
-        print(f"   Przykładów na szablon: {args.n_per_template}")
+    print(f"   Maksymalna liczba zdań: {args.max_sentences}")
     print(f"   Katalog modelu: {args.model_dir or config.MODEL_DIR}")
     
     trainer = train_model(
