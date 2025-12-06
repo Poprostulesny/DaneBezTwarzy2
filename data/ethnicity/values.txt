@@ -1,0 +1,8 @@
+polskie
+ukraińskie
+romskie
+litewskie
+białoruskie
+rosyjskie
+żydowskie
+niemieckie

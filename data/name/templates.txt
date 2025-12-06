@@ -1,0 +1,3 @@
+Moje imię to {name}.
+Jego imię jest {name}.
+Powinna się do niego zwrócić panem {name}.

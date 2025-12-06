@@ -1,0 +1,3 @@
+Mieszkam w {city}.
+Miasto: {city}.
+Pracuję w {city}.

@@ -1,0 +1,3 @@
+Numer dokumentu: {document-number}.
+Dowód osobisty nr {document-number}.
+Dokument: {document-number}.

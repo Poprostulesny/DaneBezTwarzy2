@@ -1,0 +1,3 @@
+Płeć: {sex}.
+Płeć pacjenta: {sex}.
+{sex} może być kandydatem do programu.

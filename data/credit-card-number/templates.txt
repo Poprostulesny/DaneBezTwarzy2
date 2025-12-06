@@ -1,0 +1,3 @@
+Karta kredytowa: {credit-card-number}.
+Numer karty: {credit-card-number}.
+Karta: {credit-card-number}.

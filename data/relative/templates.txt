@@ -1,0 +1,3 @@
+Moja rodzina: {relative}.
+Relacja rodzinna: {relative}.
+Bliska osoba: {relative}.

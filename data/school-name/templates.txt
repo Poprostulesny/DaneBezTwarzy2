@@ -1,0 +1,3 @@
+Szkoła: {school-name}.
+Moje wykształcenie: {school-name}.
+Ukończyłem {school-name}.

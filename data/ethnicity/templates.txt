@@ -1,0 +1,3 @@
+Pochodzenie: {ethnicity}.
+Pacjent jest pochodzenia {ethnicity}.
+Narodowość: {ethnicity}.

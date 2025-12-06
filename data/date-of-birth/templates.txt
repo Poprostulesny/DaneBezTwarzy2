@@ -1,0 +1,3 @@
+Urodziłem się {date-of-birth}.
+Data urodzenia: {date-of-birth}.
+Pacjent ur. {date-of-birth} jest pacjentem stałym.

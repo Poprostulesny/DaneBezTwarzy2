@@ -1,0 +1,3 @@
+Stan zdrowia: {health}.
+Pacjent ma {health}.
+Rozpoznanie: {health}.

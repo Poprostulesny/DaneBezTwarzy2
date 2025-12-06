@@ -1,0 +1,3 @@
+Przyjęto pacjenta dnia {date}.
+Wizyta zaplanowana na {date}.
+Raporcie z dnia {date} pokazuje poprawę.

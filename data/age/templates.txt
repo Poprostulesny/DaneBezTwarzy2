@@ -1,0 +1,3 @@
+Mam {age} lat.
+Pacjent ma {age} lat i jest w dobrym stanie.
+Wiek: {age} lat.

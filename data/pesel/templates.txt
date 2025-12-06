@@ -1,0 +1,3 @@
+PESEL: {pesel}.
+Numer PESEL: {pesel}.
+Pacjent o numerze PESEL {pesel}.

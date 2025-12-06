@@ -1,0 +1,3 @@
+Orientacja seksualna: {sexual-orientation}.
+Pacjent deklaruje orientację {sexual-orientation}.
+Jego orientacja seksualna to {sexual-orientation}.

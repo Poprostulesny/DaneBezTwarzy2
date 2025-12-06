@@ -1,0 +1,3 @@
+Wyznanie: {religion}.
+Pacjent wyznaje {religion}.
+Religia: {religion}.

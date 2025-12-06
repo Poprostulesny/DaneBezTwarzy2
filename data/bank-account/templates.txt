@@ -1,0 +1,3 @@
+Konto bankowe: {bank-account}.
+Numer konta: {bank-account}.
+Rachunek: {bank-account}.

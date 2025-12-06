@@ -1,0 +1,3 @@
+Mój adres to {address}.
+Adres zamieszkania: {address}.
+Korespondencję wysyłać na {address}.

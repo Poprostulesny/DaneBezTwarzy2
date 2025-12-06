@@ -1,0 +1,3 @@
+Stanowisko: {job-title}.
+Pracuję na stanowisku {job-title}.
+Moja funkcja to {job-title}.

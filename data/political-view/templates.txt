@@ -1,0 +1,3 @@
+Poglądy polityczne: {political-view}.
+Kandydat wyznaje poglądy {political-view}.
+Jego poglądy polityczne to {political-view}.

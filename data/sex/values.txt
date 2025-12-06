@@ -1,0 +1,6 @@
+mężczyzna
+kobieta
+dziewczynka
+chłopiec
+chłopczyk
+dziewczyna

@@ -1,0 +1,3 @@
+Numer telefonu: {phone}.
+Możesz mnie znaleźć pod numerem {phone}.
+Telefon: {phone}.

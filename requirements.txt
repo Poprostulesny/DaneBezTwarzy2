@@ -1,0 +1,9 @@
+flair>=0.12
+transformers>=4.0.0
+torch>=1.10
+faker>=13.3.4
+seqeval
+
+# Opcjonalne, przydatne:
+spacy
+polib

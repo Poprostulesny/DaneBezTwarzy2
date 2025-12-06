@@ -1,0 +1,3 @@
+Moje nazwisko to {surname}.
+Nazwisko {surname} jest znane w mieście.
+Pani {surname} pracuje w naszej firmie.
