@@ -66,13 +66,14 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
     tag_dictionary = corpus.make_label_dictionary(label_type=config.TAG_TYPE)
     print(f"   Liczba etykiet NER: {len(tag_dictionary)}")
 
-    # Utworzenie taggera sekwencyjnego
+    # Utworzenie taggera sekwencyjnego z loss weights
     tagger = SequenceTagger(
         hidden_size=256,
         embeddings=embeddings,
         tag_dictionary=tag_dictionary,
         tag_type=config.TAG_TYPE,
         use_crf=True,
+        loss_weights={'O': 0.1},  # Zmniejsz wagę klasy "O" (nie-encja) żeby model uczył się encji
     )
     
     total_params = sum(p.numel() for p in tagger.parameters())
@@ -85,18 +86,22 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
     print(f"🚀 ETAP 4/4: Trening modelu ({epochs} epok)...")
     print("="*60)
     
+    from torch.optim import AdamW
+    from flair.optim import LinearSchedulerWithWarmup
+    
     trainer = ModelTrainer(tagger, corpus)
     trainer.train(
         model_dir,
-        learning_rate=0.1,              # Wyższy LR dla CRF/linear layers
-        mini_batch_size=32,             # Większy batch dla stabilności
+        learning_rate=5e-5,              # Standardowy LR dla fine-tuningu Transformerów
+        mini_batch_size=16,              # Mniejszy batch dla stabilności z AdamW
         max_epochs=epochs,
-        patience=5,                      # Więcej cierpliwości przed zatrzymaniem
-        min_learning_rate=1e-6,          # Niższy próg minimalnego LR
-        anneal_factor=0.5,               # Wolniejsze zmniejszanie LR
         train_with_dev=False,            # Nie trenuj na dev
-        monitor_train=True,              # Monitoruj train loss
         embeddings_storage_mode='none',  # Oszczędność pamięci GPU
+        optimizer=AdamW,
+        weight_decay=0.01,               # Regularyzacja dla AdamW
+        scheduler=LinearSchedulerWithWarmup,
+        warmup_fraction=0.1,             # 10% kroków na warm-up
+        main_evaluation_metric=('micro avg', 'f1-score'),  # Optymalizuj pod F1, nie loss
     )
 
     print("\n" + "="*60)
@@ -112,7 +117,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Trening modelu NER dla języka polskiego")
     parser.add_argument("--epochs", type=int, default=15, help="Liczba epok treningu (domyślnie: 15)")
     parser.add_argument("--n-per-template", type=int, default=200, help="Liczba przykładów na szablon (domyślnie: 200, ignorowane gdy --max-sentences jest ustawione)")
-    parser.add_argument("--max-sentences", type=int, default=10000, help="Maksymalna liczba zdań do wygenerowania (domyślnie: 10000)")
+    parser.add_argument("--max-sentences", type=int, default=1000, help="Maksymalna liczba zdań do wygenerowania (domyślnie: 10000)")
     parser.add_argument("--model-dir", type=str, default=None, help="Katalog do zapisu modelu")
     args = parser.parse_args()    
     print("\n" + "="*60)
