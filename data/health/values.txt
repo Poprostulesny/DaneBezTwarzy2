@@ -1,8 +1,67 @@
-zdrowy
 cukrzyca
+cukrzyca typu 2
+cukrzyca typu 1
+insulinooporność
 nadciśnienie
-przewlekła choroba serca
-alergia
+nadciśnienie tętnicze
+hipotonia
+choroba serca
+niewydolność serca
+arytmia
+migotanie przedsionków
 astma
+POChP
+przewlekła obturacyjna choroba płuc
+alergia
+alergik
+uczulenie
+atopia
 depresja
-zapalenie stawów
+zaburzenia depresyjne
+stany depresyjne
+schizofrenia
+zaburzenia schizofreniczne
+zaburzenia lękowe
+nerwica
+lęki
+ataki paniki
+ADHD
+zespół nadpobudliwości
+zaburzenia koncentracji
+autyzm
+spektrum autyzmu
+zespół Aspergera
+zaburzenia odżywiania
+anoreksja
+bulimia
+uzależnienie
+alkoholizm
+narkomania
+epilepsja
+padaczka
+nowotwór
+rak
+białaczka
+guz
+HIV
+AIDS
+HIV-pozytywny
+stwardnienie rozsiane
+SM
+choroba Parkinsona
+Parkinson
+choroba Alzheimera
+demencja
+otępienie
+reumatyzm
+RZS
+artretyzm
+niepełnosprawność
+niepełnosprawny
+inwalida
+niedowidzący
+niedosłyszący
+niesłyszący
+głuchy
+na wózku inwalidzkim
+poruszający się na wózku

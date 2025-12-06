@@ -1,10 +1,29 @@
-mój brat {name}
-moja siostra {name} {surname}
-mój syn {name}
-moja córka {name}
-moja żona {name}
-mój mąż Tadeusz
-mój ojciec {name} {surname}
-moja matka {name}
-mój dziadek {name}
-moja babcia {name}
+mój brat
+moja siostra
+mój ojciec
+moja matka
+mój syn
+moja córka
+mój mąż
+moja żona
+mój dziadek
+moja babcia
+mój wnuk
+moja wnuczka
+mój wujek
+moja ciocia
+mój kuzyn
+moja kuzynka
+mój teść
+moja teściowa
+mój zięć
+moja synowa
+mój szwagier
+moja szwagierka
+mój brat cioteczny
+syn pana Kowalskiego
+córka pani Nowak
+brat mojej żony
+siostra mojego męża
+ojciec mojego dziecka
+matka moich dzieci

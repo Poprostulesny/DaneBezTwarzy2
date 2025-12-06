@@ -1,6 +1,15 @@
 mężczyzna
 kobieta
-dziewczynka
-chłopiec
-chłopczyk
+M
+K
+męska
+żeńska
+mężczyzną
+kobietą
+płci męskiej
+płci żeńskiej
+chłopak
 dziewczyna
+pan
+pani
+facet

@@ -1,7 +1,42 @@
-katolicyzm
-bezwyznaniowy
+katolik
+katoliczka
+katolicki
+katolickie
+rzymskokatolicki
+prawosławny
+prawosławna
 prawosławie
-protestantyzm
-judaizm
+protestant
+protestantka
+ewangelik
+luteranin
+muzułmanin
+muzułmanka
 islam
-inne
+islamski
+żyd
+żydówka
+judaizm
+wyznania mojżeszowego
+buddysta
+buddystka
+buddyzm
+buddyjski
+ateista
+ateistka
+ateizm
+bezwyznaniowy
+bezwyznaniowa
+agnostyk
+agnostyczka
+agnostycyzm
+świadek Jehowy
+Świadkowie Jehowy
+grekokatolicka
+greckokatolicki
+hinduista
+hinduizm
+wierzący
+wierząca
+niewierzący
+niewierząca

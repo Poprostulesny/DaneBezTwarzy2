@@ -1,16 +1,235 @@
-ul. Marszałkowska 10, 00-001 Warszawa
-ul. Floriańska 5, 31-021 Kraków
-ul. Świdnicka 15, 50-067 Wrocław
-ul. św. Marcina 3, 61-808 Poznań
-ul. Długi Targ 7, 80-830 Gdańsk
-ul. Piotrkowska 20, 90-001 Łódź
-ul. Wały Chrobrego 2, 70-013 Szczecin
-ul. Grunwaldzka 82, 80-244 Gdańsk
-ul. Mazowiecka 12, 15-433 Białystok
-ul. Krakowskie Przedmieście 46, 20-082 Lublin
-ul. Szeroka 30, 87-100 Toruń
-ul. Rynek 14, 40-012 Katowice
-ul. Gdańska 8, 85-001 Bydgoszcz
-ul. Żeromskiego 15, 26-600 Radom
-ul. Areny 4, 25-369 Kielce
-ul. 3 Maja 22, 35-959 Rzeszów
+ul. Kościelna 82/60, Katowice
+os. Lipowa 105/13, 20-822 Gdańsk
+Łódź, ul. Sportowa 59
+al. Szeroka 103/39, 97-316 Szczecin
+plac Wrocławska 29, 60-592 Gdynia
+plac Warszawska 50
+59-807 Białystok
+osiedle Kościelna 114/77
+91-784 Szczecin
+os. Szkolna 20
+osiedle 3 Maja 144, Gdańsk
+ul. 3 Maja 145/82, 71-664 Katowice
+al. Kolejowa 113/100, Szczecin
+osiedle Niepodległości 24/26
+36-890 Gdańsk
+aleja Gdańska 9/63, Łódź
+aleja Wrocławska 65/81, 39-394 Poznań
+os. Parkowa 138/71, Szczecin
+os. Szkolna 6/42
+Katowice, os. 3 Maja 71
+osiedle Główna 6/8, 39-377 Łódź
+osiedle Krótka 86
+00-127 Gdańsk
+Gdańsk, pl. Warszawska 144
+pl. 1 Maja 92/68
+84-340 Warszawa
+os. Niepodległości 96, Gdynia
+plac Leśna 117/45, Białystok
+Kraków, plac Kwiatowa 34/75
+aleja Parkowa 11/99
+osiedle Główna 132/58
+plac Krakowska 57/23, Łódź
+Łódź, ul. Niepodległości 92/21
+plac Szeroka 137/5
+Gdynia, ul. Szeroka 47/71
+os. Szeroka 139
+21-672 Gdynia
+ulica Gdańska 75/32, Poznań
+os. Lipowa 134/17
+ulica Kwiatowa 125/63, Gdynia
+pl. Szkolna 34/42, 91-104 Szczecin
+Lublin, al. Kwiatowa 54
+Szczecin, pl. Krótka 70
+plac Mickiewicza 90/70, Wrocław
+Lublin, ulica Wrocławska 121/10
+ulica 11 Listopada 130
+aleja 1 Maja 109/17, Częstochowa
+ul. Kwiatowa 117/81, Gdańsk
+pl. Sportowa 124/17, Białystok
+pl. Kwiatowa 148/97
+12-337 Łódź
+Białystok, os. Armii Krajowej 100
+ulica Rynek 113, Katowice
+al. 3 Maja 90/52
+32-306 Białystok
+al. Krótka 20, 00-968 Szczecin
+Wrocław, aleja Lipowa 61/63
+plac Krótka 88/53, Białystok
+Wrocław, plac Niepodległości 133
+al. Poznańska 36/78
+42-176 Warszawa
+pl. Kwiatowa 112
+00-525 Wrocław
+Gdańsk, pl. Rynek 84/98
+plac Szeroka 112/27, 24-083 Szczecin
+Białystok, al. Słoneczna 66/7
+ul. 3 Maja 138/100
+17-925 Poznań
+osiedle Krakowska 103/7
+54-101 Białystok
+ul. 3 Maja 35/28
+42-086 Lublin
+plac Wrocławska 24, Lublin
+pl. Wolności 71
+39-308 Częstochowa
+plac 11 Listopada 89/87, Częstochowa
+al. Kościuszki 124/35
+al. 1 Maja 11
+ul. Mickiewicza 106/25
+02-844 Wrocław
+Poznań, ul. Wolności 143
+ul. Szkolna 104/75
+os. Mickiewicza 26/93, 68-559 Poznań
+Kraków, osiedle Szeroka 38
+pl. Sportowa 102, 98-577 Poznań
+pl. Poznańska 3/7
+ulica Kwiatowa 29/62, 89-472 Częstochowa
+ulica Polna 59/85
+11-790 Gdynia
+plac Warszawska 94/10
+56-176 Kraków
+Wrocław, plac Solidarności 129
+pl. Ogrodowa 126
+ulica Solidarności 41/14
+os. Leśna 127/41
+67-663 Kraków
+aleja Krakowska 28/14
+plac Kwiatowa 83/17
+ulica Kolejowa 54
+al. Wolności 144
+73-611 Lublin
+aleja Niepodległości 82, 92-290 Warszawa
+aleja Marszałkowska 57
+67-392 Poznań
+Szczecin, aleja Szeroka 110
+al. Gdańska 44/37
+18-198 Kraków
+plac Szeroka 140
+al. 11 Listopada 44/82
+42-692 Białystok
+ul. 3 Maja 89/65, Częstochowa
+os. Leśna 92/80, 16-371 Częstochowa
+os. Rynek 91/95, 57-218 Gdańsk
+ul. 1 Maja 145
+pl. Leśna 14
+al. Piłsudskiego 50/63, 41-333 Wrocław
+Szczecin, plac Szeroka 119
+al. Słowackiego 115/76, Wrocław
+al. Sportowa 50
+22-270 Szczecin
+ulica Jana Pawła II 4/86
+27-589 Białystok
+Gdynia, osiedle Marszałkowska 101/16
+Szczecin, pl. Kościuszki 29
+aleja Kwiatowa 34, 58-573 Łódź
+Warszawa, os. Krakowska 113/93
+pl. Piłsudskiego 118/86, Kraków
+aleja Słowackiego 14/98
+83-630 Poznań
+ul. Polna 133/18, Gdańsk
+ul. Wolności 13/15
+pl. Długa 119/79
+aleja Kolejowa 102/81
+44-596 Wrocław
+Szczecin, ulica Warszawska 50
+Szczecin, pl. Kolejowa 90/100
+aleja Solidarności 33/3, Gdynia
+Szczecin, osiedle Sportowa 135/39
+pl. Jana Pawła II 76, Lublin
+ulica Wolności 114/13, 19-654 Białystok
+al. Poznańska 75/92, 14-576 Gdynia
+plac 1 Maja 84/51
+aleja Wrocławska 135, Gdańsk
+pl. Wrocławska 143, Lublin
+al. Krótka 141/20, Lublin
+osiedle Długa 29
+56-810 Gdynia
+ul. 3 Maja 20, Częstochowa
+osiedle Jana Pawła II 116/28, 91-571 Częstochowa
+aleja Kwiatowa 62/42, 33-197 Częstochowa
+pl. Szkolna 33/87
+93-867 Białystok
+Szczecin, osiedle Armii Krajowej 52/5
+ul. Słowackiego 52/42, 02-023 Gdańsk
+ulica Leśna 113/75
+11-607 Gdańsk
+os. Solidarności 21/11, Gdynia
+Katowice, plac Lipowa 103/67
+os. 1 Maja 11, 61-830 Białystok
+pl. Długa 6/33, Kraków
+al. Poznańska 81/43, Lublin
+plac Solidarności 64/8, Lublin
+aleja Piłsudskiego 22/87, 07-036 Gdańsk
+Poznań, ul. Kwiatowa 120/45
+Warszawa, aleja Słowackiego 73/12
+ul. Parkowa 123
+ul. Długa 3, 27-832 Poznań
+Szczecin, plac Krakowska 40/92
+ulica Szkolna 3/19
+55-613 Gdynia
+Gdańsk, osiedle 11 Listopada 71/76
+Gdańsk, al. Słowackiego 2
+ul. Ogrodowa 29, Lublin
+plac Solidarności 82/16
+Szczecin, ulica Słowackiego 2/90
+os. Główna 3/68, 10-940 Gdańsk
+aleja Marszałkowska 17
+aleja Słoneczna 67/74, 52-466 Białystok
+ul. Solidarności 85/7, Szczecin
+al. 11 Listopada 147, 29-323 Kraków
+ulica 1 Maja 23
+48-352 Białystok
+ulica Warszawska 65/68, 67-284 Lublin
+Częstochowa, plac 11 Listopada 78/20
+Warszawa, plac Wrocławska 122/28
+pl. Sportowa 43
+Częstochowa, ulica Słoneczna 72/27
+aleja Słowackiego 85/4
+Warszawa, aleja Armii Krajowej 66/33
+aleja Wrocławska 42/23, 26-376 Szczecin
+al. Długa 126/19, Białystok
+al. Wolności 31/8, 31-077 Łódź
+ulica Słoneczna 114/34, Kraków
+Lublin, pl. Polna 115
+pl. Sportowa 130, Wrocław
+os. Warszawska 138/19, 07-099 Szczecin
+Kraków, plac Warszawska 55/90
+Poznań, pl. Poznańska 73/66
+ul. Rynek 79/54, 55-299 Wrocław
+ulica Parkowa 19/46, 21-963 Częstochowa
+ul. Lipowa 83/81
+ul. 1 Maja 140/58
+Katowice, ulica Solidarności 27/26
+al. Ogrodowa 109/85, 28-136 Szczecin
+aleja Rynek 85/67, 72-367 Kraków
+osiedle Armii Krajowej 119/65, 80-707 Wrocław
+ul. Niepodległości 23/29
+aleja Kwiatowa 104/79, 67-638 Szczecin
+ulica Jana Pawła II 7
+87-091 Katowice
+Katowice, ulica Leśna 103/87
+pl. Kościelna 134/64
+Gdynia, al. Krakowska 63/24
+aleja Niepodległości 116
+14-519 Kraków
+plac Kolejowa 13, Łódź
+Lublin, pl. Jana Pawła II 34/6
+osiedle Parkowa 22/88, Katowice
+plac Piłsudskiego 32/49, 71-612 Szczecin
+Białystok, aleja Długa 24/93
+Katowice, osiedle Mickiewicza 53
+aleja Lipowa 94
+57-152 Poznań
+osiedle Solidarności 55
+47-129 Szczecin
+plac Kościuszki 27/24, Kraków
+ulica Marszałkowska 113/36, 06-404 Białystok
+Wrocław, plac Parkowa 21
+os. Kwiatowa 19, 99-009 Białystok
+pl. Piłsudskiego 13/30, 90-545 Gdańsk
+Łódź, aleja Niepodległości 65/34
+Katowice, plac Gdańska 16
+Lublin, ulica Jana Pawła II 98/62
+Katowice, ulica Mickiewicza 28
+ulica Parkowa 110/9, 10-308 Gdynia

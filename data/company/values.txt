@@ -1,10 +1,374 @@
-Acme Corporation
-Onet.pl
 PKO Bank Polski
-UBS Polska
-Microsoft Polska
+PKO Bank Polski Sp. z o.o.
+PKO Bank Polski S.A.
+Orlen
+Orlen Sp. z o.o.
+Orlen S.A.
+PZU
+PZU Sp. z o.o.
+PZU S.A.
+KGHM
+KGHM Sp. z o.o.
+KGHM S.A.
+PGNiG
+PGNiG Sp. z o.o.
+PGNiG S.A.
+PGE
+PGE Sp. z o.o.
+PGE S.A.
+Lotos
+Lotos Sp. z o.o.
+Lotos S.A.
+Tauron
+Tauron Sp. z o.o.
+Tauron S.A.
+Energa
+Energa Sp. z o.o.
+Energa S.A.
+Enea
+Enea Sp. z o.o.
+Enea S.A.
+JSW
+JSW Sp. z o.o.
+JSW S.A.
+LPP
+LPP Sp. z o.o.
+LPP S.A.
+CCC
+CCC Sp. z o.o.
+CCC S.A.
+CD Projekt
+CD Projekt Sp. z o.o.
+CD Projekt S.A.
+Allegro
+Allegro Sp. z o.o.
+Allegro S.A.
+InPost
+InPost Sp. z o.o.
+InPost S.A.
+Żabka
+Żabka Sp. z o.o.
+Żabka S.A.
+Biedronka
+Biedronka Sp. z o.o.
+Biedronka S.A.
+Lidl Polska
+Lidl Polska Sp. z o.o.
+Lidl Polska S.A.
+Kaufland Polska
+Kaufland Polska Sp. z o.o.
+Kaufland Polska S.A.
+Jeronimo Martins
+Jeronimo Martins Sp. z o.o.
+Jeronimo Martins S.A.
+Eurocash
+Eurocash Sp. z o.o.
+Eurocash S.A.
+Dino
+Dino Sp. z o.o.
+Dino S.A.
+Emperia
+Emperia Sp. z o.o.
+Emperia S.A.
+Maxima
+Maxima Sp. z o.o.
+Maxima S.A.
 Google Poland
-Samsung Poland
-Siemens Polska
-Volkswagen Polska
+Google Poland Sp. z o.o.
+Google Poland S.A.
+Microsoft Polska
+Microsoft Polska Sp. z o.o.
+Microsoft Polska S.A.
+Amazon Polska
+Amazon Polska Sp. z o.o.
+Amazon Polska S.A.
+Meta Polska
+Meta Polska Sp. z o.o.
+Meta Polska S.A.
+Samsung Electronics Polska
+Samsung Electronics Polska Sp. z o.o.
+Samsung Electronics Polska S.A.
+Apple Polska
+Apple Polska Sp. z o.o.
+Apple Polska S.A.
+IBM Polska
+IBM Polska Sp. z o.o.
+IBM Polska S.A.
+Oracle Polska
+Oracle Polska Sp. z o.o.
+Oracle Polska S.A.
+SAP Polska
+SAP Polska Sp. z o.o.
+SAP Polska S.A.
+Cisco Polska
+Cisco Polska Sp. z o.o.
+Cisco Polska S.A.
+Intel Polska
+Intel Polska Sp. z o.o.
+Intel Polska S.A.
+HP Polska
+HP Polska Sp. z o.o.
+HP Polska S.A.
+Dell Polska
+Dell Polska Sp. z o.o.
+Dell Polska S.A.
+Volkswagen Poznań
+Volkswagen Poznań Sp. z o.o.
+Volkswagen Poznań S.A.
+Toyota Motor Poland
+Toyota Motor Poland Sp. z o.o.
+Toyota Motor Poland S.A.
+Mercedes-Benz Polska
+Mercedes-Benz Polska Sp. z o.o.
+Mercedes-Benz Polska S.A.
 BMW Polska
+BMW Polska Sp. z o.o.
+BMW Polska S.A.
+Audi Polska
+Audi Polska Sp. z o.o.
+Audi Polska S.A.
+Skoda Auto Polska
+Skoda Auto Polska Sp. z o.o.
+Skoda Auto Polska S.A.
+Fiat Polska
+Fiat Polska Sp. z o.o.
+Fiat Polska S.A.
+mBank
+mBank Sp. z o.o.
+mBank S.A.
+ING Bank Śląski
+ING Bank Śląski Sp. z o.o.
+ING Bank Śląski S.A.
+Bank Millennium
+Bank Millennium Sp. z o.o.
+Bank Millennium S.A.
+Santander Bank Polska
+Santander Bank Polska Sp. z o.o.
+Santander Bank Polska S.A.
+BNP Paribas Bank Polska
+BNP Paribas Bank Polska Sp. z o.o.
+BNP Paribas Bank Polska S.A.
+Credit Agricole
+Credit Agricole Sp. z o.o.
+Credit Agricole S.A.
+Alior Bank
+Alior Bank Sp. z o.o.
+Alior Bank S.A.
+Getin Noble Bank
+Getin Noble Bank Sp. z o.o.
+Getin Noble Bank S.A.
+Bank Pekao
+Bank Pekao Sp. z o.o.
+Bank Pekao S.A.
+Bank Pocztowy
+Bank Pocztowy Sp. z o.o.
+Bank Pocztowy S.A.
+BGŻ BNP Paribas
+BGŻ BNP Paribas Sp. z o.o.
+BGŻ BNP Paribas S.A.
+Citi Handlowy
+Citi Handlowy Sp. z o.o.
+Citi Handlowy S.A.
+Orange Polska
+Orange Polska Sp. z o.o.
+Orange Polska S.A.
+T-Mobile Polska
+T-Mobile Polska Sp. z o.o.
+T-Mobile Polska S.A.
+Play
+Play Sp. z o.o.
+Play S.A.
+Plus
+Plus Sp. z o.o.
+Plus S.A.
+Polkomtel
+Polkomtel Sp. z o.o.
+Polkomtel S.A.
+Warta
+Warta Sp. z o.o.
+Warta S.A.
+Ergo Hestia
+Ergo Hestia Sp. z o.o.
+Ergo Hestia S.A.
+Generali
+Generali Sp. z o.o.
+Generali S.A.
+Allianz
+Allianz Sp. z o.o.
+Allianz S.A.
+AXA
+AXA Sp. z o.o.
+AXA S.A.
+Aviva
+Aviva Sp. z o.o.
+Aviva S.A.
+TVP
+TVP Sp. z o.o.
+TVP S.A.
+TVN
+TVN Sp. z o.o.
+TVN S.A.
+Polsat
+Polsat Sp. z o.o.
+Polsat S.A.
+Onet
+Onet Sp. z o.o.
+Onet S.A.
+WP
+WP Sp. z o.o.
+WP S.A.
+Interia
+Interia Sp. z o.o.
+Interia S.A.
+Gazeta Wyborcza
+Gazeta Wyborcza Sp. z o.o.
+Gazeta Wyborcza S.A.
+Poczta Polska
+Poczta Polska Sp. z o.o.
+Poczta Polska S.A.
+PKP
+PKP Sp. z o.o.
+PKP S.A.
+LOT
+LOT Sp. z o.o.
+LOT S.A.
+Comarch
+Comarch Sp. z o.o.
+Comarch S.A.
+Asseco
+Asseco Sp. z o.o.
+Asseco S.A.
+Atos
+Atos Sp. z o.o.
+Atos S.A.
+Capgemini
+Capgemini Sp. z o.o.
+Capgemini S.A.
+Kowalski Sp. z o.o.
+Nowak S.A.
+Trans-Bud
+Trans-Bud Sp. z o.o.
+Trans-Bud S.A.
+Auto-Serwis
+Auto-Serwis Sp. z o.o.
+Auto-Serwis S.A.
+Elektro-Instal
+Elektro-Instal Sp. z o.o.
+Elektro-Instal S.A.
+Hydro-Tech
+Hydro-Tech Sp. z o.o.
+Hydro-Tech S.A.
+Termo-System
+Termo-System Sp. z o.o.
+Termo-System S.A.
+Metal-Plast
+Metal-Plast Sp. z o.o.
+Metal-Plast S.A.
+Drewno-Bud
+Drewno-Bud Sp. z o.o.
+Drewno-Bud S.A.
+Agro-Handel
+Agro-Handel Sp. z o.o.
+Agro-Handel S.A.
+Food-Service
+Food-Service Sp. z o.o.
+Food-Service S.A.
+Clean-Pro
+Clean-Pro Sp. z o.o.
+Clean-Pro S.A.
+Budex
+P.H.U. Budex
+P.P.H.U. Budex
+F.H.U. Budex
+PPHU Budex
+PHU Budex
+FHU Budex
+Budex
+Transex
+P.H.U. Transex
+P.P.H.U. Transex
+F.H.U. Transex
+PPHU Transex
+PHU Transex
+FHU Transex
+Transex
+Metalex
+P.H.U. Metalex
+P.P.H.U. Metalex
+F.H.U. Metalex
+PPHU Metalex
+PHU Metalex
+FHU Metalex
+Metalex
+Chemex
+P.H.U. Chemex
+P.P.H.U. Chemex
+F.H.U. Chemex
+PPHU Chemex
+PHU Chemex
+FHU Chemex
+Chemex
+Agromax
+P.H.U. Agromax
+P.P.H.U. Agromax
+F.H.U. Agromax
+PPHU Agromax
+PHU Agromax
+FHU Agromax
+Agromax
+Techpol
+P.H.U. Techpol
+P.P.H.U. Techpol
+F.H.U. Techpol
+PPHU Techpol
+PHU Techpol
+FHU Techpol
+Techpol
+Polbud
+P.H.U. Polbud
+P.P.H.U. Polbud
+F.H.U. Polbud
+PPHU Polbud
+PHU Polbud
+FHU Polbud
+Polbud
+Eurobud
+P.H.U. Eurobud
+P.P.H.U. Eurobud
+F.H.U. Eurobud
+PPHU Eurobud
+PHU Eurobud
+FHU Eurobud
+Eurobud
+Eurotech
+P.H.U. Eurotech
+P.P.H.U. Eurotech
+F.H.U. Eurotech
+PPHU Eurotech
+PHU Eurotech
+FHU Eurotech
+Eurotech
+Polimax
+P.H.U. Polimax
+P.P.H.U. Polimax
+F.H.U. Polimax
+PPHU Polimax
+PHU Polimax
+FHU Polimax
+Polimax
+Intermax
+P.H.U. Intermax
+P.P.H.U. Intermax
+F.H.U. Intermax
+PPHU Intermax
+PHU Intermax
+FHU Intermax
+Intermax
+Multitech
+P.H.U. Multitech
+P.P.H.U. Multitech
+F.H.U. Multitech
+PPHU Multitech
+PHU Multitech
+FHU Multitech
+Multitech

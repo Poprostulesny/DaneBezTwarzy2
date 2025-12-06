@@ -1,10 +1,363 @@
-Szkoła Podstawowa nr 1 w Warszawie
-Liceum Ogólnokształcące nr 5 w Krakowie
-Gimnazjum nr 7 w Wrocławiu
-Szkoła Podstawowa nr 3 w Poznaniu
-Liceum nr 2 w Gdańsku
-Szkoła Podstawowa nr 10 w Łodzi
-Gimnazjum nr 4 w Szczecinie
-Liceum Ogólnokształcące nr 6 w Białymstoku
-Szkoła Podstawowa nr 8 w Lublinie
-Liceum nr 9 w Toruniu
+Szkoła Podstawowa nr 1
+Szkoła Podstawowa nr 2
+Szkoła Podstawowa nr 3
+Szkoła Podstawowa nr 4
+Szkoła Podstawowa nr 5
+Szkoła Podstawowa nr 6
+Szkoła Podstawowa nr 7
+Szkoła Podstawowa nr 8
+Szkoła Podstawowa nr 9
+Szkoła Podstawowa nr 10
+Szkoła Podstawowa nr 11
+Szkoła Podstawowa nr 12
+Szkoła Podstawowa nr 13
+Szkoła Podstawowa nr 14
+Szkoła Podstawowa nr 15
+Szkoła Podstawowa nr 16
+Szkoła Podstawowa nr 17
+Szkoła Podstawowa nr 18
+Szkoła Podstawowa nr 19
+Szkoła Podstawowa im. Jana Pawła II
+Szkoła Podstawowa im. Adama Mickiewicza
+Szkoła Podstawowa im. Marii Curie-Skłodowskiej
+Szkoła Podstawowa im. Stefana Batorego
+Szkoła Podstawowa im. Tadeusza Kościuszki
+Szkoła Podstawowa w Warszawie
+Szkoła Podstawowa w Krakowie
+Szkoła Podstawowa we Wrocławiu
+SP nr 1
+SP nr 2
+SP nr 3
+SP nr 4
+SP nr 5
+SP nr 6
+SP nr 7
+SP nr 8
+SP nr 9
+SP nr 10
+SP nr 11
+SP nr 12
+SP nr 13
+SP nr 14
+SP nr 15
+SP nr 16
+SP nr 17
+SP nr 18
+SP nr 19
+SP im. Jana Pawła II
+SP im. Adama Mickiewicza
+SP im. Marii Curie-Skłodowskiej
+SP im. Stefana Batorego
+SP im. Tadeusza Kościuszki
+SP w Warszawie
+SP w Krakowie
+SP we Wrocławiu
+Gimnazjum nr 1
+Gimnazjum nr 2
+Gimnazjum nr 3
+Gimnazjum nr 4
+Gimnazjum nr 5
+Gimnazjum nr 6
+Gimnazjum nr 7
+Gimnazjum nr 8
+Gimnazjum nr 9
+Gimnazjum nr 10
+Gimnazjum nr 11
+Gimnazjum nr 12
+Gimnazjum nr 13
+Gimnazjum nr 14
+Gimnazjum nr 15
+Gimnazjum nr 16
+Gimnazjum nr 17
+Gimnazjum nr 18
+Gimnazjum nr 19
+Gimnazjum im. Jana Pawła II
+Gimnazjum im. Adama Mickiewicza
+Gimnazjum im. Marii Curie-Skłodowskiej
+Gimnazjum im. Stefana Batorego
+Gimnazjum im. Tadeusza Kościuszki
+Gimnazjum w Warszawie
+Gimnazjum w Krakowie
+Gimnazjum we Wrocławiu
+Liceum Ogólnokształcące nr 1
+Liceum Ogólnokształcące nr 2
+Liceum Ogólnokształcące nr 3
+Liceum Ogólnokształcące nr 4
+Liceum Ogólnokształcące nr 5
+Liceum Ogólnokształcące nr 6
+Liceum Ogólnokształcące nr 7
+Liceum Ogólnokształcące nr 8
+Liceum Ogólnokształcące nr 9
+Liceum Ogólnokształcące nr 10
+Liceum Ogólnokształcące nr 11
+Liceum Ogólnokształcące nr 12
+Liceum Ogólnokształcące nr 13
+Liceum Ogólnokształcące nr 14
+Liceum Ogólnokształcące nr 15
+Liceum Ogólnokształcące nr 16
+Liceum Ogólnokształcące nr 17
+Liceum Ogólnokształcące nr 18
+Liceum Ogólnokształcące nr 19
+Liceum Ogólnokształcące im. Jana Pawła II
+Liceum Ogólnokształcące im. Adama Mickiewicza
+Liceum Ogólnokształcące im. Marii Curie-Skłodowskiej
+Liceum Ogólnokształcące im. Stefana Batorego
+Liceum Ogólnokształcące im. Tadeusza Kościuszki
+Liceum Ogólnokształcące w Warszawie
+Liceum Ogólnokształcące w Krakowie
+Liceum Ogólnokształcące we Wrocławiu
+LO nr 1
+LO nr 2
+LO nr 3
+LO nr 4
+LO nr 5
+LO nr 6
+LO nr 7
+LO nr 8
+LO nr 9
+LO nr 10
+LO nr 11
+LO nr 12
+LO nr 13
+LO nr 14
+LO nr 15
+LO nr 16
+LO nr 17
+LO nr 18
+LO nr 19
+LO im. Jana Pawła II
+LO im. Adama Mickiewicza
+LO im. Marii Curie-Skłodowskiej
+LO im. Stefana Batorego
+LO im. Tadeusza Kościuszki
+LO w Warszawie
+LO w Krakowie
+LO we Wrocławiu
+Technikum nr 1
+Technikum nr 2
+Technikum nr 3
+Technikum nr 4
+Technikum nr 5
+Technikum nr 6
+Technikum nr 7
+Technikum nr 8
+Technikum nr 9
+Technikum nr 10
+Technikum nr 11
+Technikum nr 12
+Technikum nr 13
+Technikum nr 14
+Technikum nr 15
+Technikum nr 16
+Technikum nr 17
+Technikum nr 18
+Technikum nr 19
+Technikum im. Jana Pawła II
+Technikum im. Adama Mickiewicza
+Technikum im. Marii Curie-Skłodowskiej
+Technikum im. Stefana Batorego
+Technikum im. Tadeusza Kościuszki
+Technikum w Warszawie
+Technikum w Krakowie
+Technikum we Wrocławiu
+Zespół Szkół nr 1
+Zespół Szkół nr 2
+Zespół Szkół nr 3
+Zespół Szkół nr 4
+Zespół Szkół nr 5
+Zespół Szkół nr 6
+Zespół Szkół nr 7
+Zespół Szkół nr 8
+Zespół Szkół nr 9
+Zespół Szkół nr 10
+Zespół Szkół nr 11
+Zespół Szkół nr 12
+Zespół Szkół nr 13
+Zespół Szkół nr 14
+Zespół Szkół nr 15
+Zespół Szkół nr 16
+Zespół Szkół nr 17
+Zespół Szkół nr 18
+Zespół Szkół nr 19
+Zespół Szkół im. Jana Pawła II
+Zespół Szkół im. Adama Mickiewicza
+Zespół Szkół im. Marii Curie-Skłodowskiej
+Zespół Szkół im. Stefana Batorego
+Zespół Szkół im. Tadeusza Kościuszki
+Zespół Szkół w Warszawie
+Zespół Szkół w Krakowie
+Zespół Szkół we Wrocławiu
+ZS nr 1
+ZS nr 2
+ZS nr 3
+ZS nr 4
+ZS nr 5
+ZS nr 6
+ZS nr 7
+ZS nr 8
+ZS nr 9
+ZS nr 10
+ZS nr 11
+ZS nr 12
+ZS nr 13
+ZS nr 14
+ZS nr 15
+ZS nr 16
+ZS nr 17
+ZS nr 18
+ZS nr 19
+ZS im. Jana Pawła II
+ZS im. Adama Mickiewicza
+ZS im. Marii Curie-Skłodowskiej
+ZS im. Stefana Batorego
+ZS im. Tadeusza Kościuszki
+ZS w Warszawie
+ZS w Krakowie
+ZS we Wrocławiu
+Zasadnicza Szkoła Zawodowa nr 1
+Zasadnicza Szkoła Zawodowa nr 2
+Zasadnicza Szkoła Zawodowa nr 3
+Zasadnicza Szkoła Zawodowa nr 4
+Zasadnicza Szkoła Zawodowa nr 5
+Zasadnicza Szkoła Zawodowa nr 6
+Zasadnicza Szkoła Zawodowa nr 7
+Zasadnicza Szkoła Zawodowa nr 8
+Zasadnicza Szkoła Zawodowa nr 9
+Zasadnicza Szkoła Zawodowa nr 10
+Zasadnicza Szkoła Zawodowa nr 11
+Zasadnicza Szkoła Zawodowa nr 12
+Zasadnicza Szkoła Zawodowa nr 13
+Zasadnicza Szkoła Zawodowa nr 14
+Zasadnicza Szkoła Zawodowa nr 15
+Zasadnicza Szkoła Zawodowa nr 16
+Zasadnicza Szkoła Zawodowa nr 17
+Zasadnicza Szkoła Zawodowa nr 18
+Zasadnicza Szkoła Zawodowa nr 19
+Zasadnicza Szkoła Zawodowa im. Jana Pawła II
+Zasadnicza Szkoła Zawodowa im. Adama Mickiewicza
+Zasadnicza Szkoła Zawodowa im. Marii Curie-Skłodowskiej
+Zasadnicza Szkoła Zawodowa im. Stefana Batorego
+Zasadnicza Szkoła Zawodowa im. Tadeusza Kościuszki
+Zasadnicza Szkoła Zawodowa w Warszawie
+Zasadnicza Szkoła Zawodowa w Krakowie
+Zasadnicza Szkoła Zawodowa we Wrocławiu
+Uniwersytet nr 1
+Uniwersytet nr 2
+Uniwersytet nr 3
+Uniwersytet nr 4
+Uniwersytet nr 5
+Uniwersytet nr 6
+Uniwersytet nr 7
+Uniwersytet nr 8
+Uniwersytet nr 9
+Uniwersytet nr 10
+Uniwersytet nr 11
+Uniwersytet nr 12
+Uniwersytet nr 13
+Uniwersytet nr 14
+Uniwersytet nr 15
+Uniwersytet nr 16
+Uniwersytet nr 17
+Uniwersytet nr 18
+Uniwersytet nr 19
+Uniwersytet im. Jana Pawła II
+Uniwersytet im. Adama Mickiewicza
+Uniwersytet im. Marii Curie-Skłodowskiej
+Uniwersytet im. Stefana Batorego
+Uniwersytet im. Tadeusza Kościuszki
+Uniwersytet w Warszawie
+Uniwersytet w Krakowie
+Uniwersytet we Wrocławiu
+Politechnika nr 1
+Politechnika nr 2
+Politechnika nr 3
+Politechnika nr 4
+Politechnika nr 5
+Politechnika nr 6
+Politechnika nr 7
+Politechnika nr 8
+Politechnika nr 9
+Politechnika nr 10
+Politechnika nr 11
+Politechnika nr 12
+Politechnika nr 13
+Politechnika nr 14
+Politechnika nr 15
+Politechnika nr 16
+Politechnika nr 17
+Politechnika nr 18
+Politechnika nr 19
+Politechnika im. Jana Pawła II
+Politechnika im. Adama Mickiewicza
+Politechnika im. Marii Curie-Skłodowskiej
+Politechnika im. Stefana Batorego
+Politechnika im. Tadeusza Kościuszki
+Politechnika w Warszawie
+Politechnika w Krakowie
+Politechnika we Wrocławiu
+Akademia nr 1
+Akademia nr 2
+Akademia nr 3
+Akademia nr 4
+Akademia nr 5
+Akademia nr 6
+Akademia nr 7
+Akademia nr 8
+Akademia nr 9
+Akademia nr 10
+Akademia nr 11
+Akademia nr 12
+Akademia nr 13
+Akademia nr 14
+Akademia nr 15
+Akademia nr 16
+Akademia nr 17
+Akademia nr 18
+Akademia nr 19
+Akademia im. Jana Pawła II
+Akademia im. Adama Mickiewicza
+Akademia im. Marii Curie-Skłodowskiej
+Akademia im. Stefana Batorego
+Akademia im. Tadeusza Kościuszki
+Akademia w Warszawie
+Akademia w Krakowie
+Akademia we Wrocławiu
+Wyższa Szkoła nr 1
+Wyższa Szkoła nr 2
+Wyższa Szkoła nr 3
+Wyższa Szkoła nr 4
+Wyższa Szkoła nr 5
+Wyższa Szkoła nr 6
+Wyższa Szkoła nr 7
+Wyższa Szkoła nr 8
+Wyższa Szkoła nr 9
+Wyższa Szkoła nr 10
+Wyższa Szkoła nr 11
+Wyższa Szkoła nr 12
+Wyższa Szkoła nr 13
+Wyższa Szkoła nr 14
+Wyższa Szkoła nr 15
+Wyższa Szkoła nr 16
+Wyższa Szkoła nr 17
+Wyższa Szkoła nr 18
+Wyższa Szkoła nr 19
+Wyższa Szkoła im. Jana Pawła II
+Wyższa Szkoła im. Adama Mickiewicza
+Wyższa Szkoła im. Marii Curie-Skłodowskiej
+Wyższa Szkoła im. Stefana Batorego
+Wyższa Szkoła im. Tadeusza Kościuszki
+Wyższa Szkoła w Warszawie
+Wyższa Szkoła w Krakowie
+Wyższa Szkoła we Wrocławiu
+Uniwersytet Warszawski
+Uniwersytet Jagielloński
+Politechnika Warszawska
+Politechnika Wrocławska
+Politechnika Gdańska
+Politechnika Poznańska
+Akademia Górniczo-Hutnicza
+SGH
+Szkoła Główna Handlowa
+SGGW
+Uniwersytet im. Adama Mickiewicza
+UAM

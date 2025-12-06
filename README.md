@@ -81,11 +81,14 @@ pip install -r requirements.txt
 DaneBezTwarzy2/
 ├── config.py              # Konfiguracja: etykiety, tagi anonimizacji
 ├── data_generator.py      # Generator syntetycznego korpusu NER
+├── generate_values.py     # Generator rozbudowanych plików values.txt
 ├── train.py               # Skrypt treningowy (Flair + HerBERT)
-├── inference.py           # Funkcja anonymize(text)
+├── anonymize.py           # 🔐 Główny skrypt do anonimizacji tekstu
+├── inference.py           # Funkcja anonymize(text) - stary interfejs
 ├── utils.py               # Funkcje korupcji tekstu (leet-speak, typo)
 ├── convert_data.py        # Konwerter zdań z pliku Dane do mixed_templates.txt
 ├── mixed_templates.txt    # Szablony zdań z placeholderami
+├── test_data.txt          # Przykładowe dane do testowania anonimizacji
 ├── requirements.txt       # Zależności Python
 ├── Dane                   # Surowe dane ze zdaniami
 └── data/                  # Foldery z wartościami i szablonami per tag
@@ -157,7 +160,81 @@ trainer = train_model(epochs=10, model_dir="my_model")
 
 ---
 
-## Inferencja (anonimizacja)
+## Anonimizacja tekstu
+
+### Skrypt `anonymize.py`
+
+Główny skrypt do anonimizacji tekstu. Obsługuje różne tryby działania:
+
+#### Anonimizacja tekstu z linii poleceń
+
+```bash
+python anonymize.py "Jan Kowalski mieszka w Warszawie"
+```
+
+#### Anonimizacja pliku
+
+```bash
+# Anonimizacja pliku (wynik zapisze do input_anonymized.txt)
+python anonymize.py -i dane.txt
+
+# Anonimizacja z podaniem pliku wyjściowego
+python anonymize.py -i dane.txt -o anonimowe.txt
+
+# Z wyświetlaniem szczegółów wykrytych encji
+python anonymize.py -i dane.txt -o anonimowe.txt -v
+```
+
+#### Anonimizacja ze standardowego wejścia
+
+```bash
+echo "Mój PESEL to 90010112345" | python anonymize.py
+```
+
+#### Tryb interaktywny
+
+```bash
+python anonymize.py --interactive
+```
+
+#### Różne formaty wyjścia
+
+```bash
+# Format tekstowy (domyślny)
+python anonymize.py "Jan Kowalski" --format text
+
+# Format JSON (z encjami)
+python anonymize.py "Jan Kowalski" --format json
+
+# Format CSV
+python anonymize.py "Jan Kowalski" --format csv
+```
+
+#### Użycie własnego modelu
+
+```bash
+python anonymize.py -m models/custom/best-model.pt "Tekst do anonimizacji"
+```
+
+### Przykładowy wynik
+
+Wejście (`test_data.txt`):
+
+```
+Nazywam się Jan Kowalski i mieszkam w Warszawie przy ul. Marszałkowskiej 15/3.
+Mój numer PESEL to 90010112345, a numer telefonu to +48 500 123 456.
+```
+
+Wyjście:
+
+```
+Nazywam się [IMIĘ] [NAZWISKO] i mieszkam w [MIASTO] przy [ADRES].
+Mój numer PESEL to [PESEL], a numer telefonu to [TELEFON].
+```
+
+---
+
+## Inferencja (stary interfejs)
 
 ```bash
 python -c "from inference import anonymize; print(anonymize('Nazywam się Anna Nowak i mieszkam w Krakowie.'))"

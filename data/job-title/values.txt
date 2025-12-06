@@ -1,10 +1,84 @@
-Programista
-Analityk Biznesowy
-Manager Projektów
-Kierownik Zespołu
-Architekt Systemu
-DevOps Engineer
-Data Scientist
-Administrator Bazy Danych
-Tester QA
-Specjalista ds. Bezpieczeństwa
+programista
+developer
+software engineer
+senior developer
+frontend developer
+backend developer
+full-stack developer
+DevOps engineer
+administrator systemów
+analityk IT
+tester oprogramowania
+QA engineer
+project manager
+product owner
+scrum master
+tech lead
+CTO
+dyrektor
+prezes
+wiceprezes
+członek zarządu
+CEO
+kierownik
+manager
+menedżer
+koordynator
+specjalista
+analityk biznesowy
+konsultant
+doradca
+księgowy
+główny księgowy
+analityk finansowy
+controller
+audytor
+biegły rewident
+doradca podatkowy
+broker
+lekarz
+lekarka
+pielęgniarz
+pielęgniarka
+chirurg
+kardiolog
+pediatra
+psychiatra
+dentysta
+farmaceuta
+ratownik medyczny
+fizjoterapeuta
+prawnik
+adwokat
+radca prawny
+sędzia
+prokurator
+notariusz
+komornik
+aplikant
+nauczyciel
+profesor
+wykładowca
+lektor
+pedagog
+dyrektor szkoły
+wychowawca
+inżynier
+architekt
+mechanik
+elektryk
+hydraulik
+kierowca
+sprzedawca
+kasjer
+kelner
+kucharz
+policjant
+strażak
+żołnierz
+ochroniarz
+dziennikarz
+redaktor
+grafik
+fotograf
+aktor
