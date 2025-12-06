@@ -16,7 +16,8 @@ import os
 
 from faker import Faker
 
-from flair.data import Sentence, Token, Span, Corpus, _SentenceDataset
+from flair.data import Sentence, Token, Span, Corpus
+from flair.datasets import FlairDatapointDataset
 def _generate_pesel() -> str:
     """
     Generates a valid synthetic PESEL number (11 digits).
@@ -160,18 +161,6 @@ def _generate_value_for_placeholder(placeholder: str, faker: Faker) -> str:
         return faker.phone_number()
     if key in ("pesel",):
         return _generate_pesel()
-    def _generate_pesel() -> str:
-        """
-        Generates a valid synthetic PESEL number (11 digits).
-        """
-        # PESEL: YYMMDDPPPPK (K - checksum, simplified here)
-        year = random.randint(50, 22)  # 1950-2022
-        month = random.randint(1, 12)
-        day = random.randint(1, 28)
-        serial = random.randint(1000, 9999)
-        pesel = f"{year:02d}{month:02d}{day:02d}{serial:04d}"
-        pesel = pesel[:11]  # ensure length
-        return pesel
     if key in ("document-number", "document_number"):
         return faker.bothify(text="??########")
 
@@ -317,15 +306,20 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
     n = len(all_sentences)
     n_train = int(0.8 * n)
     n_dev = int(0.1 * n)
-    train = all_sentences[:n_train]
-    dev = all_sentences[n_train:n_train + n_dev]
-    test = all_sentences[n_train + n_dev:]
+    train_sentences = all_sentences[:n_train]
+    dev_sentences = all_sentences[n_train:n_train + n_dev]
+    test_sentences = all_sentences[n_train + n_dev:]
 
-    return Corpus(train=train, dev=dev, test=test)
+    # Użyj FlairDatapointDataset, wymaganego przez nową wersję Flair
+    train_dataset = FlairDatapointDataset(train_sentences)
+    dev_dataset = FlairDatapointDataset(dev_sentences)
+    test_dataset = FlairDatapointDataset(test_sentences)
+
+    return Corpus(train=train_dataset, dev=dev_dataset, test=test_dataset)
 
 
 if __name__ == "__main__":
     # Krótka demonstracja: wygeneruj mały korpus i zapisz w formacie konsoli
     corpus = generate_corpus(n_per_template=5)
-    print(f"Wygenerowano: train={len(list(corpus.train)) if corpus.train else 0}, dev={len(list(corpus.dev)) if corpus.dev else 0}, test={len(list(corpus.test)) if corpus.test else 0}")
+    print(f"Wygenerowano: train={len(corpus.train) if corpus.train else 0}, dev={len(corpus.dev) if corpus.dev else 0}, test={len(corpus.test) if corpus.test else 0}")
 

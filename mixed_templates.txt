@@ -1,25 +1,638 @@
-{name} {surname} mieszka w {city}, pracuje jako {job-title}.
-Pacjent {name} {surname}, wiek {age}, pochodzi z {city}.
-Właściciel karty {credit-card-number} to {name} {surname} z {city}.
-Email: {email} Telefon: {phone} Imię: {name}
-Pan {name} {surname} urodził się {date-of-birth} w {city}.
-Pani {name} {surname} pracuje w firmie {company} na stanowisku {job-title}.
-Student {name} {surname} uczęszczał do {school-name} w {city}.
-Numer PESEL {pesel} należy do {name} {surname} z {city}.
-{name} {surname} wyznaje religię {religion} i pochodzi z {city}.
-Konto bankowe {bank-account} należy do {name} {surname}.
-Użytkownik {username} o numerze ID {document-number} mieszka w {city}.
-{name} ma poglądy {political-view} i pochodzi z {city}.
-Pacjentka {name} {surname} ma problemy zdrowotne: {health}.
-{name} {surname} z {city} pracuje w zawodzie {job-title} od {date}.
-Szkoda, że {name} {surname} ma sekret: {secret}.
-Pracownik {name} {surname} (PESEL: {pesel}) zatrudniony w {company}.
-Osoba pochodzenia {ethnicity} o nazwisku {surname} mieszka w {city}.
-{name} {surname} o orientacji {sexual-orientation} pochodzi z {city}.
-Bliski krewny {relative} dla {name} {surname} mieszka w {city}.
-Obywatel płci {sex} o imieniu {name} i nazwisku {surname} z {city}.
-Karta kredytowa {credit-card-number} wydana dla {name} {surname} w {city}.
-Firma {company} zatrudnia {name} jako {job-title}, siedziba w {city}.
-Dane dostępowe: login {username} email {email} z numeru {phone}.
-Historia medyczna: {name} {surname}, wiek {age}, diagnoza {health}.
-Numer dokumentu {document-number} wydany {name} {surname} z {city}.
+Cześć, z tej strony {name}, dzwonię w sprawie ogłoszenia, które widziałam wczoraj. Czy mógłbyś przekazać {name}, że niestety spóźnię się na spotkanie, bo utknęłam w korku?
+W formularzu rejestracyjnym jako drugie imię podałem {name}, chociaż wszyscy mówią na mnie {name}.
+Moja siostra ma na imię {name}, dokładnie tak samo jak nasza babcia.
+Czy {name} potwierdził już swoją obecność na konferencji?
+Hej {name}, czy mógłbyś podać mi sól?
+Nie uwierzysz, ale {name} znowu zapomniał kluczy do biura.
+Na identyfikatorze konferencyjnym wpisano błędnie: {name} zamiast Tomasz.
+Czy wiesz, że {name} wygrał wczoraj główną nagrodę w loterii?
+Proszę, przekaż te dokumenty pani o imieniu {name}, siedzi w pokoju nr 4.
+Mimo że {name} wielokrotnie obiecywał poprawę, to właśnie {name} był osobą, która ponownie zawiodła cały zespół projektowy w kluczowym momencie.
+Czy mógłbyś sprawdzić w archiwum, czy {name} figurował w spisie lokatorów z lat osiemdziesiątych, zanim budynek został przejęty przez miasto?
+Zastanawiam się, czy {name} zdaje sobie sprawę, że jej imienniczka, słynna {name}, również pochodziła z tak małej miejscowości.
+W trakcie burzliwej dyskusji to właśnie {name} zachował zimną krew, uspokajając pozostałych uczestników, w tym bardzo zdenerwowanego {name}.
+Na liście gości weselnych mamy aż trzy osoby o imieniu {name}, więc musimy używać nazwisk, żeby uniknąć potwornego zamieszania przy sadzaniu ich przy stole.
+Kiedy {name} weszła do pokoju, wszyscy zamilkli, ponieważ plotka głosiła, że to właśnie {name} zostanie nowym dyrektorem działu marketingu.
+Proszę o przekazanie informacji, że {name} nie będzie mógł dzisiaj poprowadzić szkolenia, więc zastąpi go {name} z działu IT.
+To niesamowite, że bliźniaki otrzymały imiona {name} i {name}, co brzmi bardzo podobnie i myli nawet ich własnych rodziców.
+W starożytnych kronikach często pojawia się imię {name}, ale historycy spierają się, czy chodzi o tego samego władcę, czy może o jego syna, również {name}.
+Jeśli {name} zadzwoni ponownie, powiedz jej proszę, że dokumenty są już gotowe do odbioru i czekają w sekretariacie na biurku {name}.
+Szanowny Panie {surname}, prosimy o pilny kontakt z działem kadr w sprawie Pana umowy. Dokumenty podpisał już prezes {surname}, więc brakuje tylko Pana podpisu.
+To typowe zachowanie dla rodziny {surname}, oni zawsze trzymają się razem w trudnych chwilach.
+Pani {surname} z księgowości prosiła o dostarczenie faktur do jutra.
+Nie ufam nikomu z rodu {surname}, oni zawsze kręcą.
+Proszę zaadresować kopertę do Państwa {surname} i wysłać priorytetem.
+W dzienniku lekcyjnym pod literą K widnieje uczeń o nazwisku {surname}.
+Czy jest na sali pacjent {surname}? Lekarz prosi do gabinetu numer 5.
+Kancelaria prawna {surname} i Wspólnicy ogłosiła nabór na stażystów.
+Moje nazwisko panieńskie to {surname}, ale po ślubie przejęłam nazwisko męża.
+Wydaje mi się, że pan {surname} nie do końca zrozumiał intencje zarządu, co widać po ostrej reakcji mecenasa {surname} na ostatnim spotkaniu.
+Historycy od lat badają drzewo genealogiczne rodu {surname}, próbując ustalić, czy są oni spokrewnieni z arystokratyczną linią {surname} z Wielkopolski.
+Proszę sprawdzić w bazie dłużników, czy figuruje tam nazwisko {surname}, ponieważ mamy podejrzenia co do wiarygodności finansowej klienta.
+Pani {surname} nalegała na spotkanie z dyrektorem, twierdząc, że jej mąż, pan {surname}, został niesłusznie zwolniony dyscyplinarnie.
+Na nagrobku widniało jedynie nazwisko {surname}, bez żadnych dat ani imion, co dodało całej sprawie aury tajemniczości.
+Zbieżność nazwisk jest przypadkowa, więc oskarżony {surname} nie ma nic wspólnego z prokuratorem {surname} prowadzącym tę sprawę.
+Wszyscy w firmie wiedzą, że {surname} i {surname} to odwieczni rywale, którzy walczą o ten sam awans od ponad dekady.
+Czy mógłby pan przeliterować nazwisko {surname}? W systemie mamy kilka osób o podobnym brzmieniu, na przykład {surname} przez 'rz'.
+Zaproszenie zostało zaadresowane błędnie do Państwa {surname}, podczas gdy powinno trafić do rodziny {surname} mieszkającej pod numerem 5.
+W artykule opisującym aferę gospodarczą padło nazwisko {surname}, co spowodowało gwałtowny spadek akcji spółki należącej do jego brata.
+Jako osoba, która dopiero co skończyła {age} lat, czuję ogromną presję ze strony rodziców. W moim wieku, czyli {age} lat, powinnam już rzekomo mieć własne mieszkanie.
+Pacjent, lat {age}, zgłosił się na SOR z bólem w klatce piersiowej. Wygląda na starszego, raczej na {age} lat.
+Zatrzymany mężczyzna ma {age} lata i był już wcześniej karany.
+Dziecko w wieku {age} miesięcy wymaga specjalistycznej opieki pediatrycznej.
+Na torcie urodzinowym świeczki ułożyły się w liczbę {age}, co wywołało śmiech solenizanta.
+Sprzedawca poprosił o dowód, żeby sprawdzić, czy mam skończone {age} lat.
+Ten zabytkowy budynek ma już ponad {age} lat i wymaga generalnego remontu.
+W ankiecie zaznaczyłem przedział wiekowy: od {age} do 40 lat.
+Mój dziadek przeszedł na emeryturę, mając dokładnie {age} lat.
+Biorąc pod uwagę fakt, że oskarżony w chwili popełnienia czynu miał zaledwie {age} lat, sąd postanowił zastosować nadzwyczajne złagodzenie kary.
+Trudno uwierzyć, że ta firma istnieje na rynku już {age} lat i przetrwała wszystkie kryzysy gospodarcze, które wykończyły konkurencję.
+Statystyki demograficzne pokazują niepokojący trend: średnia wieku w tej gminie wynosi już {age} lat, co oznacza szybkie starzenie się populacji.
+Jako kobieta mająca {age} lat, czuję się w pełni sił witalnych i planuję rozpocząć zupełnie nową ścieżkę kariery zawodowej.
+Dla pacjentów powyżej {age} roku życia zalecana jest dodatkowa dawka szczepionki, chyba że występują przeciwwskazania kardiologiczne.
+W kategorii juniorów mogą startować zawodnicy, którzy nie ukończyli jeszcze {age} lat, licząc rocznikowo od daty urodzenia.
+Mój samochód ma już {age} lat i mechanik powiedział, że naprawa silnika przewyższy jego obecną wartość rynkową.
+Badania pokazują, że dzieci w wieku {age} lat najlepiej przyswajają języki obce poprzez zabawę i interakcję z rówieśnikami.
+Ubezpieczenie na życie dla osoby mającej {age} lat jest znacznie droższe niż dla dwudziestolatka ze względu na ryzyko zachorowań.
+Mimo że skończył {age} lat, nadal zachowuje się jak nieodpowiedzialny nastolatek, co doprowadza jego rodzinę do szału.
+Moja mama urodziła się dokładnie {date-of-birth} w małym szpitalu powiatowym. W dowodzie mam wpisane {date-of-birth}, co często myli systemy w USA.
+System bankowy wymaga wpisania daty w formacie RRRR-MM-DD, więc wpisałem {date-of-birth}.
+Urodzony {date-of-birth}, syn Jana i Marii, zamieszkały w Łodzi.
+Jako hasło do WiFi ustawiłem datę urodzenia mojego psa: {date-of-birth}.
+W paszporcie widnieje data {date-of-birth}, więc dokument jest jeszcze ważny.
+Czy jesteś pewien, że {date-of-birth} to poprawna data urodzenia tego kandydata?
+Horoskop dla osób urodzonych {date-of-birth} przewiduje sukcesy finansowe.
+W formularzu wizowym należy bezwzględnie podać dokładną datę urodzenia w formacie amerykańskim, na przykład {date-of-birth}, aby uniknąć odrzucenia wniosku.
+Spór dotyczył tego, czy data urodzenia wpisana w starym akcie chrztu, czyli {date-of-birth}, jest tą prawdziwą, czy może urzędnik popełnił błąd.
+Osoby urodzone przed datą {date-of-birth} są uprawnione do wcześniejszej emerytury na starych zasadach, co budzi wiele kontrowersji.
+Logując się do systemu e-zdrowie, musisz potwierdzić swoją tożsamość, podając nazwisko rodowe matki oraz swoją datę urodzenia: {date-of-birth}.
+Na nagrobku wyryto jedynie datę śmierci, natomiast data urodzenia {date-of-birth} została dodana później na specjalnej tabliczce pamiątkowej.
+Zgodnie z numerologią, data urodzenia {date-of-birth} determinuje twoją ścieżkę życiową i predyspozycje do zawodów artystycznych.
+Policja poszukuje mężczyzny, który podaje fałszywą datę urodzenia {date-of-birth}, próbując wyłudzić kredyty w parabankach.
+Weryfikacja wieku na stronie wymagała wpisania daty urodzenia, więc zaznaczyłem {date-of-birth}, chociaż tak naprawdę jestem młodszy.
+Archiwum Państwowe potwierdziło, że w księgach parafialnych pod datą {date-of-birth} zarejestrowano narodziny mojego pradziadka.
+Różnica między datą w dowodzie ({date-of-birth}) a tą w akcie urodzenia wynikała z błędu pisarskiego popełnionego w urzędzie stanu cywilnego po wojnie.
+Do wypadku doszło w dniu {date} na skrzyżowaniu ulicy Marszałkowskiej. Pamiętam tę datę, {date}, bo to była rocznica mojego ślubu.
+Termin ważności polisy upływa {date}, proszę o wcześniejsze opłacenie składki.
+Widzimy się {date} o godzinie 15:00 w kawiarni przy rynku.
+Zgodnie z wyrokiem sądu z dnia {date}, pozwany musi zapłacić grzywnę.
+Ostateczny termin składania podań na studia mija {date}.
+Mamy zarezerwowane bilety lotnicze na {date}, wylot z Warszawy.
+Pamiętna data {date} zapisała się na zawsze w historii naszego miasta.
+Faktura została wystawiona w dniu {date} z terminem płatności 14 dni.
+Zgodnie z aneksem do umowy najmu, nowa stawka czynszu obowiązuje od dnia {date}, co lokatorzy przyjęli z dużym niezadowoleniem.
+W związku z inwentaryzacją magazynu zaplanowaną na dzień {date}, sklep będzie nieczynny, a zamówienia online będą realizowane z opóźnieniem.
+Termin rozprawy sądowej został przesunięty z powodu choroby sędziego na dzień {date}, co znacznie wydłuży cały proces odszkodowawczy.
+Pamiętaj, że gwarancja na ten sprzęt elektroniczny wygasa dokładnie {date}, więc warto zgłosić usterkę jeszcze przed tym terminem.
+Spotkanie zarządu spółki odbędzie się {date} w siedzibie głównej, a jego głównym tematem będzie przyjęcie sprawozdania finansowego.
+Od dnia {date} wchodzą w życie nowe przepisy ruchu drogowego, które nakładają wyższe mandaty za przekroczenie prędkości.
+W kalendarzu zaznaczyłem datę {date} czerwonym kolorem, ponieważ to ostateczny termin oddania pracy magisterskiej promotorowi.
+Zdarzenie miało miejsce w nocy z {date} na dzień następny, kiedy to monitoring miejski zarejestrował podejrzane zachowanie grupy osób.
+Bilet miesięczny jest ważny od pierwszego dnia miesiąca do {date}, potem należy go przedłużyć w biletomacie lub aplikacji.
+Uroczystość otwarcia nowego skrzydła szpitala zaplanowano na {date}, a swoją obecność potwierdził już minister zdrowia.
+W ankiecie medycznej w polu płeć zaznaczyłem opcję: {sex}. Nie rozumiem, dlaczego system pyta o płeć {sex} w kontekście tego konkretnego badania.
+Pacjent o fenotypie {sex} zgłosił się na badania hormonalne.
+Statystyki pokazują, że płeć {sex} rzadziej zapada na tę konkretną chorobę.
+W dowodzie osobistym w sekcji płeć wpisano literę oznaczającą {sex}.
+Hodowca potwierdził, że płeć nowo narodzonego źrebaka to {sex}.
+Sklep odzieżowy jest podzielony na działy: dziecięcy, męski i {sex}.
+Badanie demograficzne wykazało przewagę osób o płci {sex} w tym regionie.
+W badaniach klinicznych nad nowym lekiem wzięła udział grupa reprezentująca płeć {sex}, aby sprawdzić specyficzne reakcje organizmu.
+Dyskryminacja ze względu na płeć, w tym przypadku faworyzowanie pracowników o płci {sex}, jest niezgodna z kodeksem pracy i polityką firmy.
+W formularzu zgłoszeniowym na zawody sportowe musisz obowiązkowo zaznaczyć płeć: {sex} lub przeciwną, co decyduje o przydziale do kategorii.
+Analiza rynku pracy pokazuje, że płeć {sex} nadal dominuje w sektorze technologicznym, mimo licznych programów aktywizujących.
+System komputerowy automatycznie przypisuje tytuł grzecznościowy na podstawie pola płeć, gdzie wpisano wartość {sex}.
+Lekarz genetyk wyjaśnił rodzicom, że płeć dziecka ({sex}) jest determinowana przez chromosomy X i Y w momencie zapłodnienia.
+W niektórych kulturach płeć {sex} pełni tradycyjnie określone role społeczne, które obecnie ulegają dynamicznym przemianom.
+Ankieter zapytał respondenta o płeć, a po usłyszeniu odpowiedzi '{sex}' zaznaczył odpowiednią kratkę na tablecie.
+Przepisy dotyczące wieku emerytalnego w Polsce są zróżnicowane ze względu na płeć, co jest korzystniejsze dla osób o płci {sex}.
+W dowodzie osobistym, w polu płeć, widnieje litera K, co jednoznacznie wskazuje na płeć {sex}.
+Jako praktykujący {religion}, staram się przestrzegać postu w każdy piątek, co bywa trudne w pracy. W naszej wspólnocie {religion} święta obchodzimy w zupełnie innym terminie.
+Jako zadeklarowany {religion}, domagam się prawa do posiłków zgodnych z moją wiarą.
+Nie wiedziałem, że on jest {religion}, dopóki nie zobaczyłem symboli religijnych w jego domu.
+Czy w menu weselnym uwzględniono potrawy dla gości wyznania {religion}?
+Mój sąsiad przeszedł na {religion} i teraz w soboty nie używa elektroniki.
+W tej dzielnicy znajduje się duża świątynia dla społeczności {religion}.
+Szkoła respektuje święta wszystkich uczniów, w tym tych wyznania {religion}.
+Konflikt w regionie ma podłoże etniczne i religijne, ponieważ ścierają się tam interesy grupy wyznającej {religion} z lokalną większością.
+Jako osoba wychowana w tradycji {religion}, mam pewne trudności ze zrozumieniem świeckich zwyczajów panujących w tym kraju.
+W trakcie rozmowy kwalifikacyjnej kandydat zaznaczył, że jego wyznanie ({religion}) wymaga przerw na modlitwę w ciągu dnia pracy.
+Dialog międzyreligijny między przedstawicielami chrześcijaństwa a wyznawcami {religion} jest kluczowy dla zachowania pokoju społecznego.
+Mimo że oficjalnie jestem {religion}, nie praktykuję regularnie i traktuję wiarę bardziej jako dziedzictwo kulturowe.
+W szpitalu zapewniono opiekę duszpasterską nie tylko katolikom, ale także pacjentom deklarującym wyznanie {religion}.
+Zaskoczyło mnie, że w tym regionie Azji dominuje {religion}, a nie buddyzm, jak powszechnie się uważa.
+Kalendarz świąt państwowych uwzględnia najważniejsze uroczystości dla obywateli wyznania {religion}, dając im dni wolne od pracy.
+Małżeństwo mieszane, w którym on jest ateistą, a ona gorliwą {religion}, wymaga od obu stron dużej tolerancji i kompromisów.
+Stowarzyszenie zrzesza osoby, które odeszły od wiary {religion} i szukają wsparcia w świeckim światopoglądzie.
+Nigdy nie ukrywałem, że jestem zwolennikiem {political-view}, ponieważ ich program socjalny do mnie trafia. Mój ojciec z kolei zawsze głosuje na {political-view}, co prowadzi do kłótni przy stole.
+Ona jest zagorzałą {political-view} i regularnie chodzi na wszystkie manifestacje.
+Twoje poglądy jako {political-view} kłócą się z misją naszej fundacji.
+Na samochodzie przykleił naklejkę promującą partię {political-view}.
+Debata telewizyjna pokazała różnice między konserwatystami a {political-view}.
+W tym regionie tradycyjnie wygrywa opcja {political-view}, co widać po wynikach wyborów.
+Czytając ten artykuł, od razu widać, że autor popiera {political-view}.
+Analizując program wyborczy, widać wyraźnie, że kandydat skręca w stronę {political-view}, co może zrazić umiarkowanych wyborców centrum.
+Jako osoba o poglądach {political-view}, nie zgadzam się na zwiększanie podatków dla przedsiębiorców i rozbudowę biurokracji.
+Polaryzacja społeczeństwa sprawia, że zwolennik opcji {political-view} nie jest w stanie merytorycznie rozmawiać z przeciwnikiem politycznym.
+Mój dziadek był zatwardziałym {political-view} i nawet w czasach PRL-u głośno krytykował władzę ludową.
+W parlamencie powstała nowa koalicja, która łączy posłów o orientacji {political-view} z ludowcami, co jest dużym zaskoczeniem.
+Nie można dyskryminować pracownika tylko dlatego, że prywatnie popiera {political-view} i bierze udział w legalnych demonstracjach.
+Ideologia {political-view} zyskuje na popularności wśród młodych ludzi, którzy są rozczarowani obecnym systemem kapitalistycznym.
+W trakcie debaty kandydat oskarżył swojego oponenta o skrajny {political-view}, który zagraża stabilności państwa.
+Media publiczne zostały oskarżone o propagandę na rzecz opcji {political-view} rządzącej obecnie krajem.
+Jako zdeklarowany {political-view}, uważam, że państwo powinno minimalnie ingerować w życie obywateli i gospodarkę.
+Mimo że urodziłem się w Polsce, czuję się silnie związany z mniejszością {ethnicity}. W spisie powszechnym zadeklarowałem narodowość {ethnicity}, bo stamtąd pochodzą moi dziadkowie.
+Jej {ethnicity} korzenie są widoczne w specyficznej kuchni, którą serwuje w domu.
+Wywodzę się z grupy {ethnicity}, co jest dla mnie powodem do dumy, mimo trudnej historii.
+Zespół ludowy zaprezentował tradycyjne tańce regionu {ethnicity}.
+W domu dziadków rozmawiało się w dialekcie charakterystycznym dla {ethnicity}.
+Stypendium jest przeznaczone dla studentów pochodzenia {ethnicity}.
+Kultura {ethnicity} ma bardzo bogatą tradycję ustnego przekazywania historii.
+Wielokulturowość tego miasta przejawia się w tym, że obok siebie żyją Polacy, Ukraińcy oraz liczna mniejszość {ethnicity}.
+Dyskryminacja ze względu na pochodzenie {ethnicity} jest w tym kraju surowo karana, choć wciąż zdarzają się incydenty na tle rasistowskim.
+Badania genetyczne wykazały, że mam w sobie domieszkę krwi {ethnicity}, co tłumaczyłoby moją nietypową urodę.
+Festiwal Kultury {ethnicity} przyciągnął tysiące turystów chcących poznać muzykę i sztukę tego regionu.
+W spisie powszechnym pojawiła się możliwość zadeklarowania podwójnej tożsamości narodowej, na przykład polskiej i {ethnicity}.
+Język {ethnicity} jest zagrożony wyginięciem, dlatego lokalne władze finansują lekcje tego dialektu w szkołach podstawowych.
+Mój sąsiad, rodowity {ethnicity}, opowiedział mi fascynującą historię o tym, jak jego rodzina przybyła tutaj po wojnie.
+Konstytucja gwarantuje mniejszości {ethnicity} prawo do zachowania własnej kultury, języka i tradycji religijnych.
+Potrawy kuchni {ethnicity} stają się coraz modniejsze, a restauracje serwujące te dania powstają w każdym dużym mieście.
+Osoby deklarujące narodowość {ethnicity} mają zagwarantowane dwa miejsca w parlamencie jako przedstawiciele mniejszości narodowych.
+Jako osoba {sexual-orientation}, często spotykam się z niezrozumieniem w moim małym miasteczku. Otwarcie mówię, że jestem {sexual-orientation}, bo nie chcę już niczego ukrywać przed rodziną.
+W naszym zespole dbamy o inkluzywność, niezależnie od tego, czy ktoś jest {sexual-orientation} czy hetero.
+Coming out jako {sexual-orientation} był dla niego najtrudniejszym momentem w życiu.
+Na paradzie równości szli ludzie o orientacji {sexual-orientation} i ich sojusznicy.
+W ankiecie anonimowej zaznaczył, że jego orientacja to {sexual-orientation}.
+Tęczowa flaga w oknie symbolizuje wsparcie dla społeczności {sexual-orientation}.
+Film opowiada historię nastolatka odkrywającego, że jest {sexual-orientation}.
+W wielu krajach bycie osobą {sexual-orientation} jest nadal nielegalne i grozi za to kara więzienia, a nawet śmierć.
+Psycholog szkolny udzielił wsparcia uczniowi, który jest prześladowany przez rówieśników z powodu bycia {sexual-orientation}.
+Firma wdrożyła politykę diversity & inclusion, aby każdy pracownik, bez względu na to czy jest {sexual-orientation}, czuł się szanowany.
+Aktor znany z filmów akcji dokonał publicznego coming outu, przyznając, że jest {sexual-orientation}, co wywołało burzę w mediach.
+Badania socjologiczne pokazują, że akceptacja dla osób {sexual-orientation} w społeczeństwie polskim systematycznie rośnie, zwłaszcza wśród młodych.
+Małżeństwa osób tej samej płci są w tym stanie legalne, co pozwala parom {sexual-orientation} na adopcję dzieci.
+Mój brat długo ukrywał, że jest {sexual-orientation}, bojąc się reakcji naszych konserwatywnych rodziców.
+Organizacje LGBTQ+ walczą o równe prawa dla osób {sexual-orientation}, w tym o prawo do zawierania związków partnerskich.
+W literaturze współczesnej coraz częściej pojawiają się wątki dotyczące bohaterów {sexual-orientation}, co pomaga w oswajaniu tematu.
+Jako sojusznik osób {sexual-orientation}, biorę udział w marszach równości i sprzeciwiam się mowie nienawiści.
+Ostatnie badania wykazały u mnie {health}, co wymaga całkowitej zmiany diety. Biorę leki na {health}, więc muszę unikać stresujących sytuacji w pracy.
+Zdiagnozowano u mnie {health}, co wyklucza mnie z zawodowego uprawiania sportu.
+Pacjent leczy się psychiatrycznie na {health} od trzeciego roku życia.
+W karcie szczepień wpisano silną alergię na {health}, proszę nie podawać penicyliny.
+Dostałem zwolnienie lekarskie na dwa tygodnie z powodu ostrej {health}.
+Czy to danie zawiera gluten? Cierpię na {health} i muszę uważać.
+Lekarz rodzinny podejrzewał {health}, więc skierował mnie do specjalisty.
+Ubezpieczyciel odmówił wypłaty odszkodowania, uznając {health} za chorobę przewlekłą.
+Ze względu na zaawansowaną {health}, pacjent wymaga stałej opieki pielęgniarskiej i specjalistycznego sprzętu medycznego w domu.
+Lekarz medycyny pracy nie wydał zgody na pracę na wysokościach, ponieważ u pracownika wykryto nieleczoną {health}.
+Nowatorska terapia genowa daje nadzieję pacjentom cierpiącym na rzadką odmianę {health}, która dotychczas była nieuleczalna.
+W wywiadzie lekarskim pacjent zataił informację, że choruje na {health}, co doprowadziło do poważnych powikłań podczas operacji.
+Kampania społeczna ma na celu zwiększenie świadomości na temat profilaktyki {health}, która jest drugą najczęstszą przyczyną zgonów.
+Osoby z orzeczeniem o niepełnosprawności z powodu {health} mogą ubiegać się o dofinansowanie do turnusów rehabilitacyjnych.
+Nagły atak {health} zmusił kierowcę do zjechania na pobocze i wezwania pogotowia ratunkowego.
+Badania okresowe wykazały podwyższony poziom cukru, co może sugerować początki {health} typu drugiego.
+Szczepionka przeciwko {health} jest obowiązkowa dla wszystkich dzieci przed pójściem do przedszkola.
+Psychoterapia jest skuteczną metodą wspierania leczenia farmakologicznego w przypadku zdiagnozowanej {health}.
+To jest sklep, który prowadzi mój {relative}, więc mogę ci załatwić zniżkę. Rozmawiałem wczoraj z {relative}, który potwierdził te informacje.
+To jest firma założona przez mojego {relative}, więc czuję się tam jak w domu.
+Spotkałam wczoraj {relative}, mówiła, że u nich wszystko w porządku.
+Nawet {relative} nie wiedziała o jego problemach finansowych.
+W razie nagłego wypadku proszę dzwonić do: {relative}, numer zapisałem w telefonie.
+Cały spadek po zmarłej {relative} został przekazany na cele charytatywne.
+Na ślub zaprosiłem tylko najbliższą rodzinę, w tym moją ulubioną {relative}.
+Mój {relative} jest prawnym opiekunem dziecka i musi podpisać zgodę na wycieczkę.
+Sąd przyznał prawo do opieki nad dziećmi ojcu, mimo że {relative} ze strony matki wnosiła o ustanowienie jej rodziną zastępczą.
+Dziedziczenie ustawowe jest skomplikowane, ponieważ zmarły nie zostawił testamentu, a roszczenia zgłasza teraz dalszy {relative}.
+W formularzu wizowym musiałem podać dane osoby zapraszającej mnie do USA, którą jest moja {relative} mieszkająca w Chicago.
+Konflikt o podział majątku skłócił całą rodzinę, a najbardziej poszkodowana w tym wszystkim jest moja schorowana {relative}.
+Jako najbliższy {relative} pacjenta, mam prawo wglądu do jego dokumentacji medycznej i decydowania o dalszym leczeniu.
+Firma jest typowym biznesem rodzinnym, gdzie prezesem jest ojciec, a wiceprezesem jego {relative}.
+Moja {relative} zawsze powtarzała, że z rodziną najlepiej wychodzi się na zdjęciach, co niestety okazało się prawdą.
+Z powodu choroby rodziców, opiekę nad małoletnim rodzeństwem przejął ich pełnoletni {relative}.
+Świadek nie może składać zeznań w tej sprawie, ponieważ jest {relative} oskarżonego i ma prawo do odmowy.
+Dzięki badaniom DNA udało mi się odnaleźć biologiczną rodzinę, w tym {relative}, o której istnieniu nie miałem pojęcia.
+Planuję spędzić weekend w {city}, żeby zobaczyć Wawel i pospacerować nad Wisłą. Studiowałem we {city}, ale to {city} daje mi największe możliwości zawodowe.
+Pochodzę z małej miejscowości {city}, gdzie wszyscy się znają.
+Trasa koncertowa obejmuje występy w {city}, Poznaniu i Szczecinie.
+Oddział firmy w lokalizacji {city} notuje w tym kwartale największe straty.
+Pociąg InterCity relacji Warszawa - {city} ma opóźnienie 60 minut.
+Prognoza pogody dla {city} przewiduje silne burze w godzinach popołudniowych.
+Kibice drużyny piłkarskiej z {city} świętowali awans do ekstraklasy.
+Nasza firma otworzyła nowe biuro w centrum {city}, tuż obok dworca.
+Rewitalizacja starej dzielnicy przemysłowej w {city} przyciągnęła inwestorów z całego świata i zmieniła oblicze miasta.
+Mimo że koszty życia w {city} są bardzo wysokie, to rynek pracy oferuje tam zarobki nieporównywalne z resztą kraju.
+Z powodu gigantycznych korków na obwodnicy {city}, spóźniłem się na samolot i musiałem przebukować bilet.
+Władze miasta {city} wprowadziły strefę czystego transportu, co wywołało protesty właścicieli starszych samochodów.
+Uniwersytet w {city} jest jedną z najstarszych uczelni w Europie i co roku przyciąga tysiące studentów z zagranicy.
+Historia miasta {city} jest nierozerwalnie związana z przemysłem włókienniczym, który upadł po transformacji ustrojowej.
+Plan zagospodarowania przestrzennego dla dzielnicy portowej w {city} zakłada budowę nowoczesnych apartamentowców.
+Podróż samochodem z Gdańska do {city} zajmuje teraz o dwie godziny mniej dzięki nowo otwartej autostradzie.
+Festiwal filmowy odbywający się co roku w {city} jest jednym z najważniejszych wydarzeń kulturalnych w tej części Europy.
+Burmistrz {city} ogłosił stan klęski żywiołowej po gwałtownych ulewach, które zalały centrum miasta.
+Kurier zostawił paczkę pod drzwiami na {address}, chociaż prosiłem o kontakt. Mój adres korespondencyjny to: {address}.
+Mieszkam w {address}, zaraz obok fontanny Neptuna.
+Taksówka czeka pod adresem {address}, proszę schodzić.
+Wpisz w nawigację {address}, to powinno doprowadzić cię pod samą bramę.
+Oficjalna siedziba stowarzyszenia mieści się na {address}.
+Zamówiłem pizzę z dostawą na {address}, mam nadzieję, że trafią.
+W KRS jako adres siedziby spółki widnieje: {address}.
+Świadek zeznał, że oskarżony w chwili zdarzenia przebywał pod adresem {address}.
+Proszę o przesłanie nowej karty bankowej na adres {address}.
+Komornik sądowy dokonał zajęcia ruchomości w mieszkaniu dłużnika znajdującym się pod adresem {address}.
+W celu weryfikacji tożsamości prosimy o przesłanie rachunku za media wystawionego na adres zamieszkania: {address}.
+Nieruchomość położona przy ulicy {address} jest obciążona hipoteką na rzecz banku, co utrudnia jej sprzedaż.
+Z powodu błędu w systemie nawigacji, karetka pogotowia pojechała na {address} w innej miejscowości.
+W akcie notarialnym wpisano błędny numer lokalu w adresie {address}, co wymagało sprostowania dokumentu.
+Policja dokonała przeszukania w lokalu pod adresem {address}, gdzie zabezpieczono dowody w sprawie.
+Moja firma jest zarejestrowana w wirtualnym biurze pod adresem {address}, co jest bardzo wygodnym rozwiązaniem.
+List polecony wrócił do nadawcy z adnotacją 'adresat nieznany pod adresem {address}'.
+Nowa inwestycja deweloperska powstaje przy {address}, w miejscu dawnych zakładów produkcyjnych.
+Spotkanie organizacyjne wspólnoty mieszkaniowej budynku przy {address} odbędzie się w najbliższy wtorek.
+Jeśli masz pytania, napisz do mnie na {email}, sprawdzam tę skrzynkę codziennie. Oficjalne zgłoszenia proszę kierować na {email}.
+Błąd logowania dla użytkownika {email}, hasło niepoprawne.
+Faktury przesyłamy wyłącznie na adres {email}, prosimy nie odpowiadać na ten automat.
+Mój prywatny mail to {email}, pisz śmiało po godzinach pracy.
+Aby wypisać się z newslettera, wyślij pustą wiadomość na adres {email}.
+W formularzu kontaktowym podałem błędny adres zwrotny: {email}.
+Hakerzy wykradli bazę danych, sprawdź czy twój {email} wyciekł.
+Wyślij mi te zdjęcia na {email}, bo przez MMS tracą jakość.
+Ze względów bezpieczeństwa, prosimy nie klikać w linki w wiadomościach przychodzących z podejrzanego adresu {email}.
+Administrator systemu utworzył dla nowego pracownika konto pocztowe w domenie firmowej: {email}.
+Wszystkie aplikacje CV prosimy przesyłać na adres rekrutacyjny {email} z dopiskiem 'RODO' w tytule.
+Twój adres e-mail {email} został pomyślnie zweryfikowany, możesz teraz zalogować się do serwisu.
+Jeśli zapomniałeś hasła, wpisz swój adres {email}, a my wyślemy ci link do jego zresetowania.
+Otrzymałem dziwną wiadomość phishingową, która rzekomo przyszła z adresu banku, ale nadawcą był {email}.
+Proszę dodać mój adres {email} do kopii ukrytej (UDW), żeby inni odbiorcy go nie widzieli.
+Kontakt z Inspektorem Ochrony Danych jest możliwy pod adresem mailowym {email}.
+Automatyczna odpowiedź: Jestem na urlopie do 20 września, w pilnych sprawach pisz na {email}.
+Skrzynka pocztowa użytkownika {email} jest pełna, wiadomość nie mogła zostać dostarczona.
+W razie awarii dzwoń pod numer {phone}, to mój telefon służbowy. Możesz też spróbować stacjonarnego: {phone}.
+Potwierdzenie SMS zostało wysłane na numer {phone}.
+Biuro Obsługi Klienta jest dostępne pod numerem {phone} w dni robocze.
+Znalazłem w telefonie nieodebrane połączenie od {phone}.
+Sprzedam Opla Corsa, rok 2010, kontakt tel. {phone}.
+Zablokowałem numer {phone}, bo ciągle dzwonili z ofertą fotowoltaiki.
+Recepcja hotelu jest dostępna pod numerem {phone} całą dobę.
+Wyślij mi przelew na telefon BLIK, mój numer to {phone}.
+W celu autoryzacji przelewu wpisz kod SMS, który wysłaliśmy na Twój zaufany numer telefonu {phone}.
+Jeśli jesteś świadkiem wypadku, zadzwoń natychmiast na numer alarmowy 112 lub bezpośrednio na pogotowie pod {phone}.
+Oszuści wykorzystują spoofing, podszywając się pod numer banku {phone}, więc bądź czujny i nie podawaj haseł.
+W ogłoszeniu o wynajem mieszkania podano błędny numer kontaktowy {phone}, przez co nie można się dodzwonić.
+Proszę o aktualizację mojego numeru telefonu w bazie danych na nowy: {phone}, stary jest już nieaktywny.
+Infolinia techniczna pod numerem {phone} jest płatna zgodnie z taryfą twojego operatora.
+Zgubiłem telefon, więc proszę o kontakt z moją żoną pod numerem {phone} w sprawach pilnych.
+Kurier będzie dzwonił z numeru {phone} przed doręczeniem przesyłki, proszę mieć telefon pod ręką.
+Numery premium zaczynające się od {phone} mogą generować bardzo wysokie koszty na twoim rachunku.
+Aby aktywować usługę roamingu, wyślij SMS o treści TAK na bezpłatny numer {phone}.
+Urzędniczka poprosiła mnie o podanie numeru PESEL, więc podyktowałem: {pesel}. Sprawdź, czy w bazie danych numer {pesel} jest przypisany do tego klienta.
+Pacjent o numerze PESEL {pesel} został przyjęty na oddział ratunkowy.
+Weryfikacja tożsamości nie powiodła się, numer {pesel} nie istnieje w rejestrze.
+Proszę uzupełnić pole PESEL wartością {pesel} na drugiej stronie wniosku.
+Do rozliczenia PIT potrzebny będzie Twój numer PESEL: {pesel}.
+Farmaceuta nie mógł zrealizować recepty, bo wpisano błędny PESEL {pesel}.
+W umowie najmu musimy wpisać numery PESEL obu stron, mój to {pesel}.
+System wyświetlił komunikat: niepoprawna suma kontrolna dla PESEL {pesel}.
+Osoba posługująca się numerem PESEL {pesel} jest poszukiwana listem gończym za oszustwa podatkowe.
+W przypadku obcokrajowców, którzy nie posiadają numeru PESEL {pesel}, identyfikacja następuje na podstawie paszportu.
+Bank zablokował dostęp do konta, ponieważ numer PESEL {pesel} widnieje w bazie zastrzeżonych dokumentów.
+Proszę sprawdzić, czy numer PESEL {pesel} zgadza się z datą urodzenia wpisaną w dowodzie osobistym.
+Rejestracja na szczepienie wymaga podania numeru PESEL {pesel} w celu weryfikacji uprawnień pacjenta.
+Uczelnia wymaga podania numeru PESEL {pesel} przy zakładaniu konta w systemie USOS.
+W akcie notarialnym dotyczącym sprzedaży działki musi znaleźć się numer PESEL kupującego: {pesel}.
+Twój e-PIT został wygenerowany automatycznie na podstawie numeru PESEL {pesel}.
+Pracodawca ma obowiązek zgłosić pracownika do ZUS, podając jego imię, nazwisko i numer PESEL {pesel}.
+Błąd w systemie CEPIK: kierowca o numerze PESEL {pesel} posiada dwa aktywne prawa jazdy.
+Do odprawy na lotnisku potrzebny będzie dowód osobisty numer {document-number}. Kierowca legitymował się prawem jazdy serii {document-number}.
+Legitymował się paszportem zagranicznym o numerze {document-number}.
+Kserokopia dowodu osobistego {document-number} jest nieczytelna, proszę o nowy skan.
+Zgubiłem legitymację studencką nr {document-number} i muszę wyrobić duplikat.
+Wypożyczalnia samochodów wymaga podania numeru prawa jazdy: {document-number}.
+Notariusz spisał dane z dowodu osobistego serii {document-number}.
+Konsultant banku poprosił o dwie ostatnie cyfry dokumentu tożsamości {document-number}.
+Znaleziono portfel zawierający dowód osobisty o numerze {document-number}.
+Podróżując poza strefę Schengen, musisz posiadać paszport o numerze {document-number} ważny co najmniej 6 miesięcy.
+Policjant zatrzymał dowód rejestracyjny pojazdu numer {document-number} z powodu braku aktualnych badań technicznych.
+W systemie hotelowym zameldowano gościa na podstawie dowodu osobistego numer {document-number}.
+Proszę wpisać numer dowodu tożsamości {document-number} na rewersie czeku przed jego realizacją.
+Osoba legitymująca się skradzionym dowodem osobistym serii {document-number} próbowała wyłudzić kredyt gotówkowy.
+Karta pobytu o numerze {document-number} uprawnia cudzoziemca do legalnej pracy na terenie Rzeczypospolitej Polskiej.
+Wniosek o nowy paszport został złożony, ponieważ stary dokument o numerze {document-number} uległ zniszczeniu.
+Ochrona budynku nie wpuściła mnie do środka, ponieważ numer mojej przepustki {document-number} nie widniał na liście.
+Czy numer seryjny dowodu osobistego {document-number} zawiera literę I czy cyfrę 1? Jest to niewyraźne.
+Urząd Stanu Cywilnego wydał odpis aktu małżeństwa na podstawie okazanego dowodu numer {document-number}.
+Od trzech lat pracuję w {company} jako programista Java, ale rozważam zmianę branży. Wcześniej odbywałem staż w {company}, co było świetnym doświadczeniem.
+Naszym kluczowym klientem jest {company}, realizujemy dla nich audyt bezpieczeństwa.
+Złożyłem wypowiedzenie w {company}, bo atmosfera była nie do zniesienia.
+Słyszałeś, że {company} ogłosiło upadłość w zeszłym tygodniu?
+Fakturę za usługi remontowe wystawiła firma {company} Sp. z o.o.
+Akcje spółki {company} poszybowały w górę po ogłoszeniu nowych wyników.
+Na portalu LinkedIn zaktualizowałem profil i dodałem {company} jako obecne miejsce pracy.
+Sponsorem tytularnym maratonu warszawskiego jest {company}.
+Po fuzji dwóch gigantów, {company} stało się największym graczem na rynku telekomunikacyjnym w Europie Środkowej.
+Komisja Nadzoru Finansowego nałożyła gigantyczną karę na {company} za nieprawidłowości w raportowaniu giełdowym.
+Praca w {company} wiąże się z licznymi benefitami, takimi jak prywatna opieka medyczna i karta sportowa.
+Dział prawny firmy {company} przygotowuje pozew przeciwko konkurencji o naruszenie praw patentowych.
+Jako podwykonawca dla {company}, musimy spełniać rygorystyczne normy ISO w zakresie zarządzania jakością.
+Prezes zarządu {company} został odwołany w trybie natychmiastowym po ujawnieniu afery korupcyjnej.
+W branży IT panuje opinia, że {company} to świetne miejsce na start kariery, ale słabe na dłuższą metę.
+Czy wiesz, że {company} planuje zwolnienia grupowe obejmujące 15% załogi w przyszłym kwartale?
+Fundacja założona przez {company} przekazała milion złotych na budowę nowego oddziału dziecięcego w szpitalu.
+Start-up został przejęty przez {company} za kwotę, która zwaliła z nóg wszystkich analityków rynkowych.
+Jestem absolwentem {school-name}, wydziału Mechatroniki. Moja córka chodzi do {school-name}, które ma bardzo wysoki poziom.
+Moje dzieci chodzą do {school-name}, bo mają tam świetne zajęcia dodatkowe.
+Dyplom {school-name} otwiera wiele drzwi na lokalnym rynku pracy.
+Spotkanie absolwentów {school-name} odbędzie się w auli głównej.
+W CV w sekcji wykształcenie wpisałem: ukończone {school-name}.
+Skręć w prawo zaraz za budynkiem {school-name}, tam znajdziesz parking.
+Reprezentacja {school-name} zajęła pierwsze miejsce w turnieju siatkówki.
+Z powodu awarii ogrzewania {school-name} została zamknięta do odwołania.
+Renoma {school-name} przyciąga kandydatów z całego województwa, przez co progi punktowe są niezwykle wysokie.
+Strajk nauczycieli w {school-name} spowodował zawieszenie zajęć dydaktycznych na okres dwóch tygodni.
+Fundusze unijne pozwoliły na nowoczesne wyposażenie pracowni chemicznej w {school-name}.
+Moja babcia pracowała jako sekretarka w {school-name} przez ponad czterdzieści lat i znała tam każdego ucznia.
+Zjazd rocznicowy z okazji 100-lecia istnienia {school-name} zgromadził wielu wybitnych absolwentów.
+Czy to prawda, że {school-name} ma podpisaną umowę o współpracy z Politechniką Warszawską?
+Rodzice protestowali przeciwko decyzji kuratorium o likwidacji {school-name} z powodu niżu demograficznego.
+Jako laureat olimpiady matematycznej mam zagwarantowane miejsce w {school-name} bez egzaminów wstępnych.
+Budynek, w którym mieści się {school-name}, jest wpisany do rejestru zabytków i wymaga specjalnej zgody na remont.
+Biblioteka szkolna w {school-name} posiada unikalne zbiory starodruków, niedostępne w innych placówkach.
+Na wizytówce mam napisane {job-title}, ale zajmuję się też marketingiem. Mój cel to awans na {job-title} w ciągu najbliższych dwóch lat.
+Jako {job-title} będziesz odpowiedzialny za zarządzanie zespołem pięcioosobowym.
+Szukamy osoby z doświadczeniem, która obejmie wakat na stanowisku {job-title}.
+Awansowano go na {job-title}, chociaż nie ma odpowiednich kwalifikacji.
+Średnie wynagrodzenie na stanowisku {job-title} w Warszawie to około 10 tysięcy złotych.
+Ogłoszenie o pracę: Poszukiwany kreatywny {job-title} z biegłym angielskim.
+Z poważaniem, Jan Kowalski, {job-title}.
+Zaczynałem w tej firmie jako recepcjonista, a teraz jestem {job-title}.
+Zakres obowiązków na stanowisku {job-title} obejmuje nie tylko sprzedaż, ale także budowanie długofalowych relacji z kluczowymi klientami.
+Mimo że oficjalnie jestem zatrudniony jako {job-title}, w praktyce pełnię funkcję nieformalnego lidera zespołu IT.
+Redukcja etatów dotknęła głównie menedżerów średniego szczebla, w tym osoby na stanowisku {job-title}.
+Wymagane kompetencje miękkie dla kandydata na {job-title} to przede wszystkim komunikatywność i odporność na stres.
+Po latach pracy jako {job-title} postanowiłem rzucić korporację i otworzyć własną działalność gospodarczą.
+Czy pensja na stanowisku {job-title} zawiera prowizję od sprzedaży, czy jest to stała podstawa?
+Jako Główny {job-title}, pani Anna odpowiada za strategię finansową całej grupy kapitałowej.
+W strukturze organizacyjnej naszej firmy {job-title} raportuje bezpośrednio do Członka Zarządu ds. Operacyjnych.
+Rekrutacja na stanowisko {job-title} trwa już trzy miesiące, bo nie możemy znaleźć nikogo z odpowiednim doświadczeniem w branży automotive.
+Awans pionowy ze stanowiska asystenta na {job-title} w tak krótkim czasie jest ewenementem w skali firmy.
+Proszę o zwrot środków na rachunek w mBanku: {bank-account}. To jest mój główny numer konta IBAN: {bank-account}.
+Zdefiniuj odbiorcę przelewu: nazwa własna, rachunek {bank-account}.
+Urzad Skarbowy zablokował konto o numerze {bank-account} z powodu zaległości.
+Czy numer {bank-account} na pewno należy do tego kontrahenta?
+Wszystkie datki na schronisko prosimy wpłacać na konto: {bank-account}.
+Płatność faktury należy uregulować w terminie 7 dni na rachunek: {bank-account}.
+Przez pomyłkę wysłałem pieniądze na stare konto {bank-account}, czy da się to cofnąć?
+W dziale kadr podałem numer rachunku {bank-account} do przelewów wynagrodzenia.
+Oszuści podmienili numer konta na fakturze na {bank-account}, przez co firma straciła kilkaset tysięcy złotych.
+Proszę o sprawdzenie, czy przelew walutowy na konto {bank-account} dotarł już do odbiorcy w Wielkiej Brytanii.
+Komornik zajął kwotę wolną od podatku na rachunku bankowym o numerze {bank-account}, co jest niezgodne z prawem.
+W systemie split payment (podzielona płatność) kwota VAT musi trafić na dedykowane konto VAT powiązane z rachunkiem {bank-account}.
+Aby ustawić polecenie zapłaty za prąd, musisz podać dostawcy energii swój numer konta: {bank-account}.
+Bank odmówił realizacji przelewu na konto {bank-account}, ponieważ znajduje się ono na czarnej liście podejrzanych rachunków.
+W tytule przelewu na konto {bank-account} proszę wpisać wyłącznie numer zamówienia, bez dodatkowych opisów.
+Zmiana numeru rachunku bankowego do spłaty kredytu na {bank-account} wymaga podpisania aneksu do umowy.
+Zlecenie stałe na czynsz z rachunku {bank-account} nie zostało zrealizowane z powodu braku środków.
+Zwrot nadpłaty podatku nastąpi na wskazany w zeznaniu rocznym rachunek bankowy: {bank-account}.
+System odrzucił płatność kartą o numerze {credit-card-number}. Musiałem podać dane innej karty VISA: {credit-card-number}.
+Twoja karta {credit-card-number} wkrótce straci ważność, zamów nową w aplikacji.
+Wykryto podejrzaną transakcję na karcie {credit-card-number} w Brazylii.
+Aby potwierdzić rezerwację hotelu, musisz podać numer karty: {credit-card-number}.
+Na potwierdzeniu z terminala widoczne są tylko ostatnie cyfry karty {credit-card-number}.
+Zgłaszam kradzież karty kredytowej MasterCard o numerze {credit-card-number}.
+Karta {credit-card-number} została zablokowana z powodu trzykrotnego wpisania błędnego PIN-u.
+Bank wykrył skimming i automatycznie zablokował kartę {credit-card-number}, wysyłając klientowi nową.
+Proszę nie podawać pełnego numeru karty {credit-card-number} w wiadomości e-mail, gdyż nie jest to bezpieczny kanał komunikacji.
+Obciążenie karty kredytowej {credit-card-number} kwotą abonamentu następuje automatycznie piątego dnia każdego miesiąca.
+Czy karta wirtualna o numerze {credit-card-number} ma taki sam limit transakcyjny jak plastikowy odpowiednik?
+Wykradziona baza danych zawierała numery kart kredytowych, w tym moją {credit-card-number}, oraz kody CVV.
+Terminal płatniczy nie czyta chipa w karcie {credit-card-number}, proszę spróbować użyć paska magnetycznego lub zbliżeniowo.
+Usługa chargeback pozwala na odzyskanie pieniędzy z transakcji kartą {credit-card-number}, jeśli sprzedawca nie wywiązał się z umowy.
+Wygasła ważność karty {credit-card-number}, więc serwis streamingowy nie mógł pobrać opłaty za kolejny miesiąc.
+Aktywacja nowej karty {credit-card-number} wymaga wykonania pierwszej transakcji z użyciem kodu PIN.
+Program lojalnościowy jest przypisany do karty płatniczej numer {credit-card-number}, więc punkty naliczają się automatycznie.
+Na GitHubie znajdziesz mnie pod nickiem {username}, mam tam wszystkie projekty. Do logowania w systemie użyj nazwy użytkownika {username}.
+Użytkownik @{username} został zbanowany za naruszenie regulaminu forum.
+Zaloguj się jako {username}, żeby uzyskać dostęp do panelu administratora.
+Niestety login {username} jest już zajęty, spróbuj dodać cyfry na końcu.
+W grze online gracz o nicku {username} zdobył najwyższy poziom.
+Możesz mnie znaleźć na Instagramie, mój profil to {username}.
+Konto systemowe z uprawnieniami roota nazywa się {username}.
+Próba przejęcia konta {username} nie powiodła się dzięki włączonej weryfikacji dwuetapowej.
+W logach serwera widać, że użytkownik {username} próbował uzyskać dostęp do plików, do których nie ma uprawnień.
+Aby zresetować hasło dla konta {username}, skontaktuj się z działem Helpdesk.
+W bazie danych SQL nazwa użytkownika {username} musi być unikalna w obrębie całej tabeli 'users'.
+Konto o nazwie {username} zostało oznaczone jako nieaktywne po 180 dniach braku logowania.
+Cyberprzestępcy często używają domyślnych loginów, takich jak {username}, do przeprowadzania ataków typu brute force.
+W konfiguracji klienta pocztowego w polu 'Nazwa użytkownika' wpisz pełny adres e-mail, a nie sam login {username}.
+Twórca treści znany jako {username} ogłosił przerwę w nagrywaniu filmów z powodów zdrowotnych.
+Zmieniono uprawnienia dla użytkownika {username} z 'Editor' na 'Viewer', co uniemożliwia mu wprowadzanie zmian w dokumencie.
+Rejestracja wymaga podania loginu {username}, który będzie widoczny dla innych uczestników czatu.
+Tymczasowe hasło do twojego konta to {secret}. Pamiętaj, żeby nigdy nie udostępniać klucza API: {secret}.
+Twój jednorazowy kod autoryzacyjny to {secret}, jest ważny przez 5 minut.
+Wyciekły dane logowania, w tym hasło {secret}, zalecamy natychmiastową zmianę.
+Ktoś nieodpowiedzialny przykleił kartkę z hasłem {secret} do monitora.
+W pliku konfiguracyjnym serwera musisz ustawić wartość klucza na {secret}.
+Kelner podał nam kod do toalety, który brzmi: {secret}.
+Pamiętaj, bank nigdy nie poprosi Cię o podanie hasła {secret} przez telefon.
+Zaszyfrowany ciąg znaków {secret} służy do podpisywania żądań wysyłanych do interfejsu API płatności.
+Aby sparować urządzenia przez Bluetooth, wpisz na klawiaturze kod PIN: {secret}.
+Skasuj wiadomość SMS z kodem {secret} natychmiast po jego wykorzystaniu, aby nikt go nie przejął.
+Hasło do archiwum ZIP to {secret}, ale plik jest uszkodzony i nie da się go rozpakować.
+Wykryto słabe hasło użytkownika: {secret}. Polityka bezpieczeństwa wymaga użycia znaków specjalnych i cyfr.
+Klucz licencyjny oprogramowania ma postać {secret} i można go aktywować tylko na jednym stanowisku roboczym.
+Token sesji {secret} wygasł, nastąpiło automatyczne wylogowanie z systemu bankowości elektronicznej.
+Developerzy omyłkowo zostawili klucz prywatny {secret} w kodzie źródłowym udostępnionym na GitHubie.
+Kod do domofonu to {secret}, naciśnij go szybko, bo przyciski się zacinają.
+Twoje hasło startowe do e-dziennika to {secret}, musisz je zmienić przy pierwszym logowaniu.
+Mieszkam w {city} przy ulicy {address} razem z moją schorowaną {relative}.
+Proszę o kontakt na numer {phone}, telefon odbierze mój {relative}, bo ja będę w pracy.
+Pacjent {name} {surname} (lat {age}) podał jako osobę do kontaktu swojego {relative}.
+Mój {relative} pracuje w {company} na stanowisku {job-title} i bardzo sobie chwali tę posadę.
+Upoważniłem moją {relative} legitymującą się dowodem {document-number} do wypłat z konta {bank-account}.
+W akcie urodzenia z dnia {date-of-birth} jako ojciec wpisany jest {name}, a zgłaszającym był {relative}.
+Jako {relative} ucznia szkoły {school-name}, zostałem wezwany na rozmowę z dyrektorem.
+Paczka dla {name} została odebrana przez jego {relative} pod adresem {address}.
+Często kłócę się przy stole o {political-view}, szczególnie gdy przyjeżdża mój {relative} ze wsi.
+Moja {relative} jest wyznania {religion} i bardzo pilnuje wszystkich świąt.
+W dniu {date} mój {relative} miał wypadek samochodowy i trafił na SOR z urazem głowy.
+Nie podawaj hasła {secret} do konta {username} nikomu, nawet jeśli prosi o to twój {relative}.
+Numer PESEL {pesel} należy do zmarłego, którego zidentyfikował {relative} po znakach szczególnych.
+Złodziej ukradł portfel z kartą {credit-card-number}, gdy moja {relative} robiła zakupy w {city}.
+Czy to prawda, że twój {relative} stracił pracę w {company} przez swoje pochodzenie {ethnicity}?
+Na lotnisku celnicy zatrzymali mojego {relative}, ponieważ jego paszport {document-number} był nieważny.
+Wyniki badań potwierdzających {health} wysłaliśmy na e-mail {email}, tak jak prosiła pana {relative}.
+Mój {relative} ma zaledwie {age} lat, a już otwarcie mówi, że jest osobą {sexual-orientation}.
+Nazwisko {surname} jest bardzo popularne w tym regionie, nosi je też mój {relative}.
+Bank zablokował transakcję, więc zadzwonili na {phone} do mojej {relative} celem weryfikacji.
+Jako dumny {relative}, byłem na przysiędze wojskowej w dniu {date}.
+Mój {relative} (płeć {sex}) cierpi na rzadką odmianę {health}, co wymaga kosztownego leczenia.
+W ten weekend jadę do {city}, gdzie mieszka mój {relative}, którego nie widziałem od lat.
+Firma {company} ma siedzibę na ulicy {address}, tuż obok domu, w którym żyje moja {relative}.
+Pan {name}, czyli {relative} prezesa, objął właśnie funkcję {job-title}.
+Jesteśmy rodziną o korzeniach {ethnicity}, o czym często przypomina mi mój starszy {relative}.
+Logując się do banku, zauważyłem, że mój {relative} wpisał błędny login {username}.
+Karta kredytowa {credit-card-number} jest wystawiona na mnie, ale korzysta z niej moja {relative}.
+Sprawdź w bazie po numerze PESEL {pesel}, czy ten {relative} jest uprawniony do odbioru świadczeń.
+Uroczyste rozdanie dyplomów {school-name} odbędzie się {date}, będzie tam też moja {relative}.
+Mój {relative} przelał mi wczoraj pieniądze na konto {bank-account} tytułem spłaty długu.
+Pacjent lat {age}, płeć {sex}, został przywieziony na oddział przez swoją {relative} z silnymi objawami {health}.
+Na wizytówce pana {surname} (stanowisko: {job-title}) widnieje błędny adres email {email}.
+Urodzona w {city} {name} deklaruje w spisie powszechnym narodowość {ethnicity} oraz wyznanie {religion}.
+Administrator {username} prosił, by pod żadnym pozorem nie udostępniać hasła {secret}, nawet jeśli dzwoni prezes {company}.
+W dniu {date} świadek {name} {surname} zeznał pod przysięgą, że widział całe zajście na ulicy {address}.
+Moja {relative} kończy w tym roku {school-name} z wyróżnieniem i szuka stażu jako młodszy {job-title}.
+Zgubiłem gdzieś portfel z kartą płatniczą {credit-card-number}, którą pożyczył mi wcześniej mój {relative}.
+Odkąd skończyłem {age} lat, leczę się przewlekle na {health}, dokładnie tak samo jak mój {relative}.
+Na granicy okazało się, że paszport serii {document-number} należący do mojej {relative} jest już nieważny.
+Jeśli nie odbieram pod numerem {phone}, proszę w pilnych sprawach dzwonić bezpośrednio do mojego {relative}.
+W systemie ZUS numer PESEL {pesel} jest błędnie przypisany do osoby o danych: {name} {surname}.
+Jako osoba {sexual-orientation} o poglądach {political-view}, często dyskutuję przy obiedzie z moim konserwatywnym {relative}.
+Kurier zostawił paczkę zaadresowaną do {name} u sąsiadki pod adresem {address} w {city}.
+Firma {company} zatrudniła mojego {relative} na okres próbny, mimo że nie ma doświadczenia w tej branży.
+Moja starsza {relative} zapomniała swojego loginu {username} do bankowości internetowej i zablokowała dostęp.
+Urodziłem się {date-of-birth} w tym samym szpitalu powiatowym, gdzie przez lata pracowała moja {relative}.
+Doskonale pamiętam datę {date}, ponieważ wtedy mój {relative} brał ślub w obrządku {religion}.
+Ze względu na zdiagnozowaną {health} muszę unikać glutenu, co jest trudne dla mojej {relative}, która uwielbia piec.
+Wniosek o duży kredyt hipoteczny, który ma wpłynąć na rachunek {bank-account}, złożył wczoraj pan {name} {surname}.
+Bank wykrył próbę oszustwa na karcie {credit-card-number} i natychmiast wysłał ostrzegawczy SMS na numer {phone}.
+Moja {relative} zawsze z dumą podkreślała swoje pochodzenie {ethnicity} i uczyła nas tradycji przodków.
+Dyrektor placówki {school-name} awansował niespodziewanie na wysokie stanowisko {job-title} w ministerstwie.
+Twój klucz dostępu API {secret} wygasł wczoraj w nocy, o czym poinformował mnie {name} z działu IT.
+Statystyki pokazują, że ludzie w wieku {age} lat rzadziej głosują na {political-view} niż ich rodzice.
+Zgubiłem dowód osobisty {document-number} gdzieś w centrum {city} podczas wycieczki szkolnej.
+Mój {relative} przeprowadził się niedawno na ulicę {address}, żeby mieć wreszcie bliżej do pracy w {company}.
+W ankiecie medycznej zaznaczyłem płeć {sex}, chociaż pytania dotyczyły głównie historii chorób mojej {relative}.
+Na oficjalnej liście mailingowej wciąż brakuje aktualnego adresu {email} do pana {surname}.
+Podana we wniosku data urodzenia {date-of-birth} musi się zgadzać z cyframi kontrolnymi w numerze PESEL {pesel}.
+W dniu {date} komornik sądowy zajął rachunek bankowy o numerze {bank-account} należący do dłużnika {name} {surname}.
+Jako administrator bazy danych w {company}, widzę, że użytkownik {username} próbował zmienić swoje hasło na {secret}.
+Moja {relative} cierpi na {health} i lekarz zalecił jej natychmiastową przeprowadzkę do innego klimatu.
+Na świadectwie pracy ze szkoły {school-name} widnieje błędna data urodzenia {date-of-birth}.
+Poszukujemy mężczyzny w wieku około {age} lat, ubranego na czarno, ostatnio widzianego na ulicy {address}.
+Czy to prawda, że {name} został zwolniony ze stanowiska {job-title} za swoje kontrowersyjne poglądy {political-view}?
+Zgubiłem portfel w autobusie w {city}, w środku był dowód osobisty {document-number} i karta {credit-card-number}.
+Pacjent {surname}, lat {age}, zgłosił się na SOR z podejrzeniem zawału, towarzyszyła mu przerażona {relative}.
+Wniosek o 500+ dla dziecka o numerze PESEL {pesel} został odrzucony z powodów formalnych.
+Mój {relative} jest wyznania {religion} i nie pije alkoholu, więc proszę nie proponować mu wina.
+Faktura za usługi informatyczne na kwotę 2000 zł została wysłana na adres email {email} do działu księgowości.
+Złodziej włamał się na konto {username} i wykradł poufny klucz API {secret}, co zgłosiliśmy na policję.
+Osoby o orientacji {sexual-orientation} często czują się wykluczone w naszym małym miasteczku {city}.
+Kurier DPD nie mógł doręczyć paczki pod adres {address}, bo nikt nie otwierał domofonu.
+W akcie notarialnym z dnia {date} jako właściciel mieszkania wpisany jest {name} {surname}, syn {relative}.
+Moja babcia, czyli najstarsza {relative} w rodzie, opowiadała nam często o swoim pochodzeniu {ethnicity}.
+Proszę o pilny kontakt telefoniczny pod numerem {phone} w sprawie wyników badań potwierdzających {health}.
+Absolwenci {school-name} mają pierwszeństwo w rekrutacji na staż do firmy {company}.
+Na karcie pacjenta widnieje adnotacja: płeć {sex}, grupa krwi A Rh+, uczulenie na penicylinę.
+Mimo że mam już {age} lat, wciąż mieszkam z rodzicami przy ulicy {address} i szukam pracy jako {job-title}.
+System bankowy zablokował przelew wychodzący z konta {bank-account} na podejrzany rachunek zagraniczny.
+Czy wiesz, że twój {relative} ma założoną Niebieską Kartę i był notowany przez policję?
+Paszport o numerze {document-number} stracił ważność tydzień temu, więc nie wpuścili mnie do samolotu.
+Jako dumny przedstawiciel mniejszości {ethnicity}, pan {name} kultywuje tradycje swoich przodków.
+Wybory do samorządu wygrał kandydat {political-view}, co bardzo zdenerwowało mojego ojca.
+Zaloguj się do portalu pacjenta używając PESEL {pesel} jako loginu i nazwiska {surname} jako hasła startowego.
+Mój {relative} oświadczył się swojej partnerce w dniu {date} na molo w Sopocie.
+Karta {credit-card-number} została znaleziona w bankomacie przy ulicy Długiej w {city}.
+CV kandydata wygląda imponująco: były {job-title} w Google, obecnie student zaoczny na {school-name}.
+Proszę przesłać skan dowodu tożsamości na {email} w celu weryfikacji danych osobowych.
+Mój {relative} niestety przegrał walkę z {health}, pogrzeb odbędzie się w piątek.
+Świadek zdarzenia to kobieta, lat {age}, zamieszkała w {city}, która widziała sprawcę uciekającego w stronę parku.
+Ze względu na moje przekonania {religion} nie pracuję w święta kościelne, co zaznaczyłem w umowie z {company}.
+Numer telefonu {phone} jest nieaktywny, czy masz jakiś inny kontakt do pana {surname}?
+Oszuści metodą 'na wnuczka' próbowali wyłudzić pieniądze od mojej starszej {relative}.
+W rubryce 'drugie imię' wpisałem {name}, chociaż na co dzień nikt tak do mnie nie mówi.
+Klucz dostępu do serwera to {secret}, proszę go zapisać w bezpiecznym miejscu.
+Jako osoba {sexual-orientation} mam pełne prawo do zawarcia związku partnerskiego.
+Twoja rata kredytu hipotecznego została pobrana z konta {bank-account} w dniu dzisiejszym.
+Zgubiłem legitymację studencką {school-name} numer {document-number} i muszę wyrobić duplikat.
+Moja {relative} urodziła się dokładnie {date-of-birth}, więc w tym roku kończy okrągłe 50 lat.
+Policja zatrzymała kierowcę pod wpływem alkoholu, okazał się nim znany lokalny {job-title}.
+Wiadomość z systemu: Nieudana próba logowania na konto {username} z adresu IP w Chinach.
+Czy pan {name} {surname} wyraża zgodę na przetwarzanie danych w celach marketingowych?
+Mimo młodego wieku, ten {age}-latek jest już właścicielem dobrze prosperującej firmy {company}.
+Diagnoza lekarza była jednoznaczna: {health}, co wymaga natychmiastowej operacji.
+Mój {relative} zawsze powtarzał, że w życiu liczy się honor, a nie pieniądze na koncie {bank-account}.
+Urząd Skarbowy wzywa podatnika o numerze PESEL {pesel} do złożenia wyjaśnień.
+Czy ta karta Visa o końcówce {credit-card-number} należy do pana, czy do pana żony?
+Spotkanie rekrutacyjne odbędzie się w biurze przy ulicy {address}, wejście B, piętro 4.
+W dniu {date} obchodzimy rocznicę odzyskania niepodległości, to dzień wolny od pracy.
+Jako {job-title} będziesz raportować bezpośrednio do dyrektora generalnego w centrali w {city}.
+Mój {relative} jest zdeklarowanym {political-view} i chodzi na wszystkie marsze równości.
+Proszę o zwrot kosztów delegacji na numer konta {bank-account}, odbiorca: {name} {surname}.
+Weryfikacja dwuetapowa wysłała kod {secret} na twój zarejestrowany numer telefonu {phone}.
+Pochodzę z rodziny o korzeniach {ethnicity}, co słychać w moim akcencie.
+Pani z dziekanatu {school-name} nie chciała przyjąć mojego podania bez podpisu promotora.
+Mój {relative} przeszedł na islam i teraz jego {religion} determinuje cały jego rytm dnia.
+Zostałem wezwany na komisariat w charakterze świadka, mam zabrać dowód {document-number}.
+Pacjent {sex} lat 40, przyjęty na oddział z objawami {health}.
+Proszę o przelanie wynagrodzenia za pracę w {company} na rachunek {bank-account} należący do pana {surname}.
+Pacjent {name} {surname}, urodzony {date-of-birth}, został przyjęty na oddział z podejrzeniem {health}.
+Mój {relative} zgubił dowód osobisty {document-number} podczas wycieczki do {city}.
+Kandydat na stanowisko {job-title} musi być absolwentem {school-name} i posługiwać się językiem {ethnicity}.
+W dniu {date} policja zatrzymała osobę o numerze PESEL {pesel} pod adresem {address}.
+Użytkownik {username} (email: {email}) próbował zresetować hasło {secret}.
+Moja {relative} leczy się na {health}, więc karta kredytowa {credit-card-number} służy nam głównie do opłacania leków.
+Jako osoba {sexual-orientation} czuję się bezpiecznie w firmie {company}, która ma siedzibę w {city}.
+Faktura dla klienta {name} {surname} (NIP/PESEL: {pesel}) została wysłana na adres {email}.
+W akcie notarialnym sporządzonym {date} widnieje adres {address} oraz dane właściciela: {name} {surname}.
+Studentka {school-name} o poglądach {political-view} zorganizowała protest w centrum {city}.
+Złodziej wykorzystał dowód {document-number} do wzięcia kredytu, który wpłynął na konto {bank-account}.
+Mimo wieku {age} lat, pan {surname} nadal pracuje jako {job-title} w dużej korporacji.
+Proszę o kontakt telefoniczny {phone} w sprawie pacjenta (płeć {sex}), u którego zdiagnozowano {health}.
+Moja {relative} jest głęboko wierzącą {religion} i nie akceptuje faktu, że jej wnuk jest {sexual-orientation}.
+System odrzucił płatność kartą {credit-card-number} za bilety lotnicze dla pasażera {name} {surname}.
+Na świadectwie pracy z {company} wpisano błędną datę urodzenia {date-of-birth} oraz zły numer PESEL {pesel}.
+Jako dumny przedstawiciel mniejszości {ethnicity}, {name} startuje w wyborach reprezentując {political-view}.
+Włamanie na konto {username} nastąpiło z adresu IP w {city}, wykradziono klucz API {secret}.
+Mój {relative} mieszka przy ulicy {address} i od lat głosuje na partię o profilu {political-view}.
+Absolwent {school-name}, lat {age}, poszukuje pracy w branży IT jako młodszy {job-title}.
+Weryfikacja tożsamości klienta {surname} przebiegła pomyślnie na podstawie dowodu {document-number} i hasła telefonicznego {secret}.
+Z okazji rocznicy ślubu {date}, zamówiłem prezent dla mojej {relative} z dostawą na adres {address}.
+Osoba o numerze PESEL {pesel} jest upoważniona do konta {bank-account}, co potwierdził pracownik banku przez {phone}.
+Czy {name} {surname} nadal pełni funkcję {job-title} w fundacji wspierającej osoby z {health}?
+Zgubiłem telefon {phone}, a miałem tam zapisane PIN-y do karty {credit-card-number} i hasło do maila {email}.
+Moja {relative} studiowała na {school-name} w tym samym czasie, gdy wybuchły strajki w {city}.
+Wnioskodawca deklarujący wyznanie {religion} i narodowość {ethnicity} prosi o przyznanie dotacji na konto {bank-account}.
+Lekarz stwierdził zgon pacjenta wiek {age}, płeć {sex} w dniu {date} o godzinie 15:30.
+Nie ufaj nikomu, kto dzwoni z numeru {phone} i prosi o podanie loginu {username} lub danych karty {credit-card-number}.
+Jako {job-title} w firmie {company}, pan {surname} (PESEL: {pesel}) był odpowiedzialny za wdrożenie klucza API {secret} w nowym systemie płatności.
+Z konta {bank-account} należącego do {name} {surname} (zam. {address}, {city}) zniknęły środki, a bank odnotował logowanie z użyciem hasła {secret}.
+Pacjent {name} {surname}, lat {age}, płeć {sex}, zgłosił się na SOR w {city} z objawami {health}, podając numer ubezpieczenia {document-number}.
+Moja {relative}, która jest {job-title} w {school-name}, często narzeka na niskie zarobki, mimo że pracuje w zawodzie już {age} lat.
+W dniu {date} policja zatrzymała kierowcę ({sex}, lat {age}) prowadzącego pojazd marki Opel, który legitymował się fałszywym prawem jazdy {document-number}.
+Osoba o poglądach {political-view} i wyznaniu {religion} może mieć trudności z aklimatyzacją w tak konserwatywnej firmie jak {company}.
+Wniosek o kredyt hipoteczny dla {name} {surname} (PESEL {pesel}) został odrzucony z powodu negatywnej historii kredytowej powiązanej z kartą {credit-card-number}.
+Student {school-name}, znany w sieci jako {username}, wykrył lukę w zabezpieczeniach banku i uzyskał dostęp do konta {bank-account}.
+Jako przedstawiciel mniejszości {ethnicity}, pan {surname} czuje się dyskryminowany w miejscu pracy ({company}), o czym poinformował mailem na adres {email}.
+Zgubiłem portfel zawierający dowód {document-number}, kartę płatniczą {credit-card-number} oraz kartkę z zapisanym kodem PIN {secret}.
+Mój {relative} ({age} lat, {sexual-orientation}) wyprowadził się z domu przy ulicy {address}, ponieważ rodzice nie akceptowali jego partnera.
+Firma windykacyjna wysłała wezwanie do zapłaty na adres {address}, {city}, domagając się spłaty długu zaciągniętego na dane {name} {surname}.
+Urodzony {date-of-birth} w {city}, {name} zawsze marzył o karierze {job-title}, ale choroba {health} pokrzyżowała te plany.
+Na fakturze wystawionej przez {company} widnieje błędny NIP oraz numer konta {bank-account}, co uniemożliwia wykonanie przelewu.
+Weryfikacja dwuetapowa wymaga podania loginu {username} oraz kodu {secret} wysłanego SMS-em na numer {phone}.
+Świadek zdarzenia z dnia {date}, pani {surname} (lat {age}), zeznała, że widziała sprawcę uciekającego w stronę ulicy {address}.
+Mimo że {name} deklaruje narodowość {ethnicity} i wyznanie {religion}, to w wyborach zagłosował na kandydata o skrajnych poglądach {political-view}.
+Lekarz prowadzący ({job-title}) przepisał pacjentowi z {health} lek, który wywołał silną reakcję alergiczną u osoby o fenotypie {sex}.
+Kurier nie zastał nikogo pod adresem {address}, więc zostawił awizo dla {name} {surname} z prośbą o kontakt pod numerem {phone}.
+Absolwent {school-name}, pan {surname}, aplikował na stanowisko {job-title} w {company}, wysyłając CV z adresu {email}.
+Kradzież tożsamości polegała na wyrobieniu duplikatu karty SIM dla numeru {phone} i przejęciu dostępu do konta bankowego {bank-account}.
+W dniu {date} użytkownik {username} zmienił swoje dane w systemie HR: nowy adres to {address}, {city}, a numer konta to {bank-account}.
+Moja {relative} z {city} cierpi na {health} i wymaga stałej opieki, dlatego zatrudniliśmy pielęgniarkę z {company}.
+Podczas kontroli drogowej okazało się, że {name} {surname} prowadzi auto mimo zatrzymanego prawa jazdy nr {document-number} i ma {age} lat.
+System odrzucił transakcję kartą {credit-card-number} w sklepie internetowym, ponieważ podano błędny kod CVV lub datę ważności.
+Jako osoba {sexual-orientation}, {name} aktywnie wspiera lokalną społeczność LGBT w {city}, organizując spotkania w kawiarni przy {address}.
+Błąd w bazie PESEL: pod numerem {pesel} widnieje mężczyzna ({sex}), podczas gdy {name} jest kobietą urodzoną {date-of-birth}.
+Prezes {company}, pan {surname}, ogłosił, że firma przeznaczy 1% zysku na walkę z {health} wśród dzieci z regionu {ethnicity}.
+Włamywacz dostał się do serwera używając skradzionego loginu {username} i hasła {secret}, a następnie pobrał bazę klientów z numerami {phone}.
+Matka ({age} lat) samotnie wychowująca dziecko z {health} otrzymała pomoc finansową od fundacji działającej przy {school-name}.
+W umowie najmu lokalu przy {address} jako wynajmujący wpisany jest {name} {surname}, legitymujący się dowodem {document-number}.
+Czy wiesz, że twój {relative} pracuje teraz jako {job-title} dla konkurencji ({company}) i zarabia dwa razy więcej niż ty?
+Z powodu awarii systemu bankowego w dniu {date}, przelewy na rachunki w mBanku ({bank-account}) są opóźnione o 24 godziny.
+Policja poszukuje kobiety o nazwisku {surname}, wiek ok. {age} lat, która ostatnio była widziana w okolicach {address} w {city}.
+Pacjent {name}, zadeklarowany {religion}, odmówił transfuzji krwi mimo zagrożenia życia wynikającego z {health}.
+Na świadectwie maturalnym z {school-name} widnieje błędna data urodzenia {date-of-birth}, co uniemożliwia rekrutację na studia.
+Oszust podający się za pracownika {company} wyłudził od starszej pani ({age} lat) dane do logowania {username} i hasło {secret}.
+Moja {relative} wyjechała do pracy za granicę, ale nadal jest zameldowana pod adresem {address} i odbiera tam korespondencję.
+Sprawdź, czy numer PESEL {pesel} na recepcie zgadza się z danymi pacjenta ({name} {surname}), który leczy się na {health}.
+Jako {job-title} w dziale marketingu, {name} odpowiada za kampanie skierowane do osób w wieku {age} lat o poglądach {political-view}.
+W mailu z adresu {email} otrzymałem wezwanie do zapłaty zaległej faktury na kwotę 500 PLN na konto {bank-account}.
+Złodziej ukradł torebkę, w której był paszport {document-number}, telefon z numerem {phone} oraz klucze do mieszkania przy {address}.
+Nowy pracownik, {name} {surname}, nie dostarczył jeszcze świadectwa pracy z poprzedniej firmy {company} ani dyplomu z {school-name}.
