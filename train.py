@@ -97,7 +97,13 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
             if tag.startswith('I-') or tag.startswith('E-'):
                 loss_weights[tag] = 2.0  # Wyższa waga dla kontynuacji
         
-        print(f"   Loss weights: O=0.1, I-/E-=2.0 (dla lepszego tagowania długich encji)")
+        # Specjalnie zwiększ wagę dla DOCUMENT-NUMBER (często długie, trudne do wykrycia)
+        # np. "art. 25 § 2 w zw. z art. 21 ust. 3 ustawy z dnia 01-12-2012"
+        for tag in tag_dictionary.get_items():
+            if 'DOCUMENT-NUMBER' in tag:
+                loss_weights[tag] = 3.0  # Jeszcze wyższa waga dla numerów dokumentów
+        
+        print(f"   Loss weights: O=0.1, I-/E-=2.0, DOCUMENT-NUMBER=3.0")
 
         # Utworzenie taggera sekwencyjnego z loss weights
         tagger = SequenceTagger(
