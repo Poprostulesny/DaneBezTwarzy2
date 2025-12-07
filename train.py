@@ -165,9 +165,9 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="Trening modelu NER dla języka polskiego")
-    parser.add_argument("--epochs", type=int, default=20, help="Liczba epok treningu (domyślnie: 15)")
+    parser.add_argument("--epochs", type=int, default=20, help="Liczba epok treningu (domyślnie: 30)")
     parser.add_argument("--n-per-template", type=int, default=200, help="Liczba przykładów na szablon (domyślnie: 200, ignorowane gdy --max-sentences jest ustawione)")
-    parser.add_argument("--max-sentences", type=int, default=10000, help="Maksymalna liczba zdań do wygenerowania (domyślnie: 10000)")
+    parser.add_argument("--max-sentences", type=int, default=50000, help="Maksymalna liczba zdań do wygenerowania (domyślnie: 30000)")
     parser.add_argument("--model-dir", type=str, default=None, help="Katalog do zapisu modelu")
     args = parser.parse_args()    
     print("\n" + "="*60)
