@@ -2,11 +2,44 @@
 """
 Generator syntetycznych danych NER dla języka polskiego.
 
-Zasada działania:
-- Pobieramy listę szablonów z `config.TEMPLATES` (użytkownik uzupełni je później).
-- Dla każdego szablonu generujemy wartości (np. miasto, imię) przez `Faker('pl_PL')`.
-- Opcjonalnie stosujemy korupcję (`utils.corrupt_text`) aby dane były bardziej odporne.
-- Tworzymy obiekty `flair.data.Sentence` i przypisujemy tokenom odpowiednie tagi BIO.
+=== PIPELINE GENERACJI DANYCH TRENINGOWYCH ===
+
+1. WCZYTYWANIE SZABLONÓW
+   - Szablony pobierane z `data/{tag}/templates.txt` dla każdego tagu
+   - Szablony mieszane z `data/mixed_templates.txt`
+   - Format: "Nazywam się {name} {surname} i mieszkam w {city}"
+
+2. WAŻONE LOSOWANIE SZABLONÓW
+   - Szablony z rzadszymi tagami mają wyższą wagę
+   - Wyrównuje rozkład tagów w danych treningowych
+   - Zapobiega dominacji częstych tagów (np. NAME)
+
+3. GENEROWANIE WARTOŚCI
+   - Wartości pobierane z `data/{tag}/values.txt`
+   - Fallback do Faker('pl_PL') gdy brak pliku
+   - Równomierne losowanie - każda wartość użyta raz przed powtórzeniem
+
+4. ODMIANA GRAMATYCZNA (Morfeusz2)
+   - Automatyczne wykrywanie przypadka z kontekstu
+   - Obsługiwane przyimki: do/od/bez (dopełniacz), w/na/o (miejscownik), z (narzędnik)
+   - Obsługiwane tytuły: pana/pani (dopełniacz), panią/panem (narzędnik)
+   - Odmiana imion, nazwisk, miast, firm
+
+5. AUGMENTACJA DANYCH
+   - Korupcja tekstu (literówki) z 20% szansą
+   - CAPS LOCK dla 2% imion/nazwisk
+   - Zwiększa odporność modelu na błędy w danych wejściowych
+
+6. TAGOWANIE BIO
+   - Automatyczne dopasowanie wartości do tokenów
+   - Obsługa nakładających się encji
+   - Format: B-NAME, I-NAME, B-CITY itp.
+
+7. PODZIAŁ DANYCH
+   - Train: 80%, Dev: 10%, Test: 10%
+   - Shuffle przed podziałem
+
+Wydajność: ~500-1000 zdań/sekundę (zależy od dostępności Morfeusza)
 """
 from typing import List, Tuple, Dict, Optional
 import re
@@ -38,21 +71,29 @@ from utils import corrupt_text
 
 # Import odmiany gramatycznej z fillera
 try:
-    from template_filler.filler import PolishInflector, PREPOSITION_CASES, GENITIVE_TRIGGERS
+    from template_filler.filler import PolishInflector, PREPOSITION_CASES, GENITIVE_TRIGGERS, INSTRUMENTAL_TITLES, LOCATION_TAGS
     INFLECTOR_AVAILABLE = True
 except ImportError:
     INFLECTOR_AVAILABLE = False
     PREPOSITION_CASES = {}
     GENITIVE_TRIGGERS = set()
+    INSTRUMENTAL_TITLES = set()
+    LOCATION_TAGS = set()
 
 
-def _detect_required_case(template: str, placeholder_start: int) -> str:
+def _detect_required_case(template: str, placeholder_start: int, placeholder: str = None) -> str:
     """
     Wykrywa wymagany przypadek gramatyczny na podstawie kontekstu przed placeholderem.
+    
+    Logika jest zsynchronizowana z template_filler/filler.py:
+    - Przyimki determinują przypadek (do→gen, w→loc, z→inst)
+    - Tytuły: pana/pani→gen, panią/panem→inst
+    - Miejsca po "z" dostają dopełniacz (z Warszawy), osoby narzędnik (z Janem)
     
     Args:
         template: Tekst szablonu
         placeholder_start: Pozycja początku placeholdera w szablonie
+        placeholder: Nazwa placeholdera (np. 'city') - używane do rozróżnienia osób od miejsc
         
     Returns:
         Nazwa przypadka: 'nom', 'gen', 'dat', 'acc', 'inst', 'loc', 'voc'
@@ -66,29 +107,32 @@ def _detect_required_case(template: str, placeholder_start: int) -> str:
     
     prev_word = words[-1].rstrip('.,!?:;')
     
-    # Specjalne rozróżnienie dla "z" - narzędnik gdy towarzyszenie
-    if prev_word in {'z', 'ze'}:
-        # Szukaj czasowników wymagających narzędnika
-        inst_verbs = {'spotkać', 'spotkał', 'spotkałem', 'spotkałam', 'spotka',
-                      'rozmawia', 'rozmawiam', 'rozmawiać', 'rozmawiał',
-                      'pracuje', 'pracować', 'pracował', 'współpracuje',
-                      'mieszka', 'mieszkać', 'mieszkam', 'żyje', 'żyć',
-                      'jedzie', 'idzie', 'idę', 'jadę', 'pojechał', 'poszedł'}
-        # Sprawdź kilka poprzednich słów
-        for w in words[-5:]:
-            w_clean = w.rstrip('.,!?:;')
-            if w_clean in inst_verbs or w_clean.startswith('spotk') or w_clean.startswith('rozmaw'):
-                return 'inst'
-        # Domyślnie dopełniacz (z miejsca)
+    # Sprawdź tytuły wymagające narzędnika ("z panią Anną", "z panem Janem")
+    if prev_word in INSTRUMENTAL_TITLES:
+        return 'inst'
+    
+    # Sprawdź tytuły wymagające dopełniacza ("pani Anny", "pana Jana")
+    if prev_word in GENITIVE_TRIGGERS:
         return 'gen'
+    
+    # Specjalne rozróżnienie dla "z/ze"
+    if prev_word in {'z', 'ze'}:
+        # Sprawdź czy przed "z" jest tytuł w narzędniku ("z panią", "z panem")
+        if len(words) >= 2:
+            word_before_z = words[-2].rstrip('.,!?:;')
+            if word_before_z in INSTRUMENTAL_TITLES:
+                return 'inst'
+        
+        # Miejsca po "z" → dopełniacz (z Warszawy, z firmy X)
+        if placeholder and placeholder.lower() in {'city', 'company', 'school-name', 'address'}:
+            return 'gen'
+        
+        # Osoby → narzędnik (z Janem)
+        return 'inst'
     
     # Sprawdź przyimki
     if prev_word in PREPOSITION_CASES:
         return PREPOSITION_CASES[prev_word]
-    
-    # Sprawdź tytuły wymagające dopełniacza
-    if prev_word in GENITIVE_TRIGGERS:
-        return 'gen'
     
     # Domyślnie mianownik
     return 'nom'
@@ -436,7 +480,8 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                 
                 # Odmiana gramatyczna dla wybranych tagów
                 if inflector and key in inflectable_tags:
-                    required_case = _detect_required_case(template, pos)
+                    # Przekaż placeholder żeby rozróżnić miejsca od osób (dla przyimka "z")
+                    required_case = _detect_required_case(template, pos, key)
                     if required_case != 'nom':
                         try:
                             val = inflector.inflect_phrase(raw_val, required_case)

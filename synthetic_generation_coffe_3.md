@@ -2,14 +2,16 @@
 
 ## Podsumowanie podejścia
 
-Nasz moduł `template_filler` realizuje **rekonstrukcję tekstu** - zamianę tagów anonimizacji (`[name]`, `[city]` itp.) z powrotem na sensowne, gramatycznie poprawne wartości.
+Nasz moduł `template_filler` realizuje **rekonstrukcję tekstu** - zamianę tagów anonimizacji (`[NAME]`, `[CITY]` itp.) z powrotem na sensowne, gramatycznie poprawne wartości.
 
 **Kluczowe cechy:**
 
-- 🚀 Wydajność: ~19,000 zdań/sekundę
+- 🚀 Wydajność: ~1,000-19,000 zdań/sekundę (zależnie od złożoności)
 - 🇵🇱 Pełna obsługa polskiej fleksji (7 przypadków)
-- 📚 Słowniki wartości dla 25 kategorii
-- 🎯 Analiza kontekstu gramatycznego
+- 📚 Słowniki wartości dla 25 kategorii danych wrażliwych
+- 🎯 Analiza kontekstu gramatycznego (przyimki, tytuły)
+- 👤 Spójny kontekst osoby (PersonContext)
+- 🔄 Fallback heurystyczny dla słów nieznanych Morfeuszowi
 
 ---
 
@@ -34,7 +36,7 @@ data/
 ├── name/values.txt      # ~200 imion
 ├── surname/values.txt   # ~300 nazwisk
 ├── city/values.txt      # ~100 miast
-└── ...                  # pozostałe kategorie
+└── ...                  # pozostałe 22 kategorie
 ```
 
 ---
@@ -48,89 +50,215 @@ Polski język ma 7 przypadków i bogatą odmianę. Prosty lookup ze słownika da
 ❌ **Porażka (naiwne podejście):**
 
 ```
-Szablon: "Mieszkam w [city]."
+Szablon: "Mieszkam w [CITY]."
 Wynik:   "Mieszkam w Warszawa."  ← BŁĄD GRAMATYCZNY!
 ```
 
 ✅ **Sukces (nasze rozwiązanie):**
 
 ```
-Szablon: "Mieszkam w [city]."
+Szablon: "Mieszkam w [CITY]."
 Wynik:   "Mieszkam w Warszawie."  ← POPRAWNIE!
 ```
 
-### Nasze rozwiązanie: Morfeusz2 + analiza kontekstu
+### Nasze rozwiązanie: Morfeusz2 + analiza kontekstu + fallback heurystyczny
 
 #### 1. Detekcja wymaganego przypadka
 
-Analizujemy słowo przed tagiem (zwykle przyimek) i wyznaczamy przypadek:
+Analizujemy słowo przed tagiem (przyimek lub tytuł) i wyznaczamy przypadek:
 
 ```python
 PREPOSITION_CASES = {
-    # Miejscownik (loc) - gdzie?
-    'w': 'loc', 'we': 'loc', 'na': 'loc', 'przy': 'loc',
+    # Dopełniacz (gen) - skąd? od kogo? do czego?
+    'do': 'gen', 'od': 'gen', 'bez': 'gen', 'dla': 'gen',
+    'koło': 'gen', 'obok': 'gen', 'u': 'gen',
 
-    # Dopełniacz (gen) - skąd? od kogo?
-    'do': 'gen', 'od': 'gen', 'bez': 'gen', 'z': 'gen',
+    # Celownik (dat) - komu? ku czemu?
+    'ku': 'dat', 'dzięki': 'dat', 'przeciw': 'dat',
 
-    # Narzędnik (inst) - z kim?
-    'z': 'inst',  # gdy towarzyszenie (rozróżniane kontekstem!)
-    'przed': 'inst', 'za': 'inst', 'nad': 'inst',
+    # Biernik (acc) - kogo? co? przez co?
+    'przez': 'acc', 'mimo': 'acc',
 
-    # Biernik (acc) - kogo? co?
-    'przez': 'acc', 'na': 'acc',  # (kierunek)
+    # Narzędnik (inst) - z kim? czym? przed czym?
+    'z': 'inst', 'ze': 'inst',  # domyślnie narzędnik dla osób
+    'przed': 'inst', 'między': 'inst', 'nad': 'inst', 'pod': 'inst', 'za': 'inst',
 
-    # Celownik (dat) - komu?
-    'ku': 'dat', 'dzięki': 'dat',
+    # Miejscownik (loc) - gdzie? w czym? o czym?
+    'w': 'loc', 'we': 'loc', 'na': 'loc', 'o': 'loc', 'po': 'loc', 'przy': 'loc',
 }
 ```
 
-#### 2. Specjalna obsługa przyimka "z"
+#### 2. Obsługa tytułów grzecznościowych
+
+Tytuły wymagają specyficznych przypadków:
+
+```python
+# Tytuły wymagające NARZĘDNIKA (inst)
+INSTRUMENTAL_TITLES = {'panią', 'panem', 'panami', 'paniami'}
+# "z panią Anną" → Anną (narzędnik)
+# "z panem Janem" → Janem (narzędnik)
+
+# Tytuły wymagające DOPEŁNIACZA (gen)
+GENITIVE_TRIGGERS = {'pana', 'pani', 'państwa', 'panny', 'pań'}
+# "pani Anna" → Anny (dopełniacz)
+# "dokument pana Jana" → Jana (dopełniacz)
+```
+
+#### 3. Specjalna obsługa przyimka "z"
 
 Przyimek "z" jest **wieloznaczny** w polskim:
 
-- "z Warszawy" (dopełniacz - skąd?)
-- "z Anną" (narzędnik - z kim?)
+- "z Warszawy" (dopełniacz - skąd?) - dla **MIEJSC**
+- "z Anną" (narzędnik - z kim?) - dla **OSÓB**
 
-Rozwiązanie: analiza czasownika w kontekście:
+**Rozwiązanie: rozróżnienie na podstawie typu tagu:**
 
 ```python
-# Czasowniki wymagające narzędnika z "z"
-inst_verbs = {'spotkać', 'rozmawiam', 'pracuje', 'mieszka', 'jedzie'}
+# Tagi miejscowe → dopełniacz po "z"
+LOCATION_TAGS = {'[CITY]', '[ADDRESS]', '[SCHOOL-NAME]', '[COMPANY]'}
 
-def detect_case_for_z(context_before):
-    for word in context_before:
-        if word.startswith('spotk') or word.startswith('rozmaw'):
-            return 'inst'  # "spotkałem się z Anną"
-    return 'gen'  # domyślnie "z Warszawy"
+def _detect_required_case(text, tag_pos, tag):
+    prev_word = get_previous_word(text, tag_pos)
+    
+    # Tytuły w narzędniku mają priorytet
+    if prev_word in INSTRUMENTAL_TITLES:
+        return 'inst'
+    
+    # Tytuły w dopełniaczu
+    if prev_word in GENITIVE_TRIGGERS:
+        return 'gen'
+    
+    # Przyimek "z" - zależy od typu tagu
+    if prev_word in {'z', 'ze'}:
+        if tag in LOCATION_TAGS:
+            return 'gen'   # "z Warszawy" (skąd)
+        return 'inst'      # "z Janem" (z kim)
+    
+    # Inne przyimki
+    if prev_word in PREPOSITION_CASES:
+        return PREPOSITION_CASES[prev_word]
+    
+    return 'nom'  # domyślnie mianownik
 ```
 
-#### 3. Odmiana przez Morfeusz2
+#### 4. Odmiana przez Morfeusz2 z fallbackiem
 
 ```python
-import morfeusz2
+class PolishInflector:
+    def __init__(self):
+        self.morf = morfeusz2.Morfeusz(generate=True)
+        self._cache = {}  # cache przyspiesza powtarzające się słowa
+    
+    def get_form(self, word: str, case: str) -> str:
+        # 1. Sprawdź cache
+        if f"{word}:{case}" in self._cache:
+            return self._cache[f"{word}:{case}"]
+        
+        # 2. Próbuj Morfeusz2
+        result = self._try_morfeusz(word, case)
+        if result:
+            return result
+        
+        # 3. Fallback heurystyczny dla nieznanych słów
+        return self._fallback_inflect(word, case)
+    
+    def _fallback_inflect(self, word: str, case: str) -> str:
+        """Heurystyczna odmiana dla słów nieznanych Morfeuszowi."""
+        # Żeńskie (-a): Anna → Anny (gen), Annie (dat), Annę (acc), Anną (inst)
+        if word.endswith('a'):
+            endings = {'gen': 'y', 'dat': 'ie', 'acc': 'ę', 'inst': 'ą', 'loc': 'ie'}
+            return word[:-1] + endings.get(case, 'a')
+        
+        # Męskie spółgłoskowe: Jan → Jana (gen), Janem (inst)
+        if not word[-1] in 'aeiouy':
+            endings = {'gen': 'a', 'dat': 'owi', 'acc': 'a', 'inst': 'em', 'loc': 'ie'}
+            return word + endings.get(case, '')
+        
+        return word
+```
 
-morf = morfeusz2.Morfeusz(generate=True)
+#### 5. Obsługa ciągów tagów
 
-def inflect(word: str, case: str) -> str:
-    forms = morf.generate(word)
-    for form, _, tags in forms:
-        if case in tags and 'sg' in tags:  # pojedyncza, odpowiedni przypadek
-            return form
-    return word  # fallback
+Gdy tagi występują obok siebie (np. `[NAME] [SURNAME]`), oba otrzymują ten sam przypadek:
+
+```python
+def _detect_required_case(text, tag_pos, tag):
+    before_text = text[:tag_pos]
+    
+    # Jeśli poprzedni element to też tag → użyj tego samego przypadka
+    if before_text.rstrip().endswith(']'):
+        bracket_pos = before_text.rfind('[')
+        return self._detect_required_case(text, bracket_pos, tag)
+    
+    # ... reszta logiki
+```
+
+Przykład:
+```
+"Pracuję z panem [NAME] [SURNAME]"
+→ "Pracuję z panem Janem Kowalskim"
+                  ^^^^  ^^^^^^^^^^
+                  inst  inst (oba narzędnik!)
 ```
 
 ### Obsługiwane przypadki
 
-| Przypadek         | Przykład przyimka    | Transformacja        |
-| ----------------- | -------------------- | -------------------- |
-| Mianownik (nom)   | —                    | Warszawa → Warszawa  |
-| Dopełniacz (gen)  | do, od, z (skąd)     | Warszawa → Warszawy  |
-| Celownik (dat)    | ku, dzięki           | Warszawa → Warszawie |
-| Biernik (acc)     | przez, na (kierunek) | Warszawa → Warszawę  |
-| Narzędnik (inst)  | z (kim), przed       | Warszawa → Warszawą  |
-| Miejscownik (loc) | w, na, przy          | Warszawa → Warszawie |
-| Wołacz (voc)      | —                    | Warszawa → Warszawo  |
+| Przypadek         | Przyimki/Tytuły              | Transformacja         |
+| ----------------- | ---------------------------- | --------------------- |
+| Mianownik (nom)   | — (domyślny)                 | Warszawa → Warszawa   |
+| Dopełniacz (gen)  | do, od, bez, dla, pana, pani | Warszawa → Warszawy   |
+| Celownik (dat)    | ku, dzięki, przeciw          | Warszawa → Warszawie  |
+| Biernik (acc)     | przez, mimo                  | Warszawa → Warszawę   |
+| Narzędnik (inst)  | z (osoba), panią, panem      | Warszawa → Warszawą   |
+| Miejscownik (loc) | w, na, o, po, przy           | Warszawa → Warszawie  |
+| Wołacz (voc)      | — (bezpośredni zwrot)        | Warszawa → Warszawo   |
+
+---
+
+## Spójny kontekst osoby (PersonContext)
+
+### Problem
+Gdy w tekście jest wiele tagów osobowych, powinny być spójne:
+- Ta sama płeć dla imienia, nazwiska, PESEL
+- Wiek zgodny z datą urodzenia
+- PESEL zgodny z datą i płcią
+
+### Rozwiązanie: klasa PersonContext
+
+```python
+@dataclass
+class PersonContext:
+    gender: str      # 'M' lub 'F'
+    birth_date: date
+    name: str
+    surname: str
+    
+    @property
+    def age(self) -> int:
+        """Wiek obliczony z daty urodzenia."""
+        return calculate_age(self.birth_date)
+    
+    @property
+    def pesel(self) -> str:
+        """PESEL zgodny z datą urodzenia i płcią."""
+        return generate_pesel(self.birth_date, self.gender)
+    
+    @property
+    def sex(self) -> str:
+        return "kobieta" if self.gender == 'F' else "mężczyzna"
+```
+
+Użycie:
+```python
+# Jeden kontekst dla całego tekstu
+person = PersonContext.create(gender='F')
+
+# Wszystkie tagi osobowe używają tego samego kontekstu
+"[NAME] [SURNAME], lat [AGE], PESEL [PESEL]"
+→ "Anna Kowalska, lat 34, PESEL 90010212348"
+#   ^^^^^^^^^^^^      ^^       ^^^^^^^^^^^^
+#   spójne!         zgodne!   cyfra płci parzysta (kobieta)
+```
 
 ---
 
@@ -143,14 +271,14 @@ def inflect(word: str, case: str) -> str:
 Dlaczego:
 
 1. **Prawdziwa anonimizacja** oznacza, że oryginalne dane są utracone
-2. Losowe wartości zapewniają **lepsze pokrycie** różnych przypadków gramatycznych w danych treningowych
+2. Losowe wartości zapewniają **lepsze pokrycie** różnych przypadków gramatycznych
 3. Brak korelacji z oryginałem = **brak wycieku informacji**
 
 ### Jak dbamy o jakość?
 
 1. **Słowniki wysokiej jakości** - prawdziwe polskie imiona, nazwiska, miasta
-2. **Gramatyczna poprawność** - odmiana przez Morfeusz2
-3. **Spójność płci** (opcjonalnie) - imiona żeńskie z nazwiskami żeńskimi
+2. **Gramatyczna poprawność** - Morfeusz2 + fallback heurystyczny
+3. **Spójność płci** - PersonContext zapewnia spójne dane osobowe
 4. **Walidacja formatu** - PESEL z poprawną sumą kontrolną, prawidłowe formaty telefonów
 
 ---
@@ -160,63 +288,94 @@ Dlaczego:
 ### Przykład 1: Miejscownik (lokalizacja)
 
 ```
-Szablon:     "Pracuję w [city] od 5 lat."
+Szablon:     "Pracuję w [CITY] od 5 lat."
 Wynik:       "Pracuję w Krakowie od 5 lat."
 ```
 
-✅ Poprawna odmiana: Kraków → Krakowie (miejscownik)
+✅ Poprawna odmiana: Kraków → Krakowie (miejscownik, przyimek "w")
 
 ### Przykład 2: Dopełniacz (kierunek)
 
 ```
-Szablon:     "Jadę do [city] na spotkanie."
+Szablon:     "Jadę do [CITY] na spotkanie."
 Wynik:       "Jadę do Warszawy na spotkanie."
 ```
 
-✅ Poprawna odmiana: Warszawa → Warszawy (dopełniacz)
+✅ Poprawna odmiana: Warszawa → Warszawy (dopełniacz, przyimek "do")
 
 ### Przykład 3: Narzędnik (towarzyszenie)
 
 ```
-Szablon:     "Spotkałem się z [name] [surname] w kawiarni."
+Szablon:     "Spotkałem się z [NAME] [SURNAME] w kawiarni."
 Wynik:       "Spotkałem się z Anną Kowalską w kawiarni."
 ```
 
-✅ Poprawna odmiana: Anna → Anną, Kowalska → Kowalską (narzędnik)
+✅ Poprawna odmiana: Anna → Anną, Kowalska → Kowalską (narzędnik, przyimek "z" + osoba)
 
-### Przykład 4: Wieloznaczny przyimek "z"
-
-```
-Szablon 1:   "Przyjechałem z [city]."
-Wynik 1:     "Przyjechałem z Gdańska."
-             (dopełniacz - skąd?)
-
-Szablon 2:   "Rozmawiam z [name]."
-Wynik 2:     "Rozmawiam z Piotrem."
-             (narzędnik - z kim?)
-```
-
-✅ Rozróżnienie kontekstowe przyimka "z"
-
-### Przykład 5: Fraza wielowyrazowa
+### Przykład 4: Wieloznaczny przyimek "z" - MIEJSCA vs OSOBY
 
 ```
-Szablon:     "Pani [name] [surname] zgłosiła reklamację."
+Szablon:     "Przyjechałem z [CITY]."
+Wynik:       "Przyjechałem z Gdańska."
+             ↑ DOPEŁNIACZ (skąd? - miejsce)
+
+Szablon:     "Rozmawiam z [NAME]."
+Wynik:       "Rozmawiam z Piotrem."
+             ↑ NARZĘDNIK (z kim? - osoba)
+```
+
+✅ **Kluczowa innowacja:** rozróżnienie na podstawie typu tagu:
+- `[CITY]`, `[ADDRESS]`, `[COMPANY]` → dopełniacz
+- `[NAME]`, `[SURNAME]` → narzędnik
+
+### Przykład 5: Tytuły grzecznościowe
+
+```
+Szablon:     "Pani [NAME] [SURNAME] zgłosiła reklamację."
 Wynik:       "Pani Anny Kowalskiej zgłosiła reklamację."
+             ↑ DOPEŁNIACZ (tytuł "pani" wymaga dopełniacza)
+
+Szablon:     "Rozmawiam z panią [NAME] [SURNAME]."
+Wynik:       "Rozmawiam z panią Anną Kowalską."
+             ↑ NARZĘDNIK (tytuł "panią" wymaga narzędnika)
 ```
 
-✅ Odmiana tytułu "Pani" wymusza dopełniacz dla imienia i nazwiska
+✅ Tytuły są rozpoznawane i determinują przypadek
+
+### Przykład 6: Ciągi tagów (propagacja przypadka)
+
+```
+Szablon:     "Pracuję z panem [NAME] [SURNAME] z [CITY]."
+Wynik:       "Pracuję z panem Janem Kowalskim z Krakowa."
+                           ^^^^  ^^^^^^^^^     ^^^^^^^
+                           inst  inst          gen
+                           (panem→inst)        (miasto→gen)
+```
+
+✅ `[NAME]` i `[SURNAME]` dziedziczą przypadek z "panem", `[CITY]` ma własny przypadek
+
+### Przykład 7: Fallback heurystyczny (nieznane słowa)
+
+```
+Słowo:       "Mustafa" (nieznane Morfeuszowi)
+Przypadek:   narzędnik (inst)
+Wynik:       "Mustafą"
+
+Logika fallback: słowo kończy się na 'a' → żeńska odmiana → -a → -ą
+```
+
+✅ Nawet nieznane słowa są odmieniane sensownie
 
 ---
 
 ## Wydajność
 
-| Metryka                  | Wartość                                      |
-| ------------------------ | -------------------------------------------- |
-| Prędkość przetwarzania   | ~19,000 zdań/sekundę                         |
-| Czas ładowania słowników | <100ms                                       |
-| Zużycie pamięci          | ~50MB                                        |
-| Cache odmiany            | aktywny (przyspiesza powtarzające się słowa) |
+| Metryka                  | Wartość                                       |
+| ------------------------ | --------------------------------------------- |
+| Prędkość przetwarzania   | ~1,000-19,000 zdań/sekundę                    |
+| Czas ładowania słowników | <100ms                                        |
+| Zużycie pamięci          | ~50MB (z Morfeuszem)                          |
+| Cache odmiany            | aktywny (przyspiesza powtarzające się słowa)  |
 
 ### Dlaczego NIE używamy ML do wypełniania?
 
@@ -226,11 +385,12 @@ Testowaliśmy podejście z **HerBERT Masked LM** do predykcji wartości na podst
 - ❌ Często generował nieistniejące słowa
 - ❌ Problemy z odmianą - model nie rozumie fleksji
 
-**Nasze podejście (Morfeusz2 + słowniki):**
+**Nasze podejście (Morfeusz2 + słowniki + fallback):**
 
-- ✅ 19,000 zdań/sekundę
+- ✅ 1,000-19,000 zdań/sekundę
 - ✅ Zawsze poprawne polskie słowa
 - ✅ Gwarantowana poprawność gramatyczna
+- ✅ Fallback dla nieznanych słów
 
 ---
 
@@ -240,7 +400,7 @@ Testowaliśmy podejście z **HerBERT Masked LM** do predykcji wartości na podst
 
 ```bash
 # Pojedynczy tekst
-python -m template_filler "Mieszkam w [city] z [name]."
+python -m template_filler "Mieszkam w [CITY] z [NAME]."
 
 # Plik
 python -m template_filler -i anonimowe.txt -o syntetyczne.txt
@@ -249,22 +409,70 @@ python -m template_filler -i anonimowe.txt -o syntetyczne.txt
 ### Python API
 
 ```python
-from template_filler import TagFiller
+from template_filler.filler import TagFiller
 
 filler = TagFiller()
 
-text = "Pani [name] [surname] mieszka w [city]."
+text = "Pani [NAME] [SURNAME] mieszka w [CITY]."
 result = filler.fill(text)
-# → "Pani Anna Kowalska mieszka w Krakowie."
+# → "Pani Anny Kowalskiej mieszka w Krakowie."
+
+# Z pomiarem czasu
+result, time_ms = filler.fill(text, return_time=True)
+```
+
+### Batch processing
+
+```python
+texts = ["Tekst 1 z [NAME]", "Tekst 2 z [CITY]", ...]
+results = filler.fill_batch(texts)
+
+# Lub równolegle (dla dużych zbiorów)
+results = filler.fill_batch_parallel(texts, max_workers=4)
 ```
 
 ---
 
 ## Ograniczenia
 
-1. **Obce imiona** - Morfeusz2 nie zna wszystkich obcych imion, fallback to forma bazowa
+1. **Obce imiona** - Morfeusz2 nie zna wszystkich obcych imion, ale fallback heurystyczny daje sensowne wyniki
 2. **Nietypowe konstrukcje** - bardzo złożone zdania mogą nie być poprawnie analizowane
 3. **Brak kontekstu semantycznego** - wartości losowe, nie pasujące do sensu zdania
+4. **Końcówka 'a' = żeńskie** - heurystyka przy klasyfikacji płci może się mylić dla imion obcych (Mustafa, Nikita)
+
+---
+
+## Architektura rozwiązania
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                        TagFiller                                │
+├─────────────────────────────────────────────────────────────────┤
+│  1. Znajdź tagi: re.finditer(r'\[[A-Z\-]+\]', text)            │
+│  2. Wykryj płeć z kontekstu (pani/pan/ona/on)                  │
+│  3. Stwórz PersonContext (spójne dane osobowe)                 │
+│  4. Dla każdego tagu:                                          │
+│     a) Wykryj przypadek (_detect_required_case)                │
+│     b) Pobierz wartość (z pliku lub generator)                 │
+│     c) Odmień (PolishInflector.inflect_phrase)                 │
+│  5. Zamień tag na wartość                                      │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                     PolishInflector                             │
+├─────────────────────────────────────────────────────────────────┤
+│  1. Sprawdź cache                                              │
+│  2. Próbuj Morfeusz2:                                          │
+│     - morf.generate(word) → lista form                         │
+│     - Filtruj: sg (pojedyncza) + odpowiedni przypadek          │
+│     - Preferuj formy osobowe (m1, f)                           │
+│  3. Fallback heurystyczny:                                     │
+│     - Żeńskie (-a): gen→y, dat→ie, acc→ę, inst→ą              │
+│     - Męskie spółgł.: gen→a, dat→owi, inst→em                  │
+│  4. Zapisz w cache                                             │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -272,7 +480,9 @@ result = filler.fill(text)
 
 Nasz moduł `template_filler` to **szybkie, niezawodne rozwiązanie** do generacji danych syntetycznych z pełną obsługą polskiej fleksji. Kluczowe innowacje:
 
-1. 🎯 **Detekcja przypadka z kontekstu** - analiza przyimków
-2. 🔄 **Morfeusz2** - profesjonalny analizator morfologiczny
-3. ⚡ **Wydajność** - 19,000 zdań/s bez kompromisów jakościowych
-4. 🇵🇱 **Rozróżnienie wieloznaczności** - np. "z" + gen vs "z" + inst
+1. 🎯 **Detekcja przypadka z kontekstu** - analiza przyimków i tytułów
+2. 🔄 **Morfeusz2 + fallback** - profesjonalny analizator + heurystyka dla nieznanych słów
+3. ⚡ **Wydajność** - 1,000-19,000 zdań/s bez kompromisów jakościowych
+4. 🇵🇱 **Rozróżnienie wieloznaczności** - "z" + miejsce (gen) vs "z" + osoba (inst)
+5. 👤 **PersonContext** - spójne dane osobowe (imię, nazwisko, PESEL, wiek)
+6. 📦 **Propagacja przypadka** - ciągi tagów `[NAME] [SURNAME]` odmieniają się razem
