@@ -351,6 +351,8 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
             # znajdź placeholdery w szablonie
             placeholders = placeholder_pattern.findall(template)
             values: Dict[str, str] = {}
+            
+            # Najpierw zbierz wszystkie wartości dla placeholderów
             for ph in placeholders:
                 key = ph.lower()
                 # Użyj równomiernego losowania z get_random_value
@@ -366,50 +368,48 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                 else:
                     val = raw_val
                     
-                    # Co 50 imię/nazwisko napisz CAPS LOCKIEM (2% szansy)
-                    if ph.lower() in ('name', 'surname') and random.random() < 0.02:
-                        val = val.upper()
-                    
-                    values[ph] = val
-
-                try:
-                    sentence_text = template.format(**values)
-                except (ValueError, KeyError) as e:
-                    print(f"\nBlad w szablonie: {template[:100]}...")
-                    print(f"    Blad: {e}")
-                    pbar.update(1)
-                    continue
-                    
-                sentence = Sentence(sentence_text)
-
-                # Nie dodaj "O" na wszystko - Flair domyślnie traktuje tokeny bez tagu jako "O"
-                # Dodaj tylko tagi encji (B-, I-)
-
-                # Śledź użyte zakresy, aby uniknąć nakładania się spanów
-                used_ranges = set()
+                # Co 50 imię/nazwisko napisz CAPS LOCKIEM (2% szansy)
+                if ph.lower() in ('name', 'surname') and random.random() < 0.02:
+                    val = val.upper()
                 
-                # Dla każdego placeholdera znajdź jego miejsce w tokenach i przypisz BIO
-                for ph in placeholders:
-                    entity_value = values[ph]
-                    # Tokenizuj wartość przy użyciu tokenizera Flair, aby dopasowanie
-                    # było spójne z tokenizacją zdania (zamiast prostego .split()).
-                    target_sent = Sentence(entity_value)
-                    target_tokens = [t.text for t in target_sent.tokens]
-                    token_texts = [t.text for t in sentence.tokens]
-                    found = _find_subsequence(token_texts, target_tokens, start_from=0, used_ranges=used_ranges)
-                    label = ph.upper()
-                    if found is None:
-                        # Jeżeli nie znaleziono (rzadko), pomijamy to wystąpienie
-                        continue
-                    start, end = found
-                    # Dodaj zakres do użytych
-                    used_ranges.add((start, end))
-                    # Stwórz Span object (prawidłowy sposób dla Flair)
-                    span = Span(sentence.tokens[start:end])
-                    span.add_label(config.TAG_TYPE, label)
+                values[ph] = val
 
-                all_sentences.append(sentence)
+            # Teraz stwórz zdanie z wszystkimi wartościami
+            try:
+                sentence_text = template.format(**values)
+            except (ValueError, KeyError) as e:
+                print(f"\nBlad w szablonie: {template[:100]}...")
+                print(f"    Blad: {e}")
                 pbar.update(1)
+                continue
+                
+            sentence = Sentence(sentence_text)
+
+            # Śledź użyte zakresy, aby uniknąć nakładania się spanów
+            used_ranges = set()
+            
+            # Dla każdego placeholdera znajdź jego miejsce w tokenach i przypisz BIO
+            for ph in placeholders:
+                entity_value = values[ph]
+                # Tokenizuj wartość przy użyciu tokenizera Flair, aby dopasowanie
+                # było spójne z tokenizacją zdania (zamiast prostego .split()).
+                target_sent = Sentence(entity_value)
+                target_tokens = [t.text for t in target_sent.tokens]
+                token_texts = [t.text for t in sentence.tokens]
+                found = _find_subsequence(token_texts, target_tokens, start_from=0, used_ranges=used_ranges)
+                label = ph.upper()
+                if found is None:
+                    # Jeżeli nie znaleziono (rzadko), pomijamy to wystąpienie
+                    continue
+                start, end = found
+                # Dodaj zakres do użytych
+                used_ranges.add((start, end))
+                # Stwórz Span object (prawidłowy sposób dla Flair)
+                span = Span(sentence.tokens[start:end])
+                span.add_label(config.TAG_TYPE, label)
+
+            all_sentences.append(sentence)
+            pbar.update(1)
 
     # Podział na zbiory: 80/10/10
     random.shuffle(all_sentences)
