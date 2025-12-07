@@ -5,6 +5,9 @@ faker>=13.3.4
 seqeval
 sacremoses
 
+# Odmiana gramatyczna (wypełnianie tagów)
+morfeusz2>=1.99
+
 # Opcjonalne, przydatne:
 spacy
 polib

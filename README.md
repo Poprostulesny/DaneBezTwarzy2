@@ -91,6 +91,10 @@ DaneBezTwarzy2/
 ├── test_data.txt          # Przykładowe dane do testowania anonimizacji
 ├── requirements.txt       # Zależności Python
 ├── Dane                   # Surowe dane ze zdaniami
+├── template_filler/       # 🔄 Moduł rekonstrukcji tekstu
+│   ├── __init__.py        # Eksportuje TagFiller, PolishInflector
+│   ├── __main__.py        # CLI: python -m template_filler
+│   └── filler.py          # TagFiller + PolishInflector (Morfeusz2)
 └── data/                  # Foldery z wartościami i szablonami per tag
     ├── name/
     │   ├── values.txt     # Lista imion
@@ -231,6 +235,111 @@ Wyjście:
 Nazywam się [IMIĘ] [NAZWISKO] i mieszkam w [MIASTO] przy [ADRES].
 Mój numer PESEL to [PESEL], a numer telefonu to [TELEFON].
 ```
+
+---
+
+## Rekonstrukcja tekstu (wypełnianie tagów)
+
+Moduł `template_filler` pozwala na odwrócenie procesu anonimizacji - zamienia tagi `[IMIĘ]`, `[MIASTO]` itd. na losowe, ale **gramatycznie poprawne** wartości.
+
+### Jak działa
+
+```
+Tekst oryginalny: "Jan Kowalski mieszka w Warszawie."
+        ↓
+Model NER (anonymize.py): wykrywa i taguje dane wrażliwe
+        ↓
+Tekst zanonimizowany: "Pani [IMIĘ] [NAZWISKO] mieszka w [MIASTO]."
+        ↓
+TagFiller (template_filler): wypełnia tagi losowymi wartościami z odmianą
+        ↓
+Tekst zrekonstruowany: "Pani Anna Kowalska mieszka w Krakowie."
+```
+
+### Użycie
+
+```bash
+# Z linii poleceń
+python -m template_filler "Pani [IMIĘ] [NAZWISKO] mieszka w [MIASTO]."
+
+# Z pliku
+python -m template_filler -i anonimized.txt -o filled.txt
+
+# W kodzie Python
+from template_filler import TagFiller
+filler = TagFiller()
+result = filler.fill("Spotkałem się z [IMIĘ] w [MIASTO].")
+# → "Spotkałem się z Piotrem w Krakowie."
+```
+
+### Architektura
+
+System składa się z dwóch komponentów:
+
+1. **TagFiller** - główna klasa wypełniająca tagi:
+
+   - Losowy wybór wartości z `data/{tag}/values.txt`
+   - Analiza kontekstu (przyimki, czasowniki) do określenia przypadka
+   - Wywołanie Morfeusz2 do odmiany
+
+2. **PolishInflector** - wrapper na Morfeusz2:
+   - Generuje formy odmienione polskich słów
+   - Cache dla wydajności
+   - Obsługuje frazy wielowyrazowe ("Zielona Góra" → "Zielonej Górze")
+
+### Wykrywanie przypadka gramatycznego
+
+System automatycznie wykrywa wymagany przypadek na podstawie:
+
+| Kontekst                    | Przypadek         | Przykład                |
+| --------------------------- | ----------------- | ----------------------- |
+| w, we, na, przy             | miejscownik (loc) | "w Krakowie"            |
+| do, od, z, bez, dla         | dopełniacz (gen)  | "do Warszawy"           |
+| przez                       | biernik (acc)     | "przez Kraków"          |
+| z + czasownik ruchu         | dopełniacz        | "z Krakowa przyjechał"  |
+| z + czasownik towarzyszenia | narzędnik         | "spotkałem się z Janem" |
+| Pani, Pana                  | dopełniacz        | "Pani Anny"             |
+
+### Wydajność
+
+| Metoda                          | Zdań/sekundę | Opis                                         |
+| ------------------------------- | ------------ | -------------------------------------------- |
+| **TagFiller (Morfeusz2)**       | ~19 000      | ✅ Szybkie, regułowe                         |
+| HerBERT MLM (pseudo-perplexity) | ~0.5         | ❌ Wolne, każdy kandydat wymaga forward pass |
+
+### Dlaczego nie używamy modelu NER do predykcji wartości?
+
+1. **Model NER wykrywa, nie generuje**: Nasz wytrenowany model (`final-model.pt`) to **sekwencyjny tagger** - wykrywa gdzie są dane wrażliwe i jaką mają kategorię. Nie jest w stanie generować nowych wartości.
+
+2. **Tokeny ≠ słowa**: Model operuje na subtokenach (BPE). "Warszawa" może być rozbita na `["War", "##szaw", "##a"]`. Predykcja subtokena nie da nam sensownego słowa.
+
+3. **Brak mechanizmu generacji**: NER to klasyfikacja tokena (B-NAME, I-NAME, O), nie generacja tekstu. Potrzebowalibyśmy modelu generatywnego (GPT-like) lub MLM do uzupełniania.
+
+4. **Odmiana gramatyczna**: Nawet gdybyśmy wybrali "Warszawa", musimy ją odmienić do "Warszawie" (miejscownik). To wymaga analizy morfologicznej (Morfeusz2), nie ML.
+
+### Dlaczego HerBERT MLM jest wolny?
+
+Podejście z pseudo-perplexity wymaga:
+
+- Dla każdego kandydata (np. 20 imion)
+- Dla każdej formy odmiany (7 przypadków)
+- Dla każdego tokena w zdaniu (~15)
+- **Forward pass przez cały model** (110M parametrów)
+
+To daje: 20 × 7 × 15 = **2100 forward passów na jedno zdanie!**
+
+Nasze rozwiązanie z Morfeusz2 jest **~40 000x szybsze** bo:
+
+- Losowy wybór = O(1)
+- Odmiana = lookup w słowniku morfologicznym
+
+### Ograniczenia
+
+1. **Obce imiona**: Morfeusz2 nie zna wszystkich imion obcych (np. "Yaroslav", "Serhii"). Takie imiona nie są odmieniane.
+
+2. **Nazwy własne firm**: Niektóre nazwy firm mogą być niepoprawnie odmieniane.
+
+3. **Kontekst semantyczny**: System nie rozumie semantyki - może podstawić męskie imię po "Pani" (choć gramatycznie odmieni poprawnie).
 
 ---
 
