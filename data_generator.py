@@ -287,6 +287,30 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
     values_cache: Dict[str, List[str]] = {}
     for label in config.LABELS:
         values_cache[label.lower()] = _load_values_from_file(label.lower(), data_dir)
+    
+    # System indeksów dla równomiernego losowania
+    # Zamiast random.choice (może powtarzać), używamy shuffled indices
+    values_indices: Dict[str, List[int]] = {}
+    values_current_idx: Dict[str, int] = {}
+    
+    def get_random_value(key: str) -> Optional[str]:
+        """Pobiera wartość z równomiernym rozkładem - każda wartość użyta raz przed powtórzeniem."""
+        if key not in values_cache or not values_cache[key]:
+            return None
+        
+        values_list = values_cache[key]
+        
+        # Inicjalizuj lub reshuffle jeśli wyczerpane
+        if key not in values_indices or values_current_idx[key] >= len(values_indices[key]):
+            values_indices[key] = list(range(len(values_list)))
+            random.shuffle(values_indices[key])
+            values_current_idx[key] = 0
+        
+        # Pobierz następny indeks z przesuniętej listy
+        idx = values_indices[key][values_current_idx[key]]
+        values_current_idx[key] += 1
+        
+        return values_list[idx]
 
     # Oblicz liczbę zdań na szablon
     num_templates = len(all_templates)
@@ -319,7 +343,13 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                 placeholders = placeholder_pattern.findall(template)
                 values: Dict[str, str] = {}
                 for ph in placeholders:
-                    raw_val = _get_value_for_placeholder(ph, values_cache)
+                    key = ph.lower()
+                    # Użyj równomiernego losowania z get_random_value
+                    raw_val = get_random_value(key)
+                    if raw_val is None:
+                        # Fallback do starej funkcji jeśli brak w cache
+                        raw_val = _get_value_for_placeholder(ph, values_cache)
+                    
                     # zastosuj korupcję z pewnym prawdopodobieństwem
                     # ZMNIEJSZONO: 20% szansy na korupcję (było 50%), i mniejsza intensywność
                     if random.random() < 0.2:
