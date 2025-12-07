@@ -56,7 +56,15 @@ def train_model(corpus=None, epochs: int = 10, model_dir: Optional[str] = None,
     # Sprawdź czy istnieje wcześniej wytrenowany model
     best_model_path = os.path.join(model_dir, "best-model.pt")
     final_model_path = os.path.join(model_dir, "final-model.pt")
-    torch.set_float32_matmul_precision("high")
+    
+    # Optymalizacje NVIDIA - włącz tylko gdy CUDA jest dostępna
+    cuda_available = torch.cuda.is_available()
+    if cuda_available:
+        torch.set_float32_matmul_precision("high")  # TF32 dla Tensor Cores (Ampere+)
+        print(f"   🎮 GPU: {torch.cuda.get_device_name(0)}")
+    else:
+        print("   ⚠️ CUDA niedostępna - trening na CPU (wolniejszy)")
+    
     existing_model_path = None
     if os.path.exists(best_model_path):
         existing_model_path = best_model_path
@@ -137,7 +145,7 @@ def train_model(corpus=None, epochs: int = 10, model_dir: Optional[str] = None,
         learning_rate=1e-4,  # ≥ 0.0001
     # standardowy LR dla fine-tuningu
         mini_batch_size=64,
-        use_amp=True,
+        use_amp=cuda_available,  # AMP tylko gdy CUDA dostępna
         max_epochs=epochs,
         train_with_dev=False,
         embeddings_storage_mode='none',
