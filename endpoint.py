@@ -36,8 +36,8 @@ def get_anonymized_and_placeholder_text(text: str):
     tagger = get_tagger()
     filler = get_filler()
     
-    # Anonimizacja - zamiana encji na tagi $[name], $[city] itd.
-    anonymized, _ = anonymize_text(text, tagger)
+    # Anonimizacja - zamiana encji na tagi [NAME], [CITY] itd.
+    anonymized, _, _ = anonymize_text(text, tagger)
     
     # Wypełnienie tagów losowymi wartościami z odmianą gramatyczną
     replaced = filler.fill(anonymized)

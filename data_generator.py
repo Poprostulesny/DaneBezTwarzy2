@@ -36,6 +36,63 @@ def _generate_pesel() -> str:
 import config
 from utils import corrupt_text
 
+# Import odmiany gramatycznej z fillera
+try:
+    from template_filler.filler import PolishInflector, PREPOSITION_CASES, GENITIVE_TRIGGERS
+    INFLECTOR_AVAILABLE = True
+except ImportError:
+    INFLECTOR_AVAILABLE = False
+    PREPOSITION_CASES = {}
+    GENITIVE_TRIGGERS = set()
+
+
+def _detect_required_case(template: str, placeholder_start: int) -> str:
+    """
+    Wykrywa wymagany przypadek gramatyczny na podstawie kontekstu przed placeholderem.
+    
+    Args:
+        template: Tekst szablonu
+        placeholder_start: Pozycja początku placeholdera w szablonie
+        
+    Returns:
+        Nazwa przypadka: 'nom', 'gen', 'dat', 'acc', 'inst', 'loc', 'voc'
+    """
+    # Pobierz tekst przed placeholderem
+    before_text = template[:placeholder_start].lower()
+    words = before_text.split()
+    
+    if not words:
+        return 'nom'
+    
+    prev_word = words[-1].rstrip('.,!?:;')
+    
+    # Specjalne rozróżnienie dla "z" - narzędnik gdy towarzyszenie
+    if prev_word in {'z', 'ze'}:
+        # Szukaj czasowników wymagających narzędnika
+        inst_verbs = {'spotkać', 'spotkał', 'spotkałem', 'spotkałam', 'spotka',
+                      'rozmawia', 'rozmawiam', 'rozmawiać', 'rozmawiał',
+                      'pracuje', 'pracować', 'pracował', 'współpracuje',
+                      'mieszka', 'mieszkać', 'mieszkam', 'żyje', 'żyć',
+                      'jedzie', 'idzie', 'idę', 'jadę', 'pojechał', 'poszedł'}
+        # Sprawdź kilka poprzednich słów
+        for w in words[-5:]:
+            w_clean = w.rstrip('.,!?:;')
+            if w_clean in inst_verbs or w_clean.startswith('spotk') or w_clean.startswith('rozmaw'):
+                return 'inst'
+        # Domyślnie dopełniacz (z miejsca)
+        return 'gen'
+    
+    # Sprawdź przyimki
+    if prev_word in PREPOSITION_CASES:
+        return PREPOSITION_CASES[prev_word]
+    
+    # Sprawdź tytuły wymagające dopełniacza
+    if prev_word in GENITIVE_TRIGGERS:
+        return 'gen'
+    
+    # Domyślnie mianownik
+    return 'nom'
+
 
 def _load_values_from_file(tag_name: str, data_dir: str = "data") -> List[str]:
     """
@@ -105,7 +162,7 @@ def _get_value_for_placeholder(placeholder: str, values_cache: Dict[str, List[st
 def _generate_value_for_placeholder(placeholder: str, faker: Faker) -> str:
     """
     Zwraca wygenerowaną wartość dla zadanego placeholdera.
-
+    Funkcja pomocnicza, jeżeli wartość nie istnieje w danych.
     Args:
         placeholder: nazwa pola jak w szablonie (np. 'city', 'name')
         faker: instancja Faker('pl_PL')
@@ -222,7 +279,6 @@ def _find_subsequence(tokens: List[str], target: List[str], start_from: int = 0,
     for i in range(start_from, len(norm_tokens) - L + 1):
         if norm_tokens[i:i+L] == norm_target:
             # Sprawdź czy ten zakres nie nakłada się z już użytymi
-            candidate_range = (i, i+L)
             overlaps = False
             for used_start, used_end in used_ranges:
                 # Sprawdź nakładanie się zakresów
@@ -314,6 +370,17 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
     values_indices: Dict[str, List[int]] = {}
     values_current_idx: Dict[str, int] = {}
     
+    # Inicjalizacja odmiany gramatycznej (opcjonalna)
+    inflector = None
+    if INFLECTOR_AVAILABLE:
+        try:
+            inflector = PolishInflector()
+            print("   Odmiana gramatyczna: aktywna (Morfeusz2)")
+        except Exception as e:
+            print(f"   Odmiana gramatyczna: niedostępna ({e})")
+    else:
+        print("   Odmiana gramatyczna: niedostępna (brak modułu)")
+    
     def get_random_value(key: str) -> Optional[str]:
         """Pobiera wartość z równomiernym rozkładem - każda wartość użyta raz przed powtórzeniem."""
         if key not in values_cache or not values_cache[key]:
@@ -348,12 +415,16 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
             # Ważone losowanie szablonu - rzadkie tagi są wybierane częściej
             template = random.choices(all_templates, weights=template_weights, k=1)[0]
             
-            # znajdź placeholdery w szablonie
-            placeholders = placeholder_pattern.findall(template)
+            # znajdź placeholdery w szablonie (z pozycjami)
+            placeholders_with_pos = [(m.group(1), m.start()) for m in placeholder_pattern.finditer(template)]
+            placeholders = [p[0] for p in placeholders_with_pos]
             values: Dict[str, str] = {}
             
-            # Najpierw zbierz wszystkie wartości dla placeholderów
-            for ph in placeholders:
+            # Tagi które wymagają odmiany (imiona, nazwiska, miasta, firmy)
+            inflectable_tags = {'name', 'surname', 'city', 'company', 'school-name', 'relative'}
+            
+            # Zbierz wszystkie wartości dla placeholderów z odmianą gramatyczną
+            for ph, pos in placeholders_with_pos:
                 key = ph.lower()
                 # Użyj równomiernego losowania z get_random_value
                 raw_val = get_random_value(key)
@@ -361,15 +432,24 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                     # Fallback do starej funkcji jeśli brak w cache
                     raw_val = _get_value_for_placeholder(ph, values_cache)
                 
+                val = raw_val
+                
+                # Odmiana gramatyczna dla wybranych tagów
+                if inflector and key in inflectable_tags:
+                    required_case = _detect_required_case(template, pos)
+                    if required_case != 'nom':
+                        try:
+                            val = inflector.inflect_phrase(raw_val, required_case)
+                        except Exception:
+                            pass  # W razie błędu użyj formy bazowej
+                
                 # zastosuj korupcję z pewnym prawdopodobieństwem
                 # ZMNIEJSZONO: 20% szansy na korupcję (było 50%), i mniejsza intensywność
                 if random.random() < 0.2:
-                    val = corrupt_text(raw_val, prob=corrupt_prob * 0.5)  # połowa intensywności
-                else:
-                    val = raw_val
+                    val = corrupt_text(val, prob=corrupt_prob * 0.5)  # połowa intensywności
                     
                 # Co 50 imię/nazwisko napisz CAPS LOCKIEM (2% szansy)
-                if ph.lower() in ('name', 'surname') and random.random() < 0.02:
+                if key in ('name', 'surname') and random.random() < 0.02:
                     val = val.upper()
                 
                 values[ph] = val

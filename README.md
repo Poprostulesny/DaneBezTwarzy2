@@ -55,7 +55,7 @@ python anonymize.py --interactive
 **Przykład wyniku:**
 ```
 Wejście:  Jan Kowalski mieszka w Warszawie, tel. 500123456
-Wyjście:  [IMIĘ] [NAZWISKO] mieszka w [MIASTO], tel. [TELEFON]
+Wyjście:  [NAME] [SURNAME] mieszka w [CITY], tel. [PHONE]
 ```
 
 ### 4. Rekonstrukcja tekstu (wypełnianie tagów)
@@ -63,9 +63,15 @@ Wyjście:  [IMIĘ] [NAZWISKO] mieszka w [MIASTO], tel. [TELEFON]
 Po anonimizacji możesz wypełnić tagi losowymi, gramatycznie poprawnymi wartościami:
 
 ```bash
-python -m template_filler "Pani [IMIĘ] [NAZWISKO] mieszka w [MIASTO]."
+python -m template_filler.filler "Pani [NAME] [SURNAME] mieszka w [CITY]."
 # → Pani Anna Kowalska mieszka w Krakowie.
 ```
+
+System automatycznie:
+- Wykrywa płeć z kontekstu ("Pani" → imię żeńskie)
+- Dopasowuje nazwisko do płci (Kowalska, nie Kowalski)
+- Odmienia przez przypadki ("w Krakowie", nie "w Kraków")
+- Zachowuje spójność danych osobowych (PESEL zawiera datę urodzenia i płeć)
 
 ---
 
@@ -99,7 +105,7 @@ DaneBezTwarzy2/
 ├── requirements.txt       # Zależności Python
 │
 ├── template_filler/       # Moduł rekonstrukcji tekstu
-│   ├── filler.py          # TagFiller + PolishInflector
+│   ├── filler.py          # TagFiller + PolishInflector + PersonContext
 │   └── __main__.py        # CLI
 │
 ├── data/                  # Słowniki wartości i szablony
@@ -144,15 +150,38 @@ Generator (data_generator.py) tworzy syntetyczny korpus:
 
 ## Moduł rekonstrukcji (template_filler)
 
-Zamienia tagi anonimizacji na losowe wartości z **poprawną odmianą gramatyczną**.
+Zamienia tagi anonimizacji na losowe wartości z **poprawną odmianą gramatyczną** i **spójnym kontekstem osobowym**.
 
 ### Jak działa
 
-1. **Losowy wybór** wartości z data/{tag}/values.txt
-2. **Analiza kontekstu** - wykrywa przyimki i czasowniki
-3. **Odmiana** przez Morfeusz2 w odpowiedni przypadek
+1. **Wykrywanie płci** z kontekstu (Pan/Pani, czasowniki: -łam/-łem)
+2. **PersonContext** - spójna tożsamość osoby (imię, nazwisko, PESEL, wiek, data urodzenia)
+3. **Losowy wybór** wartości zgodnych z płcią
+4. **Odmiana** przez Morfeusz2 w odpowiedni przypadek gramatyczny
 
-### Wykrywanie przypadka
+### Spójny kontekst osobowy
+
+Tagi osobowe (`[NAME]`, `[SURNAME]`, `[AGE]`, `[DATE-OF-BIRTH]`, `[PESEL]`, `[SEX]`) są ze sobą powiązane:
+
+```
+Wejście:  Pani [NAME] [SURNAME], ur. [DATE-OF-BIRTH], PESEL: [PESEL], wiek: [AGE] lat.
+Wyjście:  Pani Anna Kowalska, ur. 15.03.1985, PESEL: 85031512348, wiek: 39 lat.
+```
+
+- **Imię i nazwisko** pasują do wykrytej płci (Anna, Kowalska = żeńskie)
+- **Data urodzenia** jest spójna z wiekiem (2025 - 1985 = 39 lat)
+- **PESEL** zawiera datę urodzenia (850315) i cyfrę płci (8 = parzysta = kobieta)
+
+### Wykrywanie płci
+
+| Wskaźnik | Płeć | Przykład |
+|----------|------|----------|
+| Pani, panna, ona, jej | Żeńska | "Pani [NAME]" → Anna |
+| Pan, on, jego | Męska | "Pan [NAME]" → Jan |
+| Czasownik -łam, -ła | Żeńska | "zadzwoniłam do [NAME]" |
+| Czasownik -łem, -ł | Męska | "rozmawiałem z [NAME]" |
+
+### Wykrywanie przypadka gramatycznego
 
 | Kontekst | Przypadek | Przykład |
 |----------|-----------|----------|
@@ -169,7 +198,7 @@ Zamienia tagi anonimizacji na losowe wartości z **poprawną odmianą gramatyczn
 ### Ograniczenia
 
 - Obce imiona (np. "Yaroslav") nie są odmieniane (brak w słowniku Morfeusz2)
-- System nie weryfikuje spójności semantycznej (może podstawić męskie imię po "Pani")
+- Niektóre męskie imiona kończące się na -a (Kuba, Mykola) mogą być błędnie klasyfikowane jako żeńskie
 
 ---
 
@@ -189,12 +218,20 @@ print(result)
 ### Rekonstrukcja
 
 ```python
-from template_filler import TagFiller
+from template_filler.filler import TagFiller
 
 filler = TagFiller()
-result = filler.fill("Spotkałem się z [IMIĘ] w [MIASTO].")
+
+# Podstawowe użycie z odmianą
+result = filler.fill("Spotkałem się z [NAME] w [CITY].")
 print(result)
 # → "Spotkałem się z Piotrem w Krakowie."
+
+# Spójny kontekst osobowy
+result = filler.fill("Pani [NAME] [SURNAME], PESEL: [PESEL], wiek: [AGE] lat.")
+print(result)
+# → "Pani Anna Kowalska, PESEL: 85031512348, wiek: 39 lat."
+# (wszystkie dane są ze sobą spójne!)
 ```
 
 ---
