@@ -316,11 +316,16 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                 for ph in placeholders:
                     raw_val = _get_value_for_placeholder(ph, values_cache)
                     # zastosuj korupcję z pewnym prawdopodobieństwem
-                    if random.random() < 0.5:
-                        # 50% szansy na próbę korupcji
-                        val = corrupt_text(raw_val, prob=corrupt_prob)
+                    # ZMNIEJSZONO: 20% szansy na korupcję (było 50%), i mniejsza intensywność
+                    if random.random() < 0.2:
+                        val = corrupt_text(raw_val, prob=corrupt_prob * 0.5)  # połowa intensywności
                     else:
                         val = raw_val
+                    
+                    # Co 50 imię/nazwisko napisz CAPS LOCKIEM (2% szansy)
+                    if ph.lower() in ('name', 'surname') and random.random() < 0.02:
+                        val = val.upper()
+                    
                     values[ph] = val
 
                 try:

@@ -501,4 +501,52 @@ art. 6 ust. 2 pkt 2 ustawy z dnia 12 listopada 2023
 art 7 ustawy z 13.12.2000 r.
 art. 8 § 4 rozporządzenia z dnia 14 stycznia 2001 r.
 art 9 ust. 4 lit. b ustawy z dnia 15/02/2002
-art. 10 w zw. z § 2 ustawy z dnia 16 marca 2003 r.
+art. 10 w zw. z § 2 ustawy z dnia 16 marca 2003 r.art. 23 ust. 1 pkt 1 ustawy o ochronie danych osobowych
+art. 5 ust. 1 lit. a RODO
+art. 17 RODO
+art. 15 ust. 3 RODO
+art. 6 ust. 1 lit. f RODO
+art. 4 pkt 1 RODO
+art. 12 ust. 2 ustawy z dnia 10 maja 2018 r.
+art. 91 kodeksu pracy
+art. 52 par. 1 pkt 1 kodeksu pracy
+art. 113 kodeksu cywilnego
+art. 415 k.c.
+art. 471 k.c.
+par. 5 ust. 1 rozporządzenia
+par. 12 pkt 3 regulaminu
+poz. 1000 Dz.U. z 2024 r.
+Dz.U. 2024 poz. 1234
+Dz.U. z 2023 r. poz. 567
+Dz.U. Nr 120, poz. 1190
+M.P. 2024 poz. 456
+decyzja nr 123/2024
+postanowienie sygn. akt I C 123/24
+wyrok sygn. akt II K 456/23
+sygn. akt III SA/Wa 1234/24
+KRS 0000123456
+NIP 1234567890
+REGON 123456789
+NIP 123-456-78-90
+NIP 987-654-32-10
+NIP 111-222-33-44
+NIP 555-666-77-88
+NIP 999-888-77-66
+NIP: 123-456-78-90
+NIP: 987-654-32-10
+NIP: 111-222-33-44
+NIP: 555-666-77-88
+NIP: 999-888-77-66
+1234567890
+9876543210
+1112223344
+5556667788
+9998887766
+123 456 78 90
+987 654 32 10
+111 222 33 44
+555 666 77 88
+999 888 77 66
+PL1234567890
+PL9876543210
+PL1112223344

@@ -24203,3 +24203,13 @@ Składam skargę na brak reakcji ze strony {company} w sprawie usterki mojego pr
 Zgłosiłem problem na adres {email} oraz pod numerem {phone}, ale jedyna odpowiedź, jaką otrzymałem, to "prosimy o cierpliwość"
 Minęły już trzy tygodnie, a moja sprawa nadal nie została rozwiązana
 Jestem bardzo rozczarowany takim traktowaniem klienta przez {company}
+Zgodnie z {document-number}, dane osobowe należy chronić.
+Na podstawie {document-number} wnoszę o udostępnienie informacji.
+W świetle {document-number} przetwarzanie danych jest legalne.
+Powołując się na {document-number}, odmawiam udzielenia informacji.
+Decyzja została wydana w oparciu o {document-number}.
+Pan {name} {surname} został przyjęty do szpitala w dniu {date}.
+Pani {name} {surname} urodziła się {date-of-birth}.
+Spotkanie z klientem {name} {surname} zaplanowano na {date}.
+Data podpisania umowy: {date}, miejsce: {city}.
+Wizyta kontrolna pacjenta {name} {surname} odbędzie się {date}.
