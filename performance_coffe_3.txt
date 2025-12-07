@@ -3,7 +3,9 @@
 ================================================================================
 
 Time: 73 seconds
-Input size: 2,000,000 characters
+Input size: 1,800,000 characters
+Time: 9,2s(labelling) 52ms(rebuilding words)
+Input size: 248,000 characters
 
 --------------------------------------------------------------------------------
 Hardware:
@@ -18,7 +20,7 @@ API:
 --------------------------------------------------------------------------------
 External API used: NO
 Model: HerBERT (allegro/herbert-base-cased) - locally trained and hosted
-
+Model: Morfeusz2 - locally hosted
 --------------------------------------------------------------------------------
 Additional notes:
 --------------------------------------------------------------------------------
