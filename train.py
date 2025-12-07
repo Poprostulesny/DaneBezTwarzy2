@@ -20,7 +20,7 @@ import config
 from data_generator import generate_corpus
 
 
-def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None, 
+def train_model(corpus=None, epochs: int = 10, model_dir: Optional[str] = None, 
                 n_per_template: int = 200, max_sentences: Optional[int] = None):
     """
     Trenuje SequenceTagger na dostarczonym korpusie.
