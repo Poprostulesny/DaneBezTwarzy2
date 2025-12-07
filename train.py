@@ -47,52 +47,72 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
     
     print(f"✅ Korpus gotowy: train={len(corpus.train)}, dev={len(corpus.dev)}, test={len(corpus.test)}")
 
-    # Etap 2: Ładowanie embeddingów
+    # Etap 2: Ładowanie lub tworzenie modelu
     print("\n" + "="*60)
-    print("🔤 ETAP 2/4: Ładowanie embeddingów HerBERT...")
-    print("="*60)
-    embeddings = TransformerWordEmbeddings(
-        model='allegro/herbert-base-cased',
-        fine_tune=True,
-    )
-    print("✅ Embeddingi załadowane!")
-
-    # Etap 3: Tworzenie modelu
-    print("\n" + "="*60)
-    print("🏗️  ETAP 3/4: Tworzenie modelu SequenceTagger...")
+    print("🔤 ETAP 2/4: Ładowanie modelu...")
     print("="*60)
     
-    # Słownik tagów utworzony z korpusu
-    tag_dictionary = corpus.make_label_dictionary(label_type=config.TAG_TYPE)
-    print(f"   Liczba etykiet NER: {len(tag_dictionary)}")
-
-    # Budowanie loss_weights: niska waga dla O, wyższa dla tagów kontynuacyjnych (I-, E-)
-    # aby model lepiej uczył się długich sekwencji (daty, adresy, artykuły ustaw)
-    loss_weights = {'O': 0.1}  # Zmniejsz wagę klasy "O" (nie-encja)
+    # Sprawdź czy istnieje wcześniej wytrenowany model
+    best_model_path = os.path.join(model_dir, "best-model.pt")
+    final_model_path = os.path.join(model_dir, "final-model.pt")
     
-    # Zwiększ wagę dla tagów I- i E- (kontynuacja i koniec encji)
-    # To pomaga modelowi lepiej przewidywać wielotokenowe encje
-    for tag in tag_dictionary.get_items():
-        if tag.startswith('I-') or tag.startswith('E-'):
-            loss_weights[tag] = 2.0  # Wyższa waga dla kontynuacji
+    existing_model_path = None
+    if os.path.exists(best_model_path):
+        existing_model_path = best_model_path
+    elif os.path.exists(final_model_path):
+        existing_model_path = final_model_path
     
-    print(f"   Loss weights: O=0.1, I-/E-=2.0 (dla lepszego tagowania długich encji)")
+    if existing_model_path:
+        print(f"   📂 Znaleziono istniejący model: {existing_model_path}")
+        print("   ⏳ Ładowanie modelu do kontynuacji treningu...")
+        tagger = SequenceTagger.load(existing_model_path)
+        print("   ✅ Model załadowany! Kontynuacja treningu od ostatniego checkpointu.")
+    else:
+        print("   📂 Brak istniejącego modelu - tworzenie nowego...")
+        
+        # Ładowanie embeddingów tylko gdy tworzymy nowy model
+        embeddings = TransformerWordEmbeddings(
+            model='allegro/herbert-base-cased',
+            fine_tune=True,
+        )
+        print("   ✅ Embeddingi HerBERT załadowane!")
 
-    # Utworzenie taggera sekwencyjnego z loss weights
-    tagger = SequenceTagger(
-        hidden_size=512,  # Zwiększone z 256 dla lepszego modelowania długich sekwencji
-        embeddings=embeddings,
-        tag_dictionary=tag_dictionary,
-        tag_type=config.TAG_TYPE,
-        use_crf=True,  # CRF jest kluczowy dla spójności sekwencji BIO
-        loss_weights=loss_weights,
-        reproject_embeddings=True,  # Dodatkowa warstwa projekcji
-    )
+        # Etap 3: Tworzenie modelu
+        print("\n" + "="*60)
+        print("🏗️  ETAP 3/4: Tworzenie modelu SequenceTagger...")
+        print("="*60)
+        
+        # Słownik tagów utworzony z korpusu
+        tag_dictionary = corpus.make_label_dictionary(label_type=config.TAG_TYPE)
+        print(f"   Liczba etykiet NER: {len(tag_dictionary)}")
+
+        # Budowanie loss_weights: niska waga dla O, wyższa dla tagów kontynuacyjnych (I-, E-)
+        # aby model lepiej uczył się długich sekwencji (daty, adresy, artykuły ustaw)
+        loss_weights = {'O': 0.1}  # Zmniejsz wagę klasy "O" (nie-encja)
+        
+        # Zwiększ wagę dla tagów I- i E- (kontynuacja i koniec encji)
+        # To pomaga modelowi lepiej przewidywać wielotokenowe encje
+        for tag in tag_dictionary.get_items():
+            if tag.startswith('I-') or tag.startswith('E-'):
+                loss_weights[tag] = 2.0  # Wyższa waga dla kontynuacji
+        
+        print(f"   Loss weights: O=0.1, I-/E-=2.0 (dla lepszego tagowania długich encji)")
+
+        # Utworzenie taggera sekwencyjnego z loss weights
+        tagger = SequenceTagger(
+            hidden_size=512,  # Zwiększone z 256 dla lepszego modelowania długich sekwencji
+            embeddings=embeddings,
+            tag_dictionary=tag_dictionary,
+            tag_type=config.TAG_TYPE,
+            use_crf=True,  # CRF jest kluczowy dla spójności sekwencji BIO
+            loss_weights=loss_weights,
+            reproject_embeddings=True,  # Dodatkowa warstwa projekcji
+        )
+        print("   ✅ Nowy model utworzony!")
     
     total_params = sum(p.numel() for p in tagger.parameters())
     trainable_params = sum(p.numel() for p in tagger.parameters() if p.requires_grad)
     print(f"   Parametry modelu: {total_params/1e6:.2f}M (trenowalnych: {trainable_params/1e6:.2f}M)")
-    print("✅ Model utworzony!")
 
     # ---------------------------------------------
     # ETAP 4: Trening
@@ -118,6 +138,7 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
         optimizer=AdamW,
         use_final_model_for_eval=True,
         main_evaluation_metric=('micro avg', 'f1-score'),
+        monitor_train=False,  # Loss liczona na zbiorze walidacyjnym (dev) zamiast treningowym
     )
 
     print("\n" + "="*60)
