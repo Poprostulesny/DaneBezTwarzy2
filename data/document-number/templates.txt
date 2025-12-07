@@ -1,3 +1,23 @@
 Numer dokumentu: {document-number}.
 Dowód osobisty nr {document-number}.
 Dokument: {document-number}.
+Na podstawie {document-number} organ administracji publicznej wydaje niniejszą decyzję.
+Zgodnie z {document-number} strona postępowania jest zobowiązana do wykonania nałożonych obowiązków.
+W oparciu o {document-number} ustala się warunki realizacji przedmiotowego zamierzenia inwestycyjnego.
+Stosownie do {document-number} inwestor jest obowiązany do przedłożenia wymaganej dokumentacji.
+Jak wynika z {document-number}, do użytkowania obiektu niezbędne jest uzyskanie odrębnego pozwolenia.
+Na mocy {document-number} niniejsza czynność pozostaje zwolniona z obowiązku uiszczenia opłaty skarbowej.
+Z przywołanego {document-number} wynika obowiązek przeprowadzenia kontroli obiektu przed dopuszczeniem do użytkowania.
+Zgodnie z treścią {document-number} właściwy organ zobowiązany jest do przeprowadzenia postępowania wyjaśniającego.
+W świetle {document-number} od niniejszej decyzji służy stronie prawo wniesienia odwołania.
+Uwzględniając dyspozycję {document-number}, organ nałożył na inwestora obowiązek wykonania prac naprawczych.
+Na podstawie postanowień {document-number} niniejsze rozstrzygnięcie staje się ostateczne z dniem doręczenia.
+Zgodnie z brzmieniem {document-number} prace budowlane mogą zostać rozpoczęte po upływie terminu na wniesienie odwołania.
+W związku z {document-number} inwestor zobowiązany jest do zawiadomienia właściwego organu o zakończeniu robót.
+W myśl {document-number} niniejsza decyzja podlega natychmiastowemu wykonaniu.
+Jak stanowi {document-number}, dokumentacja powykonawcza powinna zostać złożona w terminie 14 dni od zakończenia robót.
+Zgodnie z regulacją zawartą w {document-number} koszty postępowania ponosi strona wnioskująca.
+Mając na uwadze {document-number}, organ odstępuje od nałożenia dodatkowych obowiązków na inwestora.
+Na podstawie normy prawnej wynikającej z {document-number} niniejsze postępowanie podlega umorzeniu.
+Z powołanego {document-number} wynika uprawnienie organu do przeprowadzenia kontroli doraźnej.
+Zgodnie z dyspozycją {document-number} projekt budowlany wymaga uzgodnienia z właściwym organem ochrony środowiska.
