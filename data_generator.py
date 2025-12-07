@@ -387,5 +387,5 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
 if __name__ == "__main__":
     # Krótka demonstracja: wygeneruj mały korpus i zapisz w formacie konsoli
     corpus = generate_corpus(n_per_template=5)
-    print(f"Wygenerowano: train={len(corpus.train) if corpus.train else 0}, dev={len(corpus.dev) if corpus.dev else 0}, test={len(corpus.test) if corpus.test else 0}")
+    print(f"Wygenerowano: train={len(corpus.train) if corpus.train else 0}, dev={len(corpus.dev) if corpus.dev else 0}, test={len(corpus.test) if corpus.test else 0}") # type: ignore
 

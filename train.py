@@ -45,7 +45,7 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
         print("="*60)
         corpus = generate_corpus(n_per_template=n_per_template, max_sentences=max_sentences)
     
-    print(f"✅ Korpus gotowy: train={len(corpus.train)}, dev={len(corpus.dev)}, test={len(corpus.test)}")
+    print(f"✅ Korpus gotowy: train={len(corpus.train)}, dev={len(corpus.dev)}, test={len(corpus.test)}") # type: ignore
 
     # Etap 2: Ładowanie lub tworzenie modelu
     print("\n" + "="*60)

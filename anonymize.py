@@ -26,31 +26,31 @@ from pathlib import Path
 
 # Domyślne etykiety zastępcze dla różnych typów danych
 DEFAULT_REPLACEMENTS = {
-    "NAME": "[name]",
-    "SURNAME": "[surname]",
-    "AGE": "[age]",
-    "DATE-OF-BIRTH": "[date-of-birth]",
-    "DATE": "[date]",
-    "SEX": "[sex]",
-    "RELIGION": "[religion]",
-    "POLITICAL-VIEW": "[political-view]",
-    "ETHNICITY": "[ethnicity]",
-    "SEXUAL-ORIENTATION": "[sexual-orientation]",
-    "HEALTH": "[health]",
-    "RELATIVE": "[relative]",
-    "CITY": "[city]",
-    "ADDRESS": "[address]",
-    "EMAIL": "[email]",
-    "PHONE": "[phone]",
-    "PESEL": "[pesel]",
-    "DOCUMENT-NUMBER": "[document-number]",
-    "COMPANY": "[company]",
-    "SCHOOL-NAME": "[school-name]",
-    "JOB-TITLE": "[job-title]",
-    "BANK-ACCOUNT": "[bank-account]",
-    "CREDIT-CARD-NUMBER": "[credit-card-number]",
-    "USERNAME": "[username]",
-    "SECRET": "[secret]",
+    "NAME": "$[name]",
+    "SURNAME": "$[surname]",
+    "AGE": "$[age]",
+    "DATE-OF-BIRTH": "$[date-of-birth]",
+    "DATE": "$[date]",
+    "SEX": "$[sex]",
+    "RELIGION": "$[religion]",
+    "POLITICAL-VIEW": "$[political-view]",
+    "ETHNICITY": "$[ethnicity]",
+    "SEXUAL-ORIENTATION": "$[sexual-orientation]",
+    "HEALTH": "$[health]",
+    "RELATIVE": "$[relative]",
+    "CITY": "$[city]",
+    "ADDRESS": "$[address]",
+    "EMAIL": "$[email]",
+    "PHONE": "$[phone]",
+    "PESEL": "$[pesel]",
+    "DOCUMENT-NUMBER": "$[document-number]",
+    "COMPANY": "$[company]",
+    "SCHOOL-NAME": "$[school-name]",
+    "JOB-TITLE": "$[job-title]",
+    "BANK-ACCOUNT": "$[bank-account]",
+    "CREDIT-CARD-NUMBER": "$[credit-card-number]",
+    "USERNAME": "$[username]",
+    "SECRET": "$[secret]",
 }
 
 
@@ -190,27 +190,6 @@ def anonymize_file(
     return stats
 
 
-def interactive_mode(tagger, replacements: Optional[Dict[str, str]] = None):
-    """Tryb interaktywny - anonimizuj tekst wprowadzany przez użytkownika."""
-    print("\n🔐 Tryb interaktywny - wpisz tekst do anonimizacji (Ctrl+C aby zakończyć)")
-    print("-" * 60)
-    
-    try:
-        while True:
-            try:
-                text = input("\n📝 Wprowadź tekst: ").strip()
-                if not text:
-                    continue
-                
-                result, entities = anonymize_text(text, tagger, replacements, show_entities=True)
-                print(f"\n🔒 Zanonimizowany tekst:\n   {result}")
-                
-            except EOFError:
-                break
-    except KeyboardInterrupt:
-        print("\n\n👋 Zakończono tryb interaktywny")
-
-
 def main():
     parser = argparse.ArgumentParser(
         description="Anonimizacja danych osobowych w tekście przy użyciu modelu NER",
@@ -221,7 +200,6 @@ Przykłady użycia:
   %(prog)s -i dane.txt -o anonimowe.txt
   %(prog)s -i dane.txt -o anonimowe.txt -m models/custom_model
   echo "Tekst" | %(prog)s
-  %(prog)s --interactive
         """
     )
     
@@ -249,12 +227,7 @@ Przykłady użycia:
         default='resources/model/final-model.pt',
         help='Ścieżka do modelu NER (domyślnie: models/ner-model/best-model.pt)'
     )
-    
-    parser.add_argument(
-        '--interactive',
-        action='store_true',
-        help='Uruchom w trybie interaktywnym'
-    )
+
     
     parser.add_argument(
         '-v', '--verbose',
@@ -273,11 +246,6 @@ Przykłady użycia:
     
     # Załaduj model
     tagger = load_model(args.model)
-    
-    # Tryb interaktywny
-    if args.interactive:
-        interactive_mode(tagger)
-        return
     
     # Przetwarzanie pliku
     if args.input:
@@ -301,7 +269,6 @@ Przykłady użycia:
     else:
         # Brak tekstu - pokaż pomoc
         parser.print_help()
-        print("\n💡 Wskazówka: Użyj --interactive dla trybu interaktywnego")
         return
     
     # Anonimizuj tekst
