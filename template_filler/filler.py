@@ -13,10 +13,12 @@ Wydajność: ~1000 zdań/sekundę (bez ML przy wypełnianiu!)
 import re
 import random
 import time
+import os
 from datetime import date
 from dataclasses import dataclass, field
 from typing import Dict, List, Tuple, Optional
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
 
 try:
     import morfeusz2
@@ -608,6 +610,46 @@ class TagFiller:
         """Wypełnia listę tekstów (szybkie przetwarzanie wsadowe)."""
         start_time = time.perf_counter()
         results = [self.fill(text, return_time=False) for text in texts]
+        total_time_ms = (time.perf_counter() - start_time) * 1000
+        
+        if return_time:
+            return results, total_time_ms
+        return results
+    
+    def fill_batch_parallel(
+        self, 
+        texts: List[str], 
+        return_time: bool = False,
+        max_workers: int = None,
+        use_processes: bool = False
+    ):
+        """
+        Wypełnia listę tekstów równolegle (multithreading/multiprocessing).
+        
+        Args:
+            texts: Lista tekstów z tagami do wypełnienia
+            return_time: Czy zwrócić również czas wykonania
+            max_workers: Liczba wątków/procesów (domyślnie: liczba CPU)
+            use_processes: Użyj procesów zamiast wątków (lepsze dla CPU-bound)
+            
+        Returns:
+            Lista wypełnionych tekstów
+            Opcjonalnie: (lista, czas_ms) gdy return_time=True
+        """
+        start_time = time.perf_counter()
+        
+        if max_workers is None:
+            max_workers = os.cpu_count() or 4
+        
+        # Dla małych batch'ów - nie używaj wielowątkowości (overhead)
+        if len(texts) < max_workers * 2:
+            return self.fill_batch(texts, return_time)
+        
+        ExecutorClass = ProcessPoolExecutor if use_processes else ThreadPoolExecutor
+        
+        with ExecutorClass(max_workers=max_workers) as executor:
+            results = list(executor.map(self.fill, texts))
+        
         total_time_ms = (time.perf_counter() - start_time) * 1000
         
         if return_time:
