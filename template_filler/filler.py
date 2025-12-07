@@ -65,13 +65,12 @@ PREPOSITION_CASES = {
     # Dopełniacz (gen) - skąd? od kogo?
     'do': 'gen', 'od': 'gen', 'bez': 'gen', 'dla': 'gen',
     'koło': 'gen', 'obok': 'gen', 'naprzeciw': 'gen', 'u': 'gen',
-    'z': 'gen',  # "z Warszawy" (skąd)
-    'ze': 'gen',
     # Celownik (dat) - komu?
     'ku': 'dat', 'dzięki': 'dat', 'przeciw': 'dat', 'przeciwko': 'dat',
     # Biernik (acc) - kogo? co? dokąd?
     'przez': 'acc', 'pro': 'acc', 'mimo': 'acc',
     # Narzędnik (inst) - z kim? czym?
+    'z': 'inst', 'ze': 'inst',  # Domyślnie narzędnik (z kimś)
     'przed': 'inst', 'między': 'inst', 'pomiędzy': 'inst',
     'nad': 'inst', 'pod': 'inst', 'za': 'inst',
     # Miejscownik (loc) - gdzie? o czym?
@@ -79,7 +78,10 @@ PREPOSITION_CASES = {
     'przy': 'loc',
 }
 
-# Słowa wymagające dopełniacza
+# Tytuły wymagające narzędnika ("z panią Anną", "z panem Janem")
+INSTRUMENTAL_TITLES = {'panią', 'panem', 'panami', 'paniami'}
+
+# Słowa wymagające dopełniacza ("pani Anny", "pana Jana")
 GENITIVE_TRIGGERS = {'pana', 'pani', 'państwa', 'panny', 'pań'}
 
 # Wzorce do wykrywania płci z kontekstu
@@ -106,6 +108,9 @@ CASES = ['nom', 'gen', 'dat', 'acc', 'inst', 'loc', 'voc']
 
 # Tagi które są powiązane z kontekstem osoby
 PERSON_TAGS = {'[NAME]', '[SURNAME]', '[AGE]', '[DATE-OF-BIRTH]', '[PESEL]', '[SEX]'}
+
+# Tagi miejscowe - po "z" wymagają dopełniacza ("z Warszawy" nie "z Warszawą")
+LOCATION_TAGS = {'[CITY]', '[ADDRESS]', '[SCHOOL-NAME]', '[COMPANY]'}
 
 
 def generate_pesel(birth_date: date = None, gender: str = None) -> str:
@@ -255,8 +260,22 @@ PROCEDURAL_GENERATORS = {
 }
 
 
+# Heurystyczne końcówki dla fallback odmiany (gdy Morfeusz nie zna słowa)
+# Format: (końcówka_mianownika, {przypadek: końcówka})
+FALLBACK_FEMININE_ENDINGS = {
+    # Imiona/nazwiska żeńskie kończące się na -a (Anna, Kowalska)
+    'a': {'gen': 'y', 'dat': 'ie', 'acc': 'ę', 'inst': 'ą', 'loc': 'ie', 'voc': 'o'},
+}
+
+FALLBACK_MASCULINE_ENDINGS = {
+    # Imiona/nazwiska męskie twarde (Jan, Kowalski)
+    'i': {'gen': 'iego', 'dat': 'iemu', 'acc': 'iego', 'inst': 'im', 'loc': 'im', 'voc': 'i'},
+    'y': {'gen': 'ego', 'dat': 'emu', 'acc': 'ego', 'inst': 'ym', 'loc': 'ym', 'voc': 'y'},
+}
+
+
 class PolishInflector:
-    """Szybka odmiana polska używając Morfeusz2."""
+    """Szybka odmiana polska używając Morfeusz2 z fallbackiem heurystycznym."""
     
     def __init__(self):
         if MORFEUSZ_AVAILABLE:
@@ -265,61 +284,128 @@ class PolishInflector:
             self.morf = None
         self._cache: Dict[str, str] = {}
     
+    def _fallback_inflect(self, word: str, case: str) -> str:
+        """
+        Heurystyczna odmiana dla słów nieznanych Morfeuszowi.
+        Używa prostych reguł końcówkowych.
+        """
+        if case == 'nom' or not word:
+            return word
+        
+        # Zachowaj wielkość pierwszej litery
+        capitalize = word[0].isupper()
+        word_lower = word.lower()
+        
+        # Sprawdź żeńskie końcówki (-a)
+        if word_lower.endswith('a'):
+            endings = FALLBACK_FEMININE_ENDINGS.get('a', {})
+            if case in endings:
+                result = word_lower[:-1] + endings[case]
+                return result.capitalize() if capitalize else result
+        
+        # Sprawdź męskie końcówki (-i, -y)
+        for ending, cases in FALLBACK_MASCULINE_ENDINGS.items():
+            if word_lower.endswith(ending) and case in cases:
+                result = word_lower[:-len(ending)] + cases[case]
+                return result.capitalize() if capitalize else result
+        
+        # Dla innych męskich (spółgłoskowe) - dodaj końcówki
+        # Jan → Jana (gen), Janem (inst)
+        if not word_lower.endswith(('a', 'e', 'i', 'o', 'u', 'y')):
+            masc_endings = {
+                'gen': 'a', 'dat': 'owi', 'acc': 'a', 
+                'inst': 'em', 'loc': 'ie', 'voc': 'ie'
+            }
+            if case in masc_endings:
+                result = word_lower + masc_endings[case]
+                return result.capitalize() if capitalize else result
+        
+        return word
+    
     def get_form(self, word: str, case: str) -> str:
         """Zwraca formę słowa w danym przypadku."""
-        if not self.morf:
+        if case == 'nom':
             return word
         
         cache_key = f"{word}:{case}"
         if cache_key in self._cache:
             return self._cache[cache_key]
         
+        # Próbuj Morfeusza
+        if self.morf:
+            result = self._try_morfeusz(word, case)
+            if result and result != word:
+                self._cache[cache_key] = result
+                return result
+        
+        # Fallback heurystyczny
+        result = self._fallback_inflect(word, case)
+        self._cache[cache_key] = result
+        return result
+    
+    def _try_morfeusz(self, word: str, case: str) -> Optional[str]:
+        """Próbuje odmienić słowo przez Morfeusz2."""
         try:
             forms = self.morf.generate(word)
-            # Format tagów: "subst:sg:nom:m1" lub "subst:sg:gen.acc:m1"
-            # Szukamy formy pojedynczej (sg) w danym przypadku
+            if not forms:
+                return None
+            
+            # Format tagów: "subst:sg:nom:m1" lub "subst:sg:gen.acc:m1" lub "subst:sg.pl:nom:f"
             candidates = []
+            
             for form_tuple in forms:
                 form = form_tuple[0]
                 tags = form_tuple[2]  # np. "subst:sg:inst:m1"
                 tag_parts = tags.split(':')
                 
-                # tag_parts = ['subst', 'sg', 'inst', 'm1'] lub ['subst', 'sg', 'gen.acc', 'm1']
-                is_singular = len(tag_parts) > 1 and ('sg' in tag_parts[1] or tag_parts[1] == 'sg')
+                if len(tag_parts) < 3:
+                    continue
                 
-                # Przypadek może być połączony kropką, np. "gen.acc"
-                case_part = tag_parts[2] if len(tag_parts) > 2 else ''
+                # Sprawdź liczbę - szukamy sg (może być "sg" lub "sg.pl")
+                number_part = tag_parts[1]
+                is_singular = 'sg' in number_part.split('.')
+                
+                if not is_singular:
+                    continue
+                
+                # Sprawdź przypadek - może być połączony kropką np. "gen.acc" lub "dat.loc"
+                case_part = tag_parts[2]
                 case_options = case_part.split('.')
-                has_case = case in case_options
                 
-                if has_case and is_singular:
-                    candidates.append((form, tags))
-            
-            # Preferuj formy męskie (m1) lub żeńskie (f)
-            for form, tags in candidates:
-                if (':m1' in tags or ':f' in tags) and form != word:
-                    self._cache[cache_key] = form
-                    return form
-            
-            # Jeśli nie znaleziono preferowanej, weź pierwszą odmienioną
-            for form, tags in candidates:
-                if form != word:  # Preferuj formę różną od bazowej
-                    self._cache[cache_key] = form
-                    return form
-            
-            # Fallback - pierwsza znaleziona
-            if candidates:
-                self._cache[cache_key] = candidates[0][0]
-                return candidates[0][0]
+                if case not in case_options:
+                    continue
                 
-        except:
-            pass
-        
-        self._cache[cache_key] = word
-        return word
+                # Pobierz rodzaj (m1, m2, m3, f, n)
+                gender = tag_parts[3] if len(tag_parts) > 3 else ''
+                
+                candidates.append((form, tags, gender))
+            
+            if not candidates:
+                return None
+            
+            # Sortuj kandydatów - preferuj:
+            # 1. Formy osobowe (m1, f) nad rzeczowymi (m3, n)
+            # 2. Formy różne od bazowej
+            def score(item):
+                form, tags, gender = item
+                s = 0
+                if gender in ('m1', 'f'):
+                    s += 10  # Preferuj osobowe
+                if form != word:
+                    s += 5   # Preferuj odmienione
+                return -s  # Minus bo sortujemy rosnąco
+            
+            candidates.sort(key=score)
+            return candidates[0][0]
+            
+        except Exception:
+            return None
     
     def inflect_phrase(self, phrase: str, case: str) -> str:
         """Odmienia frazę wielowyrazową."""
+        if case == 'nom':
+            return phrase
+        
         words = phrase.split()
         if len(words) == 1:
             return self.get_form(phrase, case)
@@ -364,7 +450,7 @@ class TagFiller:
                     self.candidates[tag] = values
     
     def _split_by_gender(self):
-        """Dzieli imiona i nazwiska na męskie i żeńskie."""
+        """Dzieli imiona i nazwiska na męskie i żeńskie (prosta heurystyka końcówkowa)."""
         # Imiona - żeńskie kończą się na 'a' (w polskim)
         names = self.candidates.get("[NAME]", [])
         for name in names:
@@ -428,43 +514,64 @@ class TagFiller:
         
         return None
     
-    def _detect_required_case(self, text: str, tag_pos: int) -> str:
+    def _detect_required_case(self, text: str, tag_pos: int, tag: str = None) -> str:
         """
         Wykrywa wymagany przypadek na podstawie kontekstu przed tagiem.
         
-        Analizuje poprzedzające słowo (przyimek, tytuł) i zwraca przypadek.
+        Analizuje poprzedzające słowa (przyimki, tytuły) i kontekst.
+        Uwzględnia przypadek gdy tag następuje po innym tagu (np. [NAME] [SURNAME]).
+        
+        Args:
+            text: Cały tekst
+            tag_pos: Pozycja tagu w tekście
+            tag: Nazwa tagu (np. "[CITY]") - używane do rozróżnienia osób od miejsc
         """
         # Pobierz tekst przed tagiem
         before_text = text[:tag_pos].lower()
+        
+        # Sprawdź czy poprzedni element to też tag - wtedy użyj tego samego przypadka
+        # Szukamy wzorca: ] [TAG] gdzie aktualny tag zaczyna się na tag_pos
+        stripped = before_text.rstrip()
+        if stripped.endswith(']'):
+            # Poprzedni element to tag - znajdź przypadek z jeszcze wcześniejszego kontekstu
+            # Szukaj początku poprzedniego tagu
+            bracket_pos = stripped.rfind('[')
+            if bracket_pos > 0:
+                # Rekurencyjnie znajdź przypadek dla poprzedniego tagu
+                return self._detect_required_case(text, bracket_pos, tag)
+        
         before = before_text.split()
         if not before:
             return 'nom'
         
         prev_word = before[-1].rstrip('.,!?:;')
         
-        # Specjalne rozróżnienie dla "z" - narzędnik gdy towarzyszenie
-        if prev_word in {'z', 'ze'}:
-            # Szukaj czasowników wymagających narzędnika
-            inst_verbs = {'spotkać', 'spotkał', 'spotkałem', 'spotkałam', 'spotka',
-                          'rozmawia', 'rozmawiam', 'rozmawiać', 'rozmawiał',
-                          'pracuje', 'pracować', 'pracował', 'współpracuje',
-                          'mieszka', 'mieszkać', 'mieszkam', 'żyje', 'żyć',
-                          'jedzie', 'idzie', 'idę', 'jadę', 'pojechał', 'poszedł'}
-            # Sprawdź kilka poprzednich słów
-            for w in before[-5:]:
-                w_clean = w.rstrip('.,!?:;')
-                if w_clean in inst_verbs or w_clean.startswith('spotk') or w_clean.startswith('rozmaw'):
-                    return 'inst'
-            # Domyślnie dopełniacz (z miejsca)
+        # Sprawdź tytuły wymagające narzędnika ("z panią Anną", "z panem Janem")
+        if prev_word in INSTRUMENTAL_TITLES:
+            return 'inst'
+        
+        # Sprawdź tytuły wymagające dopełniacza ("pani Anny", "pana Jana")
+        if prev_word in GENITIVE_TRIGGERS:
             return 'gen'
+        
+        # Specjalne rozróżnienie dla "z/ze"
+        if prev_word in {'z', 'ze'}:
+            # Sprawdź czy przed "z" jest tytuł w narzędniku ("z panią", "z panem")
+            if len(before) >= 2:
+                word_before_z = before[-2].rstrip('.,!?:;')
+                if word_before_z in INSTRUMENTAL_TITLES:
+                    return 'inst'
+            
+            # Dla miejsc po "z" - dopełniacz ("z Warszawy", "z firmy X")
+            if tag and tag in LOCATION_TAGS:
+                return 'gen'
+            
+            # Dla osób - narzędnik ("z Janem")
+            return 'inst'
         
         # Sprawdź przyimki
         if prev_word in PREPOSITION_CASES:
             return PREPOSITION_CASES[prev_word]
-        
-        # Sprawdź tytuły wymagające dopełniacza
-        if prev_word in GENITIVE_TRIGGERS:
-            return 'gen'
         
         # Domyślnie mianownik
         return 'nom'
@@ -588,8 +695,8 @@ class TagFiller:
             tag = match.group(0)
             start, end = match.start(), match.end()
             
-            # Wykryj wymagany przypadek
-            case = self._detect_required_case(result, start)
+            # Wykryj wymagany przypadek (przekaż tag żeby rozróżnić osoby od miejsc)
+            case = self._detect_required_case(result, start, tag)
             
             # Użyj kontekstu osoby dla tagów osobowych
             if tag in PERSON_TAGS and person:

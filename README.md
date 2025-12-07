@@ -62,7 +62,7 @@ Model zostanie zapisany w `resources/model/final-model.pt`.
 
 ```bash
 # Pojedynczy tekst
-python anonymize.py "Jan Kowalski mieszka w Warszawie, tel. 500123456"
+python anonymize.py "Jan Kowalski z Warszawy, tel. 500123456"
 
 # Plik tekstowy
 python anonymize.py -i dane.txt -o anonimowe.txt
