@@ -131,15 +131,13 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
     # standardowy LR dla fine-tuningu
         mini_batch_size=64,
         use_amp=True,
-        num_workers=8,
         max_epochs=epochs,
         train_with_dev=False,
         embeddings_storage_mode='none',
         optimizer=AdamW,
         use_final_model_for_eval=True,
         main_evaluation_metric=('micro avg', 'f1-score'),
-        monitor_train=False,  # Loss liczona na zbiorze walidacyjnym (dev) zamiast treningowym
-    )
+     )
 
     print("\n" + "="*60)
     print("🎉 TRENING ZAKOŃCZONY!")
