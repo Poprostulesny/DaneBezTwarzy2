@@ -8,6 +8,11 @@ sacremoses
 # Odmiana gramatyczna (wypełnianie tagów)
 morfeusz2>=1.99
 
+# API endpoint
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
 # Opcjonalne, przydatne:
 spacy
 polib
