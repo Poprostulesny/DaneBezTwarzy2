@@ -456,3 +456,7 @@ Projekt przygotowany do hackathonu. Użycie zgodne z licencjami modelu HerBERT i
 ## Autor
 
 Senior ML Engineer (NLP)
+
+
+# FRONTEND
+cd anonymizer-ui && npm install && npm run dev
