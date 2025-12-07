@@ -14,8 +14,8 @@ export const TextPanel: React.FC<TextPanelProps> = ({ title, text, highlightLabe
       return <span>{content}</span>;
     }
 
-    // Find all $[LABEL] patterns and highlight them
-    const regex = /\$\[([A-Z_]+)\]/g;
+    // Find all $[LABEL] patterns and highlight them (including labels with hyphens like DATE-OF-BIRTH)
+    const regex = /\$\[([A-Z\-]+)\]/g;
     const parts: React.ReactNode[] = [];
     let lastIndex = 0;
     let match;

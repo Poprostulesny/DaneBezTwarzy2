@@ -21,6 +21,7 @@ Użycie:
 import argparse
 import sys
 import os
+import time
 from typing import Optional, Dict, List, Tuple
 from pathlib import Path
 
@@ -74,7 +75,7 @@ def anonymize_text(
     tagger,
     replacements: Optional[Dict[str, str]] = None,
     show_entities: bool = False
-) -> Tuple[str, List[Dict]]:
+) -> Tuple[str, List[Dict], float]:
     """
     Anonimizuje tekst zastępując wykryte encje.
     
@@ -85,7 +86,7 @@ def anonymize_text(
         show_entities: Czy wyświetlać wykryte encje
     
     Returns:
-        Tuple[str, List[Dict]]: Zanonimizowany tekst i lista wykrytych encji
+        Tuple[str, List[Dict], float]: Zanonimizowany tekst, lista wykrytych encji i czas inferencji
     """
     from flair.data import Sentence
     
@@ -94,7 +95,11 @@ def anonymize_text(
     
     # Przetwórz tekst przez model
     sentence = Sentence(text)
+    
+    # Mierzenie czasu inferencji
+    start_time = time.perf_counter()
     tagger.predict(sentence)
+    inference_time = time.perf_counter() - start_time
     
     # Zbierz wykryte encje
     entities = []
@@ -104,7 +109,8 @@ def anonymize_text(
             'label': entity.tag,
             'start': entity.start_position,
             'end': entity.end_position,
-            'confidence': entity.score
+            'confidence': entity.score,
+            'inference_time_ms': inference_time * 1000
         })
     
     if show_entities and entities:
@@ -119,7 +125,7 @@ def anonymize_text(
         replacement = replacements.get(label, f"[{label}]")
         result = result[:entity['start']] + replacement + result[entity['end']:]
     
-    return result, entities
+    return result, entities, inference_time
 
 
 def anonymize_file(
@@ -153,11 +159,14 @@ def anonymize_file(
     all_entities = []
     entity_counts = {}
     
+    total_inference_time = 0.0
+    
     for line in tqdm(lines, desc="Anonimizacja", unit="linii"):
         if line.strip():
-            anon_line, entities = anonymize_text(line, tagger, replacements)
+            anon_line, entities, inf_time = anonymize_text(line, tagger, replacements)
             anonymized_lines.append(anon_line)
             all_entities.extend(entities)
+            total_inference_time += inf_time
             
             for e in entities:
                 label = e['label']
@@ -174,13 +183,17 @@ def anonymize_file(
         'output_file': output_path,
         'total_lines': len(lines),
         'total_entities': len(all_entities),
-        'entity_counts': entity_counts
+        'entity_counts': entity_counts,
+        'total_inference_time_ms': total_inference_time * 1000,
+        'avg_inference_time_ms': (total_inference_time * 1000 / len(lines)) if lines else 0
     }
     
     if show_stats:
         print(f"\n📊 Statystyki anonimizacji:")
         print(f"   • Przetworzono linii: {stats['total_lines']}")
         print(f"   • Znalezionych encji: {stats['total_entities']}")
+        print(f"   • Całkowity czas inferencji: {stats['total_inference_time_ms']:.2f} ms")
+        print(f"   • Średni czas na linię: {stats['avg_inference_time_ms']:.2f} ms")
         if entity_counts:
             print(f"   • Podział według typu:")
             for label, count in sorted(entity_counts.items(), key=lambda x: -x[1]):
@@ -272,7 +285,7 @@ Przykłady użycia:
         return
     
     # Anonimizuj tekst
-    result, entities = anonymize_text(text, tagger, show_entities=args.verbose)
+    result, entities, inference_time = anonymize_text(text, tagger, show_entities=args.verbose)
     
     if args.format == 'json':
         import json
@@ -288,6 +301,7 @@ Przykłady użycia:
         print(f'"{text}","{result}",{len(entities)}')
     else:
         print(f"\n🔒 Wynik anonimizacji:\n{result}")
+        print(f"\n⏱️  Czas inferencji: {inference_time * 1000:.2f} ms")
 
 
 if __name__ == "__main__":

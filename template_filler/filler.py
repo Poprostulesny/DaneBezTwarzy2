@@ -12,6 +12,7 @@ Wydajność: ~1000 zdań/sekundę (bez ML przy wypełnianiu!)
 
 import re
 import random
+import time
 from typing import Dict, List, Tuple, Optional
 from pathlib import Path
 
@@ -281,16 +282,19 @@ class TagFiller:
         
         return value
     
-    def fill(self, text: str) -> str:
+    def fill(self, text: str, return_time: bool = False):
         """
         Wypełnia wszystkie tagi w tekście.
         
         Args:
             text: Tekst z tagami $[name], $[city] itd.
+            return_time: Czy zwrócić również czas wykonania
             
         Returns:
             Tekst z wypełnionymi i odmienionymi wartościami
+            Opcjonalnie: (tekst, czas_ms) gdy return_time=True
         """
+        start_time = time.perf_counter()
         result = text
         
         # Znajdź wszystkie tagi w formacie $[tag-name]
@@ -312,11 +316,21 @@ class TagFiller:
             # Zamień
             result = result[:start] + value + result[end:]
         
+        fill_time_ms = (time.perf_counter() - start_time) * 1000
+        
+        if return_time:
+            return result, fill_time_ms
         return result
     
-    def fill_batch(self, texts: List[str]) -> List[str]:
+    def fill_batch(self, texts: List[str], return_time: bool = False):
         """Wypełnia listę tekstów (szybkie przetwarzanie wsadowe)."""
-        return [self.fill(text) for text in texts]
+        start_time = time.perf_counter()
+        results = [self.fill(text, return_time=False) for text in texts]
+        total_time_ms = (time.perf_counter() - start_time) * 1000
+        
+        if return_time:
+            return results, total_time_ms
+        return results
 
 
 def main():
@@ -342,13 +356,21 @@ def main():
         with open(args.input, 'r', encoding='utf-8') as f:
             lines = f.readlines()
         
-        results = [filler.fill(line.strip()) if line.strip() else "" 
-                   for line in lines]
+        start_time = time.perf_counter()
+        results: List[str] = []
+        for line in lines:
+            if line.strip():
+                filled = filler.fill(line.strip(), return_time=False)
+                results.append(str(filled))
+            else:
+                results.append("")
+        total_time_ms = (time.perf_counter() - start_time) * 1000
         
         output = args.output or args.input.replace('.txt', '_filled.txt')
         with open(output, 'w', encoding='utf-8') as f:
             f.write('\n'.join(results))
         print(f"Zapisano: {output}")
+        print(f"⏱️  Czas wypełniania: {total_time_ms:.2f} ms ({len(lines)} linii)")
         return
     
     if args.text:
@@ -364,12 +386,16 @@ def main():
                 if text.lower() in ['quit', 'exit', 'q']:
                     break
                 if text:
-                    print(f"  → {filler.fill(text)}")
+                    result, fill_time = filler.fill(text, return_time=True)
+                    print(f"  → {result}")
+                    print(f"    ⏱️  Czas wypełniania: {fill_time:.2f} ms")
             except (KeyboardInterrupt, EOFError):
                 break
         return
     
-    print(filler.fill(text))
+    result, fill_time = filler.fill(text, return_time=True)
+    print(result)
+    print(f"\n⏱️  Czas wypełniania: {fill_time:.2f} ms")
 
 
 if __name__ == "__main__":
