@@ -269,7 +269,7 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                 all_templates.extend(templates)
     
     # Następnie załaduj szablony mieszane (jeśli plik istnieje)
-    mixed_templates_file = "mixed_templates.txt"
+    mixed_templates_file = "data/mixed_templates.txt"
     if os.path.exists(mixed_templates_file):
         with open(mixed_templates_file, 'r', encoding='utf-8') as f:
             mixed = [line.strip() for line in f if line.strip()]

@@ -52,7 +52,7 @@ def main():
     print("Konwersja pliku Dane do mixed_templates.txt...")
     
     # Parsuj plik Dane
-    sentences = parse_dane_file("Dane")
+    sentences = parse_dane_file("data/Dane")
     print(f"Znaleziono {len(sentences)} unikalnych zdań")
     
     # Pokaż kilka przykładowych zdań
@@ -61,7 +61,7 @@ def main():
         print(f"  {i+1}. {s[:80]}..." if len(s) > 80 else f"  {i+1}. {s}")
     
     # Zapisz do pliku
-    save_to_mixed_templates(sentences, "mixed_templates.txt")
+    save_to_mixed_templates(sentences, "data/mixed_templates.txt")
     
     print("\nGotowe! Teraz możesz uruchomić data_generator.py")
 

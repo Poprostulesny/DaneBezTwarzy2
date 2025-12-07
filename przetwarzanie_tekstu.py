@@ -21,7 +21,7 @@ zdania = [zdanie.strip() for zdanie in zdania if zdanie.strip()]
 
 # Zapisanie wyników do pliku mixed_templates
 try:
-    with open('mixed_templates.txt', 'a', encoding='utf-8') as output_file:
+    with open('data/mixed_templates.txt', 'a', encoding='utf-8') as output_file:
         for zdanie in zdania:
             output_file.write(zdanie + '\n')
     print("Przetwarzanie zakończone pomyślnie. Dane zapisano do pliku 'mixed_templates'.")
