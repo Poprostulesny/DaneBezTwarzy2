@@ -10,6 +10,7 @@ Plik zapisze model w `config.MODEL_DIR`.
 import os
 from typing import Optional
 
+import torch
 from tqdm import tqdm
 from flair.embeddings import TransformerWordEmbeddings, StackedEmbeddings
 from flair.models import SequenceTagger
@@ -55,7 +56,7 @@ def train_model(corpus=None, epochs: int = 8, model_dir: Optional[str] = None,
     # Sprawdź czy istnieje wcześniej wytrenowany model
     best_model_path = os.path.join(model_dir, "best-model.pt")
     final_model_path = os.path.join(model_dir, "final-model.pt")
-    
+    torch.set_float32_matmul_precision("high")
     existing_model_path = None
     if os.path.exists(best_model_path):
         existing_model_path = best_model_path
