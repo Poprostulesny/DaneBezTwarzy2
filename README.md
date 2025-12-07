@@ -1,6 +1,19 @@
 # DaneBezTwarzy — Anonimizacja danych osobowych (Polish NER)
 
-Narzędzie do automatycznej anonimizacji danych osobowych w tekstach polskich. Wykorzystuje model NER (Named Entity Recognition) oparty na HerBERT do wykrywania 25 kategorii danych wrażliwych.
+**Zespół: C(offe)++3**
+
+## O projekcie
+
+Narzędzie do automatycznej anonimizacji danych osobowych w tekstach polskich.
+
+**Podejście:** Fine-tuned HerBERT NER (Named Entity Recognition) — model językowy HerBERT (`allegro/herbert-base-cased`) dotrenowany na zadaniu rozpoznawania 25 kategorii encji osobowych.
+
+**Kluczowe cechy:**
+
+- 🎯 25 kategorii danych wrażliwych (PESEL, imiona, adresy, numery kart, etc.)
+- 🚀 Wydajność: ~27,400 znaków/sekundę na GPU
+- 🇵🇱 Dedykowany dla języka polskiego
+- 🔄 Moduł rekonstrukcji z odmianą gramatyczną (Morfeusz2)
 
 ---
 
@@ -22,20 +35,26 @@ source .venv/bin/activate  # Linux/macOS
 pip install -r requirements.txt
 ```
 
-**Wymagania systemowe:**
-- Python 3.8+
-- ~4GB RAM (trening), ~2GB RAM (inferencja)
-- GPU opcjonalne (CUDA) - przyspiesza trening ~10x
-
 ### 2. Trening modelu
 
 ```bash
 # Wygeneruj dane treningowe
 python data_generator.py
 
-# Wytrenuj model (domyślnie 6 epok)
+# Wytrenuj model
 python train.py
+
+Po 30 minutach trenowania osiąga:
+F-score (micro) 0.9813
+F-score (macro) 0.9826
+Accuracy 0.9689
 ```
+
+**Trenowane Na Systemie:**
+
+- Python 3.8+
+- ~32GB - RAM (trening)
+- RTX 3090 - GPU (CUDA)
 
 Model zostanie zapisany w `resources/model/final-model.pt`.
 
@@ -47,15 +66,13 @@ python anonymize.py "Jan Kowalski mieszka w Warszawie, tel. 500123456"
 
 # Plik tekstowy
 python anonymize.py -i dane.txt -o anonimowe.txt
-
-# Tryb interaktywny
-python anonymize.py --interactive
 ```
 
 **Przykład wyniku:**
+
 ```
 Wejście:  Jan Kowalski mieszka w Warszawie, tel. 500123456
-Wyjście:  [NAME] [SURNAME] mieszka w [CITY], tel. [PHONE]
+Wyjście:  [name] [surname] mieszka w [city], tel. [phone]
 ```
 
 ### 4. Rekonstrukcja tekstu (wypełnianie tagów)
@@ -63,59 +80,68 @@ Wyjście:  [NAME] [SURNAME] mieszka w [CITY], tel. [PHONE]
 Po anonimizacji możesz wypełnić tagi losowymi, gramatycznie poprawnymi wartościami:
 
 ```bash
-python -m template_filler.filler "Pani [NAME] [SURNAME] mieszka w [CITY]."
-# → Pani Anna Kowalska mieszka w Krakowie.
+# Pojedynczy tekst
+python -m template_filler "Pani [name] [surname] mieszka w [city]."
+
+# Plik tekstowy
+python -m template_filler -i anonimowe.txt -o zrekonstruowane.txt
 ```
 
-System automatycznie:
-- Wykrywa płeć z kontekstu ("Pani" → imię żeńskie)
-- Dopasowuje nazwisko do płci (Kowalska, nie Kowalski)
-- Odmienia przez przypadki ("w Krakowie", nie "w Kraków")
-- Zachowuje spójność danych osobowych (PESEL zawiera datę urodzenia i płeć)
+**Przykład wyniku:**
 
----
+```
+Wejście:  [name] [surname] mieszka w [city], tel. [phone]
+Wyjście:  Andrzej Nowak mieszka w Krakowie, tel. 132546987
+```
 
 ## Kategorie danych (25 etykiet NER)
 
-| Kategoria | Etykiety |
-|-----------|----------|
-| **Dane osobowe** | NAME, SURNAME, AGE, DATE-OF-BIRTH, DATE, SEX |
-| **Dane wrażliwe** | RELIGION, POLITICAL-VIEW, ETHNICITY, SEXUAL-ORIENTATION, HEALTH, RELATIVE |
-| **Lokalizacja** | CITY, ADDRESS |
-| **Kontakt** | EMAIL, PHONE |
-| **Dokumenty** | PESEL, DOCUMENT-NUMBER |
-| **Praca/Edukacja** | COMPANY, SCHOOL-NAME, JOB-TITLE |
-| **Finanse** | BANK-ACCOUNT, CREDIT-CARD-NUMBER |
-| **Cyfrowe** | USERNAME, SECRET |
+| Kategoria          | Etykiety                                                                  |
+| ------------------ | ------------------------------------------------------------------------- |
+| **Dane osobowe**   | NAME, SURNAME, AGE, DATE-OF-BIRTH, DATE, SEX                              |
+| **Dane wrażliwe**  | RELIGION, POLITICAL-VIEW, ETHNICITY, SEXUAL-ORIENTATION, HEALTH, RELATIVE |
+| **Lokalizacja**    | CITY, ADDRESS                                                             |
+| **Kontakt**        | EMAIL, PHONE                                                              |
+| **Dokumenty**      | PESEL, DOCUMENT-NUMBER                                                    |
+| **Praca/Edukacja** | COMPANY, SCHOOL-NAME, JOB-TITLE                                           |
+| **Finanse**        | BANK-ACCOUNT, CREDIT-CARD-NUMBER                                          |
+| **Cyfrowe**        | USERNAME, SECRET                                                          |
 
 ---
 
-## Struktura projektu
+## Struktura projektu (mapa repozytorium)
 
 ```
 DaneBezTwarzy2/
-├── anonymize.py           # Główny skrypt anonimizacji
-├── train.py               # Trening modelu NER
-├── data_generator.py      # Generator danych treningowych
-├── inference.py           # API do anonimizacji
-├── config.py              # Konfiguracja etykiet
-├── utils.py               # Funkcje pomocnicze (korupcja tekstu)
-├── generate_values.py     # Rozszerzanie słowników wartości
-├── convert_data.py        # Konwersja surowych danych
-├── requirements.txt       # Zależności Python
 │
-├── template_filler/       # Moduł rekonstrukcji tekstu
-│   ├── filler.py          # TagFiller + PolishInflector + PersonContext
-│   └── __main__.py        # CLI
+├── 📄 README.md                    # Ten plik - dokumentacja projektu
+├── 📄 output_coffe_3.txt           # Zanonimizowany plik wynikowy
+├── 📄 performance_coffe_3.txt      # Metryki wydajności i sprzęt
+├── 📄 preprocessing_coffe_3.md     # Opis preprocessingu danych
+├── 📄 synthetic_generation_coffe_3.md  # Opis generacji syntetycznej
 │
-├── data/                  # Słowniki wartości i szablony
-│   ├── name/values.txt    # Lista imion
-│   ├── surname/values.txt # Lista nazwisk
-│   ├── city/values.txt    # Lista miast
-│   └── ...                # Pozostałe kategorie
+├── 🔧 anonymize.py           # GŁÓWNY SKRYPT - anonimizacja tekstu
+├── 🔧 train.py               # Trening modelu NER
+├── 🔧 data_generator.py      # Generator danych treningowych
+├── 🔧 inference.py           # API do anonimizacji
+├── 🔧 config.py              # Konfiguracja 25 etykiet NER
+├── 🔧 utils.py               # Funkcje pomocnicze (korupcja tekstu)
+├── 🔧 generate_values.py     # Rozszerzanie słowników wartości
+├── 🔧 convert_data.py        # Konwersja surowych danych
+├── 📋 requirements.txt       # Zależności Python
 │
-└── resources/model/       # Wytrenowany model
-    └── final-model.pt
+├── 📁 template_filler/       # Moduł rekonstrukcji tekstu
+│   ├── filler.py             # TagFiller + PolishInflector (Morfeusz2)
+│   └── __main__.py           # CLI
+│
+├── 📁 data/                  # Słowniki wartości i szablony
+│   ├── name/values.txt       # ~200 polskich imion
+│   ├── surname/values.txt    # ~300 polskich nazwisk
+│   ├── city/values.txt       # ~100 miast Polski
+│   └── ...                   # Pozostałe 22 kategorie
+│
+└── 📁 resources/model/       # Wytrenowany model
+    └── final-model.pt        # Wagi modelu (~500MB)
 ```
 
 ---
@@ -127,26 +153,6 @@ DaneBezTwarzy2/
 - **Architektura:** Flair SequenceTagger + HerBERT (allegro/herbert-base-cased)
 - **Warstwa wyjściowa:** CRF (Conditional Random Field)
 - **Embeddingi:** Transformer embeddings z HerBERT
-
-### Parametry treningu (domyślne)
-
-| Parametr | Wartość |
-|----------|---------|
-| Epoki | 6 |
-| Batch size | 8 |
-| Learning rate | 5e-5 |
-| Scheduler | OneCycleLR |
-| Model bazowy | allegro/herbert-base-cased |
-
-### Dane treningowe
-
-Generator (data_generator.py) tworzy syntetyczny korpus:
-- Wczytuje szablony zdań z data/*/templates.txt i data/mixed_templates.txt
-- Wypełnia placeholdery wartościami z data/*/values.txt
-- Stosuje augmentację (literówki, leet-speak) ~25% przypadków
-- Podział: 80% train / 10% dev / 10% test
-
----
 
 ## Moduł rekonstrukcji (template_filler)
 
@@ -183,13 +189,13 @@ Wyjście:  Pani Anna Kowalska, ur. 15.03.1985, PESEL: 85031512348, wiek: 39 lat.
 
 ### Wykrywanie przypadka gramatycznego
 
-| Kontekst | Przypadek | Przykład |
-|----------|-----------|----------|
-| w, we, na, przy | miejscownik | "w Krakowie" |
-| do, od, z, bez | dopełniacz | "do Warszawy" |
-| przez | biernik | "przez Kraków" |
-| spotkałem się z | narzędnik | "z Janem" |
-| Pani, Pana | dopełniacz | "Pani Anny" |
+| Kontekst        | Przypadek   | Przykład       |
+| --------------- | ----------- | -------------- |
+| w, we, na, przy | miejscownik | "w Krakowie"   |
+| do, od, z, bez  | dopełniacz  | "do Warszawy"  |
+| przez           | biernik     | "przez Kraków" |
+| spotkałem się z | narzędnik   | "z Janem"      |
+| Pani, Pana      | dopełniacz  | "Pani Anny"    |
 
 ### Wydajność
 
@@ -212,7 +218,7 @@ from inference import anonymize
 text = "Jan Kowalski, tel. 500123456, mieszka w Warszawie."
 result = anonymize(text)
 print(result)
-# → "{name} {surname}, tel. {phone}, mieszka w {city}."
+# → "[name] [surname], tel. [phone], mieszka w [city]."
 ```
 
 ### Rekonstrukcja
@@ -221,9 +227,7 @@ print(result)
 from template_filler.filler import TagFiller
 
 filler = TagFiller()
-
-# Podstawowe użycie z odmianą
-result = filler.fill("Spotkałem się z [NAME] w [CITY].")
+result = filler.fill("Spotkałem się z [name] w [city].")
 print(result)
 # → "Spotkałem się z Piotrem w Krakowie."
 
@@ -240,7 +244,7 @@ print(result)
 
 ### Dodawanie nowych wartości
 
-Edytuj pliki w data/{kategoria}/values.txt:
+Edytuj pliki w data/[kategoria]/values.txt:
 
 ```
 # data/name/values.txt
@@ -252,11 +256,11 @@ Piotr
 
 ### Dodawanie szablonów
 
-Edytuj data/{kategoria}/templates.txt lub data/mixed_templates.txt:
+Edytuj data/[kategoria]/templates.txt lub data/mixed_templates.txt:
 
 ```
-{name} {surname} pracuje jako {job-title} w {company}.
-Mój PESEL to {pesel}, a numer telefonu {phone}.
+[name] [surname] pracuje jako [job-title] w [company].
+Mój PESEL to [pesel], a numer telefonu [phone].
 ```
 
 ### Generowanie rozszerzonych słowników
@@ -296,27 +300,3 @@ print(corrupt_text("Kowalski", prob=0.4))
 4. **Odmiana gramatyczna** - wymaga analizy morfologicznej, nie ML
 
 ---
-
-## Wymagania
-
-```
-flair>=0.12
-transformers>=4.0.0
-torch>=1.10
-faker>=13.3.4
-morfeusz2>=1.99
-seqeval
-sacremoses
-```
-
----
-
-## Licencja
-
-Projekt hackathonowy. Użycie zgodne z licencjami HerBERT i Flair.
-
----
-
-## Autor
-
-Karol — Senior ML Engineer (NLP)
