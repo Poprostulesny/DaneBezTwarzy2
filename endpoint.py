@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from anonymize import load_model, anonymize_text
+from template_filler.filler import TagFiller
 
 app = FastAPI(title="NoFace Anonymizer API")
 
@@ -17,6 +18,7 @@ app.add_middleware(
 # Załaduj model tylko raz (możesz zmienić ścieżkę jeśli trzeba)
 MODEL_PATH = 'resources/model/final-model.pt'
 _tagger = None
+_filler = None
 
 def get_tagger():
     global _tagger
@@ -24,11 +26,23 @@ def get_tagger():
         _tagger = load_model(MODEL_PATH)
     return _tagger
 
+def get_filler():
+    global _filler
+    if _filler is None:
+        _filler = TagFiller()
+    return _filler
+
 def get_anonymized_and_placeholder_text(text: str):
     tagger = get_tagger()
+    filler = get_filler()
+    
+    # Anonimizacja - zamiana encji na tagi $[name], $[city] itd.
     anonymized, _ = anonymize_text(text, tagger)
-    # Na razie oba identyczne, można rozdzielić w przyszłości
-    return anonymized, anonymized
+    
+    # Wypełnienie tagów losowymi wartościami z odmianą gramatyczną
+    replaced = filler.fill(anonymized)
+    
+    return anonymized, replaced
 
 
 class AnonymizeRequest(BaseModel):

@@ -25,32 +25,32 @@ DATA_DIR = Path(__file__).parent.parent / "data"
 
 # Mapowanie tagów anonimizacji na pliki z wartościami
 TAG_MAPPING = {
-    # Tagi w formacie [TAG] z anonymize.py
-"$[name]": "NAME",
-"$[surname]": "SURNAME",
-"$[age]": "AGE",
-"$[date-of-birth]": "DATE-OF-BIRTH",
-"$[date]": "DATE",
-"$[sex]": "SEX",
-"$[religion]": "RELIGION",
-"$[political-view]": "POLITICAL-VIEW",
-"$[ethnicity]": "ETHNICITY",
-"$[sexual-orientation]": "SEXUAL-ORIENTATION",
-"$[health]": "HEALTH",
-"$[relative]": "RELATIVE",
-"$[city]": "CITY",
-"$[address]": "ADDRESS",
-"$[email]": "EMAIL",
-"$[phone]": "PHONE",
-"$[pesel]": "PESEL",
-"$[document-number]": "DOCUMENT-NUMBER",
-"$[company]": "COMPANY",
-"$[school-name]": "SCHOOL-NAME",
-"$[job-title]": "JOB-TITLE",
-"$[bank-account]": "BANK-ACCOUNT",
-"$[credit-card-number]": "CREDIT-CARD-NUMBER",
-"$[username]": "USERNAME",
-"$[secret]": "SECRET",
+    # Tagi w formacie $[TAG] z anonymize.py -> nazwy folderów w data/
+    "$[name]": "name",
+    "$[surname]": "surname",
+    "$[age]": "age",
+    "$[date-of-birth]": "date-of-birth",
+    "$[date]": "date",
+    "$[sex]": "sex",
+    "$[religion]": "religion",
+    "$[political-view]": "political-view",
+    "$[ethnicity]": "ethnicity",
+    "$[sexual-orientation]": "sexual-orientation",
+    "$[health]": "health",
+    "$[relative]": "relative",
+    "$[city]": "city",
+    "$[address]": "address",
+    "$[email]": "email",
+    "$[phone]": "phone",
+    "$[pesel]": "pesel",
+    "$[document-number]": "document-number",
+    "$[company]": "company",
+    "$[school-name]": "school-name",
+    "$[job-title]": "job-title",
+    "$[bank-account]": "bank-account",
+    "$[credit-card-number]": "credit-card-number",
+    "$[username]": "username",
+    "$[secret]": "secret",
 }
 
 # Przyimki wymagające konkretnych przypadków
@@ -286,15 +286,15 @@ class TagFiller:
         Wypełnia wszystkie tagi w tekście.
         
         Args:
-            text: Tekst z tagami [IMIĘ], [MIASTO] itd.
+            text: Tekst z tagami $[name], $[city] itd.
             
         Returns:
             Tekst z wypełnionymi i odmienionymi wartościami
         """
         result = text
         
-        # Znajdź wszystkie tagi
-        tag_pattern = r'\[[A-ZĘÓĄŚŁŻŹĆŃ_]+\]'
+        # Znajdź wszystkie tagi w formacie $[tag-name]
+        tag_pattern = r'\$\[[a-z\-]+\]'
         
         # Przetwarzaj od końca (żeby nie przesunąć indeksów)
         matches = list(re.finditer(tag_pattern, result))
