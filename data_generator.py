@@ -278,10 +278,31 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
     if not all_templates:
         all_templates = config.TEMPLATES
     
-    # Duplikuj szablony zawierające {document-number} żeby zwiększyć ich częstotliwość 2x
-    document_templates = [t for t in all_templates if '{document-number}' in t]
-    all_templates.extend(document_templates)  # Dodaj jeszcze raz = 2x więcej
-    print(f"   Zduplikowano {len(document_templates)} szablonów z document-number (2x więcej)")
+    # Policz częstotliwość każdego tagu w szablonach
+    tag_counts: Dict[str, int] = {}
+    for template in all_templates:
+        tags_in_template = set(placeholder_pattern.findall(template))
+        for tag in tags_in_template:
+            tag_counts[tag.lower()] = tag_counts.get(tag.lower(), 0) + 1
+    
+    # Oblicz wagi szablonów - szablony z rzadkimi tagami mają wyższą wagę
+    max_count = max(tag_counts.values()) if tag_counts else 1
+    template_weights = []
+    for template in all_templates:
+        tags_in_template = set(placeholder_pattern.findall(template))
+        if not tags_in_template:
+            template_weights.append(1.0)
+        else:
+            # Waga = średnia (max_count / count) dla tagów w szablonie
+            # Im rzadszy tag, tym wyższa waga
+            weight = sum(max_count / tag_counts.get(t.lower(), 1) for t in tags_in_template) / len(tags_in_template)
+            template_weights.append(weight)
+    
+    # Normalizuj wagi
+    total_weight = sum(template_weights)
+    template_weights = [w / total_weight for w in template_weights]
+    
+    print(f"   Rozkład tagów: {len(tag_counts)} unikalnych tagów, wyrównywanie wagami")
     
     # Cache wczytanych wartości
     values_cache: Dict[str, List[str]] = {}
@@ -316,46 +337,34 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
     num_templates = len(all_templates)
     
     if max_sentences is not None:
-        # Równomierne rozłożenie zdań po szablonach
-        # Każdy szablon dostaje co najmniej max_sentences // num_templates zdań
-        # Reszta jest rozłożona losowo (pierwsze szablony dostają po 1 więcej)
-        base_per_template = max_sentences // num_templates
-        extra = max_sentences % num_templates
-        
-        # Lista: ile zdań dla każdego szablonu
-        sentences_per_template = [base_per_template + (1 if i < extra else 0) for i in range(num_templates)]
-        # Przemieszaj, żeby dodatkowe zdania nie trafiały zawsze do pierwszych szablonów
-        random.shuffle(sentences_per_template)
-        
         total_iterations = max_sentences
-        print(f"   Szablonów: {num_templates}, zdań na szablon: ~{base_per_template} (łącznie: {max_sentences})")
+        print(f"   Szablonów: {num_templates}, zdań do wygenerowania: {max_sentences} (ważone losowanie)")
     else:
-        # Stary tryb: n_per_template dla każdego szablonu
-        sentences_per_template = [n_per_template] * num_templates
         total_iterations = num_templates * n_per_template
         print(f"   Szablonów: {num_templates}, zdań na szablon: {n_per_template} (łącznie: {total_iterations})")
     
     with tqdm(total=total_iterations, desc="Generowanie zdań", unit="zdań") as pbar:
-        for template_idx, template in enumerate(all_templates):
-            n_sentences_for_this_template = sentences_per_template[template_idx]
-            for _ in range(n_sentences_for_this_template):
-                # znajdź placeholdery w szablonie
-                placeholders = placeholder_pattern.findall(template)
-                values: Dict[str, str] = {}
-                for ph in placeholders:
-                    key = ph.lower()
-                    # Użyj równomiernego losowania z get_random_value
-                    raw_val = get_random_value(key)
-                    if raw_val is None:
-                        # Fallback do starej funkcji jeśli brak w cache
-                        raw_val = _get_value_for_placeholder(ph, values_cache)
-                    
-                    # zastosuj korupcję z pewnym prawdopodobieństwem
-                    # ZMNIEJSZONO: 20% szansy na korupcję (było 50%), i mniejsza intensywność
-                    if random.random() < 0.2:
-                        val = corrupt_text(raw_val, prob=corrupt_prob * 0.5)  # połowa intensywności
-                    else:
-                        val = raw_val
+        for _ in range(total_iterations):
+            # Ważone losowanie szablonu - rzadkie tagi są wybierane częściej
+            template = random.choices(all_templates, weights=template_weights, k=1)[0]
+            
+            # znajdź placeholdery w szablonie
+            placeholders = placeholder_pattern.findall(template)
+            values: Dict[str, str] = {}
+            for ph in placeholders:
+                key = ph.lower()
+                # Użyj równomiernego losowania z get_random_value
+                raw_val = get_random_value(key)
+                if raw_val is None:
+                    # Fallback do starej funkcji jeśli brak w cache
+                    raw_val = _get_value_for_placeholder(ph, values_cache)
+                
+                # zastosuj korupcję z pewnym prawdopodobieństwem
+                # ZMNIEJSZONO: 20% szansy na korupcję (było 50%), i mniejsza intensywność
+                if random.random() < 0.2:
+                    val = corrupt_text(raw_val, prob=corrupt_prob * 0.5)  # połowa intensywności
+                else:
+                    val = raw_val
                     
                     # Co 50 imię/nazwisko napisz CAPS LOCKIEM (2% szansy)
                     if ph.lower() in ('name', 'surname') and random.random() < 0.02:
@@ -366,7 +375,7 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
                 try:
                     sentence_text = template.format(**values)
                 except (ValueError, KeyError) as e:
-                    print(f"\nBlad w szablonie #{template_idx}: {template[:100]}...")
+                    print(f"\nBlad w szablonie: {template[:100]}...")
                     print(f"    Blad: {e}")
                     pbar.update(1)
                     continue
