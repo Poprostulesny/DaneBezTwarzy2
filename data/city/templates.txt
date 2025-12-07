@@ -1,3 +1,7 @@
 Mieszkam w {city}.
 Miasto: {city}.
 Pracuję w {city}.
+w {city}
+z {city}
+do {city}
+od {city}
