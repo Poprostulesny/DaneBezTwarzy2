@@ -278,6 +278,11 @@ def generate_corpus(n_per_template: int = 300, corrupt_prob: float = 0.25, seed:
     if not all_templates:
         all_templates = config.TEMPLATES
     
+    # Duplikuj szablony zawierające {document-number} żeby zwiększyć ich częstotliwość 2x
+    document_templates = [t for t in all_templates if '{document-number}' in t]
+    all_templates.extend(document_templates)  # Dodaj jeszcze raz = 2x więcej
+    print(f"   Zduplikowano {len(document_templates)} szablonów z document-number (2x więcej)")
+    
     # Cache wczytanych wartości
     values_cache: Dict[str, List[str]] = {}
     for label in config.LABELS:
